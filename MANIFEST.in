@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include giico *.css
+recursive-include giico *.csv
+recursive-include giico *.html
+recursive-include giico *.ico
+recursive-include giico *.js
+recursive-include giico *.json
+recursive-include giico *.md
+recursive-include giico *.png
+recursive-include giico *.py
+recursive-include giico *.svg
+recursive-include giico *.txt
+recursive-exclude giico *.pyc
