@@ -1,0 +1,173 @@
+{
+ "autoname": "CHPT.####",
+ "creation": "2019-08-09 14:19:45.707878",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "dm",
+  "am",
+  "column_break_4",
+  "lm",
+  "vm",
+  "ch",
+  "column_break_7",
+  "depth",
+  "wet_sample_weight",
+  "bulk_density",
+  "column_break_12",
+  "final_moisture_content",
+  "dry_density",
+  "hydraulic_gradient",
+  "section_break_16",
+  "ptp",
+  "k_avg",
+  "section_break_18",
+  "project",
+  "column_break_16",
+  "client",
+  "column_break_18",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "dm",
+   "fieldtype": "Float",
+   "label": "Diameter of Mould"
+  },
+  {
+   "fieldname": "am",
+   "fieldtype": "Float",
+   "label": "Area of Mould"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lm",
+   "fieldtype": "Float",
+   "label": "Length of Mould"
+  },
+  {
+   "fieldname": "vm",
+   "fieldtype": "Float",
+   "label": "Volume of Mould"
+  },
+  {
+   "fieldname": "ch",
+   "fieldtype": "Float",
+   "label": "Constant Head"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "depth",
+   "fieldtype": "Float",
+   "label": "Depth(m)"
+  },
+  {
+   "fieldname": "wet_sample_weight",
+   "fieldtype": "Int",
+   "label": "Wet Sample Weight"
+  },
+  {
+   "fieldname": "bulk_density",
+   "fieldtype": "Float",
+   "label": "Bulk Density"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "final_moisture_content",
+   "fieldtype": "Float",
+   "label": "Final Moisture Content"
+  },
+  {
+   "fieldname": "dry_density",
+   "fieldtype": "Float",
+   "label": "Dry Density"
+  },
+  {
+   "fieldname": "hydraulic_gradient",
+   "fieldtype": "Float",
+   "label": "Hydraulic Gradient"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ptp",
+   "fieldtype": "Table",
+   "label": "Permeability Test Parameters",
+   "options": "Permeability Test Parameters"
+  },
+  {
+   "fieldname": "k_avg",
+   "fieldtype": "Data",
+   "label": "K <sub>avg</sub>"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  }
+ ],
+ "modified": "2019-09-27 21:09:28.867167",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Constant Head Permeability Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

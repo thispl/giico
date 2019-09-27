@@ -1,0 +1,150 @@
+{
+ "autoname": "CLT.####",
+ "creation": "2019-09-26 09:17:46.049171",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "brand_name",
+  "temperature_range",
+  "readability",
+  "instrument_id_no",
+  "column_break_5",
+  "calibration_date",
+  "report_date",
+  "giico_report_no",
+  "section_break_9",
+  "thermometer_readings",
+  "remarks_section",
+  "remarks",
+  "section_break_13",
+  "calibrated_by",
+  "column_break_15",
+  "checked_by",
+  "section_break_17",
+  "project_name",
+  "column_break_19",
+  "client"
+ ],
+ "fields": [
+  {
+   "fieldname": "brand_name",
+   "fieldtype": "Data",
+   "label": "Brand Name"
+  },
+  {
+   "fieldname": "temperature_range",
+   "fieldtype": "Data",
+   "label": "Temperature Range"
+  },
+  {
+   "fieldname": "readability",
+   "fieldtype": "Data",
+   "label": "Readability"
+  },
+  {
+   "fieldname": "instrument_id_no",
+   "fieldtype": "Data",
+   "label": "Instrument ID No"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calibration_date",
+   "fieldtype": "Date",
+   "label": "Calibration Date"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "giico_report_no",
+   "fieldtype": "Data",
+   "label": "Giico Report No"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "thermometer_readings",
+   "fieldtype": "Table",
+   "label": "Thermometer Readings",
+   "options": "Thermometer Readings"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Data",
+   "label": "Calibrated by"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "label": "Project Name",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  }
+ ],
+ "modified": "2019-09-27 21:01:14.572008",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Calibration of Thermometer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

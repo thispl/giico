@@ -1,0 +1,56 @@
+{
+ "creation": "2019-09-16 08:59:15.468874",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "dy_cm",
+  "dh_cm",
+  "time_sec",
+  "k_cmsec"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test No"
+  },
+  {
+   "fieldname": "dy_cm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "DY (cm)"
+  },
+  {
+   "fieldname": "dh_cm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dh (cm)"
+  },
+  {
+   "fieldname": "time_sec",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Time  (sec.)"
+  },
+  {
+   "fieldname": "k_cmsec",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": " K (Cm/sec )"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:08:12.604795",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "FP Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

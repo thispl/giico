@@ -1,0 +1,126 @@
+{
+ "creation": "2019-09-27 12:39:06.530115",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "l",
+  "b",
+  "h",
+  "wc",
+  "slump",
+  "date_of_cast",
+  "column_break_8",
+  "date_of_test",
+  "age",
+  "weight",
+  "density",
+  "load",
+  "csn",
+  "csnk"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample ID"
+  },
+  {
+   "description": "mm",
+   "fieldname": "l",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "L"
+  },
+  {
+   "fieldname": "b",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "B"
+  },
+  {
+   "fieldname": "h",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "H"
+  },
+  {
+   "fieldname": "wc",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "W/C"
+  },
+  {
+   "description": "mm",
+   "fieldname": "slump",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Slump"
+  },
+  {
+   "fieldname": "date_of_cast",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Cast"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Density"
+  },
+  {
+   "fieldname": "load",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Load"
+  },
+  {
+   "fieldname": "csn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Compressive Strength(N/mm2)"
+  },
+  {
+   "fieldname": "csnk",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Compressive Strength(kg/cm2)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 20:55:48.956350",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Concrete Cubes",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

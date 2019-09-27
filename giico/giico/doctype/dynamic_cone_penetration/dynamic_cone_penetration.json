@@ -1,0 +1,61 @@
+{
+ "creation": "2019-09-17 08:57:03.379649",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "blow_count",
+  "pen_mm",
+  "column_break_4",
+  "dcp_index",
+  "den_index",
+  "rel_density"
+ ],
+ "fields": [
+  {
+   "fieldname": "blow_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Blow Count(Hammer drops)"
+  },
+  {
+   "fieldname": "pen_mm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Penetration P(mm)"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dcp_index",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "DCP Index DPI(mm below)"
+  },
+  {
+   "fieldname": "den_index",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Density Index,Dr(%)"
+  },
+  {
+   "fieldname": "rel_density",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Relative Density Desc"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:08:30.805606",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Dynamic Cone Penetration",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

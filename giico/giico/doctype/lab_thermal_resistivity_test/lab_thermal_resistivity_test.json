@@ -1,0 +1,148 @@
+{
+ "autoname": "TRT.####",
+ "creation": "2019-08-13 07:36:41.811815",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "location",
+  "contract_no",
+  "report_ref",
+  "column_break_6",
+  "sample_type",
+  "elevation",
+  "easting",
+  "northing",
+  "equip_used",
+  "section_break_12",
+  "tr_reference",
+  "section_break_14",
+  "tested_by1",
+  "des1",
+  "column_break_17",
+  "checked_by",
+  "des2"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "contract_no",
+   "fieldtype": "Data",
+   "label": "Contract No"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "label": "Report Ref"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sample_type",
+   "fieldtype": "Data",
+   "label": "Sample Type"
+  },
+  {
+   "fieldname": "elevation",
+   "fieldtype": "Float",
+   "label": "Elevation"
+  },
+  {
+   "fieldname": "easting",
+   "fieldtype": "Float",
+   "label": "Easting"
+  },
+  {
+   "fieldname": "northing",
+   "fieldtype": "Float",
+   "label": "Northing"
+  },
+  {
+   "fieldname": "equip_used",
+   "fieldtype": "Data",
+   "label": "Equip used"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tr_reference",
+   "fieldtype": "Table",
+   "label": "TR Reference",
+   "options": "TR Reference"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by1",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "des1",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Checked by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "des2",
+   "fieldtype": "Data",
+   "label": "Designation"
+  }
+ ],
+ "modified": "2019-09-27 21:03:29.460528",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Lab Thermal Resistivity Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

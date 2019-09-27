@@ -1,0 +1,157 @@
+{
+ "autoname": "DCP.####",
+ "creation": "2019-09-18 08:39:06.500886",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "table_1",
+  "summary_section",
+  "total_test_depth",
+  "layer",
+  "loose_layer1",
+  "dense",
+  "column_break_7",
+  "meddense",
+  "loose_layer2",
+  "remarks_section",
+  "dcp_test__method",
+  "weight_of_hammer",
+  "column_break_13",
+  "cone_diamter",
+  "height_of_drop",
+  "section_break_16",
+  "client",
+  "project",
+  "column_break_19",
+  "tested_by",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "table_1",
+   "fieldtype": "Table",
+   "label": "DCP Test",
+   "options": "Dynamic Cone Penetration"
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "total_test_depth",
+   "fieldtype": "Float",
+   "label": "Total test depth"
+  },
+  {
+   "fieldname": "layer",
+   "fieldtype": "Section Break",
+   "label": "Layer description & thickness from top"
+  },
+  {
+   "fieldname": "loose_layer1",
+   "fieldtype": "Int",
+   "label": "Loose"
+  },
+  {
+   "fieldname": "dense",
+   "fieldtype": "Int",
+   "label": "Dense"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meddense",
+   "fieldtype": "Int",
+   "label": "Med.Dense"
+  },
+  {
+   "fieldname": "loose_layer2",
+   "fieldtype": "Int",
+   "label": "Loose"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "dcp_test__method",
+   "fieldtype": "Data",
+   "label": "DCP Test  method"
+  },
+  {
+   "fieldname": "weight_of_hammer",
+   "fieldtype": "Data",
+   "label": "Weight of hammer "
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cone_diamter",
+   "fieldtype": "Data",
+   "label": "Cone Diamter"
+  },
+  {
+   "fieldname": "height_of_drop",
+   "fieldtype": "Data",
+   "label": "Height of Drop"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By"
+  }
+ ],
+ "modified": "2019-09-27 21:03:37.313723",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Dynamic Cone Penetration Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

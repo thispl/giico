@@ -1,0 +1,158 @@
+{
+ "autoname": "BP.####",
+ "creation": "2019-09-27 07:41:34.323824",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "type_of_block",
+  "column_break_4",
+  "product_date",
+  "test_date",
+  "report_date",
+  "report_ref",
+  "section_break_9",
+  "brick_pave_readings",
+  "calculate",
+  "average_section",
+  "cs1",
+  "column_break_11",
+  "cs2",
+  "remarks_section",
+  "remarks",
+  "section_break_17",
+  "calibrated_by",
+  "column_break_19",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "type_of_block",
+   "fieldtype": "Data",
+   "label": "Type of Block"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_date",
+   "fieldtype": "Date",
+   "label": "Product Date"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Data",
+   "label": "Report Ref"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "brick_pave_readings",
+   "fieldtype": "Table",
+   "label": "Brick Pave Readings",
+   "options": "Brick Pave Readings"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "average_section",
+   "fieldtype": "Section Break",
+   "label": "Average"
+  },
+  {
+   "description": "(N/mm2)\n",
+   "fieldname": "cs1",
+   "fieldtype": "Float",
+   "label": "Compressive Strength"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(kg/cm2)\n",
+   "fieldname": "cs2",
+   "fieldtype": "Float",
+   "label": "Compressive Strength"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Data",
+   "label": "Calibrated by"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  }
+ ],
+ "modified": "2019-09-27 20:56:34.115707",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Compressive Strength of Brick Pave Units",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

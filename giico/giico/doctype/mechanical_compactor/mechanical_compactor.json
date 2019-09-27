@@ -1,0 +1,158 @@
+{
+ "autoname": "MC.####",
+ "creation": "2019-09-24 15:08:51.856495",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client",
+  "project",
+  "giico_job_no",
+  "date_of_calibration",
+  "date_of_report",
+  "column_break_6",
+  "model",
+  "make",
+  "serial",
+  "astm",
+  "procedure",
+  "section_break_12",
+  "compactor_readings",
+  "remarks_section",
+  "remarks",
+  "section_break_14",
+  "calibrated_by",
+  "lab_technician",
+  "column_break_17",
+  "approved_by",
+  "laboratory_manager"
+ ],
+ "fields": [
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "giico_job_no",
+   "fieldtype": "Data",
+   "label": "Giico Job No"
+  },
+  {
+   "fieldname": "date_of_calibration",
+   "fieldtype": "Date",
+   "label": "Date of Calibration"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fieldname": "serial",
+   "fieldtype": "Data",
+   "label": "Serial"
+  },
+  {
+   "fieldname": "astm",
+   "fieldtype": "Data",
+   "label": "ASTM Designation for which the  compactor was calibrated "
+  },
+  {
+   "fieldname": "procedure",
+   "fieldtype": "Data",
+   "label": "Procedure for which the compactor was calibrated"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "compactor_readings",
+   "fieldtype": "Table",
+   "label": "Compactor Readings",
+   "options": "Compactor Readings"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Data",
+   "label": "Calibrated by"
+  },
+  {
+   "fieldname": "lab_technician",
+   "fieldtype": "Data",
+   "label": "Lab Technician"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved by"
+  },
+  {
+   "fieldname": "laboratory_manager",
+   "fieldtype": "Data",
+   "label": "Laboratory Manager"
+  }
+ ],
+ "modified": "2019-09-27 21:02:13.484757",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Mechanical Compactor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

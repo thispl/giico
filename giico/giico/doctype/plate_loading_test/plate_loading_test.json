@@ -1,0 +1,210 @@
+{
+ "autoname": "PLT.####",
+ "creation": "2019-08-12 09:39:46.259114",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_of_test",
+  "test_no",
+  "elevation",
+  "location",
+  "column_break_5",
+  "job_ref_no",
+  "set_of_plates",
+  "test_soil_condition",
+  "section_break_9",
+  "data_9",
+  "section_break_11",
+  "test_by",
+  "designation1",
+  "column_break_13",
+  "review_by",
+  "designation2",
+  "section_break_15",
+  "project",
+  "column_break_17",
+  "client",
+  "stress_section",
+  "test2",
+  "des1",
+  "column_break_21",
+  "review2",
+  "des2",
+  "section_break_23",
+  "project2",
+  "column_break_25",
+  "client2"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "label": "Test No"
+  },
+  {
+   "fieldname": "elevation",
+   "fieldtype": "Data",
+   "label": "Elevation"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_ref_no",
+   "fieldtype": "Int",
+   "label": "Job Ref No"
+  },
+  {
+   "fieldname": "set_of_plates",
+   "fieldtype": "Data",
+   "label": "Set of Plates Used(m)"
+  },
+  {
+   "fieldname": "test_soil_condition",
+   "fieldtype": "Data",
+   "label": "Test Soil Condition"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_9",
+   "fieldtype": "Table",
+   "label": "PLT Readings",
+   "options": "PLT Readings"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_by",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "designation1",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "review_by",
+   "fieldtype": "Data",
+   "label": "Reviewed By"
+  },
+  {
+   "fieldname": "designation2",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "stress_section",
+   "fieldtype": "Section Break",
+   "label": "STRESS"
+  },
+  {
+   "fieldname": "test2",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "des1",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "review2",
+   "fieldtype": "Data",
+   "label": "Reviewed by"
+  },
+  {
+   "fieldname": "des2",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project2",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client2",
+   "fieldtype": "Data",
+   "label": "Client"
+  }
+ ],
+ "modified": "2019-09-27 21:10:40.424123",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Plate Loading Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

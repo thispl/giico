@@ -1,0 +1,146 @@
+{
+ "autoname": "OV.####",
+ "creation": "2019-09-25 08:56:13.848812",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client",
+  "project",
+  "manufacturer",
+  "serial_no",
+  "column_break_5",
+  "temp_range",
+  "date_of_calibration",
+  "date_of_report",
+  "giico_job_no",
+  "section_break_10",
+  "oven_readings",
+  "notes_section",
+  "notes",
+  "traceability_section",
+  "traceability",
+  "section_break_16",
+  "calibrated_by",
+  "column_break_18",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "C Max",
+   "fieldname": "temp_range",
+   "fieldtype": "Data",
+   "label": "Temp Range"
+  },
+  {
+   "fieldname": "date_of_calibration",
+   "fieldtype": "Date",
+   "label": "Date of Calibration"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "giico_job_no",
+   "fieldtype": "Data",
+   "label": "Giico Job No"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "oven_readings",
+   "fieldtype": "Table",
+   "label": "Oven Readings",
+   "options": "Oven Readings"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "traceability_section",
+   "fieldtype": "Section Break",
+   "label": "Traceability"
+  },
+  {
+   "fieldname": "traceability",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Data",
+   "label": "Calibrated by"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  }
+ ],
+ "modified": "2019-09-27 21:01:29.104255",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Calibration of Oven",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

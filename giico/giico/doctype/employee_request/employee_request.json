@@ -1,0 +1,105 @@
+{
+ "autoname": "ER.####",
+ "creation": "2019-08-07 07:17:43.002866",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "related_to",
+  "column_break_2",
+  "raised_to",
+  "status",
+  "section_break_5",
+  "request_date",
+  "column_break_7",
+  "requested_by",
+  "info_sb_section",
+  "info"
+ ],
+ "fields": [
+  {
+   "fieldname": "related_to",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Related to",
+   "options": "\nProject\nCustomer"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "raised_to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Raised to",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nOpen\nClosed"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "owner",
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Requested By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "info_sb_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "info",
+   "fieldtype": "Text Editor",
+   "label": "Request",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-09-27 21:10:49.373205",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Employee Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

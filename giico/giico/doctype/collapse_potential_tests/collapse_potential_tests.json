@@ -1,0 +1,169 @@
+{
+ "autoname": "CPT.####",
+ "creation": "2019-09-13 15:01:54.688145",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_ref",
+  "test_id",
+  "date",
+  "sample_id",
+  "specimen_details",
+  "type",
+  "remould_bulk_density",
+  "column_break_8",
+  "remould_moisture",
+  "initial_ht",
+  "dia",
+  "natural_moisture_cont",
+  "final_water_content",
+  "addl_info",
+  "column_break_15",
+  "collapse_potential",
+  "section_break_17",
+  "project",
+  "column_break_17",
+  "client",
+  "column_break_21",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_ref",
+   "fieldtype": "Data",
+   "label": "Job Ref"
+  },
+  {
+   "fieldname": "test_id",
+   "fieldtype": "Data",
+   "label": "Test ID"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "specimen_details",
+   "fieldtype": "Data",
+   "label": "Specimen Details"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "description": "Mg/m3\n",
+   "fieldname": "remould_bulk_density",
+   "fieldtype": "Float",
+   "label": "Remould Bulk Density ",
+   "options": "\n"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remould_moisture",
+   "fieldtype": "Data",
+   "label": "Remould. Moisture % "
+  },
+  {
+   "description": "mm\n",
+   "fieldname": "initial_ht",
+   "fieldtype": "Data",
+   "label": "Initial ht"
+  },
+  {
+   "description": "mm\n",
+   "fieldname": "dia",
+   "fieldtype": "Data",
+   "label": "Dia"
+  },
+  {
+   "description": "%",
+   "fieldname": "natural_moisture_cont",
+   "fieldtype": "Data",
+   "label": "Natural moisture cont"
+  },
+  {
+   "description": "%",
+   "fieldname": "final_water_content",
+   "fieldtype": "Data",
+   "label": "Final water content"
+  },
+  {
+   "fieldname": "addl_info",
+   "fieldtype": "Data",
+   "label": "Addl Info"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "collapse_potential",
+   "fieldtype": "Table",
+   "label": "Collapse Potential Of Soil",
+   "options": "Collapse Potential Of Soil"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  }
+ ],
+ "modified": "2019-09-27 21:03:21.386818",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Collapse Potential Tests",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,157 @@
+{
+ "autoname": "LLD.####",
+ "creation": "2019-09-24 08:25:36.836653",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "maker",
+  "serial_id",
+  "column_break_5",
+  "calibration_date",
+  "report_date",
+  "report_no",
+  "section_break_9",
+  "liquid_limit",
+  "section_break_11",
+  "overall_calibration_result",
+  "column_break_13",
+  "next_calibration_on",
+  "section_break_15",
+  "calibrated_by",
+  "des1",
+  "column_break_18",
+  "checked_by",
+  "des2"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "maker",
+   "fieldtype": "Data",
+   "label": "Maker"
+  },
+  {
+   "fieldname": "serial_id",
+   "fieldtype": "Int",
+   "label": "Serial ID"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calibration_date",
+   "fieldtype": "Date",
+   "label": "Calibration Date "
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date "
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Int",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "liquid_limit",
+   "fieldtype": "Table",
+   "label": "Liquid Limit",
+   "options": "Liquid Limit"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overall_calibration_result",
+   "fieldtype": "Data",
+   "label": "Overall Calibration Result "
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_calibration_on",
+   "fieldtype": "Date",
+   "label": "Next Calibration On "
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Link",
+   "label": "Calibrated by ",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "calibrated_by.designation",
+   "fieldname": "des1",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Checked by ",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "checked_by.designation",
+   "fieldname": "des2",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  }
+ ],
+ "modified": "2019-09-27 21:02:20.067764",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Calibration of Liquid Limit Device",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

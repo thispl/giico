@@ -1,0 +1,148 @@
+{
+ "autoname": "FERT.####",
+ "creation": "2019-08-10 13:42:51.155767",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "giico_ref_no",
+  "column_break_3",
+  "test_no",
+  "elevation",
+  "section_break_6",
+  "table_7",
+  "section_break_8",
+  "section_break_10",
+  "tested_by",
+  "des1",
+  "column_break_12",
+  "checked_by",
+  "des2",
+  "section_break_14",
+  "project",
+  "column_break_16",
+  "location",
+  "column_break_18",
+  "client"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "giico_ref_no",
+   "fieldtype": "Data",
+   "label": "Giico Ref No"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Int",
+   "label": "Test No"
+  },
+  {
+   "fieldname": "elevation",
+   "fieldtype": "Data",
+   "label": "Elevation"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_7",
+   "fieldtype": "Table",
+   "label": "FER Test",
+   "options": "FER Test"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "des1",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By"
+  },
+  {
+   "fieldname": "des2",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  }
+ ],
+ "modified": "2019-09-27 21:09:34.014917",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Field Electrical Resistivity Normal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

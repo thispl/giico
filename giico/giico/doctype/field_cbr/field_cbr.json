@@ -1,0 +1,162 @@
+{
+ "autoname": "CBR.####",
+ "creation": "2019-08-16 09:55:32.027073",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "location",
+  "test",
+  "test_depth",
+  "column_break_4",
+  "materials",
+  "water_content_",
+  "date_of_report",
+  "job_ref_no",
+  "northing",
+  "easting",
+  "section_break_9",
+  "penetration",
+  "section_break_11",
+  "tested_by",
+  "designation",
+  "section_break_14",
+  "checked_by",
+  "designation1",
+  "section_break_17",
+  "project",
+  "location1",
+  "client"
+ ],
+ "fields": [
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "LOCATION"
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "label": "TEST #"
+  },
+  {
+   "fieldname": "test_depth",
+   "fieldtype": "Float",
+   "label": "TEST DEPTH #"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "materials",
+   "fieldtype": "Data",
+   "label": "MATERIALS"
+  },
+  {
+   "fieldname": "water_content_",
+   "fieldtype": "Data",
+   "label": "WATER CONTENT (%)"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "DATE OF REPORT"
+  },
+  {
+   "fieldname": "job_ref_no",
+   "fieldtype": "Int",
+   "label": "JOB REF. NO."
+  },
+  {
+   "fieldname": "northing",
+   "fieldtype": "Float",
+   "label": "NORTHING"
+  },
+  {
+   "fieldname": "easting",
+   "fieldtype": "Float",
+   "label": "EASTING"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "penetration",
+   "fieldtype": "Table",
+   "label": "Penetration",
+   "options": "Penetration"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "TESTED BY"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "CHECKED BY"
+  },
+  {
+   "fieldname": "designation1",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "PROJECT "
+  },
+  {
+   "fieldname": "location1",
+   "fieldtype": "Data",
+   "label": "LOCATION"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "CLIENT"
+  }
+ ],
+ "modified": "2019-09-27 21:09:41.445406",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Field CBR",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

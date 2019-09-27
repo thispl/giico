@@ -1,0 +1,162 @@
+{
+ "autoname": "CPJ.####",
+ "creation": "2019-09-25 13:08:58.034413",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client",
+  "project",
+  "job_no",
+  "date_calib",
+  "column_break_5",
+  "date_report",
+  "serial_no",
+  "model",
+  "mould",
+  "volume_jar",
+  "dry_weight",
+  "jar_water",
+  "wt_water",
+  "column_break_12",
+  "volume_mould",
+  "section_break_15",
+  "top_cone",
+  "column_break_17",
+  "room_temp",
+  "section_break_19",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Int",
+   "label": "Job No"
+  },
+  {
+   "fieldname": "date_calib",
+   "fieldtype": "Date",
+   "label": "Date of Calib"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_report",
+   "fieldtype": "Date",
+   "label": "Date Of Report"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "mould",
+   "fieldtype": "Float",
+   "label": "Mould"
+  },
+  {
+   "fieldname": "volume_jar",
+   "fieldtype": "Section Break",
+   "label": "Volume of jar"
+  },
+  {
+   "description": "kg",
+   "fieldname": "dry_weight",
+   "fieldtype": "Float",
+   "label": "Dry Weight"
+  },
+  {
+   "description": "kg",
+   "fieldname": "jar_water",
+   "fieldtype": "Float",
+   "label": "Jar + Water "
+  },
+  {
+   "description": "kg",
+   "fieldname": "wt_water",
+   "fieldtype": "Float",
+   "label": "Wt of water"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "cm3\n",
+   "fieldname": "volume_mould",
+   "fieldtype": "Float",
+   "label": "Volume of Mould"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "mm",
+   "fieldname": "top_cone",
+   "fieldtype": "Float",
+   "label": "Top Cone Diameter"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "oC\t\n\n\n\n",
+   "fieldname": "room_temp",
+   "fieldtype": "Int",
+   "label": "Room Temparature"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "modified": "2019-09-27 21:01:24.065152",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Calibration Of Pycnometer Jar",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

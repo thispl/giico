@@ -1,0 +1,56 @@
+{
+ "creation": "2019-08-14 08:32:56.863029",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "extension_reading_mm",
+  "no_of_blows",
+  "total_blows",
+  "data_4",
+  "actual_pentration_reading_mm"
+ ],
+ "fields": [
+  {
+   "fieldname": "extension_reading_mm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Extension Reading (mm)"
+  },
+  {
+   "fieldname": "no_of_blows",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "No of Blows"
+  },
+  {
+   "fieldname": "total_blows",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Blows"
+  },
+  {
+   "fieldname": "data_4",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Reading (mm)"
+  },
+  {
+   "fieldname": "actual_pentration_reading_mm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Actual Pentration reading (mm)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:09:48.144563",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Lonestar DCPT Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

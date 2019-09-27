@@ -1,0 +1,182 @@
+{
+ "autoname": "BH.####",
+ "creation": "2019-09-14 07:33:47.665616",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "depthm",
+  "column_break_3",
+  "bh_no",
+  "sample_description",
+  "dimensions_of_specimen_section",
+  "average_height",
+  "average_diameter",
+  "weight",
+  "bulk_density",
+  "moisture",
+  "column_break_12",
+  "load",
+  "point_load_strength",
+  "correction_factor",
+  "point_load_strength_index",
+  "uni_cs1",
+  "uni_cs3",
+  "section_break_19",
+  "project",
+  "client",
+  "column_break_22",
+  "tested_by",
+  "checked_by",
+  "point_load_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "depthm",
+   "fieldtype": "Data",
+   "label": "Depth(m)"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bh_no",
+   "fieldtype": "Data",
+   "label": "BH No"
+  },
+  {
+   "fieldname": "sample_description",
+   "fieldtype": "Data",
+   "label": "Sample Description"
+  },
+  {
+   "fieldname": "dimensions_of_specimen_section",
+   "fieldtype": "Section Break",
+   "label": "Dimensions of Specimen"
+  },
+  {
+   "fieldname": "average_height",
+   "fieldtype": "Float",
+   "label": "Average Height"
+  },
+  {
+   "fieldname": "average_diameter",
+   "fieldtype": "Float",
+   "label": "Average Diameter"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Int",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "bulk_density",
+   "fieldtype": "Data",
+   "label": "Bulk Density"
+  },
+  {
+   "fieldname": "moisture",
+   "fieldtype": "Data",
+   "label": "Moisture"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "load",
+   "fieldtype": "Data",
+   "label": "Load"
+  },
+  {
+   "fieldname": "point_load_strength",
+   "fieldtype": "Int",
+   "label": "Point Load Strength"
+  },
+  {
+   "fieldname": "correction_factor",
+   "fieldtype": "Float",
+   "label": "Correction Factor"
+  },
+  {
+   "fieldname": "point_load_strength_index",
+   "fieldtype": "Float",
+   "label": "Point Load Strength Index"
+  },
+  {
+   "fieldname": "uni_cs1",
+   "fieldtype": "Float",
+   "label": "Uniaxial Comp Strength"
+  },
+  {
+   "fieldname": "uni_cs3",
+   "fieldtype": "Float",
+   "label": "Uniaxial Comp Strength"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By"
+  },
+  {
+   "fieldname": "point_load_value",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Point Load value"
+  }
+ ],
+ "modified": "2019-09-27 21:08:08.737198",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Point Load Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

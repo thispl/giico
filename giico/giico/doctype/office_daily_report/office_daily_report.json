@@ -1,0 +1,162 @@
+{
+ "autoname": "ODR.####",
+ "creation": "2019-08-31 09:44:07.696973",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_no",
+  "shift",
+  "report_no",
+  "work_date",
+  "work_day",
+  "column_break_4",
+  "from_time",
+  "to_time",
+  "area",
+  "weather",
+  "section_break_8",
+  "manpower",
+  "column_break_10",
+  "major_equipment",
+  "section_break_14",
+  "work_progress",
+  "proposed_activities_for_tomorrow",
+  "remarks",
+  "section_break_18",
+  "giico_representative",
+  "column_break_20",
+  "client"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Data",
+   "label": "Job No"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Data",
+   "label": "Shift"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No."
+  },
+  {
+   "fieldname": "work_date",
+   "fieldtype": "Date",
+   "label": "Work Date"
+  },
+  {
+   "fieldname": "work_day",
+   "fieldtype": "Data",
+   "label": "Work Day"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "label": "From Time"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "label": "To Time"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "weather",
+   "fieldtype": "Data",
+   "label": "Weather"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "manpower",
+   "fieldtype": "Table",
+   "label": "Manpower",
+   "options": "Manpower"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "major_equipment",
+   "fieldtype": "Table",
+   "label": "Major Equipment",
+   "options": "Major Equipment"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_progress",
+   "fieldtype": "Small Text",
+   "label": "Work Progress"
+  },
+  {
+   "fieldname": "proposed_activities_for_tomorrow",
+   "fieldtype": "Small Text",
+   "label": "Proposed Activities For Tomorrow"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "giico_representative",
+   "fieldtype": "Data",
+   "label": "GIICO Representative"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  }
+ ],
+ "modified": "2019-09-27 21:08:22.277005",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Office Daily Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

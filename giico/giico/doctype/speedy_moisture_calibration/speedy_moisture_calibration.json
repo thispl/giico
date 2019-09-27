@@ -1,0 +1,63 @@
+{
+ "creation": "2019-09-26 15:26:58.131775",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "wet_soil",
+  "dry_cont",
+  "container",
+  "wt_water",
+  "wt_dry",
+  "mc"
+ ],
+ "fields": [
+  {
+   "fieldname": "wet_soil",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wet Soil Cont"
+  },
+  {
+   "fieldname": "dry_cont",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dry Sl Cont"
+  },
+  {
+   "fieldname": "container",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Container"
+  },
+  {
+   "fieldname": "wt_water",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt Water"
+  },
+  {
+   "fieldname": "wt_dry",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt Dry"
+  },
+  {
+   "fieldname": "mc",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "MC"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 20:56:46.064845",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Speedy Moisture Calibration",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,52 @@
+{
+ "creation": "2019-08-13 09:31:13.298192",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "column_break_2",
+  "moisture_cont",
+  "column_break_4",
+  "dry_density"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Test No"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "moisture_cont",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Moisture content  (ASTM D 4944)"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dry_density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dry density(g/cm3)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:10:28.819098",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Dry Density",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

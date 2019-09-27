@@ -1,0 +1,95 @@
+{
+ "autoname": "CSE.####",
+ "creation": "2019-09-25 07:51:39.103453",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client",
+  "project",
+  "date",
+  "equipment",
+  "column_break_5",
+  "job_no",
+  "weight",
+  "read_point",
+  "section_break_9",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Data",
+   "label": "Equipment"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Int",
+   "label": "Job no"
+  },
+  {
+   "description": "gm",
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight                     "
+  },
+  {
+   "description": "mm",
+   "fieldname": "read_point",
+   "fieldtype": "Float",
+   "label": "Reading point Height"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "modified": "2019-09-27 21:02:10.182808",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Calibration of Sand Equivalent",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

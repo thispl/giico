@@ -1,0 +1,61 @@
+{
+ "creation": "2019-08-13 09:27:36.961506",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "wt_wet_soil",
+  "wt_tare",
+  "column_break_4",
+  "wet_soil_hole",
+  "wet_density"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Test No"
+  },
+  {
+   "fieldname": "wt_wet_soil",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Wt. of wet soil from hole+tare(g)"
+  },
+  {
+   "fieldname": "wt_tare",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Wt. of tare "
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wet_soil_hole",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Wt. of wet soil from hole"
+  },
+  {
+   "fieldname": "wet_density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wet density"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:10:32.943546",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Wet Density",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

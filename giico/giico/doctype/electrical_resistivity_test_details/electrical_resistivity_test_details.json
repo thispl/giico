@@ -1,0 +1,50 @@
+{
+ "creation": "2019-08-04 16:28:23.088169",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "electrode_interval",
+  "resistance",
+  "soil_resistivity"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test No"
+  },
+  {
+   "fieldname": "electrode_interval",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Electrode Interval(M)"
+  },
+  {
+   "fieldname": "resistance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Resistance(OHM)"
+  },
+  {
+   "fieldname": "soil_resistivity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Soil Resistivity(OHM M)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:10:55.664022",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Electrical Resistivity Test Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

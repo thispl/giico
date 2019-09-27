@@ -1,0 +1,311 @@
+{
+ "autoname": "DCPT.####",
+ "creation": "2019-08-14 08:08:28.789617",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer1",
+  "consultant1",
+  "column_break_3",
+  "project1",
+  "location1",
+  "section_break_6",
+  "field_data_section",
+  "dcpt_ref",
+  "test_method",
+  "coordinates",
+  "chainage1",
+  "concreteasphalt_depth",
+  "offset1",
+  "column_break_13",
+  "report_no",
+  "date_of_test",
+  "report_date1",
+  "top_layer_being_tested1",
+  "tested_by1",
+  "section_break_21",
+  "cbr",
+  "log10cbr",
+  "trrl_test",
+  "section_break_23",
+  "notes",
+  "lonestar_dcpt_field_test__sheet_section",
+  "customer",
+  "consultant",
+  "project",
+  "location",
+  "cordinates",
+  "test_date",
+  "report_ref_no",
+  "dcp_test_ref",
+  "test_elevation",
+  "column_break_35",
+  "tested_by",
+  "chainage",
+  "plate_no",
+  "offset",
+  "concrete_asphalt_depth",
+  "report_date",
+  "top_layer_being_tested",
+  "project_no",
+  "section_break_44",
+  "lonestar_dcpt_test"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer1",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "consultant1",
+   "fieldtype": "Data",
+   "label": "Consultant"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project1",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "location1",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "field_data_section",
+   "fieldtype": "Section Break",
+   "label": "FIELD DATA"
+  },
+  {
+   "fieldname": "dcpt_ref",
+   "fieldtype": "Int",
+   "label": "DCPT Ref"
+  },
+  {
+   "fieldname": "test_method",
+   "fieldtype": "Data",
+   "label": "Test Method"
+  },
+  {
+   "fieldname": "coordinates",
+   "fieldtype": "Data",
+   "label": "Coordinates"
+  },
+  {
+   "fieldname": "chainage1",
+   "fieldtype": "Int",
+   "label": "Chainage"
+  },
+  {
+   "fieldname": "concreteasphalt_depth",
+   "fieldtype": "Data",
+   "label": "Concrete/Asphalt Depth"
+  },
+  {
+   "fieldname": "offset1",
+   "fieldtype": "Data",
+   "label": "Offset"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "report_date1",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "top_layer_being_tested1",
+   "fieldtype": "Data",
+   "label": "Top layer being tested"
+  },
+  {
+   "fieldname": "tested_by1",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "2.48",
+   "fieldname": "cbr",
+   "fieldtype": "Float",
+   "label": "CBR"
+  },
+  {
+   "default": "-1.057\n",
+   "fieldname": "log10cbr",
+   "fieldtype": "Float",
+   "label": "Log10(CBR)"
+  },
+  {
+   "fieldname": "trrl_test",
+   "fieldtype": "Table",
+   "label": "TRRL Test",
+   "options": "TRRL Test"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "lonestar_dcpt_field_test__sheet_section",
+   "fieldtype": "Section Break",
+   "label": "Lonestar DCPT field test  sheet"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Data",
+   "label": "Consultant"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "cordinates",
+   "fieldtype": "Data",
+   "label": "Cordinates"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "report_ref_no",
+   "fieldtype": "Data",
+   "label": "Report Ref No"
+  },
+  {
+   "fieldname": "dcp_test_ref",
+   "fieldtype": "Data",
+   "label": "DCP Test Ref"
+  },
+  {
+   "fieldname": "test_elevation",
+   "fieldtype": "Data",
+   "label": "Test Elevation"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "chainage",
+   "fieldtype": "Data",
+   "label": "Chainage"
+  },
+  {
+   "fieldname": "plate_no",
+   "fieldtype": "Data",
+   "label": "Plate No. "
+  },
+  {
+   "fieldname": "offset",
+   "fieldtype": "Data",
+   "label": "Offset"
+  },
+  {
+   "fieldname": "concrete_asphalt_depth",
+   "fieldtype": "Data",
+   "label": "Concrete/ Asphalt Depth"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report date"
+  },
+  {
+   "fieldname": "top_layer_being_tested",
+   "fieldtype": "Data",
+   "label": "Top layer being tested"
+  },
+  {
+   "fieldname": "project_no",
+   "fieldtype": "Data",
+   "label": "Project No."
+  },
+  {
+   "fieldname": "section_break_44",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lonestar_dcpt_test",
+   "fieldtype": "Table",
+   "label": "Lonestar DCPT Test",
+   "options": "Lonestar DCPT Test"
+  }
+ ],
+ "modified": "2019-09-27 21:09:45.217549",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "DCPT Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

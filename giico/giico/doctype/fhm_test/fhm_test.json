@@ -1,0 +1,61 @@
+{
+ "creation": "2019-09-19 13:25:23.265029",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reading_no",
+  "dycm",
+  "dhcm",
+  "column_break_4",
+  "timesec",
+  "k_cmsec"
+ ],
+ "fields": [
+  {
+   "fieldname": "reading_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reading No"
+  },
+  {
+   "fieldname": "dycm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DY(Cm)"
+  },
+  {
+   "fieldname": "dhcm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DH(Cm)"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "timesec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time(sec)"
+  },
+  {
+   "fieldname": "k_cmsec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "K (cm/sec)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:03:33.041823",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "FHM Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

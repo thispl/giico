@@ -1,0 +1,64 @@
+{
+ "autoname": "CT.####",
+ "creation": "2019-09-13 11:44:21.674031",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "chemical_test",
+  "section_break_2",
+  "project",
+  "title",
+  "client"
+ ],
+ "fields": [
+  {
+   "fieldname": "chemical_test",
+   "fieldtype": "Table",
+   "label": "Chemical test",
+   "options": "Chemical Test"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  }
+ ],
+ "modified": "2019-09-27 21:08:18.210027",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Chemical Tests",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

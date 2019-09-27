@@ -1,0 +1,124 @@
+{
+ "autoname": "IT.####",
+ "creation": "2019-09-18 16:13:29.838321",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "location",
+  "test_no",
+  "depthm",
+  "column_break_5",
+  "diameter_ring",
+  "area",
+  "temperaturec",
+  "type_of_test",
+  "initial_ht",
+  "section_break_10",
+  "if_test",
+  "project",
+  "client",
+  "job_ref_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "label": "Test No"
+  },
+  {
+   "fieldname": "depthm",
+   "fieldtype": "Data",
+   "label": "Depth(m)"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diameter_ring",
+   "fieldtype": "Float",
+   "label": "Diameter of ring(cm)"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area"
+  },
+  {
+   "fieldname": "temperaturec",
+   "fieldtype": "Int",
+   "label": "Temperature(c)"
+  },
+  {
+   "fieldname": "type_of_test",
+   "fieldtype": "Data",
+   "label": "Type of test"
+  },
+  {
+   "fieldname": "initial_ht",
+   "fieldtype": "Int",
+   "label": "Initial ht of water(cm)"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "if_test",
+   "fieldtype": "Table",
+   "label": "IF Test",
+   "options": "IF Test"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "job_ref_no",
+   "fieldtype": "Data",
+   "label": "Job  Ref No"
+  }
+ ],
+ "modified": "2019-09-27 21:03:29.278599",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Infiltration Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

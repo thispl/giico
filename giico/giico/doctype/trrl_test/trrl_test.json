@@ -1,0 +1,81 @@
+{
+ "creation": "2019-08-14 08:14:45.289355",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "layer",
+  "startmm",
+  "endmm",
+  "thicknessmm",
+  "column_break_5",
+  "cumulative_blowsno",
+  "blows_layerno",
+  "strength_cbr",
+  "e_modulus_mpa"
+ ],
+ "fields": [
+  {
+   "fieldname": "layer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Layer"
+  },
+  {
+   "fieldname": "startmm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Start(mm)"
+  },
+  {
+   "fieldname": "endmm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "End(mm)"
+  },
+  {
+   "fieldname": "thicknessmm",
+   "fieldtype": "Int",
+   "label": "Thickness(mm)"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cumulative_blowsno",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Cumulative Blows(No)"
+  },
+  {
+   "fieldname": "blows_layerno",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Blows /Layer(No)"
+  },
+  {
+   "fieldname": "strength_cbr",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Strength CBR(%)"
+  },
+  {
+   "fieldname": "e_modulus_mpa",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "E Modulus MPa"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:09:46.939230",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "TRRL Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

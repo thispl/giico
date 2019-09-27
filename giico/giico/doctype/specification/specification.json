@@ -1,0 +1,35 @@
+{
+ "creation": "2019-08-13 09:40:22.967210",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "specified_min_relative_compaction"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Test No"
+  },
+  {
+   "fieldname": "specified_min_relative_compaction",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Specified Min Relative Compaction"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:10:40.000024",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Specification",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

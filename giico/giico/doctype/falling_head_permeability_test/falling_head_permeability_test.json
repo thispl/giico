@@ -1,0 +1,182 @@
+{
+ "autoname": "FHP.####",
+ "creation": "2019-09-17 09:23:05.369552",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "loc",
+  "dia_mould",
+  "len_mould",
+  "area_of_mould",
+  "vol_mould",
+  "int_head",
+  "vol_den",
+  "col1",
+  "depth",
+  "wgt_wet",
+  "bulk_density",
+  "initial_moisture",
+  "final_moisture",
+  "dry_density",
+  "cross_sec",
+  "sample_height",
+  "section_break_17",
+  "table_18",
+  "calculate",
+  "kavg",
+  "section_break_20",
+  "project",
+  "column_break_22",
+  "client"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "loc",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "dia_mould",
+   "fieldtype": "Data",
+   "label": "Diameter of Mould(cm)"
+  },
+  {
+   "fieldname": "len_mould",
+   "fieldtype": "Data",
+   "label": "Length of Mould(cm)"
+  },
+  {
+   "fieldname": "area_of_mould",
+   "fieldtype": "Data",
+   "label": "Area of Mould(cm2)"
+  },
+  {
+   "fieldname": "vol_mould",
+   "fieldtype": "Data",
+   "label": "Volume of Mould(cm3)"
+  },
+  {
+   "fieldname": "int_head",
+   "fieldtype": "Data",
+   "label": "Initial Total Head"
+  },
+  {
+   "fieldname": "vol_den",
+   "fieldtype": "Data",
+   "label": "Volume Density"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "depth",
+   "fieldtype": "Data",
+   "label": "Depth(m)"
+  },
+  {
+   "fieldname": "wgt_wet",
+   "fieldtype": "Data",
+   "label": "Weight of wet Sample(gm)"
+  },
+  {
+   "fieldname": "bulk_density",
+   "fieldtype": "Data",
+   "label": "Bulk Density (gm/cm3) :"
+  },
+  {
+   "fieldname": "initial_moisture",
+   "fieldtype": "Float",
+   "label": "Initial Moisture Content"
+  },
+  {
+   "fieldname": "final_moisture",
+   "fieldtype": "Data",
+   "label": "Final Moisture Content(%)"
+  },
+  {
+   "fieldname": "dry_density",
+   "fieldtype": "Data",
+   "label": "Dry Density(gm/cm3)"
+  },
+  {
+   "fieldname": "cross_sec",
+   "fieldtype": "Data",
+   "label": "Cross section of burrate(mm2) :"
+  },
+  {
+   "fieldname": "sample_height",
+   "fieldtype": "Int",
+   "label": "Sample Height(cm)"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_18",
+   "fieldtype": "Table",
+   "label": "FHP Test",
+   "options": "FHP Test"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "kavg",
+   "fieldtype": "Data",
+   "label": "KAvg"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  }
+ ],
+ "modified": "2019-09-27 21:08:31.130007",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Falling Head Permeability Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,111 @@
+{
+ "autoname": "CSM.####",
+ "creation": "2019-09-26 07:57:19.206638",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "serial_no",
+  "project",
+  "column_break_4",
+  "client",
+  "calibration_date",
+  "report_ref",
+  "section_break_8",
+  "moisture_calibration",
+  "moisture_conten_section",
+  "moisture_content",
+  "section_break_10",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "calibration_date",
+   "fieldtype": "Date",
+   "label": "Calibration Date"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "label": "Giico Report Ref"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "moisture_calibration",
+   "fieldtype": "Table",
+   "label": "Speedy Moisture Calibration",
+   "options": "Speedy Moisture Calibration"
+  },
+  {
+   "fieldname": "moisture_conten_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "moisture_content",
+   "fieldtype": "Table",
+   "label": "Moisture Conten",
+   "options": "Speedy Moisture"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "modified": "2019-09-27 20:56:45.041146",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Calibration of Speedy Moisture",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,153 @@
+{
+ "autoname": "COS.####",
+ "creation": "2019-09-25 08:37:25.426845",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client",
+  "project",
+  "equip_id",
+  "column_break_4",
+  "date_calib",
+  "date_report",
+  "giico_report",
+  "measuring",
+  "weight",
+  "volume",
+  "section_break_11",
+  "determin_density",
+  "calculate",
+  "aver",
+  "section_break_14",
+  "determin_cone_plate",
+  "calculate1",
+  "aver1",
+  "section_break_13",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "equip_id",
+   "fieldtype": "Data",
+   "label": "Equipment ID"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_calib",
+   "fieldtype": "Date",
+   "label": "Date of Calib"
+  },
+  {
+   "fieldname": "date_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "giico_report",
+   "fieldtype": "Int",
+   "label": "Giico Report No"
+  },
+  {
+   "fieldname": "measuring",
+   "fieldtype": "Section Break",
+   "label": "Measuring Cylinder"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight(g)"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Float",
+   "label": "Volume (cm3) "
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "determin_density",
+   "fieldtype": "Table",
+   "label": "Determination of Density of Sand",
+   "options": "Density Of Sand"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "aver",
+   "fieldtype": "Float",
+   "label": "Average"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "determin_cone_plate",
+   "fieldtype": "Table",
+   "label": "Determination Of Weight Of Sand In Cone And Plate",
+   "options": "Weight of Sand In Come"
+  },
+  {
+   "fieldname": "calculate1",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "aver1",
+   "fieldtype": "Float",
+   "label": "Average"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "modified": "2019-09-27 21:01:26.242398",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Calibration of Sandcone",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

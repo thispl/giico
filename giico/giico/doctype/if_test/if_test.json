@@ -1,0 +1,55 @@
+{
+ "creation": "2019-09-18 16:20:35.794880",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "time_interval",
+  "ht",
+  "cumul_time",
+  "height_water",
+  "increm_inf"
+ ],
+ "fields": [
+  {
+   "fieldname": "time_interval",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Time interval min"
+  },
+  {
+   "fieldname": "ht",
+   "fieldtype": "Float",
+   "label": "ht"
+  },
+  {
+   "fieldname": "cumul_time",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Cumul time min"
+  },
+  {
+   "fieldname": "height_water",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Height of water fall cm"
+  },
+  {
+   "fieldname": "increm_inf",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Increm infiltrtation cm/hr"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:03:32.980338",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "IF Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,139 @@
+{
+ "autoname": "LERT.####",
+ "creation": "2019-09-14 07:29:43.269404",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_of_test",
+  "room_temp_co",
+  "volume_of_box",
+  "section_break_3",
+  "lab_ert_test",
+  "section_break_5",
+  "equipment_used",
+  "column_break_5",
+  "test_condition",
+  "section_break_9",
+  "tested_by",
+  "checked_by",
+  "section_break_7",
+  "project",
+  "column_break_9",
+  "client",
+  "column_break_11",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test "
+  },
+  {
+   "description": "o C\n",
+   "fieldname": "room_temp_co",
+   "fieldtype": "Data",
+   "label": "Room Temp (co) "
+  },
+  {
+   "description": "CM3\n",
+   "fieldname": "volume_of_box",
+   "fieldtype": "Float",
+   "label": "Volume of box "
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lab_ert_test",
+   "fieldtype": "Table",
+   "label": "Lab ERT Test",
+   "options": "Lab ERT Test"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "equipment_used",
+   "fieldtype": "Data",
+   "label": "Equipment used"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_condition",
+   "fieldtype": "Data",
+   "label": "Test Condition"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by "
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by "
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  }
+ ],
+ "modified": "2019-09-27 21:03:25.126099",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Lab ERT",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

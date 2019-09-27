@@ -1,0 +1,80 @@
+{
+ "creation": "2019-08-12 09:45:25.901505",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "prov_ring",
+  "time",
+  "load_ton",
+  "column_break_3",
+  "gauge_1",
+  "gauge_2",
+  "gauge_3",
+  "column_break_6",
+  "press_kn"
+ ],
+ "fields": [
+  {
+   "fieldname": "prov_ring",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Proving Ring Div"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Time",
+   "options": "\n1\n4\n9\n15\nCorr"
+  },
+  {
+   "fieldname": "load_ton",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Load Ton"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gauge_1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Gauge-1"
+  },
+  {
+   "fieldname": "gauge_2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Gauge-2"
+  },
+  {
+   "fieldname": "gauge_3",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Gauge-3"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "press_kn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pressure(kN/m2)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:10:44.741570",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "PLT Readings",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

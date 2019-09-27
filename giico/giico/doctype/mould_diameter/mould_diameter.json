@@ -1,0 +1,62 @@
+{
+ "creation": "2019-09-25 13:35:07.583836",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "measured_dimension",
+  "column_break_3",
+  "min",
+  "max",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "description": "mm",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "measured_dimension",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Measured Dimension"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "min",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Min"
+  },
+  {
+   "fieldname": "max",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Max"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:01:21.679070",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Mould Diameter",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

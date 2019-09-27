@@ -1,0 +1,82 @@
+{
+ "creation": "2019-08-13 09:18:49.306197",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "wt_sand",
+  "wt_remsand",
+  "wt_hpc",
+  "column_break_5",
+  "wt_pc",
+  "bulk",
+  "wos",
+  "vol_test"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Test No"
+  },
+  {
+   "fieldname": "wt_sand",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Wt. of apparatus filled with sand(g)"
+  },
+  {
+   "fieldname": "wt_remsand",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Wt. of apparatus and remaining sand(g)"
+  },
+  {
+   "fieldname": "wt_hpc",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Wt. of sand in hole, plate and cone(g)"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wt_pc",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Wt. of sand in plate and cone(g)"
+  },
+  {
+   "fieldname": "bulk",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bulk density of sand(g/cm3)"
+  },
+  {
+   "fieldname": "wos",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Wt of sand in hole(g)"
+  },
+  {
+   "fieldname": "vol_test",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Volume of test hole(cm3)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-27 21:10:35.663268",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Sandcone Test Data",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

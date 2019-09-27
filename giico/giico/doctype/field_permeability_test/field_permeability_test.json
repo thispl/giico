@@ -1,0 +1,157 @@
+{
+ "autoname": "FP.####",
+ "creation": "2019-09-16 08:17:47.909884",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "borehole_no",
+  "depth_of_test",
+  "type_of_soil",
+  "depth_of_water",
+  "screen_length",
+  "length_radius",
+  "column_break_7",
+  "depthm",
+  "depth_of_casing",
+  "hight_of_casing",
+  "internal_diameter",
+  "cross_section",
+  "date_of_test",
+  "section_break_14",
+  "fp_test",
+  "section_break_16",
+  "remarks",
+  "section_break_18",
+  "project",
+  "column_break_17",
+  "client"
+ ],
+ "fields": [
+  {
+   "fieldname": "borehole_no",
+   "fieldtype": "Data",
+   "label": "Borehole No"
+  },
+  {
+   "fieldname": "depth_of_test",
+   "fieldtype": "Float",
+   "label": "Depth of test in BH (m)"
+  },
+  {
+   "fieldname": "type_of_soil",
+   "fieldtype": "Data",
+   "label": "Type of soil"
+  },
+  {
+   "fieldname": "depth_of_water",
+   "fieldtype": "Float",
+   "label": "Depth of water table(cm)"
+  },
+  {
+   "fieldname": "screen_length",
+   "fieldtype": "Float",
+   "label": "Screen Length (cm)"
+  },
+  {
+   "fieldname": "length_radius",
+   "fieldtype": "Float",
+   "label": "Length / Radius For Screen"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "depthm",
+   "fieldtype": "Float",
+   "label": "Depth(m)"
+  },
+  {
+   "fieldname": "depth_of_casing",
+   "fieldtype": "Float",
+   "label": "Depth of casing(m)"
+  },
+  {
+   "fieldname": "hight_of_casing",
+   "fieldtype": "Float",
+   "label": "Hight of casing above G.L(cm)"
+  },
+  {
+   "fieldname": "internal_diameter",
+   "fieldtype": "Float",
+   "label": "Internal diameter of casing(cm)"
+  },
+  {
+   "fieldname": "cross_section",
+   "fieldtype": "Float",
+   "label": "Cross section of casing(Cm2) "
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date Of Test"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fp_test",
+   "fieldtype": "Table",
+   "label": "FP Test",
+   "options": "FP Test"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  }
+ ],
+ "modified": "2019-09-27 21:03:21.941141",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Field Permeability Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

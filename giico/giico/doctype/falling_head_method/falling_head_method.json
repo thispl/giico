@@ -1,0 +1,130 @@
+{
+ "autoname": "FHM.####",
+ "creation": "2019-09-19 13:06:34.917828",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "test_id",
+  "bore_no",
+  "int",
+  "gwt",
+  "length_of_un",
+  "col1",
+  "date_of_test",
+  "dep_of_test",
+  "ch_casing",
+  "internal_dia",
+  "dia_of_un",
+  "cs_of",
+  "section_break_15",
+  "fhm_test"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "test_id",
+   "fieldtype": "Data",
+   "label": "Test ID"
+  },
+  {
+   "fieldname": "bore_no",
+   "fieldtype": "Data",
+   "label": "Borehole No"
+  },
+  {
+   "fieldname": "int",
+   "fieldtype": "Int",
+   "label": "Init.Head(cm)"
+  },
+  {
+   "fieldname": "gwt",
+   "fieldtype": "Int",
+   "label": "GWT"
+  },
+  {
+   "fieldname": "length_of_un",
+   "fieldtype": "Int",
+   "label": "Length of unline"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "dep_of_test",
+   "fieldtype": "Int",
+   "label": "Depth of Test in BH(m)"
+  },
+  {
+   "fieldname": "ch_casing",
+   "fieldtype": "Data",
+   "label": "Ch Casing-height above GL(Cm)"
+  },
+  {
+   "fieldname": "internal_dia",
+   "fieldtype": "Data",
+   "label": "Internal Dia PVC or Casing"
+  },
+  {
+   "fieldname": "dia_of_un",
+   "fieldtype": "Data",
+   "label": "Dia of Unlined BH(cm)"
+  },
+  {
+   "fieldname": "cs_of",
+   "fieldtype": "Data",
+   "label": "C/S of Casing/PVC Stand Pipe"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fhm_test",
+   "fieldtype": "Table",
+   "label": "FHM Test",
+   "options": "FHM Test"
+  }
+ ],
+ "modified": "2019-09-27 21:03:30.259291",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Falling Head Method",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
