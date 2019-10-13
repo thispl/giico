@@ -1,0 +1,56 @@
+{
+ "creation": "2019-10-05 13:04:07.230287",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "weight_of_oven",
+  "weight_of_sample",
+  "weight_of_bottle",
+  "apparent"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item"
+  },
+  {
+   "fieldname": "weight_of_sample",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight of Bottle + Water + Sample (g)"
+  },
+  {
+   "fieldname": "weight_of_bottle",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight of Bottle + Water  (g)"
+  },
+  {
+   "fieldname": "weight_of_oven",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight of Oven Dry Sample (g)"
+  },
+  {
+   "fieldname": "apparent",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Apparent Specific Gravity"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-05 13:05:49.514389",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Specific Gravity",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

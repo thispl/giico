@@ -1,0 +1,77 @@
+{
+ "creation": "2019-10-01 09:47:04.851014",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sieve_size",
+  "grade_origin",
+  "wt_sample1",
+  "wt_sample2",
+  "column_break_5",
+  "wt_sample3",
+  "pass_des",
+  "weighted_loss"
+ ],
+ "fields": [
+  {
+   "fieldname": "sieve_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sieve Size"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade_origin",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Grading of Original Sample, %"
+  },
+  {
+   "fieldname": "wt_sample1",
+   "fieldtype": "Float",
+   "label": "Wt of Sample Before Test, g"
+  },
+  {
+   "fieldname": "wt_sample2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt of Sample After Test, g"
+  },
+  {
+   "fieldname": "wt_sample3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt of Sample Passing Designated Sieve, g",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pass_des",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "% Passing Designated Sieve",
+   "read_only": 1
+  },
+  {
+   "fieldname": "weighted_loss",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weighted % Loss",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-05 07:41:31.578070",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Soundness Test of Coarse Aggregate",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

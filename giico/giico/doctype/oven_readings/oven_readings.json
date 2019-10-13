@@ -31,17 +31,19 @@
    "fieldname": "difference",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Difference"
+   "label": "Difference",
+   "read_only": 1
   },
   {
    "fieldname": "percent_difference",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Percent Difference"
+   "label": "Percent Difference",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 21:02:05.118822",
+ "modified": "2019-10-04 16:38:48.718680",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Oven Readings",

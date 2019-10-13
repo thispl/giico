@@ -1,0 +1,52 @@
+{
+ "creation": "2019-09-30 12:22:14.574584",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "location",
+  "column_break_2",
+  "short_direction_bar_mr",
+  "column_break_4",
+  "long_direction_bar_mr"
+ ],
+ "fields": [
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "short_direction_bar_mr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Short Direction Bar (mr)"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "long_direction_bar_mr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Long Direction Bar (mr)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-30 12:22:14.574584",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Cover Meter Readings",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

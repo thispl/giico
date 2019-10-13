@@ -147,7 +147,7 @@
    "label": "Location"
   }
  ],
- "modified": "2019-09-27 21:09:28.867167",
+ "modified": "2019-10-05 06:54:00.153251",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Constant Head Permeability Test",
@@ -166,7 +166,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

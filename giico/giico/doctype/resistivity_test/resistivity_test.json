@@ -1,0 +1,61 @@
+{
+ "creation": "2019-10-03 15:30:50.163632",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "soil_des",
+  "temp_soil",
+  "column_break_4",
+  "moisture",
+  "thermal1",
+  "thermal2"
+ ],
+ "fields": [
+  {
+   "fieldname": "moisture",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Moisture(%)"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "soil_des",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Soil Description"
+  },
+  {
+   "fieldname": "temp_soil",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Temp of Soil"
+  },
+  {
+   "fieldname": "thermal1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Thermal Conductivity(W/mK)"
+  },
+  {
+   "fieldname": "thermal2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Thermal Resistivity(mk/w)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-03 16:27:20.503656",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Resistivity Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

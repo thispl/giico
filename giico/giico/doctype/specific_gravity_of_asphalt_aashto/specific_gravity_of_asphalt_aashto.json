@@ -1,0 +1,105 @@
+{
+ "autoname": "SG.####",
+ "creation": "2019-10-05 08:15:28.899597",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "sample_desc",
+  "location",
+  "column_break_5",
+  "test_date",
+  "report_date",
+  "report_ref",
+  "section_break_9",
+  "specific_gravity",
+  "section_break_11",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project  ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client  "
+  },
+  {
+   "fieldname": "sample_desc",
+   "fieldtype": "Data",
+   "label": "Sample Desc"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location  "
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date "
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date "
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "label": "Report Ref  No"
+  },
+  {
+   "fieldname": "specific_gravity",
+   "fieldtype": "Table",
+   "label": "Specific Gravity",
+   "options": "Specific Gravity"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2019-10-05 13:06:38.755635",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Specific Gravity of Asphalt Aashto",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

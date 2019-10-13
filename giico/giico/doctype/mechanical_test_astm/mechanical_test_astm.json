@@ -1,0 +1,165 @@
+{
+ "autoname": "MTA.####",
+ "creation": "2019-10-01 13:45:03.197926",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client",
+  "project",
+  "description",
+  "material",
+  "column_break_5",
+  "sample_date",
+  "date_test",
+  "giico",
+  "thick",
+  "lab_temp",
+  "section_break_11",
+  "tension_test",
+  "section_break_13",
+  "initial_gauge",
+  "final_gauge",
+  "column_break_14",
+  "elongation",
+  "fracture",
+  "section_break_19",
+  "bend_test",
+  "section_break_15",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project  ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description "
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Data",
+   "label": "Material "
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "oC\n",
+   "fieldname": "lab_temp",
+   "fieldtype": "Int",
+   "label": "Lab Temperature"
+  },
+  {
+   "fieldname": "sample_date",
+   "fieldtype": "Date",
+   "label": "Sample in Lab Date"
+  },
+  {
+   "fieldname": "date_test",
+   "fieldtype": "Date",
+   "label": "Date of Test "
+  },
+  {
+   "fieldname": "giico",
+   "fieldtype": "Int",
+   "label": "Giico. RFI. No"
+  },
+  {
+   "description": "mm",
+   "fieldname": "thick",
+   "fieldtype": "Int",
+   "label": "Thick / Dia "
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "tension_test",
+   "fieldtype": "Table",
+   "label": "Tension Test ",
+   "options": "Tension Test ASTM"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bend_test",
+   "fieldtype": "Table",
+   "label": "Bend Test ",
+   "options": "Bend Test Astm"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "initial_gauge",
+   "fieldtype": "Float",
+   "label": "Initial Gauge Length (mm) \t"
+  },
+  {
+   "fieldname": "final_gauge",
+   "fieldtype": "Float",
+   "label": "Final Gauge Length (mm) "
+  },
+  {
+   "fieldname": "elongation",
+   "fieldtype": "Float",
+   "label": "Elongation %"
+  },
+  {
+   "fieldname": "fracture",
+   "fieldtype": "Data",
+   "label": "Fracture Location "
+  }
+ ],
+ "modified": "2019-10-01 15:53:42.828502",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Mechanical Test ASTM",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

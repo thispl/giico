@@ -1,0 +1,129 @@
+{
+ "autoname": "WA.####",
+ "creation": "2019-09-30 07:37:24.870595",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contractor",
+  "consultant",
+  "owner",
+  "project",
+  "location",
+  "column_break_6",
+  "date_of_cast",
+  "test_date",
+  "report_date",
+  "report_ref",
+  "concrete_grade",
+  "concrete_supplier",
+  "section_break_13",
+  "water_absorption",
+  "section_break_20",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor "
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Data",
+   "label": "Consultant "
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner "
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location "
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_cast",
+   "fieldtype": "Date",
+   "label": "Date of Cast "
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date "
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date "
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "label": "Report Ref"
+  },
+  {
+   "fieldname": "concrete_grade",
+   "fieldtype": "Data",
+   "label": "Concrete Grade "
+  },
+  {
+   "fieldname": "concrete_supplier",
+   "fieldtype": "Data",
+   "label": "Concrete Supplier "
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks "
+  },
+  {
+   "fieldname": "water_absorption",
+   "fieldtype": "Table",
+   "label": "Water Absorption",
+   "options": "Water Absorption"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2019-09-30 14:02:57.549218",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Water Absorption of Hardened Concrete",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,132 @@
+{
+ "autoname": "OM.####",
+ "creation": "2019-10-04 07:28:58.396477",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "owner",
+  "location",
+  "column_break_5",
+  "testing_date",
+  "reporting_date",
+  "job_ref",
+  "description",
+  "section_break_10",
+  "test_parameter",
+  "column_break_12",
+  "result",
+  "column_break_14",
+  "ref_standard",
+  "section_break_16",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client "
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "testing_date",
+   "fieldtype": "Date",
+   "label": "Testing Date"
+  },
+  {
+   "fieldname": "reporting_date",
+   "fieldtype": "Date",
+   "label": "Reporting Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "job_ref",
+   "fieldtype": "Data",
+   "label": "Job Ref No"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "test_parameter",
+   "fieldtype": "Data",
+   "label": "Test Parameter"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ref_standard",
+   "fieldtype": "Data",
+   "label": "Ref Standard"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Float",
+   "label": "Result %"
+  }
+ ],
+ "modified": "2019-10-04 07:42:26.238834",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Organic Matter of Chemical Test on Soil Sample",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,74 @@
+{
+ "creation": "2019-10-04 08:15:17.918925",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "passing",
+  "retained",
+  "grading_section",
+  "a",
+  "b",
+  "column_break_6",
+  "c",
+  "d"
+ ],
+ "fields": [
+  {
+   "fieldname": "grading_section",
+   "fieldtype": "Section Break",
+   "label": "Grading"
+  },
+  {
+   "fieldname": "a",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "A"
+  },
+  {
+   "fieldname": "b",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "B"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "c",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "C"
+  },
+  {
+   "fieldname": "d",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "D"
+  },
+  {
+   "fieldname": "passing",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sieve Size (Passing)"
+  },
+  {
+   "fieldname": "retained",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sieve Size (Retained On)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-04 11:57:38.066548",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Grading of Test Sample",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

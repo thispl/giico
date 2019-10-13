@@ -54,7 +54,8 @@
    "fieldname": "density",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Density"
+   "label": "Density",
+   "read_only": 1
   },
   {
    "fieldname": "load",
@@ -66,16 +67,18 @@
    "fieldname": "compressive_strength",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "(N/mm2)"
+   "label": "Compressive Strength(N/mm2)",
+   "read_only": 1
   },
   {
    "fieldname": "kgcm2",
    "fieldtype": "Float",
-   "label": "(kg/cm2)"
+   "label": "Compressive Strength(kg/cm2)",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 20:56:41.796713",
+ "modified": "2019-10-04 16:58:49.390695",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Brick Pave Readings",

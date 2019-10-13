@@ -1,0 +1,258 @@
+{
+ "autoname": "AS.####",
+ "creation": "2019-10-12 08:10:05.370432",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "asphalt_mix_by_reflux_attraction_section",
+  "client",
+  "type_of_mix",
+  "sample_source",
+  "project",
+  "location",
+  "column_break_7",
+  "asp_laying_date",
+  "report_date",
+  "job_no",
+  "sample_no",
+  "extraction_results_section",
+  "asp_sample",
+  "wt_aggregate",
+  "wt_filter_paper_before",
+  "wt_filter_paper_after",
+  "ash_correction",
+  "status",
+  "max",
+  "column_break_18",
+  "wt_of_material",
+  "total_wt_aggregate",
+  "wt_of_bitumen",
+  "bitumen_wt_aggregate",
+  "job_mix_form",
+  "min",
+  "section_break_24",
+  "gradation",
+  "total_section",
+  "total_aggregate",
+  "column_break_28",
+  "total_wash",
+  "remarks_section",
+  "remarks",
+  "section_break_32",
+  "tested_by",
+  "column_break_32",
+  "materials_engineer"
+ ],
+ "fields": [
+  {
+   "fieldname": "asphalt_mix_by_reflux_attraction_section",
+   "fieldtype": "Section Break",
+   "label": "Asphalt Mix by Reflux Attraction"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "type_of_mix",
+   "fieldtype": "Select",
+   "label": "Type of Mix",
+   "options": "\nType-1(Base Course)"
+  },
+  {
+   "fieldname": "sample_source",
+   "fieldtype": "Data",
+   "label": "Sample Source"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "asp_laying_date",
+   "fieldtype": "Date",
+   "label": "Asphalt Laying Date"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date  "
+  },
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Data",
+   "label": "Job No"
+  },
+  {
+   "fieldname": "sample_no",
+   "fieldtype": "Data",
+   "label": "Sample No"
+  },
+  {
+   "fieldname": "extraction_results_section",
+   "fieldtype": "Section Break",
+   "label": "Extraction Results"
+  },
+  {
+   "fieldname": "asp_sample",
+   "fieldtype": "Float",
+   "label": "WT. of Asphalt Sample"
+  },
+  {
+   "fieldname": "wt_aggregate",
+   "fieldtype": "Float",
+   "label": "WT. of Aggregate"
+  },
+  {
+   "fieldname": "wt_filter_paper_before",
+   "fieldtype": "Float",
+   "label": "WT. of Filter Paper Before"
+  },
+  {
+   "fieldname": "wt_filter_paper_after",
+   "fieldtype": "Float",
+   "label": "WT. of Filter Paper After"
+  },
+  {
+   "fieldname": "ash_correction",
+   "fieldtype": "Float",
+   "label": "Ash Correction"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wt_of_material",
+   "fieldtype": "Float",
+   "label": "Wt. Of Material on Filter"
+  },
+  {
+   "fieldname": "total_wt_aggregate",
+   "fieldtype": "Float",
+   "label": "Total WT. of Aggregate"
+  },
+  {
+   "fieldname": "wt_of_bitumen",
+   "fieldtype": "Float",
+   "label": "WT.of Bitumen"
+  },
+  {
+   "fieldname": "bitumen_wt_aggregate",
+   "fieldtype": "Float",
+   "label": "Bitumen % by WT.of Aggregate"
+  },
+  {
+   "fieldname": "job_mix_form",
+   "fieldtype": "Float",
+   "label": "Job Mix Form"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gradation",
+   "fieldtype": "Table",
+   "label": "Gradation",
+   "options": "Gradation"
+  },
+  {
+   "fieldname": "total_section",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "total_aggregate",
+   "fieldtype": "Float",
+   "label": " Total WT of Agg."
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_wash",
+   "fieldtype": "Float",
+   "label": " Total WT after Wash "
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "materials_engineer",
+   "fieldtype": "Data",
+   "label": "Materials Engineer"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "min",
+   "fieldtype": "Data",
+   "label": "Specification(min)"
+  },
+  {
+   "fieldname": "max",
+   "fieldtype": "Data",
+   "label": "Specification(max)"
+  }
+ ],
+ "modified": "2019-10-12 15:31:46.501449",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Asphalt Analysis Sample",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

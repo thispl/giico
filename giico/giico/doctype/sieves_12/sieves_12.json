@@ -1,0 +1,49 @@
+{
+ "creation": "2019-10-10 08:37:15.665952",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sieve_no",
+  "dia_inches",
+  "s_no",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "sieve_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sieve No"
+  },
+  {
+   "fieldname": "dia_inches",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DIA (inches)"
+  },
+  {
+   "fieldname": "s_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "S. NO"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remark"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-10 08:37:15.665952",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Sieves 12",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

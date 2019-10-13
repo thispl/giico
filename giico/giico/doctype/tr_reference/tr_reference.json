@@ -32,11 +32,12 @@
    "fieldname": "thermal_resistivity_m0cw",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "THERMAL RESISTIVITY (m0C/W)"
+   "label": "THERMAL RESISTIVITY (m0C/W)",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 21:09:40.923064",
+ "modified": "2019-10-04 16:16:51.918857",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "TR Reference",

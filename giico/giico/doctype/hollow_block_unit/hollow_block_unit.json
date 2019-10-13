@@ -1,0 +1,75 @@
+{
+ "creation": "2019-10-03 08:33:02.671178",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "area_mm2",
+  "height_mm",
+  "weightg",
+  "column_break_5",
+  "loadkn",
+  "strengthmm2",
+  "strengthkgcm2"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "weightg",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Weight(g)"
+  },
+  {
+   "fieldname": "loadkn",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Load(kN)"
+  },
+  {
+   "fieldname": "area_mm2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Dimensions Net Area (mm2)"
+  },
+  {
+   "fieldname": "height_mm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Dimensions Height (mm)"
+  },
+  {
+   "fieldname": "strengthkgcm2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Compressive Strength(kg/cm2)"
+  },
+  {
+   "fieldname": "strengthmm2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Compressive Strength(N/mm2)"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-03 12:20:41.481068",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Hollow Block Unit",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

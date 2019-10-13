@@ -1,0 +1,145 @@
+{
+ "autoname": "MA.####",
+ "creation": "2019-09-30 14:05:31.218544",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contractor",
+  "consultant",
+  "owner",
+  "project",
+  "type_of_block",
+  "column_break_6",
+  "test_date",
+  "report_date",
+  "report_ref",
+  "supplier",
+  "section_break_11",
+  "light_weight",
+  "calculate",
+  "section_break_14",
+  "average",
+  "column_break_16",
+  "average1",
+  "section_break_13",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor "
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Data",
+   "label": "Consultant "
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner "
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "type_of_block",
+   "fieldtype": "Data",
+   "label": "Type of Block "
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date "
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date "
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "label": "Report Ref"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "Supplier "
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "light_weight",
+   "fieldtype": "Table",
+   "label": "Absorption Of Light Weight",
+   "options": "Absorption Of Light Weight"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "average",
+   "fieldtype": "Float",
+   "label": "Absorption Average"
+  },
+  {
+   "fieldname": "average1",
+   "fieldtype": "Float",
+   "label": "Moisture Average"
+  }
+ ],
+ "modified": "2019-10-01 12:45:49.358800",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Moisture and Absorption Of Light Weight",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

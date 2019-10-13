@@ -1,0 +1,113 @@
+{
+ "creation": "2019-10-03 07:28:42.589126",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "l",
+  "b",
+  "h",
+  "date_of_cast",
+  "date_of__test",
+  "age",
+  "column_break_8",
+  "weight_g",
+  "density",
+  "load",
+  "strength_nm",
+  "strength_kg"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "l",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dimensions(mm) L"
+  },
+  {
+   "fieldname": "b",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dimensions(mm) B"
+  },
+  {
+   "fieldname": "h",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dimensions(mm) H"
+  },
+  {
+   "fieldname": "date_of_cast",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Cast"
+  },
+  {
+   "fieldname": "date_of__test",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of  Test"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age(days)"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight_g",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight(g)"
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Density(g/cm3)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "load",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Load(k/N)"
+  },
+  {
+   "fieldname": "strength_nm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Strength(N/mm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "strength_kg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Strength(kg/cm2)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-05 08:15:59.175518",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Grout Cubes",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,89 @@
+{
+ "creation": "2019-09-30 07:33:58.394971",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "length1",
+  "width",
+  "height",
+  "weight",
+  "column_break_6",
+  "density",
+  "load",
+  "csn",
+  "csnk"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Width"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Height"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Density"
+  },
+  {
+   "fieldname": "load",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Load"
+  },
+  {
+   "fieldname": "length1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Length"
+  },
+  {
+   "fieldname": "csn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Compressive Strength(N/mm2)"
+  },
+  {
+   "fieldname": "csnk",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Compressive Strength(kg/cm2)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-30 08:40:29.232962",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Concrete Tiles",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

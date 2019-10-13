@@ -1,0 +1,225 @@
+{
+ "autoname": "FE.####",
+ "creation": "2019-09-30 13:56:53.832534",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client_name",
+  "sample_description",
+  "location",
+  "column_break_5",
+  "test_date",
+  "report_date",
+  "report_refno",
+  "section_break_9",
+  "flakiness_index",
+  "calculate",
+  "total_section",
+  "sample",
+  "column_break_14",
+  "mass_of_flat_particles",
+  "column_break_16",
+  "flat_particles",
+  "section_break_11",
+  "elongation_index",
+  "calculate1",
+  "section_break_20",
+  "total1",
+  "column_break_23",
+  "total2",
+  "column_break_25",
+  "total3",
+  "section_break_27",
+  "remarks",
+  "section_break_29",
+  "tested_by",
+  "column_break_31",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "sample_description",
+   "fieldtype": "Data",
+   "label": "Sample Description"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "report_refno",
+   "fieldtype": "Data",
+   "label": "Report Ref.No"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "flakiness_index",
+   "fieldtype": "Table",
+   "label": "Flakiness Index",
+   "options": "Flakiness Index"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "total_section",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "sample",
+   "fieldtype": "Float",
+   "label": "Sample",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mass_of_flat_particles",
+   "fieldtype": "Float",
+   "label": "Mass of Flat Particles",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "flat_particles",
+   "fieldtype": "Float",
+   "label": "Flat Particles",
+   "read_only": 1
+  },
+  {
+   "fieldname": "elongation_index",
+   "fieldtype": "Table",
+   "label": "Elongation Index",
+   "options": "Elongation Index"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "calculate1",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "total1",
+   "fieldtype": "Float",
+   "label": "Mass of Sample(g)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  },
+  {
+   "fieldname": "total2",
+   "fieldtype": "Float",
+   "label": "Mass of Elongated Particles(g)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total3",
+   "fieldtype": "Float",
+   "label": "Elongated Particles(%)",
+   "read_only": 1
+  }
+ ],
+ "modified": "2019-10-05 08:01:01.059258",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Flakiness and Elongation Index Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

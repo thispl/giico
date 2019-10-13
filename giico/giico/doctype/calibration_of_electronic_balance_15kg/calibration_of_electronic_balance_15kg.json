@@ -1,0 +1,141 @@
+{
+ "autoname": "CEB.####",
+ "creation": "2019-10-08 12:02:48.493846",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "make_brand",
+  "capacity",
+  "equipment_id",
+  "section_break_6",
+  "readability",
+  "calibration_date",
+  "report_date",
+  "report_ref_no",
+  "section_break_11",
+  "electronic_balance_15kg",
+  "column_break_13",
+  "remarks",
+  "section_break_13",
+  "calibrated_by",
+  "column_break_15",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "make_brand",
+   "fieldtype": "Data",
+   "label": "Make / Brand"
+  },
+  {
+   "description": "kg",
+   "fieldname": "capacity",
+   "fieldtype": "Data",
+   "label": "Capacity"
+  },
+  {
+   "fieldname": "equipment_id",
+   "fieldtype": "Data",
+   "label": "Equipment ID"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "g",
+   "fieldname": "readability",
+   "fieldtype": "Data",
+   "label": "Readability"
+  },
+  {
+   "fieldname": "calibration_date",
+   "fieldtype": "Date",
+   "label": "Calibration Date"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "report_ref_no",
+   "fieldtype": "Data",
+   "label": "Report Ref No"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Data",
+   "label": "Calibrated by"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  },
+  {
+   "fieldname": "electronic_balance_15kg",
+   "fieldtype": "Table",
+   "label": "Electronic Balance 15kg",
+   "options": "Electronic Balance 15kg"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2019-10-08 12:19:23.091801",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Calibration of Electronic Balance 15kg",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

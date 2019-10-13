@@ -1,0 +1,75 @@
+{
+ "creation": "2019-10-01 07:47:10.550766",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample",
+  "location",
+  "chloride_cl",
+  "chloride",
+  "column_break_5",
+  "sulphate_as",
+  "sulphate",
+  "ref_standard"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ref_standard",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ref Standard"
+  },
+  {
+   "fieldname": "chloride_cl",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Chloride as Cl PPM"
+  },
+  {
+   "fieldname": "chloride",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Chloride as Cl (%)"
+  },
+  {
+   "fieldname": "sulphate_as",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Sulphate as SO4 PPM"
+  },
+  {
+   "fieldname": "sulphate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sulphate as SO4 (%)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-01 08:11:23.230012",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Soil Sample",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

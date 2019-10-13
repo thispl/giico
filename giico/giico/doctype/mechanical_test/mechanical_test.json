@@ -1,0 +1,143 @@
+{
+ "autoname": "MT.####",
+ "creation": "2019-10-01 09:36:27.027453",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "main_con",
+  "description",
+  "material",
+  "sample_lab",
+  "column_break_6",
+  "date_test",
+  "giico",
+  "thick",
+  "lab_temp",
+  "section_break_11",
+  "tension_test",
+  "section_break_13",
+  "requirements",
+  "section_break_15",
+  "bend_test",
+  "section_break_17",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project  ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description "
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Data",
+   "label": "Material "
+  },
+  {
+   "description": "oC\n",
+   "fieldname": "lab_temp",
+   "fieldtype": "Int",
+   "label": "Lab Temperature"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "main_con",
+   "fieldtype": "Data",
+   "label": "Main Contractor "
+  },
+  {
+   "fieldname": "sample_lab",
+   "fieldtype": "Date",
+   "label": "Sample in Lab Date"
+  },
+  {
+   "fieldname": "date_test",
+   "fieldtype": "Date",
+   "label": "Date of Test "
+  },
+  {
+   "fieldname": "giico",
+   "fieldtype": "Int",
+   "label": "Giico RFI No"
+  },
+  {
+   "description": "mm",
+   "fieldname": "thick",
+   "fieldtype": "Int",
+   "label": "Thick  Dia "
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tension_test",
+   "fieldtype": "Table",
+   "label": "Tension Test",
+   "options": "Tension Test"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requirements",
+   "fieldtype": "Table",
+   "label": "Requirements",
+   "options": "Requirements"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bend_test",
+   "fieldtype": "Table",
+   "label": "Bend Test",
+   "options": "Bend Test"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "modified": "2019-10-01 10:07:30.074967",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Mechanical Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

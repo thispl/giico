@@ -34,23 +34,26 @@
    "fieldname": "wt_water",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Wt Water"
+   "label": "Wt Water",
+   "read_only": 1
   },
   {
    "fieldname": "wt_dry",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Wt Dry"
+   "label": "Wt Dry",
+   "read_only": 1
   },
   {
    "fieldname": "mc",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "MC"
+   "label": "MC",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 20:56:46.064845",
+ "modified": "2019-10-05 09:23:56.214332",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Speedy Moisture Calibration",

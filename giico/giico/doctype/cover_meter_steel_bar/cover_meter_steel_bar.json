@@ -1,0 +1,116 @@
+{
+ "autoname": "CMS.####",
+ "creation": "2019-09-30 12:30:27.179202",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "client_name",
+  "location",
+  "aparatus_no",
+  "column_break_5",
+  "date_of_test",
+  "date_of_report",
+  "job_ref_no",
+  "section_break_9",
+  "cover_meter_readings",
+  "section_break_11",
+  "tested_by",
+  "column_break_13",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "label": "Project Name   ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name         "
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "aparatus_no",
+   "fieldtype": "Data",
+   "label": "Aparatus No"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "job_ref_no",
+   "fieldtype": "Data",
+   "label": "Job Ref No"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cover_meter_readings",
+   "fieldtype": "Table",
+   "label": "Cover Meter Readings",
+   "options": "Cover Meter Readings"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  }
+ ],
+ "modified": "2019-09-30 12:30:27.179202",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Cover Meter Steel Bar",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

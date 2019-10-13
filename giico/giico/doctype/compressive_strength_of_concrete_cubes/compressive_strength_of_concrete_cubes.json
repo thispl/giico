@@ -127,7 +127,8 @@
    "description": "(N/mm2)\n",
    "fieldname": "strength1",
    "fieldtype": "Data",
-   "label": "Strength"
+   "label": "Strength",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_19",
@@ -137,7 +138,8 @@
    "description": "kg/cm2\n",
    "fieldname": "strength2",
    "fieldtype": "Data",
-   "label": "Strength"
+   "label": "Strength",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_21",
@@ -167,7 +169,7 @@
    "label": "Checked by"
   }
  ],
- "modified": "2019-09-27 20:55:47.276871",
+ "modified": "2019-10-04 17:04:06.666539",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Compressive Strength of Concrete Cubes",

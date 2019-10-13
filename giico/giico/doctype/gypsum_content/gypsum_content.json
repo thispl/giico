@@ -1,0 +1,52 @@
+{
+ "creation": "2019-10-04 07:15:21.548097",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test",
+  "column_break_2",
+  "result_",
+  "column_break_4",
+  "limit"
+ ],
+ "fields": [
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "result_",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Result %"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "limit",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Limit"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-04 07:19:49.704648",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Gypsum Content",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

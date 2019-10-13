@@ -1,0 +1,82 @@
+{
+ "creation": "2019-10-01 09:58:49.605302",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "material",
+  "min_mpa",
+  "max_mpa",
+  "min_gauge",
+  "column_break_5",
+  "min_f_length",
+  "tensile",
+  "ratio_max",
+  "actual_ratio"
+ ],
+ "fields": [
+  {
+   "fieldname": "actual_ratio",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Actual Ratio"
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Material Spec"
+  },
+  {
+   "fieldname": "min_mpa",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Yield Strength Min (Mpa)"
+  },
+  {
+   "fieldname": "max_mpa",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Yield Strength Max (Mpa)"
+  },
+  {
+   "fieldname": "min_gauge",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Elongation % Min Gauge length"
+  },
+  {
+   "fieldname": "min_f_length",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Elongation % Min F length"
+  },
+  {
+   "fieldname": "tensile",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Tensile / Yield Ratio Min"
+  },
+  {
+   "fieldname": "ratio_max",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Tensile / Yield Ratio Max"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-01 10:24:37.172375",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Requirements",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

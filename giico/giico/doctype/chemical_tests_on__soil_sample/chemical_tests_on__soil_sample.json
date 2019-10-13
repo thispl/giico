@@ -1,0 +1,105 @@
+{
+ "autoname": "CTS.####",
+ "creation": "2019-10-01 07:33:11.818633",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "description",
+  "ir_no",
+  "column_break_5",
+  "date_test",
+  "date_report",
+  "job_ref",
+  "section_break_9",
+  "soil_sample",
+  "section_break_11",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": " Description"
+  },
+  {
+   "fieldname": "ir_no",
+   "fieldtype": "Data",
+   "label": "IR No"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_test",
+   "fieldtype": "Date",
+   "label": "Date of Test   "
+  },
+  {
+   "fieldname": "date_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "job_ref",
+   "fieldtype": "Int",
+   "label": "GII Job Ref No"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client "
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks "
+  },
+  {
+   "fieldname": "soil_sample",
+   "fieldtype": "Table",
+   "label": "Soil Sample",
+   "options": "Soil Sample"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2019-10-01 07:47:48.605159",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Chemical Tests On  Soil Sample",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,131 @@
+{
+ "creation": "2019-10-10 09:40:39.702960",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample",
+  "mass",
+  "cr",
+  "div",
+  "time",
+  "settl",
+  "wc",
+  "dia",
+  "column_break_9",
+  "height",
+  "disprate",
+  "area",
+  "ct",
+  "density",
+  "dry_density",
+  "gs"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample"
+  },
+  {
+   "fieldname": "mass",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mass"
+  },
+  {
+   "fieldname": "cr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cr"
+  },
+  {
+   "fieldname": "div",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DIv"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time"
+  },
+  {
+   "fieldname": "settl",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Settl"
+  },
+  {
+   "fieldname": "wc",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "wc"
+  },
+  {
+   "fieldname": "dia",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dia"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Height"
+  },
+  {
+   "fieldname": "disprate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Disp.Rate"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area"
+  },
+  {
+   "fieldname": "ct",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ct"
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Density"
+  },
+  {
+   "fieldname": "dry_density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dry density"
+  },
+  {
+   "fieldname": "gs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gs"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-10 09:52:57.827231",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Sample",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

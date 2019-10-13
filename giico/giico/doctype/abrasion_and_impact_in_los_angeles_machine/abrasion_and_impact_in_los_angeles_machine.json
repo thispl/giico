@@ -1,0 +1,175 @@
+{
+ "autoname": "LA.####",
+ "creation": "2019-10-04 08:12:20.521436",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client_name",
+  "sample_description",
+  "location",
+  "column_break_5",
+  "test_date",
+  "report_date",
+  "report_ref_no",
+  "section_break_9",
+  "grading_test",
+  "calculate",
+  "total",
+  "section_break_13",
+  "ws_testing",
+  "column_break_15",
+  "ws_remaining",
+  "column_break_17",
+  "percentage",
+  "section_break_19",
+  "remarks",
+  "section_break_21",
+  "tested_by",
+  "column_break_23",
+  "approved_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "sample_description",
+   "fieldtype": "Data",
+   "label": "Sample Description"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "report_ref_no",
+   "fieldtype": "Data",
+   "label": "Report Ref No"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "grading_test",
+   "fieldtype": "Table",
+   "label": "Grading of Test Sample",
+   "options": "Grading of Test Sample"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ws_testing",
+   "fieldtype": "Float",
+   "label": "Weight of sample of taken for testing",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved by"
+  },
+  {
+   "fieldname": "ws_remaining",
+   "fieldtype": "Float",
+   "label": "Weight of sample remaining over"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Float",
+   "label": "Percentage loss by abrasion and impact",
+   "read_only": 1
+  }
+ ],
+ "modified": "2019-10-04 16:48:22.888263",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Abrasion and Impact in Los Angeles Machine",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

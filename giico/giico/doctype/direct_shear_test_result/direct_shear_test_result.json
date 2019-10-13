@@ -1,0 +1,102 @@
+{
+ "autoname": "DS.####",
+ "creation": "2019-10-10 09:05:33.519805",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_of_test",
+  "borehole_id",
+  "depth",
+  "sample_condition",
+  "column_break_5",
+  "avb",
+  "test__condition",
+  "cohesion",
+  "phi",
+  "section_break_10",
+  "sample"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "borehole_id",
+   "fieldtype": "Data",
+   "label": "Borehole ID"
+  },
+  {
+   "description": "m",
+   "fieldname": "depth",
+   "fieldtype": "Float",
+   "label": "Depth"
+  },
+  {
+   "fieldname": "sample_condition",
+   "fieldtype": "Data",
+   "label": "Sample Condition"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "avb",
+   "fieldtype": "Float",
+   "label": "Av. B. Density(Mg/m3) "
+  },
+  {
+   "fieldname": "test__condition",
+   "fieldtype": "Data",
+   "label": "Test  Condition"
+  },
+  {
+   "description": "kpa",
+   "fieldname": "cohesion",
+   "fieldtype": "Float",
+   "label": "Cohesion"
+  },
+  {
+   "description": "Degree",
+   "fieldname": "phi",
+   "fieldtype": "Float",
+   "label": "phi"
+  },
+  {
+   "fieldname": "sample",
+   "fieldtype": "Table",
+   "label": "Sample",
+   "options": "Sample"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2019-10-10 09:47:49.643757",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Direct Shear Test Result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

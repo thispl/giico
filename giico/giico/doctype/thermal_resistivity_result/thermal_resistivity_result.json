@@ -5,12 +5,12 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "data_1",
-  "data_2",
-  "data_3",
-  "data_4",
+  "project",
+  "client",
+  "location",
+  "ref",
   "column_break_5",
-  "data_6",
+  "samp_type",
   "equip_used",
   "section_break_8",
   "reference_std",
@@ -24,35 +24,8 @@
  ],
  "fields": [
   {
-   "fieldname": "data_1",
-   "fieldtype": "Link",
-   "label": "Project ",
-   "options": "Project"
-  },
-  {
-   "fieldname": "data_2",
-   "fieldtype": "Data",
-   "label": "Client "
-  },
-  {
-   "fieldname": "data_3",
-   "fieldtype": "Data",
-   "label": "Location "
-  },
-  {
-   "fieldname": "data_4",
-   "fieldtype": "Data",
-   "label": "Report Ref"
-  },
-  {
    "fieldname": "column_break_5",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "data_6",
-   "fieldtype": "Select",
-   "label": "Sample Type ",
-   "options": "Natural Condition"
   },
   {
    "fieldname": "equip_used",
@@ -86,6 +59,7 @@
   {
    "fieldname": "designation",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Designation"
   },
   {
@@ -100,10 +74,37 @@
   {
    "fieldname": "designation1",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Designation"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client "
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location "
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Data",
+   "label": "Report Ref"
+  },
+  {
+   "fieldname": "samp_type",
+   "fieldtype": "Data",
+   "label": "Sample Type "
   }
  ],
- "modified": "2019-09-27 21:09:37.281926",
+ "modified": "2019-10-11 07:59:45.366092",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Thermal resistivity result",

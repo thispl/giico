@@ -35,11 +35,12 @@
    "fieldname": "error",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Error"
+   "label": "Error",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 20:56:53.604636",
+ "modified": "2019-10-04 16:32:14.727859",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Vernire Caliper Readings",

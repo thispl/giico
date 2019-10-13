@@ -1,0 +1,82 @@
+{
+ "creation": "2019-10-04 12:00:29.672459",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "slno",
+  "area",
+  "crack_id",
+  "start",
+  "column_break_5",
+  "end",
+  "div_differ",
+  "crack_width",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "slno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SL.No"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area"
+  },
+  {
+   "fieldname": "crack_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Crack ID"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remark"
+  },
+  {
+   "fieldname": "start",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Crackn Division Start "
+  },
+  {
+   "fieldname": "end",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Crackn Division End"
+  },
+  {
+   "fieldname": "div_differ",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Div Difference"
+  },
+  {
+   "fieldname": "crack_width",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Crack Width MM"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-04 12:01:12.474982",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Crack Width",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

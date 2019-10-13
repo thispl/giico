@@ -1,0 +1,106 @@
+{
+ "creation": "2019-09-30 08:37:12.178819",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "diameter_mm",
+  "height_mm",
+  "dry_wt",
+  "surface",
+  "submerged",
+  "column_break_5",
+  "area",
+  "sur_area",
+  "volume",
+  "cr_factor",
+  "density",
+  "absorption"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "diameter_mm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Diameter (mm)"
+  },
+  {
+   "fieldname": "height_mm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Height (mm)"
+  },
+  {
+   "fieldname": "dry_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dry Wt(g) *"
+  },
+  {
+   "fieldname": "surface",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Surface Dry Wt +(g)"
+  },
+  {
+   "fieldname": "absorption",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Absorption (%)"
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Density (kg/m3)"
+  },
+  {
+   "fieldname": "submerged",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Submerged wt(g) (water)"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sur_area",
+   "fieldtype": "Float",
+   "label": "Sur Area"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Float",
+   "label": "Volume"
+  },
+  {
+   "fieldname": "cr_factor",
+   "fieldtype": "Float",
+   "label": "Correction Factor"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-09-30 13:33:49.843265",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Water Absorption",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,133 @@
+{
+ "autoname": "CTC.####",
+ "creation": "2019-10-01 14:14:50.961574",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contractor",
+  "project",
+  "description",
+  "casting_date",
+  "column_break_5",
+  "date_of_test",
+  "date_of_report",
+  "job_ref_no",
+  "concrete_supplier",
+  "section_break_10",
+  "concrete_sample",
+  "section_break_12",
+  "remarks",
+  "section_break_14",
+  "tested_by",
+  "column_break_16",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "casting_date",
+   "fieldtype": "Date",
+   "label": "Casting Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "job_ref_no",
+   "fieldtype": "Data",
+   "label": "Job Ref No"
+  },
+  {
+   "fieldname": "concrete_supplier",
+   "fieldtype": "Data",
+   "label": "Concrete Supplier"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "concrete_sample",
+   "fieldtype": "Table",
+   "label": "Concrete Sample",
+   "options": "Concrete Sample"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  }
+ ],
+ "modified": "2019-10-01 15:03:42.851324",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Chemical Test on Concrete Sample",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

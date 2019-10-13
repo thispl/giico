@@ -79,7 +79,8 @@
    "fieldname": "age",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Age"
+   "label": "Age",
+   "read_only": 1
   },
   {
    "fieldname": "weight",
@@ -91,7 +92,8 @@
    "fieldname": "density",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Density"
+   "label": "Density",
+   "read_only": 1
   },
   {
    "fieldname": "load",
@@ -103,17 +105,19 @@
    "fieldname": "csn",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Compressive Strength(N/mm2)"
+   "label": "Strength(N/mm2)",
+   "read_only": 1
   },
   {
    "fieldname": "csnk",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Compressive Strength(kg/cm2)"
+   "label": " Strength(kg/cm2)",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 20:55:48.956350",
+ "modified": "2019-10-04 17:02:11.463475",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Concrete Cubes",

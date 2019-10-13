@@ -21,7 +21,8 @@
    "fieldname": "penetrationmm",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Penetration(mm)"
+   "label": "Penetration(mm)",
+   "read_only": 1
   },
   {
    "fieldname": "dial__reading",
@@ -33,17 +34,19 @@
    "fieldname": "mpa",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Mpa"
+   "label": "Mpa",
+   "read_only": 1
   },
   {
    "fieldname": "psi",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "psi"
+   "label": "psi",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 21:09:44.925736",
+ "modified": "2019-10-04 16:27:07.024999",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Penetration",

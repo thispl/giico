@@ -1,0 +1,124 @@
+{
+ "autoname": "TRR.####",
+ "creation": "2019-10-03 15:06:14.726171",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "report_ref",
+  "ref_std",
+  "air_temp",
+  "column_break_6",
+  "date_test",
+  "date_report",
+  "sample_type",
+  "test_con",
+  "equip_used",
+  "section_break_12",
+  "resistivity_test",
+  "section_break_14",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "label": "Report Ref"
+  },
+  {
+   "fieldname": "ref_std",
+   "fieldtype": "Data",
+   "label": "Ref STD"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sample_type",
+   "fieldtype": "Data",
+   "label": "Sample type "
+  },
+  {
+   "fieldname": "equip_used",
+   "fieldtype": "Data",
+   "label": "Equip used"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "description": "o c\n",
+   "fieldname": "air_temp",
+   "fieldtype": "Float",
+   "label": "Air Temperature"
+  },
+  {
+   "fieldname": "date_test",
+   "fieldtype": "Date",
+   "label": "Date Of Test"
+  },
+  {
+   "fieldname": "date_report",
+   "fieldtype": "Date",
+   "label": "Date of Report "
+  },
+  {
+   "fieldname": "test_con",
+   "fieldtype": "Data",
+   "label": "Test Condition"
+  },
+  {
+   "fieldname": "resistivity_test",
+   "fieldtype": "Table",
+   "label": "Resistivity Test",
+   "options": "Resistivity Test"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2019-10-03 16:26:18.457258",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Thermal Resistivity Test Result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
