@@ -1,0 +1,130 @@
+{
+ "creation": "2019-10-19 07:21:23.369487",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_depth",
+  "field_spt",
+  "unit_wt",
+  "mass_den",
+  "ttrig_sec",
+  "tp2_sec",
+  "ts2_sec",
+  "column_break_8",
+  "sr2_m",
+  "vs2_ms",
+  "vp2_ms",
+  "g2_mpa",
+  "m2_mpa",
+  "vsv",
+  "m2",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "ttrig_sec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ttrig sec"
+  },
+  {
+   "fieldname": "tp2_sec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "tp2 sec"
+  },
+  {
+   "fieldname": "ts2_sec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ts2 sec"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_depth",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Test Depth, m"
+  },
+  {
+   "fieldname": "field_spt",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Field SPT-N/cm"
+  },
+  {
+   "fieldname": "unit_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Unit wt kN/m3"
+  },
+  {
+   "fieldname": "mass_den",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mass Den Unit wt/g"
+  },
+  {
+   "fieldname": "sr2_m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "SR2 m"
+  },
+  {
+   "fieldname": "vs2_ms",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vs2 m/s"
+  },
+  {
+   "fieldname": "vp2_ms",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vp2 m/s"
+  },
+  {
+   "fieldname": "g2_mpa",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "G2 mpa"
+  },
+  {
+   "fieldname": "m2_mpa",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "M2 mpa"
+  },
+  {
+   "fieldname": "m2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "m2"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "vsv",
+   "fieldtype": "Float",
+   "label": "vs/vp"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-19 14:05:08.362570",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Crosshole Source and Receiver2",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

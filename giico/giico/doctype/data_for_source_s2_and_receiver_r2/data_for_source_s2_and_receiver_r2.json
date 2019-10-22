@@ -1,0 +1,158 @@
+{
+ "creation": "2019-10-18 16:17:54.690670",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test",
+  "r2_test",
+  "field",
+  "unit",
+  "mass_density",
+  "ttrig_p",
+  "ttrig_s",
+  "tp2",
+  "ts2",
+  "column_break_10",
+  "sr2",
+  "vs2",
+  "vp2",
+  "g2",
+  "m2",
+  "m2r",
+  "x1",
+  "y1",
+  "remarks",
+  "e1"
+ ],
+ "fields": [
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "r2_test",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "R2 Test"
+  },
+  {
+   "fieldname": "field",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Field"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Unit"
+  },
+  {
+   "fieldname": "mass_density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mass Density"
+  },
+  {
+   "fieldname": "ttrig_p",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ttrig(p)"
+  },
+  {
+   "fieldname": "ttrig_s",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ttrig(s)"
+  },
+  {
+   "fieldname": "tp2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "tp2"
+  },
+  {
+   "fieldname": "ts2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ts2"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sr2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "SR2"
+  },
+  {
+   "fieldname": "vs2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Vs2"
+  },
+  {
+   "fieldname": "vp2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Vp2"
+  },
+  {
+   "fieldname": "g2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "G2"
+  },
+  {
+   "fieldname": "m2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "M2"
+  },
+  {
+   "fieldname": "m2r",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "m2"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "x1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "X"
+  },
+  {
+   "fieldname": "y1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Y"
+  },
+  {
+   "fieldname": "e1",
+   "fieldtype": "Data",
+   "label": "E"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-22 12:45:26.609946",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Data for Source S2 and Receiver R2",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

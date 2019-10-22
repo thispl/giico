@@ -1,0 +1,80 @@
+{
+ "creation": "2019-10-21 08:20:32.605895",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_depth_m",
+  "sr1__g_mpa",
+  "sr1_m_mpa",
+  "sr1_m",
+  "sr1_e2g1m_mpa",
+  "sr2__g_mpa",
+  "sr2_m_mpa",
+  "sr2_m",
+  "sr2_e2g1m_mpa"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_depth_m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Test Depth m "
+  },
+  {
+   "fieldname": "sr1__g_mpa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SR1  G Mpa"
+  },
+  {
+   "fieldname": "sr1_m_mpa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SR1 M Mpa"
+  },
+  {
+   "fieldname": "sr1_m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "SR1 m"
+  },
+  {
+   "fieldname": "sr1_e2g1m_mpa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SR1 E=2G(1+m) Mpa"
+  },
+  {
+   "fieldname": "sr2__g_mpa",
+   "fieldtype": "Data",
+   "label": "SR2  G Mpa"
+  },
+  {
+   "fieldname": "sr2_m_mpa",
+   "fieldtype": "Data",
+   "label": "SR2 M Mpa"
+  },
+  {
+   "fieldname": "sr2_m",
+   "fieldtype": "Data",
+   "label": "SR2 m"
+  },
+  {
+   "fieldname": "sr2_e2g1m_mpa",
+   "fieldtype": "Data",
+   "label": "SR2 E=2G(1+m) Mpa"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-21 08:24:42.860943",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Summary of Crosshole Seismic Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

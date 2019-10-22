@@ -1,0 +1,140 @@
+{
+ "autoname": "DHT.####",
+ "creation": "2019-10-18 08:30:26.122018",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "test_location",
+  "column_break_4",
+  "tested_by",
+  "date",
+  "data_for_source_s1_and_receiver_r1_section",
+  "table_2",
+  "calculate",
+  "avg_m1",
+  "section_break_3",
+  "h",
+  "column_break_13",
+  "r1r2",
+  "section_break_5",
+  "s2_r2",
+  "calculate1",
+  "avg_calculate"
+ ],
+ "fields": [
+  {
+   "fieldname": "data_for_source_s1_and_receiver_r1_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_2",
+   "fieldtype": "Table",
+   "label": "Data for Source S1 and Receiver R1",
+   "options": "Data for Source S1 and Receiver R1"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "h",
+   "fieldtype": "Float",
+   "label": "Distance between source and borehole"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "avg_m1",
+   "fieldtype": "Data",
+   "label": "Average"
+  },
+  {
+   "fieldname": "calculate1",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "avg_calculate",
+   "fieldtype": "Data",
+   "label": "Average"
+  },
+  {
+   "fieldname": "s2_r2",
+   "fieldtype": "Table",
+   "label": "Data for Source S2 and Receiver R2",
+   "options": "Data for Source S2 and Receiver R2"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "test_location",
+   "fieldtype": "Data",
+   "label": "Test Location"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested/Checked by"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "r1r2",
+   "fieldtype": "Data",
+   "label": "R1R2"
+  }
+ ],
+ "modified": "2019-10-21 10:01:31.647282",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Downhole Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

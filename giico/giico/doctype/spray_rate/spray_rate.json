@@ -1,0 +1,68 @@
+{
+ "creation": "2019-10-14 12:59:48.572680",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "size",
+  "area",
+  "wt_of_empty",
+  "column_break_5",
+  "wt_of_sheet",
+  "wt_of_mc",
+  "rate_of_spray"
+ ],
+ "fields": [
+  {
+   "fieldname": "size",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Size of Sheet (m) "
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Area of Sheet (m2) "
+  },
+  {
+   "fieldname": "wt_of_empty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt. of Empty Sheet (kg) "
+  },
+  {
+   "fieldname": "wt_of_sheet",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt. of Sheet + MC -70 (kg)  "
+  },
+  {
+   "fieldname": "wt_of_mc",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt. of MC70 (kg)   "
+  },
+  {
+   "fieldname": "rate_of_spray",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate of Spray (kg/m2)       "
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-14 13:11:49.042577",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Spray Rate",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

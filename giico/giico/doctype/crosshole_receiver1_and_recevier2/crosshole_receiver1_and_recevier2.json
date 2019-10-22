@@ -1,0 +1,130 @@
+{
+ "creation": "2019-10-19 09:18:21.606509",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_depth",
+  "field_spt",
+  "unit_wt",
+  "mass_den",
+  "ttrig_sec",
+  "tp12_sec",
+  "ts12_sec",
+  "column_break_8",
+  "r1r2_m",
+  "vs12_ms",
+  "vp12_ms",
+  "g12_mpa",
+  "m12_mpa",
+  "vsv",
+  "m12",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "ttrig_sec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ttrig sec"
+  },
+  {
+   "fieldname": "tp12_sec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "tp12 sec"
+  },
+  {
+   "fieldname": "ts12_sec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ts12 sec"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "r1r2_m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "R1R2 m"
+  },
+  {
+   "fieldname": "vs12_ms",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vs12 m/s"
+  },
+  {
+   "fieldname": "vp12_ms",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vp12 m/s"
+  },
+  {
+   "fieldname": "g12_mpa",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "G12 Mpa"
+  },
+  {
+   "fieldname": "m12_mpa",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "M12 Mpa"
+  },
+  {
+   "fieldname": "m12",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "m12"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "test_depth",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Test Depth, m"
+  },
+  {
+   "fieldname": "field_spt",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Field SPT-N/cm"
+  },
+  {
+   "fieldname": "unit_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Unit wt kN/m3"
+  },
+  {
+   "fieldname": "mass_den",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mass den unit wt/g"
+  },
+  {
+   "fieldname": "vsv",
+   "fieldtype": "Float",
+   "label": "Vsvp"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-19 14:13:54.945788",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Crosshole Receiver1 and Recevier2",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

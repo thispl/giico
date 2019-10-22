@@ -1,0 +1,358 @@
+{
+ "autoname": "RCDT.####",
+ "creation": "2019-10-14 09:58:19.062737",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_details_section",
+  "project_name",
+  "client_name",
+  "report_ref",
+  "column_break_5",
+  "report_date",
+  "test_date",
+  "core_details_section",
+  "core_no",
+  "description",
+  "structure_id",
+  "general_condition",
+  "remarks",
+  "column_break_14",
+  "date_cored",
+  "cored_by",
+  "core_diameter",
+  "extracted_len",
+  "lab_testing_section",
+  "surface_condition",
+  "steel_rebar_if_any",
+  "chemical_tests_column",
+  "cement_content",
+  "alkali_content",
+  "sulfate_content",
+  "weight_of_concrete",
+  "compressive_strength_test_astm_d2938_section",
+  "rate_of_loading",
+  "uncapped_len",
+  "capped_len",
+  "dia",
+  "lcd",
+  "strength_corr",
+  "failure_load",
+  "corr_strength",
+  "corr_strength_kg",
+  "column_break_39",
+  "dry_weight",
+  "saturated_weight",
+  "area",
+  "volume",
+  "dry_density",
+  "wet_density",
+  "type_of_fracture",
+  "eqv_cube_strength1",
+  "eqv_cube_strength2",
+  "section_break_47",
+  "note",
+  "section_break_49",
+  "tested_by",
+  "column_break_49",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_details_section",
+   "fieldtype": "Section Break",
+   "label": "Project Details"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "label": "Project Name ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name "
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Data",
+   "label": "Report Ref "
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date "
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date "
+  },
+  {
+   "fieldname": "core_details_section",
+   "fieldtype": "Section Break",
+   "label": "Core Details"
+  },
+  {
+   "fieldname": "core_no",
+   "fieldtype": "Data",
+   "label": "Core No. "
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description "
+  },
+  {
+   "fieldname": "structure_id",
+   "fieldtype": "Data",
+   "label": "Structure ID "
+  },
+  {
+   "fieldname": "general_condition",
+   "fieldtype": "Data",
+   "label": "General Condition "
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_cored",
+   "fieldtype": "Date",
+   "label": "Date Cored"
+  },
+  {
+   "fieldname": "cored_by",
+   "fieldtype": "Data",
+   "label": "Cored by "
+  },
+  {
+   "description": "cm",
+   "fieldname": "core_diameter",
+   "fieldtype": "Float",
+   "label": "Core Diameter"
+  },
+  {
+   "description": "cm",
+   "fieldname": "extracted_len",
+   "fieldtype": "Data",
+   "label": "Extracted Length (Max)"
+  },
+  {
+   "fieldname": "lab_testing_section",
+   "fieldtype": "Section Break",
+   "label": "Lab Testing"
+  },
+  {
+   "fieldname": "surface_condition",
+   "fieldtype": "Data",
+   "label": "Surface Condition "
+  },
+  {
+   "fieldname": "steel_rebar_if_any",
+   "fieldtype": "Data",
+   "label": "Steel Rebar, if any "
+  },
+  {
+   "fieldname": "chemical_tests_column",
+   "fieldtype": "Column Break",
+   "label": "Chemical Tests"
+  },
+  {
+   "fieldname": "cement_content",
+   "fieldtype": "Percent",
+   "label": "Cement Content"
+  },
+  {
+   "fieldname": "alkali_content",
+   "fieldtype": "Percent",
+   "label": "Alkali Content"
+  },
+  {
+   "fieldname": "sulfate_content",
+   "fieldtype": "Percent",
+   "label": "Sulfate Content "
+  },
+  {
+   "fieldname": "weight_of_concrete",
+   "fieldtype": "Data",
+   "label": "Weight of concrete"
+  },
+  {
+   "fieldname": "compressive_strength_test_astm_d2938_section",
+   "fieldtype": "Section Break",
+   "label": "Compressive Strength Test (ASTM D2938)"
+  },
+  {
+   "description": "N/s",
+   "fieldname": "rate_of_loading",
+   "fieldtype": "Data",
+   "label": "Rate of Loading"
+  },
+  {
+   "description": "cm",
+   "fieldname": "uncapped_len",
+   "fieldtype": "Float",
+   "label": "Uncapped Length (Luc)"
+  },
+  {
+   "description": "cm",
+   "fieldname": "capped_len",
+   "fieldtype": "Float",
+   "label": "Capped Length (Lc)"
+  },
+  {
+   "description": "cm",
+   "fetch_from": "Rock Core",
+   "fieldname": "dia",
+   "fieldtype": "Float",
+   "label": "Diameter (d)"
+  },
+  {
+   "fieldname": "lcd",
+   "fieldtype": "Float",
+   "label": "Lc/d ratio "
+  },
+  {
+   "fieldname": "strength_corr",
+   "fieldtype": "Float",
+   "label": "Strength Correction Factor "
+  },
+  {
+   "description": "kN",
+   "fieldname": "failure_load",
+   "fieldtype": "Float",
+   "label": "Failure Load "
+  },
+  {
+   "fieldname": "corr_strength",
+   "fieldtype": "Float",
+   "label": "Corrected Strength (MPa) "
+  },
+  {
+   "description": "kg/cm2",
+   "fieldname": "corr_strength_kg",
+   "fieldtype": "Data",
+   "label": "Corrected Strength (MPa) "
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "g",
+   "fieldname": "dry_weight",
+   "fieldtype": "Float",
+   "label": "Dry Weight"
+  },
+  {
+   "description": "g",
+   "fieldname": "saturated_weight",
+   "fieldtype": "Data",
+   "label": "Saturated Weight"
+  },
+  {
+   "description": "cm2",
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area"
+  },
+  {
+   "fieldname": "eqv_cube_strength1",
+   "fieldtype": "Float",
+   "label": "Equivalent Cube Strength(Mpa)"
+  },
+  {
+   "description": "kg/cm2",
+   "fieldname": "eqv_cube_strength2",
+   "fieldtype": "Data",
+   "label": "Equivalent Cube Strength"
+  },
+  {
+   "description": "cm3 \n",
+   "fieldname": "volume",
+   "fieldtype": "Float",
+   "label": "Volume"
+  },
+  {
+   "description": "g/cm3",
+   "fieldname": "dry_density",
+   "fieldtype": "Float",
+   "label": "Dry Density"
+  },
+  {
+   "description": "g/cm3",
+   "fieldname": "wet_density",
+   "fieldtype": "Data",
+   "label": "Wet Density"
+  },
+  {
+   "fieldname": "type_of_fracture",
+   "fieldtype": "Select",
+   "label": "Type of Fracture",
+   "options": "\nA\nB\nC\nD\nE"
+  },
+  {
+   "fieldname": "section_break_47",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "section_break_49",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2019-10-14 16:25:54.423135",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Rock Core Drilling and Strength Testing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

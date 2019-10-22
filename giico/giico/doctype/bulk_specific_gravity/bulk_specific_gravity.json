@@ -1,0 +1,103 @@
+{
+ "creation": "2019-10-17 10:07:58.933128",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "core_location",
+  "type_asphalt",
+  "mass_of_sample",
+  "mass_of_water",
+  "mass_of_ssd",
+  "column_break_6",
+  "calculated_bulk",
+  "job_mix",
+  "percent_com",
+  "aver_thick",
+  "total_thickness",
+  "aver_thick1"
+ ],
+ "fields": [
+  {
+   "fieldname": "core_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Core Location & sample  no"
+  },
+  {
+   "fieldname": "type_asphalt",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type of Asphalt"
+  },
+  {
+   "fieldname": "mass_of_sample",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mass of sample in Air (g)"
+  },
+  {
+   "fieldname": "mass_of_water",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mass of sample in Water (g)"
+  },
+  {
+   "fieldname": "mass_of_ssd",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mass of SSD sample (g)"
+  },
+  {
+   "fieldname": "calculated_bulk",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Calculated Bulk Density (g/cm3)"
+  },
+  {
+   "fieldname": "job_mix",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Job Mix Density (g/cm3)"
+  },
+  {
+   "fieldname": "percent_com",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Percent Compaction %"
+  },
+  {
+   "fieldname": "aver_thick",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Average Thickness (mm)"
+  },
+  {
+   "fieldname": "total_thickness",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Thickness (mm)"
+  },
+  {
+   "fieldname": "aver_thick1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Average Thickness (mm)"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-10-17 10:13:16.767707",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Bulk Specific Gravity",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
