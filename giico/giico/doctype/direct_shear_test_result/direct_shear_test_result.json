@@ -5,28 +5,30 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project",
+  "consultant",
+  "location",
+  "client",
+  "contractor",
+  "job_ref_no",
   "date_of_test",
-  "borehole_id",
+  "column_break_5",
   "depth",
   "sample_condition",
-  "column_break_5",
   "avb",
   "test__condition",
   "cohesion",
   "phi",
   "section_break_10",
-  "sample"
+  "sample",
+  "section_break_18",
+  "remarks"
  ],
  "fields": [
   {
    "fieldname": "date_of_test",
    "fieldtype": "Date",
    "label": "Date of Test"
-  },
-  {
-   "fieldname": "borehole_id",
-   "fieldtype": "Data",
-   "label": "Borehole ID"
   },
   {
    "description": "m",
@@ -74,9 +76,49 @@
   {
    "fieldname": "section_break_10",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Data",
+   "label": "Consultant "
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location "
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor "
+  },
+  {
+   "fieldname": "job_ref_no",
+   "fieldtype": "Data",
+   "label": "Job Ref No"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
   }
  ],
- "modified": "2019-10-10 09:47:49.643757",
+ "modified": "2019-10-16 15:52:00.298157",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Direct Shear Test Result",

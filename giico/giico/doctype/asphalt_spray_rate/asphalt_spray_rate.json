@@ -15,6 +15,8 @@
   "temp",
   "ambient_temperature",
   "section_break_9",
+  "spray_rate",
+  "section_break_12",
   "remarks",
   "section_break_11",
   "viewed_by",
@@ -93,9 +95,19 @@
    "fieldname": "ambient_temperature",
    "fieldtype": "Data",
    "label": "Ambient Temperature"
+  },
+  {
+   "fieldname": "spray_rate",
+   "fieldtype": "Table",
+   "label": "Spray Rate",
+   "options": "Spray Rate"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
   }
  ],
- "modified": "2019-10-12 15:41:19.767731",
+ "modified": "2019-10-14 13:02:12.313228",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Asphalt Spray Rate",
