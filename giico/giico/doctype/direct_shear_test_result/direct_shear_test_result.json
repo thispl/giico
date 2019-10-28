@@ -21,6 +21,8 @@
   "phi",
   "section_break_10",
   "sample",
+  "section_break_17",
+  "shear_test_results",
   "section_break_18",
   "remarks"
  ],
@@ -116,9 +118,19 @@
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shear_test_results",
+   "fieldtype": "Table",
+   "label": "Shear Test Results",
+   "options": "Shear Test Results"
   }
  ],
- "modified": "2019-10-16 15:52:00.298157",
+ "modified": "2019-10-25 08:32:27.551239",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Direct Shear Test Result",

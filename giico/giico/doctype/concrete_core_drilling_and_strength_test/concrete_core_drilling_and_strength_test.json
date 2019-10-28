@@ -32,6 +32,12 @@
   "column_break_25",
   "sulfate_content",
   "weight_concrete",
+  "upv_test_section",
+  "path_mm",
+  "column_break_30",
+  "time_ms",
+  "column_break_32",
+  "vel_kms",
   "compressive_strength_test_section",
   "rate_of_loading_ns",
   "uncapped_length",
@@ -51,6 +57,18 @@
   "volume_cm3",
   "dry_density",
   "wet_density",
+  "type_of_fracture",
+  "section_break_53",
+  "html_1",
+  "column_break_56",
+  "html_48",
+  "column_break_58",
+  "html_52",
+  "column_break_60",
+  "html_54",
+  "column_break_62",
+  "html_56",
+  "column_break_63",
   "section_break_47",
   "note",
   "section_break_49",
@@ -322,9 +340,93 @@
    "fieldname": "approved_by",
    "fieldtype": "Data",
    "label": "Approved by "
+  },
+  {
+   "fieldname": "upv_test_section",
+   "fieldtype": "Section Break",
+   "label": "UPV Test "
+  },
+  {
+   "fieldname": "path_mm",
+   "fieldtype": "Data",
+   "label": "Path (mm)"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time_ms",
+   "fieldtype": "Data",
+   "label": "Time (ms)"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vel_kms",
+   "fieldtype": "Data",
+   "label": "Vel (km/s)"
+  },
+  {
+   "fieldname": "type_of_fracture",
+   "fieldtype": "Select",
+   "label": "Type of Fracture",
+   "options": "\nA\nB\nC\nD\nE"
+  },
+  {
+   "fieldname": "section_break_53",
+   "fieldtype": "Section Break",
+   "label": "Type of Fracture"
+  },
+  {
+   "fieldname": "html_56",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/E.JPG\">"
+  },
+  {
+   "fieldname": "column_break_56",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_63",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_1",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/A.JPG\">"
+  },
+  {
+   "fieldname": "html_48",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/B.JPG\">"
+  },
+  {
+   "fieldname": "html_52",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/C.JPG\">"
+  },
+  {
+   "fieldname": "html_54",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/D.JPG\">"
   }
  ],
- "modified": "2019-10-16 13:02:56.024773",
+ "modified": "2019-10-25 10:09:54.811135",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Concrete Core Drilling And Strength Test",

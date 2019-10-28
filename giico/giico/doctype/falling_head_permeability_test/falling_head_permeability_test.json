@@ -26,6 +26,8 @@
   "table_18",
   "calculate",
   "kavg",
+  "chart_section",
+  "chart_html",
   "section_break_20",
   "project",
   "column_break_22",
@@ -154,9 +156,19 @@
    "fieldname": "client",
    "fieldtype": "Data",
    "label": "Client"
+  },
+  {
+   "fieldname": "chart_section",
+   "fieldtype": "Section Break",
+   "label": "Chart"
+  },
+  {
+   "fieldname": "chart_html",
+   "fieldtype": "HTML",
+   "label": "chart_html"
   }
  ],
- "modified": "2019-09-27 21:08:31.130007",
+ "modified": "2019-10-25 09:51:31.656110",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Falling Head Permeability Test",

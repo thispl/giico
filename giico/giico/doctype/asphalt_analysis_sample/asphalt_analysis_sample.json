@@ -40,6 +40,8 @@
   "remarks_section",
   "remarks",
   "section_break_32",
+  "asphalt_analysis_calculations",
+  "section_break_37",
   "tested_by",
   "column_break_32",
   "materials_engineer"
@@ -230,9 +232,19 @@
    "fieldname": "max",
    "fieldtype": "Data",
    "label": "Specification(max)"
+  },
+  {
+   "fieldname": "asphalt_analysis_calculations",
+   "fieldtype": "Table",
+   "label": "Asphalt Analysis Calculations",
+   "options": "Asphalt Analysis Calculations"
+  },
+  {
+   "fieldname": "section_break_37",
+   "fieldtype": "Section Break"
   }
  ],
- "modified": "2019-10-12 15:31:46.501449",
+ "modified": "2019-10-23 16:42:20.364847",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Asphalt Analysis Sample",

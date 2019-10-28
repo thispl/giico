@@ -51,6 +51,16 @@
   "type_of_fracture",
   "eqv_cube_strength1",
   "eqv_cube_strength2",
+  "sec1",
+  "html_1",
+  "col_1",
+  "html_48",
+  "column_break_51",
+  "html_52",
+  "column_break_53",
+  "html_54",
+  "column_break_55",
+  "html_56",
   "section_break_47",
   "note",
   "section_break_49",
@@ -330,9 +340,55 @@
   {
    "fieldname": "section_break_49",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sec1",
+   "fieldtype": "Section Break",
+   "label": "Type of Fracture"
+  },
+  {
+   "fieldname": "html_48",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/B.JPG\">"
+  },
+  {
+   "fieldname": "html_1",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/A.JPG\">"
+  },
+  {
+   "fieldname": "col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_52",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/C.JPG\">"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_54",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/D.JPG\">"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_56",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/E.JPG\">"
   }
  ],
- "modified": "2019-10-14 16:25:54.423135",
+ "modified": "2019-10-25 09:58:30.684884",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Rock Core Drilling and Strength Testing",

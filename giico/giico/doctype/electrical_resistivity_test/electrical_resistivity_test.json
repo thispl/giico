@@ -1,5 +1,5 @@
 {
- "autoname": "ERT{location}-.####",
+ "autoname": "ERT-{location}-.####",
  "creation": "2019-08-04 16:33:03.067659",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -15,7 +15,6 @@
   "section_break_8",
   "generate_graph",
   "graph_view",
-  "graph",
   "section_break_10",
   "tested_by",
   "column_break_9",
@@ -71,12 +70,8 @@
   {
    "fieldname": "graph_view",
    "fieldtype": "HTML",
-   "label": "Graph View"
-  },
-  {
-   "fieldname": "graph",
-   "fieldtype": "Small Text",
-   "label": "Graph"
+   "label": "Graph View",
+   "options": "<div id=\"chart\"></div>\n"
   },
   {
    "fieldname": "section_break_10",
@@ -99,7 +94,7 @@
    "options": "Employee"
   }
  ],
- "modified": "2019-09-27 21:10:52.110522",
+ "modified": "2019-10-28 12:24:51.568416",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Electrical Resistivity Test",

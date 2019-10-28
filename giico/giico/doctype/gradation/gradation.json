@@ -7,9 +7,12 @@
   "sieve_size",
   "cumulative_wt_retained",
   "cumulative__retained",
+  "status",
   "column_break_4",
   "passing",
-  "job_mix"
+  "job_mix",
+  "min",
+  "max"
  ],
  "fields": [
   {
@@ -45,10 +48,28 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "% Passing\n"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "min",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specification(min)"
+  },
+  {
+   "fieldname": "max",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specification(max)"
   }
  ],
  "istable": 1,
- "modified": "2019-10-12 14:06:51.497988",
+ "modified": "2019-10-24 10:27:10.878320",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Gradation",
