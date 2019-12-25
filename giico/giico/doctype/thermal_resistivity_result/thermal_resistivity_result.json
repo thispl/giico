@@ -6,16 +6,19 @@
  "engine": "InnoDB",
  "field_order": [
   "project",
-  "client",
+  "customer",
+  "column_break_3",
   "location",
-  "ref",
+  "department",
   "column_break_5",
+  "ref",
   "samp_type",
-  "equip_used",
   "section_break_8",
+  "equip_used",
   "reference_std",
-  "reference__std",
   "section_break_10",
+  "reference__std",
+  "section_break_12",
   "tested_by",
   "designation",
   "column_break_12",
@@ -25,7 +28,7 @@
  "fields": [
   {
    "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "equip_used",
@@ -34,7 +37,7 @@
   },
   {
    "fieldname": "section_break_8",
-   "fieldtype": "Section Break"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "reference_std",
@@ -84,14 +87,11 @@
    "options": "Project"
   },
   {
-   "fieldname": "client",
-   "fieldtype": "Data",
-   "label": "Client "
-  },
-  {
+   "fetch_from": "project.location",
    "fieldname": "location",
-   "fieldtype": "Data",
-   "label": "Location "
+   "fieldtype": "Link",
+   "label": "Location ",
+   "options": "Location"
   },
   {
    "fieldname": "ref",
@@ -102,9 +102,31 @@
    "fieldname": "samp_type",
    "fieldtype": "Data",
    "label": "Sample Type "
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer ",
+   "options": "Customer"
   }
  ],
- "modified": "2019-10-11 07:59:45.366092",
+ "modified": "2019-12-19 15:22:51.302767",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Thermal resistivity result",

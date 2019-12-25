@@ -5,16 +5,22 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "method_of_compaction",
-  "material_description",
-  "oversized_materials",
-  "layer_no",
-  "layer_thicknesscm",
-  "elevationm",
-  "column_break_7",
-  "apparatus_no",
+  "project",
+  "client",
+  "location",
+  "section_break_34",
   "date_of_report",
   "date_of_test",
+  "department",
+  "column_break_7",
+  "method_of_compaction",
+  "oversized_materials",
+  "material_description",
+  "layer_no",
+  "layer_thicknesscm",
+  "column_break_36",
+  "elevationm",
+  "apparatus_no",
   "report_no",
   "client_ref_no",
   "test_location",
@@ -28,12 +34,6 @@
   "column_break_31",
   "checked_by",
   "des2",
-  "section_break_34",
-  "project",
-  "column_break_36",
-  "client",
-  "column_break_38",
-  "location",
   "section_break_40",
   "fdt__test"
  ],
@@ -70,7 +70,7 @@
   },
   {
    "fieldname": "column_break_7",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "apparatus_no",
@@ -151,7 +151,7 @@
   },
   {
    "fieldname": "section_break_34",
-   "fieldtype": "Section Break"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "project",
@@ -169,10 +169,6 @@
    "label": "Client"
   },
   {
-   "fieldname": "column_break_38",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
@@ -186,9 +182,15 @@
    "fieldtype": "Table",
    "label": "FDT  Test",
    "options": "FDT Test"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:03:13.819918",
+ "modified": "2019-11-22 14:21:25.610661",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "FDT",

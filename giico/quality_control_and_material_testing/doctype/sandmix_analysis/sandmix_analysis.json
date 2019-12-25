@@ -1,0 +1,68 @@
+{
+ "creation": "2019-11-28 09:33:21.908704",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sieve_size",
+  "astm_sieve",
+  "passing",
+  "column_break_4",
+  "job_mix",
+  "specificationmin",
+  "specificationmax"
+ ],
+ "fields": [
+  {
+   "fieldname": "sieve_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sieve Size"
+  },
+  {
+   "fieldname": "astm_sieve",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ASTM Sieve"
+  },
+  {
+   "fieldname": "passing",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "%passing"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_mix",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Mix"
+  },
+  {
+   "fieldname": "specificationmin",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Specification(Min)"
+  },
+  {
+   "fieldname": "specificationmax",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Specification(Max)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-28 15:56:57.535089",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Sandmix Analysis",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

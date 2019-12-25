@@ -1,0 +1,92 @@
+{
+ "autoname": "SAMP-.####",
+ "creation": "2019-12-17 10:41:06.579500",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_no",
+  "depth",
+  "date",
+  "sample_owner",
+  "column_break_5",
+  "boring",
+  "sample_no",
+  "sample_by",
+  "location",
+  "soil_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Data",
+   "label": "Job No."
+  },
+  {
+   "fieldname": "depth",
+   "fieldtype": "Data",
+   "label": "Depth"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "boring",
+   "fieldtype": "Data",
+   "label": "Boring"
+  },
+  {
+   "fieldname": "sample_no",
+   "fieldtype": "Data",
+   "label": "Sample No."
+  },
+  {
+   "fieldname": "sample_by",
+   "fieldtype": "Data",
+   "label": "Sample By"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Small Text",
+   "label": "Soil Type"
+  },
+  {
+   "fieldname": "sample_owner",
+   "fieldtype": "Data",
+   "label": "Owner"
+  }
+ ],
+ "modified": "2019-12-17 10:47:21.647678",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Sample Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

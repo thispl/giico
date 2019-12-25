@@ -1,0 +1,240 @@
+{
+ "autoname": "FHP.####",
+ "creation": "2019-09-17 09:23:05.369552",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "column_break_3",
+  "location",
+  "section_break_5",
+  "sample_id",
+  "column_break_7",
+  "department",
+  "section_break_8",
+  "dia_mould",
+  "len_mould",
+  "area_of_mould",
+  "vol_mould",
+  "int_head",
+  "depth",
+  "wgt_wet",
+  "col1",
+  "bulk_density",
+  "vol_den",
+  "initial_moisture",
+  "final_moisture",
+  "dry_density",
+  "cross_sec",
+  "sample_height",
+  "section_break_17",
+  "table_18",
+  "calculate",
+  "kavg",
+  "chart_section",
+  "generate_graph",
+  "chart_html",
+  "chart_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "dia_mould",
+   "fieldtype": "Data",
+   "label": "Diameter of Mould(cm)"
+  },
+  {
+   "fieldname": "len_mould",
+   "fieldtype": "Data",
+   "label": "Length of Mould(cm)"
+  },
+  {
+   "fieldname": "area_of_mould",
+   "fieldtype": "Data",
+   "label": "Area of Mould(cm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vol_mould",
+   "fieldtype": "Data",
+   "label": "Volume of Mould(cm3)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "int_head",
+   "fieldtype": "Data",
+   "label": "Initial Total Head"
+  },
+  {
+   "fieldname": "depth",
+   "fieldtype": "Data",
+   "label": "Depth(m)"
+  },
+  {
+   "fieldname": "vol_den",
+   "fieldtype": "Data",
+   "label": "Volume Density",
+   "read_only": 1
+  },
+  {
+   "fieldname": "wgt_wet",
+   "fieldtype": "Data",
+   "label": "Weight of wet Sample(gm)"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bulk_density",
+   "fieldtype": "Data",
+   "label": "Bulk Density (gm/cm3) "
+  },
+  {
+   "fieldname": "initial_moisture",
+   "fieldtype": "Float",
+   "label": "Initial Moisture Content"
+  },
+  {
+   "fieldname": "final_moisture",
+   "fieldtype": "Data",
+   "label": "Final Moisture Content(%)"
+  },
+  {
+   "fieldname": "dry_density",
+   "fieldtype": "Data",
+   "label": "Dry Density(gm/cm3)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cross_sec",
+   "fieldtype": "Data",
+   "label": "Cross section of burrate(mm2) :"
+  },
+  {
+   "fieldname": "sample_height",
+   "fieldtype": "Int",
+   "label": "Sample Height(cm)"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_18",
+   "fieldtype": "Table",
+   "label": "FHP Test",
+   "options": "FHP Test"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "kavg",
+   "fieldtype": "Data",
+   "label": "KAvg",
+   "read_only": 1
+  },
+  {
+   "fieldname": "chart_section",
+   "fieldtype": "Section Break",
+   "label": "Charts"
+  },
+  {
+   "fieldname": "chart_html",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "chart image"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate Graph"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  }
+ ],
+ "modified": "2019-12-19 16:24:55.071065",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Falling Head Permeability Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

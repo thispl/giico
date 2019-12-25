@@ -1,0 +1,197 @@
+{
+ "autoname": "LA.####",
+ "creation": "2019-10-04 08:12:20.521436",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "location",
+  "column_break_5",
+  "test_date",
+  "report_date",
+  "department",
+  "section_break_7",
+  "report_ref_no",
+  "sample_description",
+  "section_break_9",
+  "grading_test",
+  "calculate",
+  "total",
+  "section_break_13",
+  "ws_testing",
+  "column_break_15",
+  "ws_remaining",
+  "column_break_17",
+  "percentage",
+  "section_break_19",
+  "remarks",
+  "section_break_21",
+  "tested_by",
+  "column_break_23",
+  "approved_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "report_ref_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Report Ref No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sample_description",
+   "fieldtype": "Data",
+   "label": "Sample Description"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grading_test",
+   "fieldtype": "Table",
+   "label": "Grading of Test Sample",
+   "options": "Grading of Test Sample"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ws_testing",
+   "fieldtype": "Float",
+   "label": "Weight of sample of taken for testing"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ws_remaining",
+   "fieldtype": "Float",
+   "label": "Weight of sample remaining over"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Float",
+   "label": "Percentage loss by abrasion and impact",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved by"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-21 17:11:33.507907",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Abrasion and Impact in Los Angeles Machine",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

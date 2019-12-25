@@ -4,6 +4,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "test_no",
   "date_of_test",
   "temp_c",
   "flow_dir",
@@ -65,7 +66,8 @@
    "fieldname": "qua",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Quavr cm3"
+   "label": "Quavr cm3",
+   "read_only": 1
   },
   {
    "fieldname": "time",
@@ -77,11 +79,18 @@
    "fieldname": "k_cm",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "K cm/sec x 10-4"
+   "label": "K cm/sec x 10-4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test No"
   }
  ],
  "istable": 1,
- "modified": "2019-10-04 17:12:49.995841",
+ "modified": "2019-11-13 13:23:20.169237",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Permeability Test Parameters",

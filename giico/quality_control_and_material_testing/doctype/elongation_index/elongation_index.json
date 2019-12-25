@@ -1,0 +1,62 @@
+{
+ "creation": "2019-09-30 14:20:54.306471",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pass",
+  "retained",
+  "mass_sample",
+  "column_break_4",
+  "mass_elongated",
+  "elongated_particle"
+ ],
+ "fields": [
+  {
+   "fieldname": "pass",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Aggregate Size-fraction(100% passing)"
+  },
+  {
+   "fieldname": "retained",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Aggregate Size-fraction(100% retained)"
+  },
+  {
+   "fieldname": "mass_sample",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mass of Sample(g)"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mass_elongated",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mass of Elongated  Particles (g)"
+  },
+  {
+   "fieldname": "elongated_particle",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Elongated Particles (%)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 14:55:32.051666",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Elongation Index",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

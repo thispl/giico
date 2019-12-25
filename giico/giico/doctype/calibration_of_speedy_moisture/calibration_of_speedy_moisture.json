@@ -5,13 +5,15 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "serial_no",
   "project",
-  "column_break_4",
   "client",
+  "column_break_3",
   "calibration_date",
+  "department",
+  "column_break_4",
+  "serial_no",
   "report_ref",
+  "name1",
   "section_break_8",
   "moisture_calibration",
   "moisture_conten_section",
@@ -38,7 +40,7 @@
   },
   {
    "fieldname": "column_break_4",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "client",
@@ -83,9 +85,19 @@
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 20:56:45.041146",
+ "modified": "2019-11-22 13:05:55.258445",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration of Speedy Moisture",

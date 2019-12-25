@@ -1,0 +1,182 @@
+{
+ "autoname": "SG.####",
+ "creation": "2019-10-05 08:15:28.899597",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "location",
+  "column_break_5",
+  "test_date",
+  "report_date",
+  "department",
+  "section_break_7",
+  "report_ref",
+  "sample_desc",
+  "section_break_9",
+  "specific_gravity",
+  "calculate",
+  "section_break_14",
+  "average1",
+  "column_break_15",
+  "average2",
+  "column_break_17",
+  "average3",
+  "column_break_19",
+  "average4",
+  "section_break_11",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project  ",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client  ",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location  "
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date "
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date "
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Report Ref  No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sample_desc",
+   "fieldtype": "Data",
+   "label": "Sample Desc"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "specific_gravity",
+   "fieldtype": "Table",
+   "label": "Specific Gravity",
+   "options": "Specific Gravity"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "average1",
+   "fieldtype": "Float",
+   "label": "Weight of Oven Dry Sample Average",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "average2",
+   "fieldtype": "Float",
+   "label": "Weight of Bottle+Water+Sam Aver",
+   "read_only": 1
+  },
+  {
+   "fieldname": "average3",
+   "fieldtype": "Float",
+   "label": "Weight of Bottle+Water Average",
+   "read_only": 1
+  },
+  {
+   "fieldname": "average4",
+   "fieldtype": "Float",
+   "label": "Apparent Specific Gravity Average",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2019-12-23 16:21:38.001881",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Specific Gravity of Asphalt Aashto",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

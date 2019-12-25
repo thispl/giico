@@ -1,0 +1,56 @@
+{
+ "creation": "2019-09-25 08:59:35.052984",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ref_instrument",
+  "oven",
+  "column_break_4",
+  "difference",
+  "percent_difference"
+ ],
+ "fields": [
+  {
+   "fieldname": "ref_instrument",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ref Instrument"
+  },
+  {
+   "fieldname": "oven",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Oven"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "difference",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Difference",
+   "read_only": 1
+  },
+  {
+   "fieldname": "percent_difference",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Percent Difference",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 13:32:39.426920",
+ "modified_by": "ceo@giico.net",
+ "module": "Quality Control and Material Testing",
+ "name": "Oven Readings",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

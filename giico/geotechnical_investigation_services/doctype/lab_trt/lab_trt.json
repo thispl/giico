@@ -1,0 +1,157 @@
+{
+ "autoname": "LTRT.####",
+ "creation": "2019-09-13 07:15:50.354984",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "location",
+  "date",
+  "section_break_6",
+  "east",
+  "report_ref",
+  "north",
+  "column_break_10",
+  "equip_used",
+  "reference_std",
+  "section_break_11",
+  "lab_trt_result",
+  "section_break_13",
+  "tested_by",
+  "column_break_13",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "east",
+   "fieldtype": "Data",
+   "label": "East"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Report Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "north",
+   "fieldtype": "Data",
+   "label": "North"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "equip_used",
+   "fieldtype": "Data",
+   "label": "Equip Used "
+  },
+  {
+   "fieldname": "reference_std",
+   "fieldtype": "Data",
+   "label": "Reference STD "
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lab_trt_result",
+   "fieldtype": "Table",
+   "label": "Lab TRT Result",
+   "options": "Lab TRT Result"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 14:29:55.111388",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Lab TRT",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

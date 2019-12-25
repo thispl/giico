@@ -1,0 +1,51 @@
+{
+ "creation": "2019-08-10 09:40:08.413250",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "electrode_interval",
+  "resistance",
+  "soil_resistivity"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Test No",
+   "options": "EAST/WEST\nNORTH/SOUTH"
+  },
+  {
+   "fieldname": "electrode_interval",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Electrode Interval"
+  },
+  {
+   "fieldname": "resistance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Resistance"
+  },
+  {
+   "fieldname": "soil_resistivity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Soil Resistivity",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-19 07:10:07.129680",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "FER Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

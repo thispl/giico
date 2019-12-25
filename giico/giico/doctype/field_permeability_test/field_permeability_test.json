@@ -5,6 +5,12 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "client",
+  "project",
+  "column_break_3",
+  "department",
+  "date_of_test",
+  "section_break_5",
   "borehole_no",
   "depth_of_test",
   "type_of_soil",
@@ -17,15 +23,12 @@
   "hight_of_casing",
   "internal_diameter",
   "cross_section",
-  "date_of_test",
+  "dh_cm",
   "section_break_14",
   "fp_test",
+  "calculate",
   "section_break_16",
-  "remarks",
-  "section_break_18",
-  "project",
-  "column_break_17",
-  "client"
+  "remarks"
  ],
  "fields": [
   {
@@ -112,26 +115,48 @@
    "label": "Remarks"
   },
   {
-   "fieldname": "section_break_18",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "project",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Project",
-   "options": "Project"
-  },
-  {
-   "fieldname": "column_break_17",
-   "fieldtype": "Column Break"
+   "options": "Project",
+   "reqd": 1
   },
   {
    "fieldname": "client",
    "fieldtype": "Data",
-   "label": "Client"
+   "in_list_view": 1,
+   "label": "Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "dh_cm",
+   "fieldtype": "Float",
+   "label": "Dh (cm)"
   }
  ],
- "modified": "2019-09-27 21:03:21.941141",
+ "modified": "2019-12-03 14:42:14.118374",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Field Permeability Test",

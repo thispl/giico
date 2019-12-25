@@ -1,0 +1,175 @@
+{
+ "autoname": "MT.####",
+ "creation": "2019-10-01 09:36:27.027453",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "date_test",
+  "sample_lab",
+  "section_break_4",
+  "main_con",
+  "description",
+  "material",
+  "column_break_6",
+  "giico",
+  "thick",
+  "lab_temp",
+  "section_break_11",
+  "tension_test",
+  "section_break_13",
+  "requirements",
+  "section_break_15",
+  "bend_test",
+  "section_break_17",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project  ",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sample_lab",
+   "fieldtype": "Date",
+   "label": "Sample in Lab Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_test",
+   "fieldtype": "Date",
+   "label": "Date of Test "
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "main_con",
+   "fieldtype": "Data",
+   "label": "Main Contractor "
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description "
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Data",
+   "label": "Material "
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "giico",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Giico RFI No",
+   "reqd": 1
+  },
+  {
+   "description": "mm",
+   "fieldname": "thick",
+   "fieldtype": "Int",
+   "label": "Thick  Dia "
+  },
+  {
+   "description": "oC\n",
+   "fieldname": "lab_temp",
+   "fieldtype": "Int",
+   "label": "Lab Temperature"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tension_test",
+   "fieldtype": "Table",
+   "label": "Tension Test",
+   "options": "Tension Test"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requirements",
+   "fieldtype": "Table",
+   "label": "Requirements",
+   "options": "Requirements"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bend_test",
+   "fieldtype": "Table",
+   "label": "Bend Test",
+   "options": "Bend Test"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 09:08:00.329894",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Mechanical Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

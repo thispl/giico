@@ -7,11 +7,13 @@
  "field_order": [
   "project",
   "client",
-  "type_block",
-  "section_break_4",
   "product_date",
+  "section_break_4",
   "test_date",
   "report_date",
+  "department",
+  "column_break_7",
+  "type_block",
   "report_ref",
   "section_break_9",
   "concrete_masonary",
@@ -99,15 +101,27 @@
   {
    "fieldname": "average",
    "fieldtype": "Float",
-   "label": "Average Com Strength(N/mm2)"
+   "label": "Average Com Strength(N/mm2)",
+   "read_only": 1
   },
   {
    "fieldname": "average1",
    "fieldtype": "Float",
-   "label": "Average Com Strength(kg/cm2)"
+   "label": "Average Com Strength(kg/cm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-01 12:56:25.930314",
+ "modified": "2019-11-22 14:04:30.425238",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Compressive Strength of Concrete Masonary",

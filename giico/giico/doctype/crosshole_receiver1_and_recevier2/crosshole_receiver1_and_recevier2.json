@@ -19,6 +19,7 @@
   "m12_mpa",
   "vsv",
   "m12",
+  "total_mpa2",
   "remarks"
  ],
  "fields": [
@@ -48,37 +49,43 @@
    "fieldname": "r1r2_m",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "R1R2 m"
+   "label": "R1R2 m",
+   "read_only": 1
   },
   {
    "fieldname": "vs12_ms",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Vs12 m/s"
+   "label": "Vs12 m/s",
+   "read_only": 1
   },
   {
    "fieldname": "vp12_ms",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Vp12 m/s"
+   "label": "Vp12 m/s",
+   "read_only": 1
   },
   {
    "fieldname": "g12_mpa",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "G12 Mpa"
+   "label": "G12 Mpa",
+   "read_only": 1
   },
   {
    "fieldname": "m12_mpa",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "M12 Mpa"
+   "label": "M12 Mpa",
+   "read_only": 1
   },
   {
    "fieldname": "m12",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "m12"
+   "label": "m12",
+   "read_only": 1
   },
   {
    "fieldname": "remarks",
@@ -108,16 +115,23 @@
    "fieldname": "mass_den",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Mass den unit wt/g"
+   "label": "Mass den unit wt/g",
+   "read_only": 1
   },
   {
    "fieldname": "vsv",
    "fieldtype": "Float",
-   "label": "Vsvp"
+   "label": "Vsvp",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_mpa2",
+   "fieldtype": "Int",
+   "label": "Total mpa2"
   }
  ],
  "istable": 1,
- "modified": "2019-10-19 14:13:54.945788",
+ "modified": "2019-11-16 08:34:12.913693",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Crosshole Receiver1 and Recevier2",

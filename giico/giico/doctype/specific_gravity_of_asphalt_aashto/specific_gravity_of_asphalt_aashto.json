@@ -7,14 +7,18 @@
  "field_order": [
   "project",
   "client",
-  "sample_desc",
   "location",
   "column_break_5",
   "test_date",
   "report_date",
+  "department",
+  "section_break_7",
   "report_ref",
+  "sample_desc",
   "section_break_9",
   "specific_gravity",
+  "calculate",
+  "average",
   "section_break_11",
   "remarks"
  ],
@@ -77,9 +81,29 @@
   {
    "fieldname": "section_break_11",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "average",
+   "fieldtype": "Float",
+   "label": "Average"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-05 13:06:38.755635",
+ "modified": "2019-11-22 15:36:46.133564",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Specific Gravity of Asphalt Aashto",

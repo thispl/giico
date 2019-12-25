@@ -1,0 +1,99 @@
+{
+ "creation": "2019-09-27 07:45:22.130063",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "length1",
+  "width",
+  "height",
+  "column_break_5",
+  "weight",
+  "density",
+  "load",
+  "compressive_strength",
+  "kgcm2"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample ID"
+  },
+  {
+   "columns": 2,
+   "fieldname": "length1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Length"
+  },
+  {
+   "columns": 1,
+   "fieldname": "width",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Width"
+  },
+  {
+   "columns": 1,
+   "fieldname": "height",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Height"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(g)",
+   "fieldname": "weight",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "description": "(kg/m3)\n",
+   "fieldname": "density",
+   "fieldtype": "Float",
+   "label": "Density",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "description": "(kN)\n",
+   "fieldname": "load",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Load"
+  },
+  {
+   "description": "(N/mm2)\n",
+   "fieldname": "compressive_strength",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Compressive Strength(N/mm2)",
+   "read_only": 1
+  },
+  {
+   "description": "(kg/cm2)\n",
+   "fieldname": "kgcm2",
+   "fieldtype": "Float",
+   "label": "Compressive Strength(kg/cm2)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-16 11:02:47.892843",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Brick Pave Readings",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

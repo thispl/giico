@@ -5,12 +5,16 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "customer1",
-  "consultant1",
-  "column_break_3",
   "project1",
   "location1",
+  "date_of_test",
+  "column_break_3",
+  "test_date",
+  "report_date1",
   "section_break_6",
+  "customer1",
+  "consultant1",
+  "section_break_9",
   "field_data_section",
   "dcpt_ref",
   "test_method",
@@ -20,8 +24,6 @@
   "offset1",
   "column_break_13",
   "report_no",
-  "date_of_test",
-  "report_date1",
   "top_layer_being_tested1",
   "tested_by1",
   "section_break_21",
@@ -36,7 +38,6 @@
   "project",
   "location",
   "cordinates",
-  "test_date",
   "report_ref_no",
   "dcp_test_ref",
   "test_elevation",
@@ -46,7 +47,6 @@
   "plate_no",
   "offset",
   "concrete_asphalt_depth",
-  "report_date",
   "top_layer_being_tested",
   "project_no",
   "section_break_44",
@@ -54,6 +54,7 @@
  ],
  "fields": [
   {
+   "fetch_from": "project.customer",
    "fieldname": "customer1",
    "fieldtype": "Link",
    "label": "Customer",
@@ -75,9 +76,11 @@
    "options": "Project"
   },
   {
+   "fetch_from": "project.location",
    "fieldname": "location1",
-   "fieldtype": "Data",
-   "label": "Location"
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
   },
   {
    "fieldname": "section_break_6",
@@ -260,11 +263,6 @@
    "label": "Concrete/ Asphalt Depth"
   },
   {
-   "fieldname": "report_date",
-   "fieldtype": "Date",
-   "label": "Report date"
-  },
-  {
    "fieldname": "top_layer_being_tested",
    "fieldtype": "Data",
    "label": "Top layer being tested"
@@ -283,9 +281,13 @@
    "fieldtype": "Table",
    "label": "Lonestar DCPT Test",
    "options": "Lonestar DCPT Test"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
   }
  ],
- "modified": "2019-09-27 21:09:45.217549",
+ "modified": "2019-12-19 15:28:51.892480",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "DCPT Test",

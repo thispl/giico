@@ -5,9 +5,11 @@
  "engine": "InnoDB",
  "field_order": [
   "reading_no",
+  "t",
+  "ft1",
   "dycm",
-  "dhcm",
   "column_break_4",
+  "dhcm",
   "timesec",
   "k_cmsec"
  ],
@@ -20,13 +22,13 @@
   },
   {
    "fieldname": "dycm",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "DY(Cm)"
   },
   {
    "fieldname": "dhcm",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "DH(Cm)"
   },
@@ -44,11 +46,24 @@
    "fieldname": "k_cmsec",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "K (cm/sec)"
+   "label": "K (cm/sec)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "t",
+   "fieldtype": "Float",
+   "label": "t",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ft1",
+   "fieldtype": "Float",
+   "label": "ft",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 21:03:33.041823",
+ "modified": "2019-12-03 14:48:38.717398",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "FHM Test",

@@ -5,14 +5,17 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project",
   "contractor",
+  "department",
+  "column_break_6",
+  "location",
+  "report_date",
+  "section_break_6",
   "consultant",
   "owner1",
-  "project",
-  "location",
-  "column_break_6",
-  "report_date",
   "report_ref",
+  "column_break_10",
   "grade",
   "concrete_supplier",
   "section_break_11",
@@ -120,9 +123,23 @@
    "fieldtype": "Float",
    "label": "Average Strength((kg/cm2)",
    "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-05 08:17:01.058226",
+ "modified": "2019-11-22 14:23:09.946087",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Compressive Strength of Grout Cubes",

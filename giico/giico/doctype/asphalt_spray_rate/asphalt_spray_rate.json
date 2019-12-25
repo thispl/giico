@@ -8,9 +8,11 @@
   "project",
   "client",
   "location",
-  "date_test",
   "column_break_4",
+  "date_test",
   "date_report",
+  "department",
+  "section_break_7",
   "job_no",
   "temp",
   "ambient_temperature",
@@ -105,9 +107,19 @@
   {
    "fieldname": "section_break_12",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-14 13:02:12.313228",
+ "modified": "2019-11-22 13:58:09.666741",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Asphalt Spray Rate",

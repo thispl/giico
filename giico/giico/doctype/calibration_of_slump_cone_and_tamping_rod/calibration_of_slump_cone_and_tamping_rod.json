@@ -5,14 +5,16 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "client",
   "project",
-  "calib_date",
-  "column_break_4",
+  "client",
+  "department",
+  "column_break_3",
   "report_date",
+  "calib_date",
+  "section_break_8",
   "equip_id",
   "giico_report",
-  "section_break_8",
+  "column_break_4",
   "apparatus",
   "slump_cone",
   "shape",
@@ -21,8 +23,8 @@
   "top_dia",
   "height",
   "tamping_rod",
-  "dia",
   "column_break_18",
+  "dia",
   "length",
   "section_break_19",
   "note"
@@ -46,7 +48,7 @@
   },
   {
    "fieldname": "column_break_4",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "report_date",
@@ -133,9 +135,19 @@
    "fieldname": "note",
    "fieldtype": "Small Text",
    "label": "Note"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:01:09.535628",
+ "modified": "2019-11-22 13:07:42.431719",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration Of Slump Cone and Tamping Rod",

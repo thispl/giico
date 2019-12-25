@@ -1,0 +1,173 @@
+{
+ "autoname": "OV.####",
+ "creation": "2019-09-25 08:56:13.848812",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "date_of_report",
+  "date_of_calibration",
+  "column_break_5",
+  "manufacturer",
+  "serial_no",
+  "column_break_9",
+  "temp_range",
+  "giico_job_no",
+  "section_break_10",
+  "oven_readings",
+  "notes_section",
+  "notes",
+  "traceability_section",
+  "traceability",
+  "section_break_16",
+  "calibrated_by",
+  "column_break_18",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "date_of_calibration",
+   "fieldtype": "Date",
+   "label": "Date of Calibration"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "C Max",
+   "fieldname": "temp_range",
+   "fieldtype": "Data",
+   "label": "Temp Range"
+  },
+  {
+   "fieldname": "giico_job_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Giico Job No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "oven_readings",
+   "fieldtype": "Table",
+   "label": "Oven Readings",
+   "options": "Oven Readings"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "traceability_section",
+   "fieldtype": "Section Break",
+   "label": "Traceability"
+  },
+  {
+   "fieldname": "traceability",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Data",
+   "label": "Calibrated by"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-21 14:29:52.141506",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Calibration of Oven",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

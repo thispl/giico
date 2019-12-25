@@ -1,0 +1,101 @@
+{
+ "creation": "2019-12-18 09:53:35.486852",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "depth",
+  "hole_dia",
+  "casing_dia",
+  "from_1",
+  "to_1",
+  "column_break_6",
+  "designation",
+  "from_2",
+  "to_2",
+  "des"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "description": "m",
+   "fieldname": "depth",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Depth"
+  },
+  {
+   "columns": 1,
+   "fieldname": "hole_dia",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Hole Dia"
+  },
+  {
+   "columns": 2,
+   "fieldname": "casing_dia",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Casing Dia"
+  },
+  {
+   "columns": 1,
+   "description": "m",
+   "fieldname": "from_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From"
+  },
+  {
+   "columns": 1,
+   "description": "m",
+   "fieldname": "to_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "columns": 1,
+   "fieldname": "from_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From"
+  },
+  {
+   "columns": 1,
+   "fieldname": "to_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To"
+  },
+  {
+   "columns": 1,
+   "fieldname": "des",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-18 12:30:07.142220",
+ "modified_by": "Administrator",
+ "module": "Drilling Water Well Service",
+ "name": "Footage",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

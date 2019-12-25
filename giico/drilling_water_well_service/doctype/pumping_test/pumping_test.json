@@ -1,0 +1,70 @@
+{
+ "creation": "2019-11-25 10:55:24.577601",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "elapsed_time1",
+  "water_level1",
+  "drawdown1",
+  "column_break_4",
+  "elapsed_time2",
+  "water_level2",
+  "drawdown2"
+ ],
+ "fields": [
+  {
+   "fieldname": "elapsed_time1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Elapsed Time"
+  },
+  {
+   "description": "m",
+   "fieldname": "water_level1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Water Level"
+  },
+  {
+   "fieldname": "drawdown1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drawdown"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "elapsed_time2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Elapsed Time"
+  },
+  {
+   "description": "m",
+   "fieldname": "water_level2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Water Level"
+  },
+  {
+   "fieldname": "drawdown2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drawdown"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 11:52:07.670300",
+ "modified_by": "Administrator",
+ "module": "Drilling Water Well Service",
+ "name": "Pumping Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

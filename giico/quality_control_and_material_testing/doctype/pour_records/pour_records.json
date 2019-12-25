@@ -1,0 +1,136 @@
+{
+ "creation": "2019-09-28 09:47:01.551785",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "truck_no",
+  "ticket_no",
+  "time_batch",
+  "time_arrived",
+  "time_of_start",
+  "time_finish",
+  "qty_m3",
+  "column_break_8",
+  "cum_qty_m3",
+  "air_temp_0c",
+  "concrete_temp_0c",
+  "slump_mm",
+  "air_content",
+  "unit_weight",
+  "concrete_cube_id_nos",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "truck_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Truck No"
+  },
+  {
+   "fieldname": "ticket_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ticket No"
+  },
+  {
+   "description": "hh:mm",
+   "fieldname": "time_batch",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time Batch"
+  },
+  {
+   "description": "hh:mm",
+   "fieldname": "time_arrived",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time Arrived "
+  },
+  {
+   "description": "hh:mm",
+   "fieldname": "time_of_start",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time of Start"
+  },
+  {
+   "description": "hh:mm",
+   "fieldname": "time_finish",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time Finish"
+  },
+  {
+   "fieldname": "qty_m3",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty. m3"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cum_qty_m3",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cum. Qty. m3"
+  },
+  {
+   "fieldname": "air_temp_0c",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Air Temp 0C"
+  },
+  {
+   "fieldname": "concrete_temp_0c",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Concrete Temp 0C"
+  },
+  {
+   "fieldname": "slump_mm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Slump (mm)"
+  },
+  {
+   "fieldname": "air_content",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Air Content "
+  },
+  {
+   "fieldname": "unit_weight",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit Weight"
+  },
+  {
+   "fieldname": "concrete_cube_id_nos",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Concrete Cube Id Nos"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-16 12:40:51.236316",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Pour Records",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

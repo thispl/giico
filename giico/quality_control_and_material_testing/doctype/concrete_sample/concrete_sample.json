@@ -1,0 +1,55 @@
+{
+ "creation": "2019-10-01 14:18:23.121585",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test",
+  "resultsppm",
+  "column_break_3",
+  "results",
+  "reference_standard"
+ ],
+ "fields": [
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "resultsppm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Results(PPM)"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "results",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Results(%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_standard",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reference Standard"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 15:22:54.074343",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Concrete Sample",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

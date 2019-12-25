@@ -54,7 +54,8 @@
    "fieldname": "mass_density",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Mass Density"
+   "label": "Mass Density",
+   "read_only": 1
   },
   {
    "fieldname": "ttrig_p",
@@ -72,13 +73,15 @@
    "fieldname": "tp2",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "tp2"
+   "label": "tp2",
+   "read_only": 1
   },
   {
    "fieldname": "ts2",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "ts2"
+   "label": "ts2",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_10",
@@ -88,37 +91,43 @@
    "fieldname": "sr2",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "SR2"
+   "label": "SR2",
+   "read_only": 1
   },
   {
    "fieldname": "vs2",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Vs2"
+   "label": "Vs2",
+   "read_only": 1
   },
   {
    "fieldname": "vp2",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Vp2"
+   "label": "Vp2",
+   "read_only": 1
   },
   {
    "fieldname": "g2",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "G2"
+   "label": "G2",
+   "read_only": 1
   },
   {
    "fieldname": "m2",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "M2"
+   "label": "M2",
+   "read_only": 1
   },
   {
    "fieldname": "m2r",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "m2"
+   "label": "m2",
+   "read_only": 1
   },
   {
    "fieldname": "remarks",
@@ -145,7 +154,7 @@
   }
  ],
  "istable": 1,
- "modified": "2019-10-22 12:45:26.609946",
+ "modified": "2019-11-13 13:06:48.396470",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Data for Source S2 and Receiver R2",

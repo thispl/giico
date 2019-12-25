@@ -5,13 +5,16 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "owner1",
   "location",
-  "dimensions",
-  "type_of_sample",
-  "column_break_5",
   "test_date",
+  "column_break_3",
   "report_date",
+  "department",
+  "section_break_5",
+  "dimensions",
+  "owner1",
+  "column_break_5",
+  "type_of_sample",
   "report_ref",
   "section_break_9",
   "concrete_tiles",
@@ -99,15 +102,31 @@
   {
    "fieldname": "cs1",
    "fieldtype": "Float",
-   "label": "Compressive Strength(N/mm2)"
+   "label": "Compressive Strength(N/mm2)",
+   "read_only": 1
   },
   {
    "fieldname": "cs2",
    "fieldtype": "Float",
-   "label": "Compressive Strength(kg/cm2)"
+   "label": "Compressive Strength(kg/cm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-30 09:52:10.403831",
+ "modified": "2019-11-22 15:53:04.830968",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Concrete Tiles Units",

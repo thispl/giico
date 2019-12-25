@@ -1,0 +1,151 @@
+{
+ "autoname": "CWB.####",
+ "creation": "2019-09-27 05:49:57.162367",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_4",
+  "calibration_due",
+  "calibration_date",
+  "report_date",
+  "section_break_7",
+  "readability",
+  "brand_name",
+  "temp_range",
+  "column_break_6",
+  "serial_no",
+  "report_ref",
+  "section_break_12",
+  "water",
+  "section_break_14",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "calibration_date",
+   "fieldtype": "Date",
+   "label": "Calibration Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calibration_due",
+   "fieldtype": "Date",
+   "label": "Calibration Due"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "readability",
+   "fieldtype": "Data",
+   "label": "Readability"
+  },
+  {
+   "fieldname": "brand_name",
+   "fieldtype": "Data",
+   "label": "Brand Name"
+  },
+  {
+   "description": "0C\n",
+   "fieldname": "temp_range",
+   "fieldtype": "Data",
+   "label": "Temperature Range"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Report Ref No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "water",
+   "fieldtype": "Table",
+   "label": "Water Bath",
+   "options": "Water Bath"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-21 15:02:36.236636",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Calibration Of Water Bath",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

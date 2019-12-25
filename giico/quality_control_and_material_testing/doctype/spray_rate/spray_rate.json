@@ -1,0 +1,74 @@
+{
+ "creation": "2019-10-14 12:59:48.572680",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "size",
+  "area",
+  "wt_of_empty",
+  "column_break_5",
+  "wt_of_sheet",
+  "wt_of_mc",
+  "rate_of_spray"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "size",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Size of Sheet (m) "
+  },
+  {
+   "columns": 3,
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Area of Sheet (m2) "
+  },
+  {
+   "columns": 2,
+   "fieldname": "wt_of_empty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt. of Empty Sheet (kg) "
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 3,
+   "fieldname": "wt_of_sheet",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt. of Sheet + MC -70 (kg)  "
+  },
+  {
+   "fieldname": "wt_of_mc",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt. of MC70 (kg)   ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate_of_spray",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate of Spray (kg/m2)       ",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-16 10:47:02.723072",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Spray Rate",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

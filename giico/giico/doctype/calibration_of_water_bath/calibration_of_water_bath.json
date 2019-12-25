@@ -5,17 +5,20 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "brand_name",
-  "readability",
-  "temp_range",
   "project",
   "client",
+  "calibration_date",
+  "column_break_4",
+  "calibration_due",
+  "report_date",
+  "department",
+  "section_break_7",
+  "readability",
+  "brand_name",
+  "temp_range",
   "column_break_6",
   "serial_no",
-  "report_date",
   "report_ref",
-  "calibration_date",
-  "calibration_due",
   "section_break_12",
   "water",
   "section_break_14",
@@ -96,9 +99,23 @@
    "fieldname": "note",
    "fieldtype": "Small Text",
    "label": "Note"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 20:56:36.271074",
+ "modified": "2019-11-22 12:36:24.255061",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration Of Water Bath",

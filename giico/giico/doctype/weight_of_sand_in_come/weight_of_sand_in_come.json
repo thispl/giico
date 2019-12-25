@@ -19,17 +19,19 @@
    "fieldname": "wt_bottle_after",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Wt of Sand + Bottle After Pouring (g)"
+   "label": "Wt of Sand + Bottle After Pouring (g)",
+   "read_only": 1
   },
   {
    "fieldname": "wt_cone_plate",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Wt of Sand in Cone & Plate (g)"
+   "label": "Wt of Sand in Cone & Plate (g)",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 21:01:31.996822",
+ "modified": "2019-11-11 14:03:11.426719",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Weight of Sand In Come",

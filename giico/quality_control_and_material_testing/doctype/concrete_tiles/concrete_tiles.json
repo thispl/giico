@@ -1,0 +1,92 @@
+{
+ "creation": "2019-09-30 07:33:58.394971",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "length1",
+  "width",
+  "height",
+  "weight",
+  "column_break_6",
+  "density",
+  "load",
+  "csn",
+  "csnk"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "length1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Length"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Width"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Height"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Density",
+   "read_only": 1
+  },
+  {
+   "fieldname": "load",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Load"
+  },
+  {
+   "fieldname": "csn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Compressive Strength(N/mm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "csnk",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Compressive Strength(kg/cm2)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 15:37:28.536219",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Concrete Tiles",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

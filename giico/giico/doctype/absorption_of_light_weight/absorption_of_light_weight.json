@@ -66,17 +66,19 @@
    "fieldname": "moisture",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Moisture Content (%)"
+   "label": "Moisture Content (%)",
+   "read_only": 1
   },
   {
    "fieldname": "absor",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Absorption (%)"
+   "label": "Absorption (%)",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-30 17:10:49.024969",
+ "modified": "2019-11-12 14:13:26.362970",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Absorption Of Light Weight",

@@ -7,6 +7,7 @@
   "manpower",
   "prev",
   "nos",
+  "column_break_4",
   "total_hours",
   "ttl",
   "cum_hours"
@@ -41,17 +42,23 @@
    "fieldname": "ttl",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "TTL"
+   "label": "TTL",
+   "read_only": 1
   },
   {
    "fieldname": "cum_hours",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Cum Hours"
+   "label": "Cum Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 21:08:26.525500",
+ "modified": "2019-11-26 10:31:08.300559",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Manpower",

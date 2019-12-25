@@ -1,0 +1,42 @@
+{
+ "creation": "2019-10-03 12:34:22.385063",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sl_no",
+  "distance",
+  "transit_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "sl_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SL NO"
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Distance Between Transducers(mm)"
+  },
+  {
+   "fieldname": "transit_time",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Transit Time in \u00b5s"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 14:48:22.618536",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Crack Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

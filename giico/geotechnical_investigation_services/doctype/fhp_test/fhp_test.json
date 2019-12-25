@@ -1,0 +1,76 @@
+{
+ "creation": "2019-09-17 09:29:11.949338",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "date_of_test",
+  "temp_c",
+  "final_total_headmm",
+  "column_break_4",
+  "time_sec",
+  "k_cm",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test No"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "temp_c",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Temp C"
+  },
+  {
+   "fieldname": "final_total_headmm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Final Total Head(mm)"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time_sec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time sec"
+  },
+  {
+   "fieldname": "k_cm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "K cm/sec x 10-4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-17 15:05:50.239286",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "FHP Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

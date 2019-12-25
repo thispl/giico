@@ -1,0 +1,154 @@
+{
+ "autoname": "DI.####",
+ "creation": "2019-11-16 09:05:41.960206",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "information_on_the_test_section",
+  "test_depth",
+  "test_no",
+  "probe_size",
+  "slotted_casing",
+  "id_tube",
+  "column_break_4",
+  "diameter",
+  "length",
+  "vo",
+  "od_tube",
+  "calculated_coefficients_section",
+  "a",
+  "column_break_14",
+  "b",
+  "volume_correction_section",
+  "vol_correction",
+  "section_break_18",
+  "effective_volume_calculation"
+ ],
+ "fields": [
+  {
+   "fieldname": "information_on_the_test_section",
+   "fieldtype": "Section Break",
+   "label": "Information on the test"
+  },
+  {
+   "fieldname": "test_depth",
+   "fieldtype": "Float",
+   "label": "Test depth"
+  },
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "label": "Test number"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "probe_size",
+   "fieldtype": "Data",
+   "label": "Probe size"
+  },
+  {
+   "fieldname": "slotted_casing",
+   "fieldtype": "Data",
+   "label": "Use of a slotted casing"
+  },
+  {
+   "description": "mm",
+   "fieldname": "diameter",
+   "fieldtype": "Data",
+   "label": "Diameter"
+  },
+  {
+   "description": "cm",
+   "fieldname": "length",
+   "fieldtype": "Data",
+   "label": "Length"
+  },
+  {
+   "description": "cm3",
+   "fieldname": "vo",
+   "fieldtype": "Data",
+   "label": "Vo"
+  },
+  {
+   "description": "mm",
+   "fieldname": "id_tube",
+   "fieldtype": "Float",
+   "label": "ID tube"
+  },
+  {
+   "description": "mm",
+   "fieldname": "od_tube",
+   "fieldtype": "Float",
+   "label": "OD tube"
+  },
+  {
+   "fieldname": "calculated_coefficients_section",
+   "fieldtype": "Section Break",
+   "label": "Calculated Coefficients"
+  },
+  {
+   "description": "kpa",
+   "fieldname": "a",
+   "fieldtype": "Data",
+   "label": "a"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "kpa",
+   "fieldname": "b",
+   "fieldtype": "Data",
+   "label": "b"
+  },
+  {
+   "fieldname": "volume_correction_section",
+   "fieldtype": "Section Break",
+   "label": "Volume correction"
+  },
+  {
+   "fieldname": "vol_correction",
+   "fieldtype": "Data",
+   "label": "Apply volume correction?",
+   "options": "\n"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "effective_volume_calculation",
+   "fieldtype": "Table",
+   "label": "Effective Volume Calculation",
+   "options": "Effective Volume Calculation"
+  }
+ ],
+ "modified": "2019-11-16 10:13:11.950818",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Data input",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

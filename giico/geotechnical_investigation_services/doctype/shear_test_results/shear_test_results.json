@@ -1,0 +1,92 @@
+{
+ "creation": "2019-10-25 08:30:54.549203",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample",
+  "normal_stress",
+  "shear_stress",
+  "horizontal_displacement",
+  "column_break_4",
+  "dry_density",
+  "void_ratio",
+  "moisture_content"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "description": "kpa",
+   "fieldname": "normal_stress",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Normal Stress"
+  },
+  {
+   "columns": 2,
+   "description": "kpa",
+   "fieldname": "shear_stress",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Shear Stress",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "description": "mm",
+   "fieldname": "horizontal_displacement",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Horizontal Displacement",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "description": "Mg/m3\t\n",
+   "fieldname": "dry_density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dry Density",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "void_ratio",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Void Ratio",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "description": "%",
+   "fieldname": "moisture_content",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Moisture Content",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "sample",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-05 13:08:46.021208",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Shear Test Results",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

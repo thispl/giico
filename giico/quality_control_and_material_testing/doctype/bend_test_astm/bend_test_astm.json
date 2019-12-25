@@ -1,0 +1,68 @@
+{
+ "creation": "2019-10-01 14:11:07.353751",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "specimen_id",
+  "type",
+  "dia_in_mm",
+  "section_break_4",
+  "bend_angle",
+  "result",
+  "plunger_dia"
+ ],
+ "fields": [
+  {
+   "fieldname": "specimen_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specimen ID"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "dia_in_mm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dia in mm"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bend_angle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bend Angle "
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Result"
+  },
+  {
+   "fieldname": "plunger_dia",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plunger Dia "
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 15:28:49.863816",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Bend Test Astm",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

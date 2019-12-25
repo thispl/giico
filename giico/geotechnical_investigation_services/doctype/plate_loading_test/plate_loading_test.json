@@ -1,0 +1,257 @@
+{
+ "autoname": "PLT.####",
+ "creation": "2019-11-18 12:14:01.360022",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "location",
+  "column_break_4",
+  "date_of_test",
+  "test_no",
+  "department",
+  "section_break_7",
+  "elevation",
+  "job_ref_no",
+  "set_of_plates_used",
+  "column_break_11",
+  "test_soil_condition",
+  "settlement_readings_section",
+  "gauge_1",
+  "calculate",
+  "section_break_11",
+  "gauge_2",
+  "calculate_2",
+  "section_break_13",
+  "gauge_3",
+  "calculate_3",
+  "section_break_15",
+  "mean_of_final_settlement",
+  "generate_graph",
+  "notes_section",
+  "charts_section",
+  "charts",
+  "chart_image",
+  "section_break_30",
+  "notes",
+  "section_break_25",
+  "tested_by",
+  "reviewed_by",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "label": "Test No"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "elevation",
+   "fieldtype": "Data",
+   "label": "Elevation"
+  },
+  {
+   "fieldname": "job_ref_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Ref No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "set_of_plates_used",
+   "fieldtype": "Float",
+   "label": "Set of Plates used"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_soil_condition",
+   "fieldtype": "Data",
+   "label": "Test Soil Condition"
+  },
+  {
+   "fieldname": "settlement_readings_section",
+   "fieldtype": "Section Break",
+   "label": "Settlement Readings"
+  },
+  {
+   "fieldname": "gauge_1",
+   "fieldtype": "Table",
+   "label": "Gauge 1",
+   "options": "Gauge 1"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gauge_2",
+   "fieldtype": "Table",
+   "label": "Gauge 2",
+   "options": "Gauge 2"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gauge_3",
+   "fieldtype": "Table",
+   "label": "Gauge 3",
+   "options": "Gauge 3"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mean_of_final_settlement",
+   "fieldtype": "Table",
+   "label": "Mean of Final Settlement",
+   "options": "Mean of Final Settlement"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Data",
+   "label": "Reviewed by"
+  },
+  {
+   "fieldname": "calculate_2",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "calculate_3",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "default": "0",
+   "fieldname": "description",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "CHARTS"
+  },
+  {
+   "fieldname": "charts",
+   "fieldtype": "HTML",
+   "label": "Charts",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Chart Image"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate Graph"
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-19 16:50:54.165748",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Plate Loading Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

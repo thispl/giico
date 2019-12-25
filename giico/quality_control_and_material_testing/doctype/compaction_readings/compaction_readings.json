@@ -1,0 +1,52 @@
+{
+ "creation": "2019-09-24 12:35:52.241995",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "column_break_2",
+  "reading",
+  "column_break_4",
+  "tolerance"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reading",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Reading"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tolerance",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tolerance"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 13:51:44.668119",
+ "modified_by": "ceo@giico.net",
+ "module": "Quality Control and Material Testing",
+ "name": "Compaction Readings",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

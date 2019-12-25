@@ -1,0 +1,52 @@
+{
+ "creation": "2019-12-21 07:33:55.993187",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "conponent",
+  "column_break_2",
+  "default",
+  "column_break_4",
+  "needs"
+ ],
+ "fields": [
+  {
+   "fieldname": "conponent",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Conponent"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Default"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "needs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Needs"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-21 07:33:55.993187",
+ "modified_by": "Administrator",
+ "module": "Drilling Water Well Service",
+ "name": "Repair Asap",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

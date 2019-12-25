@@ -1,0 +1,161 @@
+{
+ "creation": "2019-10-19 09:18:21.606509",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_depth",
+  "field_spt",
+  "unit_wt",
+  "mass_den2",
+  "ttrig_sec",
+  "tp12_sec",
+  "ts12_sec",
+  "column_break_8",
+  "r1r2_m",
+  "vs12_ms",
+  "vp12_ms",
+  "g12_mpa",
+  "m12_mpa",
+  "vsv",
+  "m123",
+  "total_mpa2",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "description": "m",
+   "fieldname": "test_depth",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Test Depth"
+  },
+  {
+   "columns": 2,
+   "description": "cm",
+   "fieldname": "field_spt",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Field SPT-N"
+  },
+  {
+   "columns": 1,
+   "description": "m3",
+   "fieldname": "unit_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Unit wt kN"
+  },
+  {
+   "columns": 1,
+   "description": "sec",
+   "fieldname": "ttrig_sec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ttrig "
+  },
+  {
+   "columns": 1,
+   "description": "sec",
+   "fieldname": "tp12_sec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "tp12 "
+  },
+  {
+   "columns": 1,
+   "description": "sec",
+   "fieldname": "ts12_sec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ts12 "
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "m",
+   "fieldname": "r1r2_m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "R1R2 ",
+   "read_only": 1
+  },
+  {
+   "description": "m/s",
+   "fieldname": "vs12_ms",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vs12 ",
+   "read_only": 1
+  },
+  {
+   "description": "m/s",
+   "fieldname": "vp12_ms",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vp12",
+   "read_only": 1
+  },
+  {
+   "description": "Mpa",
+   "fieldname": "g12_mpa",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "G12 ",
+   "read_only": 1
+  },
+  {
+   "description": "Mpa",
+   "fieldname": "m12_mpa",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "M12 ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vsv",
+   "fieldtype": "Float",
+   "label": "Vsvp",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_mpa2",
+   "fieldtype": "Int",
+   "label": "Total mpa2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "description": "g",
+   "fieldname": "mass_den2",
+   "fieldtype": "Float",
+   "label": "Mass den unit wt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "m123",
+   "fieldtype": "Float",
+   "label": "M12",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-17 09:00:51.762936",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Crosshole Receiver1 and Recevier2",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,28 @@
+{
+ "creation": "2019-11-18 14:38:50.797613",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "readings5"
+ ],
+ "fields": [
+  {
+   "fieldname": "readings5",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Readings"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-18 14:57:44.963229",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Additional Readings 1",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,43 @@
+{
+ "creation": "2019-09-13 15:19:35.482984",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stress_kpa",
+  "defrmn_mm",
+  "strain"
+ ],
+ "fields": [
+  {
+   "fieldname": "stress_kpa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stress (kpa)"
+  },
+  {
+   "fieldname": "defrmn_mm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Defrmn (mm)"
+  },
+  {
+   "fieldname": "strain",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Strain (%)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 10:30:54.532732",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Collapse Potential Of Soil",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

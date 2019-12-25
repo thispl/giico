@@ -1,0 +1,164 @@
+{
+ "autoname": "WA.####",
+ "creation": "2019-09-30 07:37:24.870595",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "department",
+  "customer",
+  "test_date",
+  "column_break_4",
+  "date_of_cast",
+  "report_date",
+  "location",
+  "section_break_7",
+  "contractor",
+  "consultant",
+  "owner",
+  "column_break_6",
+  "report_ref",
+  "concrete_grade",
+  "concrete_supplier",
+  "section_break_13",
+  "water_absorption",
+  "section_break_20",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project ",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location ",
+   "options": "Location"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date "
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_cast",
+   "fieldtype": "Date",
+   "label": "Date of Cast "
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date "
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contractor "
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Data",
+   "label": "Consultant "
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner "
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Report Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "concrete_grade",
+   "fieldtype": "Data",
+   "label": "Concrete Grade "
+  },
+  {
+   "fieldname": "concrete_supplier",
+   "fieldtype": "Data",
+   "label": "Concrete Supplier "
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "water_absorption",
+   "fieldtype": "Table",
+   "label": "Water Absorption",
+   "options": "Water Absorption"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks "
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 09:19:02.041381",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Water Absorption of Hardened Concrete",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

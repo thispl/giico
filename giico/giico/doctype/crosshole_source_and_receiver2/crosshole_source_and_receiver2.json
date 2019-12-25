@@ -19,6 +19,7 @@
   "m2_mpa",
   "vsv",
   "m2",
+  "total_mpa1",
   "remarks"
  ],
  "fields": [
@@ -66,43 +67,50 @@
    "fieldname": "mass_den",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Mass Den Unit wt/g"
+   "label": "Mass Den Unit wt/g",
+   "read_only": 1
   },
   {
    "fieldname": "sr2_m",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "SR2 m"
+   "label": "SR2 m",
+   "read_only": 1
   },
   {
    "fieldname": "vs2_ms",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Vs2 m/s"
+   "label": "Vs2 m/s",
+   "read_only": 1
   },
   {
    "fieldname": "vp2_ms",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Vp2 m/s"
+   "label": "Vp2 m/s",
+   "read_only": 1
   },
   {
    "fieldname": "g2_mpa",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "G2 mpa"
+   "label": "G2 mpa",
+   "read_only": 1
   },
   {
    "fieldname": "m2_mpa",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "M2 mpa"
+   "label": "M2 mpa",
+   "read_only": 1
   },
   {
    "fieldname": "m2",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "m2"
+   "label": "m2",
+   "read_only": 1
   },
   {
    "fieldname": "remarks",
@@ -113,11 +121,17 @@
   {
    "fieldname": "vsv",
    "fieldtype": "Float",
-   "label": "vs/vp"
+   "label": "vs/vp",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_mpa1",
+   "fieldtype": "Int",
+   "label": "Total mpa1"
   }
  ],
  "istable": 1,
- "modified": "2019-10-19 14:05:08.362570",
+ "modified": "2019-11-16 08:36:51.257160",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Crosshole Source and Receiver2",

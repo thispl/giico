@@ -1,0 +1,203 @@
+{
+ "autoname": "IR.####",
+ "creation": "2019-12-13 08:54:09.515794",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "project",
+  "ref_no",
+  "column_break_3",
+  "department",
+  "date",
+  "section_break_6",
+  "office",
+  "column_break_9",
+  "contract_no",
+  "inspection",
+  "section_break_12",
+  "main_order_no",
+  "sub_order_no",
+  "section_break_16",
+  "main_order_on",
+  "sub_order_on",
+  "section_break_18",
+  "issu_no",
+  "issue_date",
+  "column_break_20",
+  "finally_inspection_on",
+  "document",
+  "column_break_21",
+  "section_break_19",
+  "item",
+  "reports_section",
+  "attach_report"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ref_no",
+   "fieldtype": "Int",
+   "label": "Ref No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "office",
+   "fieldtype": "Data",
+   "label": "Office"
+  },
+  {
+   "fieldname": "contract_no",
+   "fieldtype": "Data",
+   "label": "Contract No"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inspection",
+   "fieldtype": "Date",
+   "label": "Inspection"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Table",
+   "label": "Item",
+   "options": "Release Note"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "issu_no",
+   "fieldtype": "Int",
+   "label": "Issue No"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "main_order_no",
+   "fieldtype": "Data",
+   "label": "Main Order No"
+  },
+  {
+   "fieldname": "main_order_on",
+   "fieldtype": "Date",
+   "label": "Main Order On"
+  },
+  {
+   "fieldname": "sub_order_no",
+   "fieldtype": "Data",
+   "label": "Sub Order No"
+  },
+  {
+   "fieldname": "sub_order_on",
+   "fieldtype": "Date",
+   "label": "Sub Order On"
+  },
+  {
+   "fieldname": "finally_inspection_on",
+   "fieldtype": "Date",
+   "label": "Finally Inspection On"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Select",
+   "label": "Documentation Attached",
+   "options": "\nYES\nNO"
+  },
+  {
+   "fieldname": "reports_section",
+   "fieldtype": "Section Break",
+   "label": "Reports"
+  },
+  {
+   "fieldname": "attach_report",
+   "fieldtype": "Attach",
+   "label": "Attach Report"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-22 13:46:19.148654",
+ "modified_by": "Administrator",
+ "module": "Third Party Industrial Inspection",
+ "name": "Inspection Release Note",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

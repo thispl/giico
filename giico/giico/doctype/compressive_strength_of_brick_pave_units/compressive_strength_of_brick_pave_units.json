@@ -7,11 +7,13 @@
  "field_order": [
   "project",
   "client",
-  "type_of_block",
-  "column_break_4",
   "product_date",
-  "test_date",
+  "column_break_4",
   "report_date",
+  "test_date",
+  "department",
+  "section_break_7",
+  "type_of_block",
   "report_ref",
   "section_break_9",
   "brick_pave_readings",
@@ -92,7 +94,8 @@
    "description": "(N/mm2)\n",
    "fieldname": "cs1",
    "fieldtype": "Float",
-   "label": "Compressive Strength"
+   "label": "Compressive Strength",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_11",
@@ -102,7 +105,8 @@
    "description": "(kg/cm2)\n",
    "fieldname": "cs2",
    "fieldtype": "Float",
-   "label": "Compressive Strength"
+   "label": "Compressive Strength",
+   "read_only": 1
   },
   {
    "fieldname": "remarks_section",
@@ -120,6 +124,7 @@
   {
    "fieldname": "calibrated_by",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Calibrated by"
   },
   {
@@ -129,10 +134,21 @@
   {
    "fieldname": "checked_by",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Checked by"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 20:56:34.115707",
+ "modified": "2019-11-22 13:59:04.017392",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Compressive Strength of Brick Pave Units",

@@ -1,0 +1,49 @@
+{
+ "creation": "2019-09-24 08:39:57.374941",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "si",
+  "dia",
+  "height",
+  "weight"
+ ],
+ "fields": [
+  {
+   "fieldname": "si",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SI NO"
+  },
+  {
+   "fieldname": "dia",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dia(mm)"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Height (mm)"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight(gm)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 13:44:32.438038",
+ "modified_by": "ceo@giico.net",
+ "module": "Quality Control and Material Testing",
+ "name": "Containers",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

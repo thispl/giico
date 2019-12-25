@@ -1,0 +1,88 @@
+{
+ "creation": "2019-09-16 16:00:24.076893",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "def_dial",
+  "load_dr",
+  "def",
+  "cort_area",
+  "column_break_5",
+  "load",
+  "load_kg",
+  "stress_kg",
+  "strain"
+ ],
+ "fields": [
+  {
+   "fieldname": "def_dial",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Def Dial R"
+  },
+  {
+   "fieldname": "load_dr",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Load D R"
+  },
+  {
+   "fieldname": "def",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Def (mm)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cort_area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Cort area  (cm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "load",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Load(N)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "load_kg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "load (kg)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stress_kg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Stress (kg/cm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "strain",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Strain (%)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-06 12:07:54.761704",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "UCS Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

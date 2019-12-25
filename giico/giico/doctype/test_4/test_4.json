@@ -1,0 +1,49 @@
+{
+ "creation": "2019-11-18 14:33:38.961893",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test1",
+  "test2",
+  "test3",
+  "test4"
+ ],
+ "fields": [
+  {
+   "fieldname": "test1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test1"
+  },
+  {
+   "fieldname": "test2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test2"
+  },
+  {
+   "fieldname": "test3",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test3"
+  },
+  {
+   "fieldname": "test4",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test4"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-19 17:00:44.394140",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Test 4",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

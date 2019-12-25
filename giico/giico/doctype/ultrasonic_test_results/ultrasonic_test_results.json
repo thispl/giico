@@ -5,21 +5,21 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "test_location",
+  "project",
+  "client",
+  "department",
+  "column_break_3",
   "date_of_test",
   "date_of_report",
   "column_break_4",
   "job_ref_no",
+  "test_location",
   "page_no",
   "section_break_7",
   "ultrasonic_test",
   "section_break_9",
   "note",
   "section_break_11",
-  "project",
-  "column_break_13",
-  "client",
-  "column_break_15",
   "approved_by"
  ],
  "fields": [
@@ -40,7 +40,7 @@
   },
   {
    "fieldname": "column_break_4",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "job_ref_no",
@@ -82,25 +82,27 @@
    "options": "Project"
   },
   {
-   "fieldname": "column_break_13",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "client",
    "fieldtype": "Data",
    "label": "Client"
   },
   {
-   "fieldname": "column_break_15",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "approved_by",
    "fieldtype": "Data",
    "label": "Approved by"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-01 08:59:29.396913",
+ "modified": "2019-11-22 15:53:45.593193",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Ultrasonic Test Results",

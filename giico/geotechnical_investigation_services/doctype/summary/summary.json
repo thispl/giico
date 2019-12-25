@@ -1,0 +1,52 @@
+{
+ "creation": "2019-12-18 10:21:43.587621",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hr",
+  "column_break_2",
+  "from_to",
+  "column_break_4",
+  "op_summary"
+ ],
+ "fields": [
+  {
+   "fieldname": "hr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HR"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_to",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From - To"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "op_summary",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Operations Summary"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-18 10:21:43.587621",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Summary",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,150 @@
+{
+ "autoname": "CMR.####",
+ "creation": "2019-09-24 13:30:36.790529",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "department",
+  "column_break_3",
+  "date_calib",
+  "date_report",
+  "column_break_4",
+  "equip_id",
+  "giico_report_no",
+  "section_break_8",
+  "marshall_rammer",
+  "section_break_10",
+  "remarks",
+  "section_break_12",
+  "calibrated_by",
+  "desig",
+  "column_break_12",
+  "checked_by",
+  "desig1"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_calib",
+   "fieldtype": "Date",
+   "label": "Date of Calib"
+  },
+  {
+   "fieldname": "date_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "equip_id",
+   "fieldtype": "Data",
+   "label": "Equipment ID"
+  },
+  {
+   "fieldname": "giico_report_no",
+   "fieldtype": "Data",
+   "label": "Giico Report No"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "marshall_rammer",
+   "fieldtype": "Table",
+   "label": "Marshall Rammer",
+   "options": "Marshall Rammer"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Link",
+   "label": "Calibrated by",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "calibrated_by.designation",
+   "fieldname": "desig",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Checked by",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "checked_by.designation",
+   "fieldname": "desig1",
+   "fieldtype": "Data",
+   "label": "Designation1"
+  }
+ ],
+ "modified": "2019-11-24 16:39:40.832256",
+ "modified_by": "ceo@giico.net",
+ "module": "Drilling Water Well Service",
+ "name": "Calibration of Marshall Rammer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

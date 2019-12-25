@@ -1,0 +1,91 @@
+{
+ "creation": "2019-09-30 14:41:15.783499",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "length",
+  "width",
+  "height",
+  "as_received",
+  "ssd_wt_g",
+  "column_break_6",
+  "oven_dry",
+  "dry_density",
+  "absor",
+  "moisture"
+ ],
+ "fields": [
+  {
+   "fieldname": "length",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Length Dimensions (mm)"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Width Dimensions (mm)"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Height Dimensions (mm)"
+  },
+  {
+   "fieldname": "as_received",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "As received Wt (g)"
+  },
+  {
+   "fieldname": "ssd_wt_g",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "SSD Wt (g)"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "oven_dry",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Oven Dry Wt (g)"
+  },
+  {
+   "fieldname": "dry_density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dry Density (kg/m3)"
+  },
+  {
+   "fieldname": "absor",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Absorption (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "moisture",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Moisture Content (%)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 15:40:20.352937",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Absorption Of Light Weight",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

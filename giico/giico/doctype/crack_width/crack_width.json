@@ -59,17 +59,19 @@
    "fieldname": "div_differ",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Div Difference"
+   "label": "Div Difference",
+   "read_only": 1
   },
   {
    "fieldname": "crack_width",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Crack Width MM"
+   "label": "Crack Width MM",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-10-04 12:01:12.474982",
+ "modified": "2019-11-12 10:49:07.043922",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Crack Width",

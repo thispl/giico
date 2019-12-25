@@ -5,13 +5,16 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "project_details_section",
   "project_name",
   "client_name",
-  "report_ref",
+  "department",
   "column_break_5",
   "report_date",
   "test_date",
+  "date_cored",
+  "section_break_6",
+  "report_ref",
+  "project_details_section",
   "core_details_section",
   "core_no",
   "description",
@@ -19,7 +22,6 @@
   "general_condition",
   "remarks",
   "column_break_14",
-  "date_cored",
   "cored_by",
   "core_diameter",
   "extracted_len",
@@ -182,17 +184,17 @@
   },
   {
    "fieldname": "cement_content",
-   "fieldtype": "Percent",
+   "fieldtype": "Data",
    "label": "Cement Content"
   },
   {
    "fieldname": "alkali_content",
-   "fieldtype": "Percent",
+   "fieldtype": "Data",
    "label": "Alkali Content"
   },
   {
    "fieldname": "sulfate_content",
-   "fieldtype": "Percent",
+   "fieldtype": "Data",
    "label": "Sulfate Content "
   },
   {
@@ -228,17 +230,20 @@
    "fetch_from": "Rock Core",
    "fieldname": "dia",
    "fieldtype": "Float",
-   "label": "Diameter (d)"
+   "label": "Diameter (d)",
+   "read_only": 1
   },
   {
    "fieldname": "lcd",
    "fieldtype": "Float",
-   "label": "Lc/d ratio "
+   "label": "Lc/d ratio ",
+   "read_only": 1
   },
   {
    "fieldname": "strength_corr",
    "fieldtype": "Float",
-   "label": "Strength Correction Factor "
+   "label": "Strength Correction Factor ",
+   "read_only": 1
   },
   {
    "description": "kN",
@@ -249,13 +254,15 @@
   {
    "fieldname": "corr_strength",
    "fieldtype": "Float",
-   "label": "Corrected Strength (MPa) "
+   "label": "Corrected Strength (MPa) ",
+   "read_only": 1
   },
   {
    "description": "kg/cm2",
    "fieldname": "corr_strength_kg",
    "fieldtype": "Data",
-   "label": "Corrected Strength (MPa) "
+   "label": "Corrected Strength (MPa) ",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_39",
@@ -277,30 +284,35 @@
    "description": "cm2",
    "fieldname": "area",
    "fieldtype": "Float",
-   "label": "Area"
+   "label": "Area",
+   "read_only": 1
   },
   {
    "fieldname": "eqv_cube_strength1",
    "fieldtype": "Float",
-   "label": "Equivalent Cube Strength(Mpa)"
+   "label": "Equivalent Cube Strength(Mpa)",
+   "read_only": 1
   },
   {
    "description": "kg/cm2",
    "fieldname": "eqv_cube_strength2",
    "fieldtype": "Data",
-   "label": "Equivalent Cube Strength"
+   "label": "Equivalent Cube Strength",
+   "read_only": 1
   },
   {
    "description": "cm3 \n",
    "fieldname": "volume",
    "fieldtype": "Float",
-   "label": "Volume"
+   "label": "Volume",
+   "read_only": 1
   },
   {
    "description": "g/cm3",
    "fieldname": "dry_density",
    "fieldtype": "Float",
-   "label": "Dry Density"
+   "label": "Dry Density",
+   "read_only": 1
   },
   {
    "description": "g/cm3",
@@ -321,6 +333,7 @@
   {
    "fieldname": "tested_by",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Tested by"
   },
   {
@@ -330,6 +343,7 @@
   {
    "fieldname": "checked_by",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Checked by"
   },
   {
@@ -386,9 +400,19 @@
    "fieldname": "html_56",
    "fieldtype": "HTML",
    "options": "<img height=\"100\" src=\"/files/E.JPG\">"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-25 09:58:30.684884",
+ "modified": "2019-11-22 14:10:26.862965",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Rock Core Drilling and Strength Testing",

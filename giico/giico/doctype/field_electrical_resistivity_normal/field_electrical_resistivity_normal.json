@@ -5,26 +5,32 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "date",
-  "giico_ref_no",
+  "project",
+  "client",
   "column_break_3",
+  "location",
+  "date",
+  "department",
+  "section_break_6",
+  "giico_ref_no",
   "test_no",
   "elevation",
-  "section_break_6",
+  "column_break_11",
+  "east",
+  "north",
+  "section_break_11",
   "table_7",
-  "section_break_8",
-  "section_break_10",
+  "generate_graph",
+  "section_break_13",
+  "charts_section",
+  "charts",
+  "chart_image",
+  "section_break_21",
   "tested_by",
   "des1",
   "column_break_12",
   "checked_by",
-  "des2",
-  "section_break_14",
-  "project",
-  "column_break_16",
-  "location",
-  "column_break_18",
-  "client"
+  "des2"
  ],
  "fields": [
   {
@@ -35,7 +41,9 @@
   {
    "fieldname": "giico_ref_no",
    "fieldtype": "Data",
-   "label": "Giico Ref No"
+   "in_list_view": 1,
+   "label": "Giico Ref No",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_3",
@@ -62,14 +70,6 @@
    "options": "FER Test"
   },
   {
-   "fieldname": "section_break_8",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "section_break_10",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "tested_by",
    "fieldtype": "Data",
    "label": "Tested By"
@@ -94,18 +94,12 @@
    "label": "Designation"
   },
   {
-   "fieldname": "section_break_14",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "project",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Project",
-   "options": "Project"
-  },
-  {
-   "fieldname": "column_break_16",
-   "fieldtype": "Column Break"
+   "options": "Project",
+   "reqd": 1
   },
   {
    "fieldname": "location",
@@ -113,16 +107,69 @@
    "label": "Location"
   },
   {
-   "fieldname": "column_break_18",
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_11",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "client",
-   "fieldtype": "Data",
-   "label": "Client"
+   "fieldname": "east",
+   "fieldtype": "Float",
+   "label": "East"
+  },
+  {
+   "fieldname": "north",
+   "fieldtype": "Float",
+   "label": "North"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate Graph"
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "CHARTS"
+  },
+  {
+   "fieldname": "charts",
+   "fieldtype": "HTML",
+   "label": "Charts",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Chart Image"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
   }
  ],
- "modified": "2019-09-27 21:09:34.014917",
+ "modified": "2019-12-17 10:48:10.154746",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Field Electrical Resistivity Normal",

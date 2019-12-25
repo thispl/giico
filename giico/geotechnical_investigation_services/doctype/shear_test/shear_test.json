@@ -1,0 +1,47 @@
+{
+ "autoname": "SAM.####",
+ "creation": "2019-12-05 12:06:09.162791",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample",
+  "sample_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample",
+   "fieldtype": "Data",
+   "label": "Sample"
+  },
+  {
+   "fieldname": "sample_data",
+   "fieldtype": "Table",
+   "label": "Sample Data",
+   "options": "Sample Data"
+  }
+ ],
+ "modified": "2019-12-05 12:06:49.590020",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Shear Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

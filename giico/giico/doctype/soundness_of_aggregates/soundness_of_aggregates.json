@@ -7,12 +7,14 @@
  "field_order": [
   "project",
   "client_name",
-  "sample_desc",
   "location",
   "column_break_5",
   "test_date",
   "report_date",
+  "department",
+  "section_break_7",
   "report_ref",
+  "sample_desc",
   "section_break_9",
   "fine",
   "calculate_total",
@@ -124,7 +126,8 @@
   {
    "fieldname": "total",
    "fieldtype": "Float",
-   "label": "Total Weighted % Loss"
+   "label": "Total Weighted % Loss",
+   "read_only": 1
   },
   {
    "fieldname": "calculate",
@@ -134,10 +137,21 @@
   {
    "fieldname": "total2",
    "fieldtype": "Float",
-   "label": "Total Weighted % Loss"
+   "label": "Total Weighted % Loss",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-01 12:23:50.205869",
+ "modified": "2019-11-22 15:36:06.807937",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Soundness of Aggregates",

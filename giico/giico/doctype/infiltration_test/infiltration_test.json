@@ -5,20 +5,26 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "date",
+  "project",
+  "client",
   "location",
+  "column_break_4",
+  "date",
   "test_no",
+  "department",
+  "section_break_7",
   "depthm",
-  "column_break_5",
   "diameter_ring",
   "area",
+  "column_break_11",
   "temperaturec",
   "type_of_test",
   "initial_ht",
   "section_break_10",
   "if_test",
-  "project",
-  "client",
+  "charts_section",
+  "chart",
+  "chart_image",
   "job_ref_no"
  ],
  "fields": [
@@ -43,10 +49,6 @@
    "label": "Depth(m)"
   },
   {
-   "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "diameter_ring",
    "fieldtype": "Float",
    "label": "Diameter of ring(cm)"
@@ -54,7 +56,8 @@
   {
    "fieldname": "area",
    "fieldtype": "Float",
-   "label": "Area"
+   "label": "Area",
+   "read_only": 1
   },
   {
    "fieldname": "temperaturec",
@@ -96,9 +99,43 @@
    "fieldname": "job_ref_no",
    "fieldtype": "Data",
    "label": "Job  Ref No"
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "Charts"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "label": "chart image"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:03:29.278599",
+ "modified": "2019-11-22 16:46:47.920554",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Infiltration Test",

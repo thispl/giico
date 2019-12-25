@@ -1,13 +1,18 @@
 {
+ "_comments": "[]",
+ "_liked_by": "[]",
  "creation": "2019-09-16 08:59:15.468874",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "test_no",
+  "time_sec",
   "dy_cm",
   "dh_cm",
-  "time_sec",
+  "column_break_5",
+  "t",
+  "ft",
   "k_cmsec"
  ],
  "fields": [
@@ -40,10 +45,24 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": " K (Cm/sec )"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "t",
+   "fieldtype": "Float",
+   "label": "t"
+  },
+  {
+   "fieldname": "ft",
+   "fieldtype": "Float",
+   "label": "ft"
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 21:08:12.604795",
+ "modified": "2019-12-02 13:34:33.336898",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "FP Test",

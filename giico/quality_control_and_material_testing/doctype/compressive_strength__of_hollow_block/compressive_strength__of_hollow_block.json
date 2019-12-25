@@ -1,0 +1,157 @@
+{
+ "autoname": "HB.####",
+ "creation": "2019-10-03 07:32:09.043238",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_5",
+  "test_date",
+  "report_date",
+  "section_break_6",
+  "report_ref",
+  "type_block",
+  "source_of_sample",
+  "section_break_9",
+  "hollow_block",
+  "calculate",
+  "section_break_12",
+  "aver_strength1",
+  "column_break_11",
+  "aver_strength2",
+  "section_break_16",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date "
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date "
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "type_block",
+   "fieldtype": "Data",
+   "label": "Type of Block"
+  },
+  {
+   "fieldname": "source_of_sample",
+   "fieldtype": "Data",
+   "label": "Source of Sample "
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Report Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hollow_block",
+   "fieldtype": "Table",
+   "label": "Hollow Block ",
+   "options": "Hollow Block Unit"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "aver_strength1",
+   "fieldtype": "Float",
+   "label": "Average Com Strength  (N/mm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aver_strength2",
+   "fieldtype": "Float",
+   "label": "Average Com Strength(kg/cm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 08:39:38.628499",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Compressive Strength  Of Hollow Block",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

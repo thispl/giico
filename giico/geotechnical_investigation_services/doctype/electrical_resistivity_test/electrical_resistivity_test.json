@@ -1,0 +1,202 @@
+{
+ "autoname": "ERT.####",
+ "creation": "2019-08-04 16:33:03.067659",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "location",
+  "column_break_3",
+  "date",
+  "department",
+  "section_break_5",
+  "test_no",
+  "east",
+  "ref_no",
+  "column_break_10",
+  "north",
+  "elevation",
+  "section_break_6",
+  "table_7",
+  "section_break_8",
+  "electrical_resistivity_east_and_west",
+  "generate_graph",
+  "graph_view",
+  "section_break_10",
+  "tested_by",
+  "column_break_9",
+  "checked_by",
+  "charts_section",
+  "charts",
+  "chart_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_7",
+   "fieldtype": "Table",
+   "label": "Electrical Resistivity North and  South",
+   "options": "Electrical Resistivity North and  South"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate Graph"
+  },
+  {
+   "fieldname": "graph_view",
+   "fieldtype": "HTML",
+   "label": "Graph View",
+   "options": "<div id=\"chart\"></div>\n"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Checked By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "east",
+   "fieldtype": "Float",
+   "label": "East"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "north",
+   "fieldtype": "Float",
+   "label": "North"
+  },
+  {
+   "fieldname": "elevation",
+   "fieldtype": "Data",
+   "label": "Elevation "
+  },
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Int",
+   "label": "Test no"
+  },
+  {
+   "fieldname": "ref_no",
+   "fieldtype": "Int",
+   "label": "Ref no",
+   "reqd": 1
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "CHARTS"
+  },
+  {
+   "fieldname": "charts",
+   "fieldtype": "HTML",
+   "label": "Charts",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Chart Image"
+  },
+  {
+   "fieldname": "electrical_resistivity_east_and_west",
+   "fieldtype": "Table",
+   "label": "Electrical Resistivity East and West",
+   "options": "Electrical Restivity East and West"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-19 15:13:08.738200",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Electrical Resistivity Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

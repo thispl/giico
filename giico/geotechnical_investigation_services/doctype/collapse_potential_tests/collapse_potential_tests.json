@@ -1,0 +1,215 @@
+{
+ "autoname": "CPT.####",
+ "creation": "2019-09-13 15:01:54.688145",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "location",
+  "date",
+  "section_break_6",
+  "job_ref",
+  "test_id",
+  "sample_id",
+  "specimen_details",
+  "type",
+  "remould_bulk_density",
+  "column_break_8",
+  "remould_moisture",
+  "initial_ht",
+  "dia",
+  "natural_moisture_cont",
+  "final_water_content",
+  "addl_info",
+  "column_break_15",
+  "collapse_potential",
+  "generate_graph",
+  "section_break_17",
+  "charts_section",
+  "chart",
+  "chart_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_ref",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_id",
+   "fieldtype": "Data",
+   "label": "Test ID"
+  },
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "specimen_details",
+   "fieldtype": "Data",
+   "label": "Specimen Details"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "description": "Mg/m3\n",
+   "fieldname": "remould_bulk_density",
+   "fieldtype": "Float",
+   "label": "Remould Bulk Density ",
+   "options": "\n"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remould_moisture",
+   "fieldtype": "Data",
+   "label": "Remould. Moisture % "
+  },
+  {
+   "description": "mm\n",
+   "fieldname": "initial_ht",
+   "fieldtype": "Data",
+   "label": "Initial ht"
+  },
+  {
+   "description": "mm\n",
+   "fieldname": "dia",
+   "fieldtype": "Data",
+   "label": "Dia"
+  },
+  {
+   "description": "%",
+   "fieldname": "natural_moisture_cont",
+   "fieldtype": "Data",
+   "label": "Natural moisture cont",
+   "read_only": 1
+  },
+  {
+   "description": "%",
+   "fieldname": "final_water_content",
+   "fieldtype": "Data",
+   "label": "Final water content"
+  },
+  {
+   "fieldname": "addl_info",
+   "fieldtype": "Data",
+   "label": "Addl Info"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "collapse_potential",
+   "fieldtype": "Table",
+   "label": "Collapse Potential Of Soil",
+   "options": "Collapse Potential Of Soil"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "CHARTS"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Chart Image"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate Graph"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 14:21:38.345474",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Collapse Potential Tests",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

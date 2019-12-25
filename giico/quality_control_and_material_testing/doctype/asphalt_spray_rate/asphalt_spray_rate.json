@@ -1,0 +1,153 @@
+{
+ "autoname": "ASR.####",
+ "creation": "2019-10-12 15:28:58.981870",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_4",
+  "date_test",
+  "date_report",
+  "location",
+  "section_break_7",
+  "job_no",
+  "temp",
+  "ambient_temperature",
+  "section_break_9",
+  "spray_rate",
+  "section_break_12",
+  "remarks",
+  "section_break_11",
+  "viewed_by",
+  "column_break_13",
+  "approved_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location       "
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_test",
+   "fieldtype": "Date",
+   "label": "Date of Test "
+  },
+  {
+   "fieldname": "date_report",
+   "fieldtype": "Date",
+   "label": "Date of Report "
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Data",
+   "label": "Job No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "temp",
+   "fieldtype": "Data",
+   "label": "Temperature"
+  },
+  {
+   "fieldname": "ambient_temperature",
+   "fieldtype": "Data",
+   "label": "Ambient Temperature"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "spray_rate",
+   "fieldtype": "Table",
+   "label": "Spray Rate",
+   "options": "Spray Rate"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "viewed_by",
+   "fieldtype": "Data",
+   "label": "Viewed by"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved by "
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-21 15:20:55.396438",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Asphalt Spray Rate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

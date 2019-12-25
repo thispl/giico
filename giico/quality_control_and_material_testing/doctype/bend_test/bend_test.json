@@ -1,0 +1,68 @@
+{
+ "creation": "2019-10-01 10:04:55.080142",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "spec_id",
+  "type",
+  "bend_angle",
+  "column_break_4",
+  "re_bend_angle",
+  "plunger_dia",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "spec_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Spec ID"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "bend_angle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bend Angle "
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "re_bend_angle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Re-Bend Angle "
+  },
+  {
+   "fieldname": "plunger_dia",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plunger Dia "
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks "
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 15:28:34.649511",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Bend Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

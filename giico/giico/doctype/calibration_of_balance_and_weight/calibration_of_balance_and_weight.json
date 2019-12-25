@@ -5,15 +5,18 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "client_name",
   "project_name",
+  "client_name",
+  "department",
+  "column_break_3",
+  "calibration_date",
+  "report_date",
+  "section_break_6",
   "make",
   "capacity",
   "equipment_id",
   "column_break_6",
   "readability",
-  "calibration_date",
-  "report_date",
   "giico_job_no",
   "section_break_11",
   "cbw_readings",
@@ -103,6 +106,7 @@
   {
    "fieldname": "tested_by",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Tested by"
   },
   {
@@ -112,10 +116,25 @@
   {
    "fieldname": "checked_by",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Checked by"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 20:56:48.381560",
+ "modified": "2019-11-22 13:02:36.948446",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration of Balance and Weight",

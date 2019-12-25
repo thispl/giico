@@ -7,12 +7,14 @@
  "field_order": [
   "project",
   "client_name",
-  "sample_description",
   "location",
   "column_break_5",
   "test_date",
   "report_date",
+  "department",
+  "section_break_7",
   "report_refno",
+  "sample_description",
   "section_break_9",
   "flakiness_index",
   "calculate",
@@ -197,9 +199,19 @@
    "fieldtype": "Float",
    "label": "Elongated Particles(%)",
    "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-05 08:01:01.059258",
+ "modified": "2019-11-22 14:22:19.547808",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Flakiness and Elongation Index Test",

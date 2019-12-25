@@ -7,13 +7,15 @@
  "field_order": [
   "project",
   "client",
-  "owner",
   "test_location",
+  "department",
   "column_break_6",
+  "test_no",
   "date_of_test",
   "date_of_report",
+  "section_break_8",
   "job_ref_no",
-  "test_no",
+  "owner",
   "section_break_10",
   "crack_test"
  ],
@@ -72,9 +74,19 @@
    "fieldtype": "Table",
    "label": "Crack Test",
    "options": "Crack Test"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-03 13:34:30.714354",
+ "modified": "2019-11-22 14:14:39.640145",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Crack Test Result",

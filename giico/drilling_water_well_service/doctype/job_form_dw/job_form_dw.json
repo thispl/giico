@@ -1,0 +1,159 @@
+{
+ "autoname": "DW.####",
+ "creation": "2019-11-22 14:48:08.217541",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_no",
+  "date_received",
+  "project",
+  "customer",
+  "phone",
+  "person_to_contact",
+  "column_break_7",
+  "fieldwork_start",
+  "fieldwork_finish",
+  "report",
+  "location",
+  "section_break_12",
+  "subject",
+  "section_break_13",
+  "field_works",
+  "section_break_15",
+  "civil_works",
+  "section_break_17",
+  "ref",
+  "section_break_19",
+  "payment"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Data",
+   "label": "Job No"
+  },
+  {
+   "fieldname": "date_received",
+   "fieldtype": "Date",
+   "label": "Date Received"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "person_to_contact",
+   "fieldtype": "Data",
+   "label": "Person to Contact"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fieldwork_start",
+   "fieldtype": "Date",
+   "label": "Fieldwork Start"
+  },
+  {
+   "fieldname": "fieldwork_finish",
+   "fieldtype": "Date",
+   "label": "Fieldwork Finish"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Data",
+   "label": "Report"
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "field_works",
+   "fieldtype": "Small Text",
+   "label": "Field Works"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "civil_works",
+   "fieldtype": "Small Text",
+   "label": "Civil Works"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Small Text",
+   "label": "Ref"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Small Text",
+   "label": "Payment"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2019-12-23 12:25:58.182335",
+ "modified_by": "Administrator",
+ "module": "Drilling Water Well Service",
+ "name": "Job Form DW",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

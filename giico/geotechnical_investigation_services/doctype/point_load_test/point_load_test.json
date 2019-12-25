@@ -1,0 +1,209 @@
+{
+ "autoname": "BH.####",
+ "creation": "2019-09-14 07:33:47.665616",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "column_break_3",
+  "date",
+  "department",
+  "section_break_19",
+  "depthm",
+  "bh_no",
+  "column_break_8",
+  "sample_description",
+  "dimensions_of_specimen_section",
+  "average_height",
+  "average_diameter",
+  "weight",
+  "bulk_density",
+  "moisture",
+  "column_break_12",
+  "load",
+  "point_load_strength",
+  "correction_factor",
+  "point_load_strength_index",
+  "uni_cs1",
+  "uni_cs3",
+  "column_break_22",
+  "tested_by",
+  "column_break_26",
+  "checked_by",
+  "point_load_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "depthm",
+   "fieldtype": "Data",
+   "label": "Depth(m)"
+  },
+  {
+   "fieldname": "bh_no",
+   "fieldtype": "Data",
+   "label": "BH No"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sample_description",
+   "fieldtype": "Data",
+   "label": "Sample Description"
+  },
+  {
+   "fieldname": "dimensions_of_specimen_section",
+   "fieldtype": "Section Break",
+   "label": "Dimensions of Specimen"
+  },
+  {
+   "fieldname": "average_height",
+   "fieldtype": "Float",
+   "label": "Average Height"
+  },
+  {
+   "fieldname": "average_diameter",
+   "fieldtype": "Float",
+   "label": "Average Diameter"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Int",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "bulk_density",
+   "fieldtype": "Data",
+   "label": "Bulk Density"
+  },
+  {
+   "fieldname": "moisture",
+   "fieldtype": "Data",
+   "label": "Moisture"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "load",
+   "fieldtype": "Data",
+   "label": "Load"
+  },
+  {
+   "fieldname": "point_load_strength",
+   "fieldtype": "Int",
+   "label": "Point Load Strength"
+  },
+  {
+   "fieldname": "correction_factor",
+   "fieldtype": "Float",
+   "label": "Correction Factor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "point_load_strength_index",
+   "fieldtype": "Float",
+   "label": "Point Load Strength Index"
+  },
+  {
+   "fieldname": "uni_cs1",
+   "fieldtype": "Float",
+   "label": "Uniaxial Comp Strength",
+   "read_only": 1
+  },
+  {
+   "fieldname": "uni_cs3",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Uniaxial Comp Strength"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By"
+  },
+  {
+   "fieldname": "point_load_value",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Point Load value"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 14:42:18.572597",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Point Load Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

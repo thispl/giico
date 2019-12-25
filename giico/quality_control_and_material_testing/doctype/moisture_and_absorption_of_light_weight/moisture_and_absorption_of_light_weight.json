@@ -1,0 +1,180 @@
+{
+ "autoname": "MA.####",
+ "creation": "2019-09-30 14:05:31.218544",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "test_date",
+  "report_date",
+  "section_break_5",
+  "contractor",
+  "consultant",
+  "owner",
+  "column_break_8",
+  "type_of_block",
+  "report_ref",
+  "supplier",
+  "section_break_11",
+  "light_weight",
+  "calculate",
+  "section_break_14",
+  "average",
+  "column_break_16",
+  "average1",
+  "section_break_13",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project ",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date "
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date "
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contractor "
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Data",
+   "label": "Consultant "
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner "
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_of_block",
+   "fieldtype": "Data",
+   "label": "Type of Block "
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Report Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "Supplier "
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "light_weight",
+   "fieldtype": "Table",
+   "label": "Absorption Of Light Weight",
+   "options": "Absorption Of Light Weight"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "average",
+   "fieldtype": "Float",
+   "label": "Absorption Average",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "average1",
+   "fieldtype": "Float",
+   "label": "Moisture Average",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 09:21:24.203651",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Moisture and Absorption Of Light Weight",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

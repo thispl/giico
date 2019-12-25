@@ -1,0 +1,183 @@
+{
+ "autoname": "CTR.####",
+ "creation": "2019-09-26 09:33:31.586765",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "report_date",
+  "calib_date",
+  "section_break_8",
+  "equip_id",
+  "giico_report",
+  "column_break_4",
+  "apparatus",
+  "slump_cone",
+  "shape",
+  "column_break_12",
+  "base_dia",
+  "top_dia",
+  "height",
+  "tamping_rod",
+  "column_break_18",
+  "dia",
+  "length",
+  "section_break_19",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "calib_date",
+   "fieldtype": "Date",
+   "label": "Calib Date"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "equip_id",
+   "fieldtype": "Data",
+   "label": "Equip ID"
+  },
+  {
+   "fieldname": "giico_report",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Giico Report No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "apparatus",
+   "fieldtype": "Data",
+   "label": "Apparatus"
+  },
+  {
+   "fieldname": "slump_cone",
+   "fieldtype": "Data",
+   "label": "Slump cone"
+  },
+  {
+   "fieldname": "shape",
+   "fieldtype": "Data",
+   "label": "Shape"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "mm",
+   "fieldname": "base_dia",
+   "fieldtype": "Float",
+   "label": "Base dia"
+  },
+  {
+   "description": "mm",
+   "fieldname": "top_dia",
+   "fieldtype": "Float",
+   "label": "Top dia"
+  },
+  {
+   "description": "mm",
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "tamping_rod",
+   "fieldtype": "Section Break",
+   "label": "Tamping rod"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "mm",
+   "fieldname": "dia",
+   "fieldtype": "Int",
+   "label": "Dia"
+  },
+  {
+   "description": "mm",
+   "fieldname": "length",
+   "fieldtype": "Int",
+   "label": "Length"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-21 14:33:50.355336",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Calibration Of Slump Cone and Tamping Rod",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

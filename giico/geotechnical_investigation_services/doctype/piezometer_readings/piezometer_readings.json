@@ -1,0 +1,42 @@
+{
+ "creation": "2019-08-09 08:34:39.178470",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "timein_hrs",
+  "gwlmbgl"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "timein_hrs",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time(in hrs)"
+  },
+  {
+   "fieldname": "gwlmbgl",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "GWL(m)BGL"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 10:22:38.962261",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Piezometer Readings",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

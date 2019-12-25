@@ -1,0 +1,104 @@
+{
+ "creation": "2019-09-14 07:42:39.808708",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "sam_so_bh",
+  "depth_m",
+  "smple_gms",
+  "mould",
+  "column_break_6",
+  "sw_gms",
+  "wet_den_mgm3",
+  "moisture_con",
+  "dry_den",
+  "soil_res",
+  "soil_des"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Test No"
+  },
+  {
+   "fieldname": "sam_so_bh",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample Source (BH)"
+  },
+  {
+   "fieldname": "depth_m",
+   "fieldtype": "Float",
+   "label": "Depth (m)"
+  },
+  {
+   "fieldname": "smple_gms",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Smple wt +mld (gms)"
+  },
+  {
+   "fieldname": "mould",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mould Wt (gms)"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sw_gms",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sample Weight (gms)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "wet_den_mgm3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wet Density (mg/m3)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "moisture_con",
+   "fieldtype": "Float",
+   "label": "Moisture Content (%)"
+  },
+  {
+   "fieldname": "dry_den",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dry  Density (mg/m3)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "soil_res",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Soil Resistivity (W-CM)"
+  },
+  {
+   "fieldname": "soil_des",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Soil Description"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 07:23:54.586006",
+ "modified_by": "Administrator",
+ "module": "Topography and Marine Survey",
+ "name": "Lab ERT Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

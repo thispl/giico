@@ -7,12 +7,15 @@
  "field_order": [
   "project",
   "client",
+  "department",
+  "column_break_3",
+  "date_test",
+  "date_report",
+  "section_break_6",
   "report_ref",
   "ref_std",
   "air_temp",
   "column_break_6",
-  "date_test",
-  "date_report",
   "sample_type",
   "test_con",
   "equip_used",
@@ -96,9 +99,23 @@
   {
    "fieldname": "section_break_14",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-03 16:26:18.457258",
+ "modified": "2019-11-25 09:22:18.490362",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Thermal Resistivity Test Result",

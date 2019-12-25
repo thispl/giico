@@ -1,0 +1,128 @@
+{
+ "creation": "2019-09-30 08:37:12.178819",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "diameter_mm",
+  "height_mm",
+  "dry_wt",
+  "surface",
+  "submerged",
+  "column_break_5",
+  "area",
+  "sur_area",
+  "volume",
+  "cr_factor",
+  "density",
+  "absorption"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "sample_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Sample ID"
+  },
+  {
+   "columns": 2,
+   "fieldname": "diameter_mm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Diameter (mm)"
+  },
+  {
+   "columns": 2,
+   "fieldname": "height_mm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Height (mm)"
+  },
+  {
+   "columns": 2,
+   "fieldname": "dry_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dry Wt(g) *"
+  },
+  {
+   "columns": 1,
+   "fieldname": "surface",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Surface Dry Wt +(g)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "submerged",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Submerged wt(g) (water)"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Area",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "sur_area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sur Area",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "volume",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Volume",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "cr_factor",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Correction Factor",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Density (kg/m3)",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "absorption",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Absorption (%)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-14 15:10:31.509959",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Water Absorption",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

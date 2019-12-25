@@ -5,17 +5,24 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "sample_id",
+  "project",
+  "client",
+  "column_break_3",
   "loc",
+  "section_break_5",
+  "sample_id",
+  "column_break_7",
+  "department",
+  "section_break_8",
   "dia_mould",
   "len_mould",
   "area_of_mould",
   "vol_mould",
   "int_head",
-  "vol_den",
-  "col1",
   "depth",
+  "vol_den",
   "wgt_wet",
+  "col1",
   "bulk_density",
   "initial_moisture",
   "final_moisture",
@@ -28,10 +35,7 @@
   "kavg",
   "chart_section",
   "chart_html",
-  "section_break_20",
-  "project",
-  "column_break_22",
-  "client"
+  "chart_image"
  ],
  "fields": [
   {
@@ -57,12 +61,14 @@
   {
    "fieldname": "area_of_mould",
    "fieldtype": "Data",
-   "label": "Area of Mould(cm2)"
+   "label": "Area of Mould(cm2)",
+   "read_only": 1
   },
   {
    "fieldname": "vol_mould",
    "fieldtype": "Data",
-   "label": "Volume of Mould(cm3)"
+   "label": "Volume of Mould(cm3)",
+   "read_only": 1
   },
   {
    "fieldname": "int_head",
@@ -136,21 +142,14 @@
   {
    "fieldname": "kavg",
    "fieldtype": "Data",
-   "label": "KAvg"
-  },
-  {
-   "fieldname": "section_break_20",
-   "fieldtype": "Section Break"
+   "label": "KAvg",
+   "read_only": 1
   },
   {
    "fieldname": "project",
    "fieldtype": "Link",
    "label": "Project",
    "options": "Project"
-  },
-  {
-   "fieldname": "column_break_22",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "client",
@@ -160,15 +159,43 @@
   {
    "fieldname": "chart_section",
    "fieldtype": "Section Break",
-   "label": "Chart"
+   "label": "Charts"
   },
   {
    "fieldname": "chart_html",
    "fieldtype": "HTML",
-   "label": "chart_html"
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "label": "chart image"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2019-10-25 09:51:31.656110",
+ "modified": "2019-11-22 16:50:01.378028",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Falling Head Permeability Test",

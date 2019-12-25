@@ -1,0 +1,144 @@
+{
+ "autoname": "S.####",
+ "creation": "2019-10-09 07:34:46.342599",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "date_cal",
+  "date_report",
+  "column_break_4",
+  "giico_job",
+  "equipment",
+  "section_break_8",
+  "sieves_12",
+  "column_break_10",
+  "remarks",
+  "section_break_10",
+  "calibrated_by",
+  "column_break_12",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_cal",
+   "fieldtype": "Date",
+   "label": "Date of Calibration"
+  },
+  {
+   "fieldname": "date_report",
+   "fieldtype": "Date",
+   "label": "Date Of Report"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "giico_job",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Giico Job No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Data",
+   "label": "Equipment"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sieves_12",
+   "fieldtype": "Table",
+   "label": "Sieves 12",
+   "options": "Sieves 12"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Calibrated by "
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-21 14:25:08.655188",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Calibration of Sieves 12",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,189 @@
+{
+ "autoname": "SC.####",
+ "creation": "2019-09-24 12:30:34.196405",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "date_of_report",
+  "date_of_calibration",
+  "column_break_5",
+  "model",
+  "giico_job_no",
+  "column_break_9",
+  "make",
+  "serial",
+  "section_break_10",
+  "compaction_readings",
+  "remarks_section",
+  "remarks",
+  "section_break_12",
+  "calibrated_by",
+  "calibrated_by1",
+  "des1",
+  "column_break_16",
+  "checked_by",
+  "des2"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "date_of_calibration",
+   "fieldtype": "Date",
+   "label": "Date of Calibration"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "giico_job_no",
+   "fieldtype": "Data",
+   "label": "Giico Job No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fieldname": "serial",
+   "fieldtype": "Data",
+   "label": "Serial"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "compaction_readings",
+   "fieldtype": "Table",
+   "label": "Compaction Readings",
+   "options": "Compaction Readings"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fetch_from": "checked_by.designation",
+   "fieldname": "calibrated_by",
+   "fieldtype": "Link",
+   "label": "Calibrated by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "calibrated_by1",
+   "fieldtype": "Read Only",
+   "label": "Employee Name",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "calibrated_by.designation",
+   "fieldname": "des1",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Checked By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "checked_by.designation",
+   "fieldname": "des2",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-23 16:20:00.433897",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Calibration of Site Compaction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

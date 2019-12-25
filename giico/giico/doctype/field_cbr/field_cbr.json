@@ -5,44 +5,48 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project",
+  "client",
+  "department",
+  "column_break_3",
   "location",
+  "date_of_report",
+  "section_break_6",
   "test",
   "test_depth",
-  "column_break_4",
   "materials",
   "water_content_",
-  "date_of_report",
+  "column_break_4",
   "job_ref_no",
   "northing",
   "easting",
   "section_break_9",
   "penetration",
-  "section_break_11",
+  "chart_section",
+  "chart_html",
+  "chart_image",
+  "section_break_20",
   "tested_by",
   "designation",
   "section_break_14",
   "checked_by",
-  "designation1",
-  "section_break_17",
-  "project",
-  "location1",
-  "client"
+  "designation1"
  ],
  "fields": [
   {
    "fieldname": "location",
    "fieldtype": "Data",
-   "label": "LOCATION"
+   "label": "Location"
   },
   {
    "fieldname": "test",
    "fieldtype": "Data",
-   "label": "TEST #"
+   "label": "Test#"
   },
   {
    "fieldname": "test_depth",
    "fieldtype": "Float",
-   "label": "TEST DEPTH #"
+   "label": "Test Depth#"
   },
   {
    "fieldname": "column_break_4",
@@ -51,32 +55,32 @@
   {
    "fieldname": "materials",
    "fieldtype": "Data",
-   "label": "MATERIALS"
+   "label": "Materials"
   },
   {
    "fieldname": "water_content_",
    "fieldtype": "Data",
-   "label": "WATER CONTENT (%)"
+   "label": "Water Content(%)"
   },
   {
    "fieldname": "date_of_report",
    "fieldtype": "Date",
-   "label": "DATE OF REPORT"
+   "label": "Date Of Report"
   },
   {
    "fieldname": "job_ref_no",
    "fieldtype": "Int",
-   "label": "JOB REF. NO."
+   "label": "Job Ref No"
   },
   {
    "fieldname": "northing",
    "fieldtype": "Float",
-   "label": "NORTHING"
+   "label": "Northing"
   },
   {
    "fieldname": "easting",
    "fieldtype": "Float",
-   "label": "EASTING"
+   "label": "Easting"
   },
   {
    "fieldname": "section_break_9",
@@ -89,13 +93,9 @@
    "options": "Penetration"
   },
   {
-   "fieldname": "section_break_11",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "tested_by",
    "fieldtype": "Data",
-   "label": "TESTED BY"
+   "label": "Tested By"
   },
   {
    "fieldname": "designation",
@@ -109,7 +109,7 @@
   {
    "fieldname": "checked_by",
    "fieldtype": "Data",
-   "label": "CHECKED BY"
+   "label": "Checked By"
   },
   {
    "fieldname": "designation1",
@@ -117,26 +117,51 @@
    "label": "Designation"
   },
   {
-   "fieldname": "section_break_17",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "project",
    "fieldtype": "Data",
-   "label": "PROJECT "
-  },
-  {
-   "fieldname": "location1",
-   "fieldtype": "Data",
-   "label": "LOCATION"
+   "label": "Project"
   },
   {
    "fieldname": "client",
    "fieldtype": "Data",
-   "label": "CLIENT"
+   "label": "Client"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "chart_section",
+   "fieldtype": "Section Break",
+   "label": "Chart"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "label": "chart image"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "chart_html",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:09:41.445406",
+ "modified": "2019-11-22 14:18:00.184186",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Field CBR",

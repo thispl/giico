@@ -7,10 +7,12 @@
  "field_order": [
   "project",
   "client",
-  "test_location",
+  "department",
   "column_break_4",
-  "tested_by",
+  "test_location",
   "date",
+  "section_break_6",
+  "tested_by",
   "data_for_source_s1_and_receiver_r1_section",
   "table_2",
   "calculate",
@@ -56,7 +58,8 @@
   {
    "fieldname": "avg_m1",
    "fieldtype": "Data",
-   "label": "Average"
+   "label": "Average",
+   "read_only": 1
   },
   {
    "fieldname": "calculate1",
@@ -66,7 +69,8 @@
   {
    "fieldname": "avg_calculate",
    "fieldtype": "Data",
-   "label": "Average"
+   "label": "Average",
+   "read_only": 1
   },
   {
    "fieldname": "s2_r2",
@@ -112,9 +116,19 @@
    "fieldname": "r1r2",
    "fieldtype": "Data",
    "label": "R1R2"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-21 10:01:31.647282",
+ "modified": "2019-11-22 16:45:45.561738",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Downhole Test",

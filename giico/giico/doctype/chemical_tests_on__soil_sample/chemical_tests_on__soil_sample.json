@@ -7,11 +7,14 @@
  "field_order": [
   "project",
   "client",
-  "description",
-  "ir_no",
+  "department",
   "column_break_5",
   "date_test",
   "date_report",
+  "section_break_6",
+  "ir_no",
+  "description",
+  "column_break_10",
   "job_ref",
   "section_break_9",
   "soil_sample",
@@ -77,9 +80,23 @@
   {
    "fieldname": "section_break_11",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2019-10-01 07:47:48.605159",
+ "modified": "2019-11-22 16:25:14.822760",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Chemical Tests On  Soil Sample",

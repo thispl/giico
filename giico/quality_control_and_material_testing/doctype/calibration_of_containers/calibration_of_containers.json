@@ -1,0 +1,140 @@
+{
+ "autoname": "COC.####",
+ "creation": "2019-09-24 08:35:25.886727",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "date",
+  "equipment",
+  "section_break_6",
+  "container",
+  "remarks",
+  "section_break_8",
+  "calibrated_by",
+  "desig1",
+  "column_break_10",
+  "checked_by",
+  "desig"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Data",
+   "label": "Equipment"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "container",
+   "fieldtype": "Table",
+   "label": "Container",
+   "options": "Containers"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Calibrated by",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "calibrated_by.designation",
+   "fieldname": "desig1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Checked by",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "checked_by.designation",
+   "fieldname": "desig",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Designation"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-21 10:15:52.177572",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Calibration Of Containers",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -5,6 +5,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project",
+  "client",
+  "column_break_3",
+  "department",
+  "section_break_3",
   "table_1",
   "summary_section",
   "total_test_depth",
@@ -21,8 +26,6 @@
   "cone_diamter",
   "height_of_drop",
   "section_break_16",
-  "client",
-  "project",
   "column_break_19",
   "tested_by",
   "checked_by"
@@ -42,7 +45,8 @@
   {
    "fieldname": "total_test_depth",
    "fieldtype": "Float",
-   "label": "Total test depth"
+   "label": "Total test depth",
+   "read_only": 1
   },
   {
    "fieldname": "layer",
@@ -129,9 +133,23 @@
    "fieldname": "checked_by",
    "fieldtype": "Data",
    "label": "Checked By"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:03:37.313723",
+ "modified": "2019-11-22 16:41:47.396781",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Dynamic Cone Penetration Test",

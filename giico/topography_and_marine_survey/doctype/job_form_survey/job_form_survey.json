@@ -1,0 +1,113 @@
+{
+ "autoname": "JFS.####",
+ "creation": "2019-12-23 09:30:19.603975",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_no",
+  "date_received",
+  "project",
+  "customer",
+  "phone",
+  "person_to_contact",
+  "column_break_7",
+  "fieldwork_start",
+  "fieldwork_finish",
+  "final_report",
+  "subject",
+  "section_break_13",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Data",
+   "label": "Job No"
+  },
+  {
+   "fieldname": "date_received",
+   "fieldtype": "Date",
+   "label": "Date Received"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "person_to_contact",
+   "fieldtype": "Data",
+   "label": "Person to Contact"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fieldwork_start",
+   "fieldtype": "Date",
+   "label": "Fieldwork Start"
+  },
+  {
+   "fieldname": "fieldwork_finish",
+   "fieldtype": "Date",
+   "label": "Fieldwork Finish"
+  },
+  {
+   "fieldname": "final_report",
+   "fieldtype": "Date",
+   "label": "Final Report"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Table",
+   "label": "Description",
+   "options": "GT"
+  }
+ ],
+ "modified": "2019-12-23 15:27:10.467576",
+ "modified_by": "Administrator",
+ "module": "Topography and Marine Survey",
+ "name": "Job Form Survey",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

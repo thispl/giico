@@ -1,0 +1,140 @@
+{
+ "autoname": "CM.####",
+ "creation": "2019-09-30 12:20:29.405066",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "location",
+  "column_break_4",
+  "date_of_test",
+  "date_of_report",
+  "department",
+  "section_break_7",
+  "aparatus_no",
+  "job_ref_no",
+  "section_break_9",
+  "cover_meter_readngs",
+  "section_break_11",
+  "tested_by",
+  "column_break_13",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "default": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "aparatus_no",
+   "fieldtype": "Data",
+   "label": "Aparatus No"
+  },
+  {
+   "fieldname": "job_ref_no",
+   "fieldtype": "Data",
+   "label": "Job Ref No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cover_meter_readngs",
+   "fieldtype": "Table",
+   "label": "Cover Meter Readngs",
+   "options": "Cover Meter Readings"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project ",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 08:09:32.784597",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Cover Meter Steel Bar",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

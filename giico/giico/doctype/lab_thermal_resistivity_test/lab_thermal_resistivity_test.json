@@ -7,12 +7,14 @@
  "field_order": [
   "project",
   "client",
+  "column_break_3",
   "location",
+  "section_break_5",
   "contract_no",
   "report_ref",
-  "column_break_6",
   "sample_type",
   "elevation",
+  "column_break_6",
   "easting",
   "northing",
   "equip_used",
@@ -89,7 +91,7 @@
    "fieldname": "tr_reference",
    "fieldtype": "Table",
    "label": "TR Reference",
-   "options": "TR Reference"
+   "options": "TR reference lab"
   },
   {
    "fieldname": "section_break_14",
@@ -120,9 +122,17 @@
    "fieldname": "des2",
    "fieldtype": "Data",
    "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
   }
  ],
- "modified": "2019-09-27 21:03:29.460528",
+ "modified": "2019-11-13 07:36:55.577250",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Lab Thermal Resistivity Test",

@@ -8,6 +8,7 @@
   "depth_m",
   "thermal_1",
   "thermal_2",
+  "column_break_5",
   "thermal_3",
   "average_con",
   "thermal_res",
@@ -48,23 +49,28 @@
    "fieldname": "average_con",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Average Conductivity (W/m0C)"
+   "label": "Average Conductivity (W/m0C)",
+   "read_only": 1
   },
   {
    "fieldname": "thermal_res",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Thermal Resistivity (m0C/W)"
+   "label": "Thermal Resistivity (m0C/W)",
+   "read_only": 1
   },
   {
    "fieldname": "location_en",
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Location EN"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
   }
  ],
- "istable": 1,
- "modified": "2019-09-27 21:03:34.195562",
+ "modified": "2019-11-25 08:01:55.646267",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Lab TRT Result",

@@ -7,11 +7,13 @@
  "field_order": [
   "project",
   "client",
-  "type_block",
-  "source_of_sample",
+  "department",
   "column_break_5",
   "test_date",
   "report_date",
+  "section_break_6",
+  "type_block",
+  "source_of_sample",
   "report_ref",
   "section_break_9",
   "hollow_block",
@@ -75,12 +77,14 @@
   {
    "fieldname": "aver_strength1",
    "fieldtype": "Float",
-   "label": "Average Com Strength  (N/mm2)"
+   "label": "Average Com Strength  (N/mm2)",
+   "read_only": 1
   },
   {
    "fieldname": "aver_strength2",
    "fieldtype": "Float",
-   "label": "Average Com Strength(kg/cm2)"
+   "label": "Average Com Strength(kg/cm2)",
+   "read_only": 1
   },
   {
    "fieldname": "hollow_block",
@@ -105,9 +109,19 @@
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-03 12:21:18.173173",
+ "modified": "2019-11-22 14:26:54.168254",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Compressive Strength  Of Hollow Block",

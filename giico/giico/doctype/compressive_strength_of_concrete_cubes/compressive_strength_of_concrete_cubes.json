@@ -5,15 +5,18 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project",
+  "location",
+  "department",
+  "column_break_3",
+  "test_date",
+  "report_date",
+  "section_break_6",
   "contractor",
   "consultant",
   "owner1",
-  "project",
-  "location",
   "structure",
   "column_break_7",
-  "test_date",
-  "report_date",
   "report_ref",
   "concrete_grade",
   "concrete_supplier",
@@ -157,6 +160,7 @@
   {
    "fieldname": "calibrated_by",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Calibrated by"
   },
   {
@@ -166,10 +170,25 @@
   {
    "fieldname": "checked_by",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Checked by"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-04 17:04:06.666539",
+ "modified": "2019-11-22 14:05:47.258288",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Compressive Strength of Concrete Cubes",

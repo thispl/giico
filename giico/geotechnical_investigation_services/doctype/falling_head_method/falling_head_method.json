@@ -1,0 +1,228 @@
+{
+ "autoname": "FHM.####",
+ "creation": "2019-09-19 13:06:34.917828",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "column_break_3",
+  "department",
+  "test_id",
+  "bore_no",
+  "int",
+  "gwt",
+  "length_of_un",
+  "k",
+  "f",
+  "dia",
+  "col1",
+  "date_of_test",
+  "dep_of_test",
+  "ch_casing1",
+  "internal_dia1",
+  "dia_un",
+  "cs_of_1",
+  "area_of_casing",
+  "dy",
+  "time",
+  "section_break_15",
+  "fhm_test",
+  "calculate",
+  "section_break_18",
+  "average",
+  "charts_section",
+  "generate_graph",
+  "chart",
+  "chart_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_id",
+   "fieldtype": "Data",
+   "label": "Test ID"
+  },
+  {
+   "fieldname": "bore_no",
+   "fieldtype": "Data",
+   "label": "Borehole No"
+  },
+  {
+   "fieldname": "int",
+   "fieldtype": "Int",
+   "label": "Init.Head(cm)"
+  },
+  {
+   "fieldname": "gwt",
+   "fieldtype": "Int",
+   "label": "GWT"
+  },
+  {
+   "fieldname": "length_of_un",
+   "fieldtype": "Int",
+   "label": "Length of unline"
+  },
+  {
+   "fieldname": "k",
+   "fieldtype": "Data",
+   "label": "K"
+  },
+  {
+   "fieldname": "f",
+   "fieldtype": "Float",
+   "label": "F"
+  },
+  {
+   "fieldname": "dia",
+   "fieldtype": "Float",
+   "label": "Diameter"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "dep_of_test",
+   "fieldtype": "Int",
+   "label": "Depth of Test in BH(m)"
+  },
+  {
+   "fieldname": "ch_casing1",
+   "fieldtype": "Float",
+   "label": "Ch Casing-height above GL(Cm)"
+  },
+  {
+   "fieldname": "internal_dia1",
+   "fieldtype": "Float",
+   "label": "Internal Dia PVC or Casing"
+  },
+  {
+   "fieldname": "dia_un",
+   "fieldtype": "Float",
+   "label": "Dia of Unlined BH(cm)"
+  },
+  {
+   "fieldname": "cs_of_1",
+   "fieldtype": "Float",
+   "label": "C/S of Casing/PVC Stand Pipe"
+  },
+  {
+   "fieldname": "area_of_casing",
+   "fieldtype": "Float",
+   "label": "Area of Casing"
+  },
+  {
+   "fieldname": "dy",
+   "fieldtype": "Data",
+   "label": "DY"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Time"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fhm_test",
+   "fieldtype": "Table",
+   "label": "FHM Test",
+   "options": "FHM Test"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "average",
+   "fieldtype": "Data",
+   "label": "Average"
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "CHARTS"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Chart Image"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate Graph"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-19 16:32:21.884026",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Falling Head Method",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -7,12 +7,15 @@
  "field_order": [
   "project",
   "client",
+  "department",
+  "column_break_3",
   "location",
   "date",
-  "report_ref",
-  "column_break_6",
+  "section_break_6",
   "east",
+  "report_ref",
   "north",
+  "column_break_10",
   "equip_used",
   "reference_std",
   "section_break_11",
@@ -48,10 +51,6 @@
    "fieldname": "report_ref",
    "fieldtype": "Int",
    "label": "Report Ref"
-  },
-  {
-   "fieldname": "column_break_6",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "east",
@@ -100,9 +99,27 @@
    "fieldname": "checked_by",
    "fieldtype": "Data",
    "label": "Checked By"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:03:25.559830",
+ "modified": "2019-11-25 08:01:37.059823",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Lab TRT",

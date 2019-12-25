@@ -1,0 +1,51 @@
+{
+ "creation": "2019-09-26 08:05:57.443332",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "oven_drying",
+  "speedy",
+  "differen",
+  "differen1"
+ ],
+ "fields": [
+  {
+   "fieldname": "oven_drying",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Oven Drying"
+  },
+  {
+   "fieldname": "speedy",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Speedy Moisture"
+  },
+  {
+   "fieldname": "differen",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Difference",
+   "read_only": 1
+  },
+  {
+   "fieldname": "differen1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Difference%",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-24 08:21:18.023450",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Speedy Moisture",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

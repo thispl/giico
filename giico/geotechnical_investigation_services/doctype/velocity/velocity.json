@@ -1,0 +1,52 @@
+{
+ "creation": "2019-12-06 16:09:24.960100",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "depth",
+  "column_break_2",
+  "vs",
+  "column_break_4",
+  "vp"
+ ],
+ "fields": [
+  {
+   "fieldname": "depth",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Depth"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vs"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vp"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-06 16:09:29.666302",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Velocity",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

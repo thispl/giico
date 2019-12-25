@@ -1,0 +1,82 @@
+{
+ "creation": "2019-10-12 08:18:09.475417",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sieve_size",
+  "cumulative_wt_retained",
+  "cumulative__retained",
+  "status",
+  "column_break_4",
+  "passing",
+  "job_mix",
+  "min",
+  "max"
+ ],
+ "fields": [
+  {
+   "fieldname": "sieve_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sieve Size\n"
+  },
+  {
+   "fieldname": "cumulative_wt_retained",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Cumulative WT Retained"
+  },
+  {
+   "fieldname": "cumulative__retained",
+   "fieldtype": "Float",
+   "label": "Cumulative % Retained",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "passing",
+   "fieldtype": "Float",
+   "label": "% Passing\n",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_mix",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Mix "
+  },
+  {
+   "fieldname": "min",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specification(min)"
+  },
+  {
+   "fieldname": "max",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specification(max)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-27 16:02:37.036363",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Gradation",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

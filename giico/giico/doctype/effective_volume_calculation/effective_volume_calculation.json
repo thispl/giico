@@ -1,0 +1,57 @@
+{
+ "creation": "2019-11-16 09:39:10.785408",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vi",
+  "v1",
+  "column_break_3",
+  "v2",
+  "m"
+ ],
+ "fields": [
+  {
+   "description": "cm3",
+   "fieldname": "vi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "VI"
+  },
+  {
+   "description": "cm3",
+   "fieldname": "v1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "V1"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "cm3",
+   "fieldname": "v2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "V2"
+  },
+  {
+   "fieldname": "m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "m"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-16 09:39:10.785408",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Effective Volume Calculation",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

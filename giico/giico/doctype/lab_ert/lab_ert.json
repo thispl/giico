@@ -5,7 +5,13 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project",
+  "client",
+  "department",
+  "column_break_3",
+  "location",
   "date_of_test",
+  "section_break_6",
   "room_temp_co",
   "volume_of_box",
   "section_break_3",
@@ -16,13 +22,8 @@
   "test_condition",
   "section_break_9",
   "tested_by",
-  "checked_by",
-  "section_break_7",
-  "project",
-  "column_break_9",
-  "client",
-  "column_break_11",
-  "location"
+  "column_break_17",
+  "checked_by"
  ],
  "fields": [
   {
@@ -85,18 +86,10 @@
    "label": "Checked by "
   },
   {
-   "fieldname": "section_break_7",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "project",
    "fieldtype": "Link",
    "label": "Project ",
    "options": "Project"
-  },
-  {
-   "fieldname": "column_break_9",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "client",
@@ -104,16 +97,30 @@
    "label": "Client"
   },
   {
-   "fieldname": "column_break_11",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:03:25.126099",
+ "modified": "2019-11-22 16:56:38.916117",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Lab ERT",

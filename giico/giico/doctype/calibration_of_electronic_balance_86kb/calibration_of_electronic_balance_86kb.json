@@ -7,21 +7,24 @@
  "field_order": [
   "project",
   "client",
+  "department",
+  "column_break_4",
+  "report_date",
+  "calibration_date",
+  "section_break_7",
   "make_brand",
   "capacity",
-  "equipment_id",
-  "column_break_6",
+  "section_break_9",
   "readability",
-  "calibration_date",
-  "report_date",
   "report_ref_no",
-  "section_break_11",
+  "equipment_id",
+  "section_break_14",
   "electronic_balance",
-  "column_break_13",
+  "section_break_16",
   "remarks",
-  "section_break_13",
+  "section_break_18",
   "calibrated_by",
-  "column_break_15",
+  "column_break_20",
   "checked_by"
  ],
  "fields": [
@@ -53,10 +56,6 @@
    "label": "Equipment ID"
   },
   {
-   "fieldname": "column_break_6",
-   "fieldtype": "Column Break"
-  },
-  {
    "description": "g",
    "fieldname": "readability",
    "fieldtype": "Data",
@@ -78,26 +77,14 @@
    "label": "Report Ref No"
   },
   {
-   "fieldname": "section_break_11",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
   },
   {
-   "fieldname": "section_break_13",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "calibrated_by",
    "fieldtype": "Data",
    "label": "Calibrated by"
-  },
-  {
-   "fieldname": "column_break_15",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "checked_by",
@@ -111,11 +98,41 @@
    "options": "Electronic Balance 86KB"
   },
   {
-   "fieldname": "column_break_13",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2019-10-08 15:51:09.155586",
+ "modified": "2019-11-22 13:46:00.494450",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration of Electronic Balance 86KB",

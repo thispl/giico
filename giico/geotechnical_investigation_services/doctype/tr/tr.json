@@ -1,0 +1,49 @@
+{
+ "creation": "2019-12-05 12:26:36.980447",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_id",
+  "depth_m",
+  "thermal_con",
+  "resist"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test ID"
+  },
+  {
+   "fieldname": "depth_m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Depth (m)"
+  },
+  {
+   "fieldname": "thermal_con",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Thermal conductivity(w/m0c)"
+  },
+  {
+   "fieldname": "resist",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Thermal Resistivity(m0c/w)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-05 12:48:47.482492",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "TR",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -7,11 +7,14 @@
  "field_order": [
   "project_name",
   "location",
-  "consultant_name",
-  "column_break_4",
   "report_ref",
+  "column_break_4",
   "report_date",
   "test_date",
+  "department",
+  "section_break_7",
+  "consultant_name",
+  "section_break_9",
   "core_details",
   "core_no",
   "core_location",
@@ -217,12 +220,14 @@
    "description": "cm",
    "fieldname": "diameter_d_cm",
    "fieldtype": "Float",
-   "label": "Diameter (d)"
+   "label": "Diameter (d)",
+   "read_only": 1
   },
   {
    "fieldname": "lcd_ratio",
    "fieldtype": "Float",
-   "label": "Lc/d ratio "
+   "label": "Lc/d ratio ",
+   "read_only": 1
   },
   {
    "fieldname": "failure_load_kn",
@@ -243,13 +248,15 @@
    "description": "cm2",
    "fieldname": "area_cm2",
    "fieldtype": "Float",
-   "label": "Area"
+   "label": "Area",
+   "read_only": 1
   },
   {
    "description": "cm3",
    "fieldname": "volume_cm3",
    "fieldtype": "Float",
-   "label": "Volume"
+   "label": "Volume",
+   "read_only": 1
   },
   {
    "fieldname": "steel_rebar",
@@ -276,27 +283,32 @@
   {
    "fieldname": "strength_correction",
    "fieldtype": "Float",
-   "label": "Strength Correction Factor "
+   "label": "Strength Correction Factor ",
+   "read_only": 1
   },
   {
    "fieldname": "corrected_mpa",
    "fieldtype": "Float",
-   "label": "Corrected Strength (MPa) "
+   "label": "Corrected Strength (MPa) ",
+   "read_only": 1
   },
   {
    "fieldname": "corrected_kgcm2",
    "fieldtype": "Float",
-   "label": "Corrected Strength (kg/cm2) "
+   "label": "Corrected Strength (kg/cm2) ",
+   "read_only": 1
   },
   {
    "fieldname": "equivalent_mpa",
    "fieldtype": "Float",
-   "label": "Equivalent Cube Strength(MPa)"
+   "label": "Equivalent Cube Strength(MPa)",
+   "read_only": 1
   },
   {
    "fieldname": "equivalent_kgcm",
    "fieldtype": "Float",
-   "label": "Equivalent Cube Strength (kg/cm2)\t"
+   "label": "Equivalent Cube Strength (kg/cm2)\t",
+   "read_only": 1
   },
   {
    "description": "g",
@@ -307,7 +319,8 @@
   {
    "fieldname": "dry_density",
    "fieldtype": "Float",
-   "label": "Dry Density (g/cm3) "
+   "label": "Dry Density (g/cm3) ",
+   "read_only": 1
   },
   {
    "fieldname": "wet_density",
@@ -424,9 +437,23 @@
    "fieldname": "html_54",
    "fieldtype": "HTML",
    "options": "<img height=\"100\" src=\"/files/D.JPG\">"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-25 10:09:54.811135",
+ "modified": "2019-11-22 14:11:07.060754",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Concrete Core Drilling And Strength Test",

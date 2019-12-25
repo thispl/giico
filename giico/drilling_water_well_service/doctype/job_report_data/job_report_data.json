@@ -1,0 +1,203 @@
+{
+ "autoname": "JRD.####",
+ "creation": "2019-11-25 13:23:20.407097",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "print_job_no",
+  "status_1",
+  "job_no",
+  "fac",
+  "received_date",
+  "strt_fieldwork",
+  "finished_work",
+  "lab_strt",
+  "lab_finish",
+  "fact_rept",
+  "geotech_sub",
+  "project",
+  "owner",
+  "location",
+  "phone",
+  "contact_person",
+  "section_break_17",
+  "subject",
+  "description",
+  "details",
+  "sno",
+  "status",
+  "ref_no",
+  "invno",
+  "work",
+  "quantity",
+  "total_price",
+  "client"
+ ],
+ "fields": [
+  {
+   "fieldname": "print_job_no",
+   "fieldtype": "Data",
+   "label": "Print Job No"
+  },
+  {
+   "fieldname": "status_1",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nWait\nProceed\nFinish"
+  },
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Data",
+   "label": "Job No"
+  },
+  {
+   "fieldname": "fac",
+   "fieldtype": "Data",
+   "label": "FAC"
+  },
+  {
+   "fieldname": "received_date",
+   "fieldtype": "Date",
+   "label": "Received Date"
+  },
+  {
+   "fieldname": "strt_fieldwork",
+   "fieldtype": "Data",
+   "label": "STRT Field Work"
+  },
+  {
+   "fieldname": "finished_work",
+   "fieldtype": "Data",
+   "label": "Finish Field Work"
+  },
+  {
+   "fieldname": "lab_strt",
+   "fieldtype": "Data",
+   "label": "Lab Work STRT"
+  },
+  {
+   "fieldname": "lab_finish",
+   "fieldtype": "Data",
+   "label": "Lab Work Finish"
+  },
+  {
+   "fieldname": "fact_rept",
+   "fieldtype": "Data",
+   "label": "Fact Rept Sub"
+  },
+  {
+   "fieldname": "geotech_sub",
+   "fieldtype": "Data",
+   "label": "Geotech Sub"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Person to Contact"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Data",
+   "label": "Details"
+  },
+  {
+   "fieldname": "sno",
+   "fieldtype": "Data",
+   "label": "Sno"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "ref_no",
+   "fieldtype": "Small Text",
+   "label": "Ref No"
+  },
+  {
+   "fieldname": "invno",
+   "fieldtype": "Data",
+   "label": "INV.NO"
+  },
+  {
+   "fieldname": "work",
+   "fieldtype": "Data",
+   "label": "% OfWork"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Data",
+   "label": "Total Price"
+  }
+ ],
+ "modified": "2019-11-25 13:28:19.570080",
+ "modified_by": "Administrator",
+ "module": "Drilling Water Well Service",
+ "name": "Job Report Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

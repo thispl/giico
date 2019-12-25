@@ -1,0 +1,76 @@
+{
+ "creation": "2019-09-26 09:21:50.452038",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trial_no",
+  "test_temperature",
+  "instrument_reading",
+  "column_break_4",
+  "difference",
+  "percent_difference",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "trial_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trial No"
+  },
+  {
+   "columns": 2,
+   "fieldname": "test_temperature",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Test Temperature"
+  },
+  {
+   "columns": 2,
+   "fieldname": "instrument_reading",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Instrument Reading"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "difference",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Difference",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "percent_difference",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Percent Difference",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-14 13:29:22.396552",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Thermometer Readings",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

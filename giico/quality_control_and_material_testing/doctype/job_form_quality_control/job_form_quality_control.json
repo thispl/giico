@@ -1,0 +1,125 @@
+{
+ "autoname": "JFQ.####",
+ "creation": "2019-12-23 09:19:16.305865",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_no",
+  "date_received",
+  "project",
+  "customer",
+  "phone",
+  "person_to_contact",
+  "column_break_7",
+  "fieldwork_start",
+  "fieldwork_finish",
+  "lab_work_start",
+  "fact_rpt_submit",
+  "section_break_12",
+  "subject",
+  "section_break_13",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Data",
+   "label": "Job No"
+  },
+  {
+   "fieldname": "date_received",
+   "fieldtype": "Date",
+   "label": "Date Received"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "person_to_contact",
+   "fieldtype": "Data",
+   "label": "Person to Contact"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fieldwork_start",
+   "fieldtype": "Date",
+   "label": "Fieldwork Start"
+  },
+  {
+   "fieldname": "fieldwork_finish",
+   "fieldtype": "Date",
+   "label": "Fieldwork Finish"
+  },
+  {
+   "fieldname": "lab_work_start",
+   "fieldtype": "Date",
+   "label": "Lab Work Start"
+  },
+  {
+   "fieldname": "fact_rpt_submit",
+   "fieldtype": "Date",
+   "label": "Fact Rpt Submit"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Table",
+   "label": "Description",
+   "options": "GT"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2019-12-23 12:48:44.664513",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Job Form Quality Control",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

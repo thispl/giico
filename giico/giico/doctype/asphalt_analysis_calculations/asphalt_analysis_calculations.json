@@ -37,7 +37,7 @@
   },
   {
    "fieldname": "job_mix",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Job Mix"
   },
@@ -55,7 +55,7 @@
   }
  ],
  "istable": 1,
- "modified": "2019-10-23 16:38:44.149538",
+ "modified": "2019-10-31 15:42:02.552551",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Asphalt Analysis Calculations",

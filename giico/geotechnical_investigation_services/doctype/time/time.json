@@ -1,0 +1,52 @@
+{
+ "creation": "2019-12-06 16:14:16.806298",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "depth",
+  "column_break_2",
+  "ts",
+  "column_break_4",
+  "tp"
+ ],
+ "fields": [
+  {
+   "fieldname": "depth",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Depth"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ts",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ts"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tp",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Tp"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-06 16:14:16.806298",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Time",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

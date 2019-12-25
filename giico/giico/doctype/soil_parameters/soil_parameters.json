@@ -1,0 +1,70 @@
+{
+ "creation": "2019-11-29 12:25:02.005706",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "depth",
+  "g",
+  "m1",
+  "column_break_4",
+  "m",
+  "e1"
+ ],
+ "fields": [
+  {
+   "description": "m",
+   "fieldname": "depth",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Depth",
+   "read_only": 1
+  },
+  {
+   "description": "Mpa",
+   "fieldname": "g",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "G",
+   "read_only": 1
+  },
+  {
+   "description": "Mpa",
+   "fieldname": "m1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "M",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "m",
+   "read_only": 1
+  },
+  {
+   "description": "Mpa",
+   "fieldname": "e1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "E=2G(1+m)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-06 08:38:12.855518",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Soil Parameters",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

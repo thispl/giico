@@ -1,0 +1,173 @@
+{
+ "autoname": "LWC.####",
+ "creation": "2019-09-28 09:41:09.516936",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "location",
+  "date",
+  "section_break_6",
+  "name_rmc",
+  "pour_location",
+  "concrete_grade",
+  "column_break_4",
+  "report_no",
+  "method",
+  "section_break_8",
+  "pour_records",
+  "section_break_10",
+  "consultant",
+  "column_break_13",
+  "section_break_16",
+  "viewed_by",
+  "column_break_18",
+  "approved_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name_rmc",
+   "fieldtype": "Data",
+   "label": "Name of RMC Supplier:  "
+  },
+  {
+   "fieldname": "pour_location",
+   "fieldtype": "Data",
+   "label": " Pour Location / Identification"
+  },
+  {
+   "fieldname": "concrete_grade",
+   "fieldtype": "Data",
+   "label": "Concrete Grade"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "method",
+   "fieldtype": "Data",
+   "label": "Method of Placement "
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pour_records",
+   "fieldtype": "Table",
+   "label": "Pour Records",
+   "options": "Pour Records"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Data",
+   "label": "Consultant"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "viewed_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Viewed by"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Approved by"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-21 16:48:44.858864",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Location Wise Concrete Pour Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

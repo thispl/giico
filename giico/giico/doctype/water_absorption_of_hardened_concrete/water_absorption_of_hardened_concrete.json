@@ -5,15 +5,18 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project",
+  "location",
+  "test_date",
+  "column_break_4",
+  "date_of_cast",
+  "report_date",
+  "department",
+  "section_break_7",
   "contractor",
   "consultant",
   "owner",
-  "project",
-  "location",
   "column_break_6",
-  "date_of_cast",
-  "test_date",
-  "report_date",
   "report_ref",
   "concrete_grade",
   "concrete_supplier",
@@ -101,9 +104,23 @@
   {
    "fieldname": "section_break_20",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-30 14:02:57.549218",
+ "modified": "2019-11-22 15:55:44.384008",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Water Absorption of Hardened Concrete",

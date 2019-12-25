@@ -7,13 +7,16 @@
  "field_order": [
   "project",
   "client",
+  "department",
+  "column_break_3",
+  "calibration_date",
+  "report_date",
+  "section_break_6",
   "make_brand",
   "capacity",
   "equipment_id",
-  "column_break_6",
+  "column_break_10",
   "readability",
-  "calibration_date",
-  "report_date",
   "report_ref_no",
   "section_break_11",
   "electronic_balance",
@@ -51,10 +54,6 @@
    "fieldname": "equipment_id",
    "fieldtype": "Data",
    "label": "Equipment ID"
-  },
-  {
-   "fieldname": "column_break_6",
-   "fieldtype": "Column Break"
   },
   {
    "description": "g",
@@ -113,9 +112,27 @@
   {
    "fieldname": "column_break_13",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-08 13:55:06.860975",
+ "modified": "2019-11-22 13:39:52.470079",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration of Electronic Balance 200g",

@@ -1,0 +1,103 @@
+{
+ "creation": "2019-08-09 14:28:54.842287",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "date_of_test",
+  "temp_c",
+  "flow_dir",
+  "column_break_4",
+  "vi",
+  "vii",
+  "viii",
+  "column_break_8",
+  "qua",
+  "time",
+  "k_cm"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test No"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "temp_c",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Temp. C<sup>o</sup>"
+  },
+  {
+   "fieldname": "flow_dir",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Flow Direction"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vi",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "VI cm3"
+  },
+  {
+   "fieldname": "vii",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "VII cm3"
+  },
+  {
+   "fieldname": "viii",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "VIII cm3"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qua",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quavr cm3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Time(sec)"
+  },
+  {
+   "fieldname": "k_cm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "K cm/sec x 10-4",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-18 07:51:55.750932",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Permeability Test Parameters",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

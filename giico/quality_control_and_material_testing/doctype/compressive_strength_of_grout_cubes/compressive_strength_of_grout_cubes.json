@@ -1,0 +1,182 @@
+{
+ "autoname": "GC.####",
+ "creation": "2019-10-03 07:20:19.678908",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_6",
+  "location",
+  "report_date",
+  "section_break_6",
+  "report_ref",
+  "consultant",
+  "contractor",
+  "owner1",
+  "column_break_10",
+  "grade",
+  "concrete_supplier",
+  "section_break_11",
+  "grout_cubes",
+  "calculate",
+  "average_section",
+  "avg_s1",
+  "column_break_15",
+  "avg_s2",
+  "remarks_section",
+  "small_text_18"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contractor"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Data",
+   "label": "Consultant"
+  },
+  {
+   "fieldname": "owner1",
+   "fieldtype": "Data",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Data",
+   "label": "Report Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "concrete_supplier",
+   "fieldtype": "Data",
+   "label": "Concrete Supplier"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grout_cubes",
+   "fieldtype": "Table",
+   "label": "Grout Cubes",
+   "options": "Grout Cubes"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "average_section",
+   "fieldtype": "Section Break",
+   "label": "Average"
+  },
+  {
+   "fieldname": "avg_s1",
+   "fieldtype": "Float",
+   "label": "Average Strength(N/mm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "avg_s2",
+   "fieldtype": "Float",
+   "label": "Average Strength((kg/cm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "small_text_18",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 08:34:31.684852",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Compressive Strength of Grout Cubes",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

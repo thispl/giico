@@ -1,0 +1,185 @@
+{
+ "autoname": "IT.####",
+ "creation": "2019-09-18 16:13:29.838321",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "location",
+  "column_break_4",
+  "date",
+  "test_no",
+  "department",
+  "section_break_7",
+  "job_ref_no",
+  "depthm",
+  "diameter_ring",
+  "area",
+  "column_break_11",
+  "temperaturec",
+  "type_of_test",
+  "initial_ht",
+  "section_break_10",
+  "if_test",
+  "calculate",
+  "generate_graph",
+  "charts_section",
+  "chart",
+  "chart_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "label": "Test No"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "depthm",
+   "fieldtype": "Data",
+   "label": "Depth(m)"
+  },
+  {
+   "fieldname": "diameter_ring",
+   "fieldtype": "Float",
+   "label": "Diameter of ring(cm)"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "temperaturec",
+   "fieldtype": "Int",
+   "label": "Temperature(c)"
+  },
+  {
+   "fieldname": "type_of_test",
+   "fieldtype": "Data",
+   "label": "Type of test"
+  },
+  {
+   "fieldname": "initial_ht",
+   "fieldtype": "Int",
+   "label": "Initial ht of water(cm)"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "if_test",
+   "fieldtype": "Table",
+   "label": "IF Test",
+   "options": "IF Test"
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "Charts"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "chart image"
+  },
+  {
+   "fieldname": "job_ref_no",
+   "fieldtype": "Data",
+   "label": "Job  Ref No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate Graph"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-19 16:26:26.405462",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Infiltration Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -5,15 +5,18 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "contractor",
   "project",
-  "description",
+  "date_of_report",
+  "department",
+  "column_break_3",
+  "date_of_test",
   "casting_date",
   "column_break_5",
-  "date_of_test",
-  "date_of_report",
   "job_ref_no",
+  "description",
+  "column_break_9",
   "concrete_supplier",
+  "contractor",
   "section_break_10",
   "concrete_sample",
   "section_break_12",
@@ -47,7 +50,7 @@
   },
   {
    "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "date_of_test",
@@ -105,9 +108,23 @@
    "fieldname": "checked_by",
    "fieldtype": "Data",
    "label": "Checked by"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-01 15:03:42.851324",
+ "modified": "2019-11-22 15:34:33.778767",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Chemical Test on Concrete Sample",

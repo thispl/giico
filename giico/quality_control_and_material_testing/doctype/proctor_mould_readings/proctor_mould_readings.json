@@ -1,0 +1,55 @@
+{
+ "creation": "2019-09-25 13:03:56.742453",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dia_top",
+  "column_break_2",
+  "dia_bottom",
+  "column_break_4",
+  "height"
+ ],
+ "fields": [
+  {
+   "description": "mm",
+   "fieldname": "dia_top",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dia Top"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "mm",
+   "fieldname": "dia_bottom",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dia Bottom"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "mm",
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Height"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 13:36:08.280091",
+ "modified_by": "ceo@giico.net",
+ "module": "Quality Control and Material Testing",
+ "name": "Proctor Mould Readings",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

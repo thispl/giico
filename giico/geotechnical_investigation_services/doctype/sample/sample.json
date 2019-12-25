@@ -1,0 +1,145 @@
+{
+ "creation": "2019-10-10 09:40:39.702960",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample",
+  "mass",
+  "cr",
+  "div",
+  "time",
+  "settl",
+  "wc_1",
+  "dia",
+  "column_break_9",
+  "height",
+  "disprate",
+  "area",
+  "ct",
+  "density",
+  "dry_density",
+  "gs"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "sample",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample"
+  },
+  {
+   "columns": 1,
+   "fieldname": "mass",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mass"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cr"
+  },
+  {
+   "columns": 1,
+   "fieldname": "div",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DIv"
+  },
+  {
+   "columns": 1,
+   "description": "sec",
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time"
+  },
+  {
+   "columns": 1,
+   "fieldname": "settl",
+   "fieldtype": "Data",
+   "label": "Settl"
+  },
+  {
+   "columns": 1,
+   "fieldname": "dia",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dia"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "height",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Height"
+  },
+  {
+   "columns": 1,
+   "fieldname": "disprate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Disp.Rate"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ct",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ct",
+   "read_only": 1
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Density",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dry_density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dry density",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gs"
+  },
+  {
+   "columns": 1,
+   "fieldname": "wc_1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "wc"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-05 13:10:21.041186",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Sample",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

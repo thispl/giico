@@ -1,0 +1,49 @@
+{
+ "creation": "2019-11-18 14:39:45.317148",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "add_test1",
+  "add_test2",
+  "add_test3",
+  "add_test4"
+ ],
+ "fields": [
+  {
+   "fieldname": "add_test1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Add test1"
+  },
+  {
+   "fieldname": "add_test2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Add test2"
+  },
+  {
+   "fieldname": "add_test3",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Add test3"
+  },
+  {
+   "fieldname": "add_test4",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Add test4"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-19 17:14:45.091379",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Additional Readings 4",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

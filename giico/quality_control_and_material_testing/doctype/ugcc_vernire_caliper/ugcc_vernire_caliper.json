@@ -1,0 +1,204 @@
+{
+ "autoname": "UGCC.####",
+ "creation": "2019-09-26 13:39:36.953440",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "giico_job_ref",
+  "date_of_calibration",
+  "date_of_report",
+  "section_break_6",
+  "made",
+  "equipment_id",
+  "rang",
+  "column_break_6",
+  "readability",
+  "section_break_11",
+  "vernire_caliper_readings",
+  "ambient_condition_section",
+  "room_temperature",
+  "column_break_15",
+  "relative_humidity",
+  "note_section",
+  "small_text_18",
+  "traceability_section",
+  "small_text_20",
+  "section_break_21",
+  "calibrated_by",
+  "column_break_23",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "giico_job_ref",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Giico Job Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_calibration",
+   "fieldtype": "Date",
+   "label": "Date of Calibration"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "made",
+   "fieldtype": "Data",
+   "label": "Made"
+  },
+  {
+   "fieldname": "equipment_id",
+   "fieldtype": "Data",
+   "label": "Equipment ID"
+  },
+  {
+   "description": "mm",
+   "fieldname": "rang",
+   "fieldtype": "Data",
+   "label": "Rang"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "mm",
+   "fieldname": "readability",
+   "fieldtype": "Data",
+   "label": "Readability"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vernire_caliper_readings",
+   "fieldtype": "Table",
+   "label": "Vernire Caliper Readings",
+   "options": "Vernire Caliper Readings"
+  },
+  {
+   "fieldname": "ambient_condition_section",
+   "fieldtype": "Section Break",
+   "label": "Ambient Condition"
+  },
+  {
+   "fieldname": "room_temperature",
+   "fieldtype": "Percent",
+   "label": "Room Temperature"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "relative_humidity",
+   "fieldtype": "Percent",
+   "label": "Relative Humidity"
+  },
+  {
+   "fieldname": "note_section",
+   "fieldtype": "Section Break",
+   "label": "Note"
+  },
+  {
+   "fieldname": "small_text_18",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "traceability_section",
+   "fieldtype": "Section Break",
+   "label": "Traceability"
+  },
+  {
+   "fieldname": "small_text_20",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Calibrated By"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Checked By"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-23 16:37:36.518552",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "UGCC Vernire Caliper",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

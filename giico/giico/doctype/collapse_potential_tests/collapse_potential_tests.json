@@ -5,9 +5,15 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project",
+  "client",
+  "department",
+  "column_break_3",
+  "location",
+  "date",
+  "section_break_6",
   "job_ref",
   "test_id",
-  "date",
   "sample_id",
   "specimen_details",
   "type",
@@ -22,11 +28,9 @@
   "column_break_15",
   "collapse_potential",
   "section_break_17",
-  "project",
-  "column_break_17",
-  "client",
-  "column_break_21",
-  "location"
+  "charts_section",
+  "chart",
+  "chart_image"
  ],
  "fields": [
   {
@@ -91,7 +95,8 @@
    "description": "%",
    "fieldname": "natural_moisture_cont",
    "fieldtype": "Data",
-   "label": "Natural moisture cont"
+   "label": "Natural moisture cont",
+   "read_only": 1
   },
   {
    "description": "%",
@@ -125,25 +130,47 @@
    "options": "Project"
   },
   {
-   "fieldname": "column_break_17",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "client",
    "fieldtype": "Data",
    "label": "Client"
   },
   {
-   "fieldname": "column_break_21",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "CHARTS"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "label": "Chart Image"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:03:21.386818",
+ "modified": "2019-11-22 16:58:15.623893",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Collapse Potential Tests",

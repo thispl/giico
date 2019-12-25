@@ -1,0 +1,162 @@
+{
+ "autoname": "CHM.####",
+ "creation": "2019-10-17 09:11:50.738020",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "location",
+  "column_break_5",
+  "date_of_report",
+  "date_of_test",
+  "date_of_core",
+  "section_break_7",
+  "report_ref",
+  "contractor",
+  "cored_by",
+  "section_break_10",
+  "bulk_specific",
+  "section_break_12",
+  "remarks",
+  "section_break_14",
+  "tested_by",
+  "column_break_14",
+  "approved_by"
+ ],
+ "fields": [
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test "
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report "
+  },
+  {
+   "fieldname": "date_of_core",
+   "fieldtype": "Date",
+   "label": "Date of Core "
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor "
+  },
+  {
+   "fieldname": "cored_by",
+   "fieldtype": "Data",
+   "label": "Cored by "
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Report Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bulk_specific",
+   "fieldtype": "Table",
+   "label": "Bulk Specific Gravity",
+   "options": "Bulk Specific Gravity"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by "
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved by "
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project ",
+   "options": "Project",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 09:13:41.845012",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Compacted Hot mix Asphalt As per Aashto",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

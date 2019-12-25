@@ -6,12 +6,15 @@
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "sample_lab",
+  "column_break_3",
+  "date_test",
+  "department",
+  "section_break_4",
   "main_con",
   "description",
   "material",
-  "sample_lab",
   "column_break_6",
-  "date_test",
   "giico",
   "thick",
   "lab_temp",
@@ -115,9 +118,23 @@
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-01 10:07:30.074967",
+ "modified": "2019-11-22 15:50:25.799948",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Mechanical Test",

@@ -1,0 +1,49 @@
+{
+ "creation": "2019-12-15 11:07:34.359708",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "select_test",
+  "test_id",
+  "test_pf",
+  "open"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_test",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Test",
+   "options": "All Tests"
+  },
+  {
+   "fieldname": "test_id",
+   "fieldtype": "Data",
+   "label": "Test ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "open",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Create / Edit"
+  },
+  {
+   "fieldname": "test_pf",
+   "fieldtype": "Data",
+   "label": "Print Format"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-15 15:08:34.985685",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Project Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

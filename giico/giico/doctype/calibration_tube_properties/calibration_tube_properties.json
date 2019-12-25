@@ -1,0 +1,52 @@
+{
+ "creation": "2019-11-16 08:30:55.932899",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "size_or_property",
+  "column_break_2",
+  "id",
+  "column_break_4",
+  "od"
+ ],
+ "fields": [
+  {
+   "fieldname": "size_or_property",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size or property"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "od",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "OD"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-16 08:30:55.932899",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Calibration tube properties",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

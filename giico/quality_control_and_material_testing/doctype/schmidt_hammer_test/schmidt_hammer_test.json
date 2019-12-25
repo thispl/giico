@@ -1,0 +1,436 @@
+{
+ "autoname": "SHT.####",
+ "creation": "2019-11-01 08:28:10.055047",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_5",
+  "location",
+  "date_of_report",
+  "date_of_test",
+  "section_break_6",
+  "job_ref",
+  "column_break_8",
+  "structure_location",
+  "column_break_10",
+  "consultant_name",
+  "test_1_section",
+  "test_no",
+  "uncorrected_comp1",
+  "column_break_14",
+  "location_1",
+  "time_factor1",
+  "column_break_16",
+  "direction_of_test",
+  "corrected_comp1",
+  "section_break_18",
+  "test_2_section",
+  "testno_2",
+  "uncorrected_comp2",
+  "column_break_24",
+  "location_2",
+  "time_factor2",
+  "column_break_26",
+  "direction_of_test_2",
+  "corrected_comp2",
+  "section_break_28",
+  "test_3_section",
+  "testno_3",
+  "uncorrected_comp3",
+  "column_break_46",
+  "location_3",
+  "time_factor3",
+  "column_break_48",
+  "direction_of_test2",
+  "corrected_comp3",
+  "section_break_50",
+  "test_4_section",
+  "testno_4",
+  "uncorrected_comp4",
+  "column_break_62",
+  "location_4",
+  "time_factor4",
+  "column_break_64",
+  "direction_of_test4",
+  "corrected_comp4",
+  "section_break_66",
+  "readings_4",
+  "calculate",
+  "section_break_41",
+  "aver1",
+  "column_break_43",
+  "aver2",
+  "column_break_45",
+  "aver3",
+  "column_break_47",
+  "aver4",
+  "section_break_42",
+  "additional_readings4",
+  "section_break_80",
+  "age_of_structure"
+ ],
+ "fields": [
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "structure_location",
+   "fieldtype": "Data",
+   "label": "Structure Location"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_ref",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consultant_name",
+   "fieldtype": "Data",
+   "label": "Consultant Name"
+  },
+  {
+   "fieldname": "test_1_section",
+   "fieldtype": "Section Break",
+   "label": "TEST 1"
+  },
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "label": "Test No"
+  },
+  {
+   "fieldname": "uncorrected_comp1",
+   "fieldtype": "Data",
+   "label": "Uncorrected Cube Compr. Strength"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location_1",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "time_factor1",
+   "fieldtype": "Float",
+   "label": "Time factor"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "direction_of_test",
+   "fieldtype": "Data",
+   "label": "Direction of Test"
+  },
+  {
+   "fieldname": "corrected_comp1",
+   "fieldtype": "Data",
+   "label": "Corrected Cube Compr. Strength ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_2_section",
+   "fieldtype": "Section Break",
+   "label": "TEST 2"
+  },
+  {
+   "fieldname": "testno_2",
+   "fieldtype": "Data",
+   "label": "Test No"
+  },
+  {
+   "fieldname": "uncorrected_comp2",
+   "fieldtype": "Data",
+   "label": "Uncorrected Cube Compr. Strength"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location_2",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "time_factor2",
+   "fieldtype": "Float",
+   "label": "Time factor"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "direction_of_test_2",
+   "fieldtype": "Data",
+   "label": "Direction of Test"
+  },
+  {
+   "fieldname": "corrected_comp2",
+   "fieldtype": "Data",
+   "label": "Corrected Cube Compr. Strength ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_3_section",
+   "fieldtype": "Section Break",
+   "label": "TEST 3"
+  },
+  {
+   "fieldname": "testno_3",
+   "fieldtype": "Data",
+   "label": "Test No"
+  },
+  {
+   "fieldname": "uncorrected_comp3",
+   "fieldtype": "Data",
+   "label": "Uncorrected Cube Compr. Strength"
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location_3",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "time_factor3",
+   "fieldtype": "Float",
+   "label": "Time factor"
+  },
+  {
+   "fieldname": "column_break_48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "direction_of_test2",
+   "fieldtype": "Data",
+   "label": "Direction of Test"
+  },
+  {
+   "fieldname": "corrected_comp3",
+   "fieldtype": "Data",
+   "label": "Corrected Cube Compr. Strength ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_50",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_4_section",
+   "fieldtype": "Section Break",
+   "label": "TEST 4"
+  },
+  {
+   "fieldname": "testno_4",
+   "fieldtype": "Data",
+   "label": "Test No"
+  },
+  {
+   "fieldname": "uncorrected_comp4",
+   "fieldtype": "Data",
+   "label": "Uncorrected Cube Compr. Strength"
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location_4",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "time_factor4",
+   "fieldtype": "Float",
+   "label": "Time factor"
+  },
+  {
+   "fieldname": "column_break_64",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "direction_of_test4",
+   "fieldtype": "Data",
+   "label": "Direction of Test"
+  },
+  {
+   "fieldname": "corrected_comp4",
+   "fieldtype": "Data",
+   "label": "Corrected Cube Compr. Strength ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_66",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "readings_4",
+   "fieldtype": "Table",
+   "label": "Readings ",
+   "options": "Test 4"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_41",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "aver1",
+   "fieldtype": "Data",
+   "label": "Average(test1)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aver2",
+   "fieldtype": "Data",
+   "label": "Average(test2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aver3",
+   "fieldtype": "Data",
+   "label": "Average(test3)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aver4",
+   "fieldtype": "Data",
+   "label": "Average(test4)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_42",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "additional_readings4",
+   "fieldtype": "Table",
+   "label": "Additional Readings ",
+   "options": "Additional Readings 4"
+  },
+  {
+   "fieldname": "section_break_80",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "age_of_structure",
+   "fieldtype": "Data",
+   "label": "Age of Structure"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 12:42:23.832882",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Schmidt Hammer Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

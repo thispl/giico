@@ -1,0 +1,61 @@
+{
+ "creation": "2019-11-16 08:21:12.934405",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type_of_apparatus",
+  "size",
+  "th_diameter",
+  "column_break_4",
+  "th_length",
+  "th_volume"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_of_apparatus",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type of apparatus"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size"
+  },
+  {
+   "fieldname": "th_diameter",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Th. diameter"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "th_length",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Th. length"
+  },
+  {
+   "fieldname": "th_volume",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Th. volume"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-16 08:22:34.180750",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Probe Lengths",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

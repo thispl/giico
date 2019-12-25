@@ -1,0 +1,64 @@
+{
+ "creation": "2019-11-25 14:34:39.269305",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "elapsedtime_pumping",
+  "elapsed_time_within_step",
+  "water_level",
+  "column_break_4",
+  "drawdown_s",
+  "step_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "elapsedtime_pumping",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Total Elapsed time since pumping"
+  },
+  {
+   "description": "min",
+   "fieldname": "elapsed_time_within_step",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Elapsed time within Step "
+  },
+  {
+   "description": "m",
+   "fieldname": "water_level",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Water Level"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "m",
+   "fieldname": "drawdown_s",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Drawdown S"
+  },
+  {
+   "fieldname": "step_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Step No"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 14:34:39.269305",
+ "modified_by": "Administrator",
+ "module": "Drilling Water Well Service",
+ "name": "Step Test Data",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

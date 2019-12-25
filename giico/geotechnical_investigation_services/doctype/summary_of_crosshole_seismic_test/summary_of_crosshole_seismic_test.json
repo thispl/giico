@@ -1,0 +1,216 @@
+{
+ "creation": "2019-10-21 08:20:32.605895",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_depth_m1",
+  "g1mpa",
+  "g2mpa",
+  "g12mpa",
+  "gmpa",
+  "m1mpa",
+  "m2mpa",
+  "column_break_7",
+  "m12mpa",
+  "mmpa",
+  "msd1",
+  "msd2",
+  "msd12",
+  "msd",
+  "column_break_14",
+  "vs1",
+  "vs2",
+  "vs12",
+  "vs",
+  "vp1",
+  "vp2",
+  "column_break_21",
+  "vp12",
+  "vp",
+  "e1",
+  "e2",
+  "e12",
+  "e"
+ ],
+ "fields": [
+  {
+   "fieldname": "g1mpa",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "G1mpa",
+   "read_only": 1
+  },
+  {
+   "fieldname": "g2mpa",
+   "fieldtype": "Int",
+   "label": "G2mpa",
+   "read_only": 1
+  },
+  {
+   "fieldname": "g12mpa",
+   "fieldtype": "Int",
+   "label": "G12mpa",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gmpa",
+   "fieldtype": "Int",
+   "label": "Gmpa",
+   "read_only": 1
+  },
+  {
+   "fieldname": "m1mpa",
+   "fieldtype": "Int",
+   "label": "M1mpa",
+   "read_only": 1
+  },
+  {
+   "fieldname": "m2mpa",
+   "fieldtype": "Int",
+   "label": "M2mpa",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "m12mpa",
+   "fieldtype": "Int",
+   "label": "M12mpa",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mmpa",
+   "fieldtype": "Int",
+   "label": "Mmpa",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vs1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vs1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vs2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vs2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vs12",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vs12",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vs",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vp1",
+   "fieldtype": "Int",
+   "label": "Vp1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vp2",
+   "fieldtype": "Int",
+   "label": "Vp2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vp12",
+   "fieldtype": "Int",
+   "label": "Vp12",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vp",
+   "fieldtype": "Int",
+   "label": "Vp",
+   "read_only": 1
+  },
+  {
+   "fieldname": "e1",
+   "fieldtype": "Int",
+   "label": "E1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "e2",
+   "fieldtype": "Int",
+   "label": "E2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "e12",
+   "fieldtype": "Int",
+   "label": "E12",
+   "read_only": 1
+  },
+  {
+   "fieldname": "e",
+   "fieldtype": "Int",
+   "label": "E",
+   "read_only": 1
+  },
+  {
+   "fieldname": "test_depth_m1",
+   "fieldtype": "Float",
+   "label": "Test Depth m",
+   "read_only": 1
+  },
+  {
+   "fieldname": "msd",
+   "fieldtype": "Float",
+   "label": "m",
+   "read_only": 1
+  },
+  {
+   "fieldname": "msd1",
+   "fieldtype": "Float",
+   "label": "m1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "msd2",
+   "fieldtype": "Float",
+   "label": "m2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "msd12",
+   "fieldtype": "Float",
+   "label": "m12",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-09 08:10:41.422912",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Summary of Crosshole Seismic Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

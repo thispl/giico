@@ -1,0 +1,110 @@
+{
+ "creation": "2019-12-18 10:30:26.262430",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "weight",
+  "funnel_vis",
+  "filtratewl",
+  "filtratewi",
+  "pv",
+  "yp",
+  "column_break_7",
+  "elecresis",
+  "elecstable",
+  "gels",
+  "ph",
+  "ca",
+  "cl"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "columns": 2,
+   "fieldname": "funnel_vis",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Funnel Vis"
+  },
+  {
+   "columns": 2,
+   "fieldname": "filtratewl",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Filtrate(WL)"
+  },
+  {
+   "columns": 2,
+   "fieldname": "filtratewi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Filtrate(WI)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "pv",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PV"
+  },
+  {
+   "columns": 1,
+   "fieldname": "yp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "YP"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "elecresis",
+   "fieldtype": "Data",
+   "label": "Elec.Resis"
+  },
+  {
+   "fieldname": "elecstable",
+   "fieldtype": "Data",
+   "label": "Elec.Stable"
+  },
+  {
+   "fieldname": "gels",
+   "fieldtype": "Data",
+   "label": "Gels"
+  },
+  {
+   "fieldname": "ph",
+   "fieldtype": "Data",
+   "label": "PH"
+  },
+  {
+   "fieldname": "ca",
+   "fieldtype": "Data",
+   "label": "CA"
+  },
+  {
+   "fieldname": "cl",
+   "fieldtype": "Data",
+   "label": "CL"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-18 10:30:26.262430",
+ "modified_by": "Administrator",
+ "module": "Drilling Water Well Service",
+ "name": "Mud Data",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -7,9 +7,11 @@
  "field_order": [
   "project",
   "client",
+  "department",
+  "column_break_4",
   "test_location",
   "date",
-  "column_break_4",
+  "section_break_6",
   "source",
   "receiver",
   "sr",
@@ -18,7 +20,10 @@
   "2",
   "source_recevier2",
   "3",
-  "receiver1_receiver2"
+  "receiver1_receiver2",
+  "calculate",
+  "summary_of_crosshole_section",
+  "summary"
  ],
  "fields": [
   {
@@ -87,15 +92,41 @@
   {
    "fieldname": "sr",
    "fieldtype": "Float",
-   "label": "SR"
+   "label": "SR",
+   "read_only": 1
   },
   {
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "summary_of_crosshole_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "Table",
+   "label": "Summary of Crosshole Seismic Test",
+   "options": "Summary of Crosshole Seismic Test"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-21 17:30:51.470185",
+ "modified": "2019-11-22 16:46:11.813476",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Crosshole Test",

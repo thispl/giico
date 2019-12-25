@@ -5,14 +5,17 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "client",
   "project",
+  "client",
+  "department",
+  "column_break_3",
+  "date_of_report",
+  "date_of_calibration",
+  "column_break_5",
   "manufacturer",
   "serial_no",
-  "column_break_5",
+  "column_break_9",
   "temp_range",
-  "date_of_calibration",
-  "date_of_report",
   "giico_job_no",
   "section_break_10",
   "oven_readings",
@@ -49,7 +52,7 @@
   },
   {
    "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "description": "C Max",
@@ -118,9 +121,23 @@
    "fieldname": "checked_by",
    "fieldtype": "Data",
    "label": "Checked by"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:01:29.104255",
+ "modified": "2019-11-22 13:22:48.161377",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration of Oven",

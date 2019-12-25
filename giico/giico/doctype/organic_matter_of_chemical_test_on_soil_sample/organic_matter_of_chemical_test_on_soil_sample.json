@@ -7,11 +7,12 @@
  "field_order": [
   "project",
   "client",
-  "owner",
   "location",
-  "column_break_5",
+  "column_break_4",
   "testing_date",
   "reporting_date",
+  "column_break_5",
+  "owner",
   "job_ref",
   "description",
   "section_break_10",
@@ -47,7 +48,7 @@
   },
   {
    "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "testing_date",
@@ -104,9 +105,13 @@
    "fieldname": "result",
    "fieldtype": "Float",
    "label": "Result %"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2019-10-04 07:42:26.238834",
+ "modified": "2019-11-12 13:34:08.404977",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Organic Matter of Chemical Test on Soil Sample",

@@ -1,0 +1,170 @@
+{
+ "autoname": "CKB.####",
+ "creation": "2019-10-08 14:59:40.293242",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_4",
+  "report_date",
+  "calibration_date",
+  "section_break_7",
+  "make_brand",
+  "capacity",
+  "readability",
+  "section_break_9",
+  "report_ref_no",
+  "equipment_id",
+  "section_break_14",
+  "electronic_balance",
+  "section_break_16",
+  "remarks",
+  "section_break_18",
+  "calibrated_by",
+  "column_break_20",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "calibration_date",
+   "fieldtype": "Date",
+   "label": "Calibration Date"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "make_brand",
+   "fieldtype": "Data",
+   "label": "Make / Brand"
+  },
+  {
+   "description": "g",
+   "fieldname": "capacity",
+   "fieldtype": "Data",
+   "label": "Capacity"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "g",
+   "fieldname": "readability",
+   "fieldtype": "Data",
+   "label": "Readability"
+  },
+  {
+   "fieldname": "report_ref_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Report Ref No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "equipment_id",
+   "fieldtype": "Data",
+   "label": "Equipment ID"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "electronic_balance",
+   "fieldtype": "Table",
+   "label": "Electronic Balance",
+   "options": "Electronic Balance 86KB"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Calibrated by"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Checked by"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 09:48:18.149521",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Calibration of Electronic Balance 86KB",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -5,10 +5,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "date",
-  "client",
-  "column_break_3",
   "project",
+  "client",
+  "department",
+  "column_break_3",
+  "date",
   "equipment",
   "section_break_6",
   "cylinders",
@@ -100,9 +101,15 @@
    "fieldtype": "Link",
    "label": "Designation",
    "options": "Designation"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:02:23.988096",
+ "modified": "2019-11-22 13:35:45.459977",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration of Cylinders",

@@ -1,0 +1,153 @@
+{
+ "autoname": "TR.####",
+ "creation": "2019-08-09 09:46:25.432166",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "column_break_3",
+  "location",
+  "department",
+  "column_break_5",
+  "ref",
+  "samp_type",
+  "section_break_8",
+  "equip_used",
+  "section_break_10",
+  "reference__std",
+  "section_break_12",
+  "tested_by",
+  "designation",
+  "column_break_12",
+  "checked_by",
+  "designation1"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project ",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer ",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location ",
+   "options": "Location"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Report Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "samp_type",
+   "fieldtype": "Data",
+   "label": "Sample Type "
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "equip_used",
+   "fieldtype": "Data",
+   "label": "Equip. Used"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reference__std",
+   "fieldtype": "Table",
+   "label": "Reference  std",
+   "options": "TR Reference"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  },
+  {
+   "fieldname": "designation1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Designation"
+  }
+ ],
+ "modified": "2019-12-24 16:37:19.099655",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Thermal Resistivity Result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

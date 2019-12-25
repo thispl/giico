@@ -5,18 +5,21 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "asphalt_mix_by_reflux_attraction_section",
-  "client",
-  "type_of_mix",
-  "sample_source",
   "project",
+  "client",
   "location",
-  "column_break_7",
+  "column_break_4",
   "asp_laying_date",
   "report_date",
+  "department",
+  "section_break_7",
+  "type_of_mix",
+  "sample_source",
+  "column_break_7",
   "job_no",
   "sample_no",
   "extraction_results_section",
+  "asphalt_mix_by_reflux_attraction_section",
   "asp_sample",
   "wt_aggregate",
   "wt_filter_paper_before",
@@ -33,6 +36,7 @@
   "min",
   "section_break_24",
   "gradation",
+  "calculate",
   "total_section",
   "total_aggregate",
   "column_break_28",
@@ -42,6 +46,10 @@
   "section_break_32",
   "asphalt_analysis_calculations",
   "section_break_37",
+  "chart_section",
+  "chart",
+  "chart_image",
+  "section_break_44",
   "tested_by",
   "column_break_32",
   "materials_engineer"
@@ -131,7 +139,8 @@
   {
    "fieldname": "ash_correction",
    "fieldtype": "Float",
-   "label": "Ash Correction"
+   "label": "Ash Correction",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_18",
@@ -140,22 +149,26 @@
   {
    "fieldname": "wt_of_material",
    "fieldtype": "Float",
-   "label": "Wt. Of Material on Filter"
+   "label": "Wt. Of Material on Filter",
+   "read_only": 1
   },
   {
    "fieldname": "total_wt_aggregate",
    "fieldtype": "Float",
-   "label": "Total WT. of Aggregate"
+   "label": "Total WT. of Aggregate",
+   "read_only": 1
   },
   {
    "fieldname": "wt_of_bitumen",
    "fieldtype": "Float",
-   "label": "WT.of Bitumen"
+   "label": "WT.of Bitumen",
+   "read_only": 1
   },
   {
    "fieldname": "bitumen_wt_aggregate",
    "fieldtype": "Float",
-   "label": "Bitumen % by WT.of Aggregate"
+   "label": "Bitumen % by WT.of Aggregate",
+   "read_only": 1
   },
   {
    "fieldname": "job_mix_form",
@@ -180,7 +193,8 @@
   {
    "fieldname": "total_aggregate",
    "fieldtype": "Float",
-   "label": " Total WT of Agg."
+   "label": " Total WT of Agg.",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_28",
@@ -189,7 +203,8 @@
   {
    "fieldname": "total_wash",
    "fieldtype": "Float",
-   "label": " Total WT after Wash "
+   "label": " Total WT after Wash ",
+   "read_only": 1
   },
   {
    "fieldname": "remarks_section",
@@ -242,9 +257,48 @@
   {
    "fieldname": "section_break_37",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "chart_section",
+   "fieldtype": "Section Break",
+   "label": "Chart"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "label": "chart image"
+  },
+  {
+   "fieldname": "section_break_44",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-23 16:42:20.364847",
+ "modified": "2019-11-22 13:56:05.362443",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Asphalt Analysis Sample",

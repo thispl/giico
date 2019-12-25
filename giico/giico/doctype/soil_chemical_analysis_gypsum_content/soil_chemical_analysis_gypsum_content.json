@@ -7,6 +7,8 @@
  "field_order": [
   "project_name",
   "client_name",
+  "department",
+  "column_break_3",
   "date_of_test",
   "date_of_report",
   "column_break_5",
@@ -46,7 +48,7 @@
   },
   {
    "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "description",
@@ -99,9 +101,19 @@
    "fieldname": "checked_by",
    "fieldtype": "Data",
    "label": "Checked by"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-04 07:16:56.742390",
+ "modified": "2019-11-22 15:35:28.301188",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Soil Chemical Analysis Gypsum Content",

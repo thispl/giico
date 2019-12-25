@@ -1,0 +1,42 @@
+{
+ "creation": "2019-11-26 13:25:34.453531",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type1",
+  "type2",
+  "type3"
+ ],
+ "fields": [
+  {
+   "fieldname": "type1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type1"
+  },
+  {
+   "fieldname": "type2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Type2"
+  },
+  {
+   "fieldname": "type3",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Type3"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-26 14:37:07.049086",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Total Progress",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

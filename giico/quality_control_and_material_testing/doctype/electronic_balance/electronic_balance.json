@@ -1,0 +1,63 @@
+{
+ "creation": "2019-09-24 10:53:16.606370",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stand_weight",
+  "balance",
+  "differ",
+  "column_break_4",
+  "difference",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "stand_weight",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Standard Weight(g)"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Balance Weight(g)"
+  },
+  {
+   "fieldname": "differ",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Difference(g)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "difference",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Difference(%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 13:42:47.456561",
+ "modified_by": "ceo@giico.net",
+ "module": "Quality Control and Material Testing",
+ "name": "Electronic Balance",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

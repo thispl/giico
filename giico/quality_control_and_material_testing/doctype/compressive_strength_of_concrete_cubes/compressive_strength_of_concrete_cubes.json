@@ -1,0 +1,230 @@
+{
+ "autoname": "CC.####",
+ "creation": "2019-09-27 12:29:53.269107",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "location",
+  "department",
+  "column_break_3",
+  "customer",
+  "test_date",
+  "report_date",
+  "section_break_6",
+  "contractor",
+  "consultant",
+  "owner1",
+  "structure",
+  "column_break_7",
+  "report_ref",
+  "concrete_grade",
+  "concrete_supplier",
+  "delivery_note_no",
+  "section_break_14",
+  "concrete_cubes",
+  "calculate",
+  "section_break_16",
+  "average_section",
+  "strength1",
+  "column_break_19",
+  "strength2",
+  "section_break_21",
+  "remarks",
+  "section_break_23",
+  "calibrated_by",
+  "column_break_25",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor"
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Data",
+   "label": "Consultant"
+  },
+  {
+   "fieldname": "owner1",
+   "fieldtype": "Data",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "structure",
+   "fieldtype": "Data",
+   "label": "Structure"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Data",
+   "label": "Report Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "concrete_grade",
+   "fieldtype": "Data",
+   "label": "Concrete Grade"
+  },
+  {
+   "fieldname": "concrete_supplier",
+   "fieldtype": "Data",
+   "label": "Concrete Supplier "
+  },
+  {
+   "fieldname": "delivery_note_no",
+   "fieldtype": "Data",
+   "label": "Delivery Note No. "
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "concrete_cubes",
+   "fieldtype": "Table",
+   "label": "Concrete Cubes",
+   "options": "Concrete Cubes"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "average_section",
+   "fieldtype": "Section Break",
+   "label": "Average"
+  },
+  {
+   "description": "(N/mm2)\n",
+   "fieldname": "strength1",
+   "fieldtype": "Data",
+   "label": "Strength",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "kg/cm2\n",
+   "fieldname": "strength2",
+   "fieldtype": "Data",
+   "label": "Strength",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Calibrated by"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Checked by"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  }
+ ],
+ "modified": "2019-12-21 16:50:02.612653",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Compressive Strength of Concrete Cubes",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

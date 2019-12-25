@@ -1,0 +1,72 @@
+{
+ "creation": "2019-09-26 15:26:58.131775",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "wet_soil",
+  "dry_cont",
+  "container",
+  "wt_water",
+  "wt_dry",
+  "mc"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "wet_soil",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wet Soil Cont"
+  },
+  {
+   "columns": 2,
+   "fieldname": "dry_cont",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Dry Sl Cont"
+  },
+  {
+   "columns": 2,
+   "fieldname": "container",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Container"
+  },
+  {
+   "columns": 2,
+   "fieldname": "wt_water",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt Water",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "wt_dry",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt Dry",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "mc",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "MC",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-14 13:23:46.198471",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Speedy Moisture Calibration",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

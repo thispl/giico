@@ -5,11 +5,13 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "client",
   "project",
+  "client",
+  "department",
+  "column_break_3",
   "date_calib",
-  "column_break_4",
   "date_report",
+  "column_break_4",
   "equip_id",
   "giico_report_no",
   "section_break_8",
@@ -42,7 +44,7 @@
   },
   {
    "fieldname": "column_break_4",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "date_report",
@@ -110,9 +112,19 @@
    "fieldname": "desig1",
    "fieldtype": "Data",
    "label": "Designation1"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:02:16.348491",
+ "modified": "2019-11-22 13:29:22.609951",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration of Marshall Rammer",

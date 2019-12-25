@@ -1,0 +1,256 @@
+{
+ "autoname": "PFC.####",
+ "creation": "2019-11-22 13:30:47.301857",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bill_of_quantity_section",
+  "date",
+  "column_break_3",
+  "total_working",
+  "sec_1",
+  "install_pump",
+  "section_break_3",
+  "pullout_pump",
+  "section_break_5",
+  "calculate_1",
+  "pullout_installpump",
+  "section_break_8",
+  "timesheet",
+  "calculate",
+  "section_break_14",
+  "total_cost",
+  "section_break_13",
+  "manpower_daily_cost",
+  "over_time",
+  "column_break_16",
+  "guardian",
+  "rig_diesel",
+  "section_break_19",
+  "pick_up_car_diesel",
+  "section_break_21",
+  "jeep_car_diesel",
+  "section_break_23",
+  "minibus",
+  "crane",
+  "manpow_exp",
+  "spare_part",
+  "other_expenses",
+  "column_break_29",
+  "monthly_acc",
+  "rental_bus",
+  "rental_car",
+  "crane_cameras",
+  "rubber_slips"
+ ],
+ "fields": [
+  {
+   "fieldname": "bill_of_quantity_section",
+   "fieldtype": "Section Break",
+   "label": "BILL OF QUANTITY"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_working",
+   "fieldtype": "Time",
+   "label": "Total Working Hours"
+  },
+  {
+   "fieldname": "sec_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "install_pump",
+   "fieldtype": "Table",
+   "label": "Install Pump Unit",
+   "options": "Install Pump Unit"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pullout_pump",
+   "fieldtype": "Table",
+   "label": "Pull out Pump Unit",
+   "options": "Pull out Pump Unit"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calculate_1",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "pullout_installpump",
+   "fieldtype": "Table",
+   "label": "Pull out & install Pump Unit",
+   "options": "Pull out and install Pump Unit"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "timesheet",
+   "fieldtype": "Table",
+   "label": "Timesheet",
+   "options": "Time Sheet"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Data",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "manpower_daily_cost",
+   "fieldtype": "Data",
+   "label": "Manpower Daily Cost"
+  },
+  {
+   "fieldname": "over_time",
+   "fieldtype": "Data",
+   "label": "Over Time"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "guardian",
+   "fieldtype": "Data",
+   "label": "Guardian"
+  },
+  {
+   "fieldname": "rig_diesel",
+   "fieldtype": "Data",
+   "label": "Rig Diesel"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pick_up_car_diesel",
+   "fieldtype": "Table",
+   "label": "Pick up Car Diesel",
+   "options": "Pick up Car Diesel"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jeep_car_diesel",
+   "fieldtype": "Table",
+   "label": "Jeep Car Diesel",
+   "options": "Jeep Car Diesel"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "minibus",
+   "fieldtype": "Data",
+   "label": "Minibus Diesel"
+  },
+  {
+   "fieldname": "crane",
+   "fieldtype": "Data",
+   "label": "Crane Diesel"
+  },
+  {
+   "fieldname": "manpow_exp",
+   "fieldtype": "Data",
+   "label": "Manpower Expenses"
+  },
+  {
+   "fieldname": "spare_part",
+   "fieldtype": "Data",
+   "label": "Spare Part"
+  },
+  {
+   "fieldname": "other_expenses",
+   "fieldtype": "Data",
+   "label": "Other Expenses"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "monthly_acc",
+   "fieldtype": "Data",
+   "label": "Monthly Accomodation"
+  },
+  {
+   "fieldname": "rental_bus",
+   "fieldtype": "Data",
+   "label": "Monthly Rental Bus"
+  },
+  {
+   "fieldname": "rental_car",
+   "fieldtype": "Data",
+   "label": "Monthly Rental Car"
+  },
+  {
+   "fieldname": "crane_cameras",
+   "fieldtype": "Data",
+   "label": "Crane & Cameras Depreciation"
+  },
+  {
+   "fieldname": "rubber_slips",
+   "fieldtype": "Data",
+   "label": "Rubber Slips"
+  }
+ ],
+ "modified": "2019-12-23 10:57:10.516399",
+ "modified_by": "Administrator",
+ "module": "Drilling Water Well Service",
+ "name": "Project Follow up CostSheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

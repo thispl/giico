@@ -33,12 +33,12 @@
    "fieldname": "differen1",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "% Difference",
+   "label": "Difference%",
    "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-10-05 09:23:09.877809",
+ "modified": "2019-11-11 15:10:13.921542",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Speedy Moisture",

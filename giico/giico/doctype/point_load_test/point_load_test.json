@@ -5,10 +5,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "date",
-  "depthm",
+  "project",
+  "client",
   "column_break_3",
+  "date",
+  "section_break_19",
+  "depthm",
   "bh_no",
+  "column_break_8",
   "sample_description",
   "dimensions_of_specimen_section",
   "average_height",
@@ -23,9 +27,6 @@
   "point_load_strength_index",
   "uni_cs1",
   "uni_cs3",
-  "section_break_19",
-  "project",
-  "client",
   "column_break_22",
   "tested_by",
   "checked_by",
@@ -137,7 +138,7 @@
   },
   {
    "fieldname": "column_break_22",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "tested_by",
@@ -154,9 +155,13 @@
    "fieldtype": "Float",
    "hidden": 1,
    "label": "Point Load value"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2019-09-27 21:08:08.737198",
+ "modified": "2019-11-13 14:38:49.278923",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Point Load Test",

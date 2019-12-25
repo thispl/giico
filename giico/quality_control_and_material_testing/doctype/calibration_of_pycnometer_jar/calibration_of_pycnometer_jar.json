@@ -1,0 +1,191 @@
+{
+ "autoname": "CPJ.####",
+ "creation": "2019-09-25 13:08:58.034413",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "date_calib",
+  "date_report",
+  "column_break_5",
+  "job_no",
+  "serial_no",
+  "column_break_9",
+  "model",
+  "mould",
+  "volume_jar",
+  "dry_weight",
+  "jar_water",
+  "column_break_12",
+  "wt_water",
+  "volume_mould",
+  "section_break_15",
+  "top_cone",
+  "column_break_17",
+  "room_temp",
+  "section_break_19",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_calib",
+   "fieldtype": "Date",
+   "label": "Date of Calibration"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_report",
+   "fieldtype": "Date",
+   "label": "Date Of Report"
+  },
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Job No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "mould",
+   "fieldtype": "Float",
+   "label": "Mould"
+  },
+  {
+   "fieldname": "volume_jar",
+   "fieldtype": "Section Break",
+   "label": "Volume of jar"
+  },
+  {
+   "description": "kg",
+   "fieldname": "dry_weight",
+   "fieldtype": "Float",
+   "label": "Dry Weight"
+  },
+  {
+   "description": "kg",
+   "fieldname": "jar_water",
+   "fieldtype": "Float",
+   "label": "Jar + Water "
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "kg",
+   "fieldname": "wt_water",
+   "fieldtype": "Float",
+   "label": "Wt of water",
+   "read_only": 1
+  },
+  {
+   "description": "cm3\n",
+   "fieldname": "volume_mould",
+   "fieldtype": "Float",
+   "label": "Volume of Mould",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "mm",
+   "fieldname": "top_cone",
+   "fieldtype": "Float",
+   "label": "Top Cone Diameter"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "oC\t\n\n\n\n",
+   "fieldname": "room_temp",
+   "fieldtype": "Int",
+   "label": "Room Temparature"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-23 16:30:35.534672",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Calibration Of Pycnometer Jar",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

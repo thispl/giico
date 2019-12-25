@@ -5,14 +5,17 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "client",
   "project",
-  "giico_job_no",
+  "client",
+  "department",
+  "column_break_3",
   "date_of_calibration",
   "date_of_report",
   "column_break_6",
   "model",
+  "giico_job_no",
   "make",
+  "column_break_10",
   "serial",
   "astm",
   "procedure",
@@ -56,7 +59,7 @@
   },
   {
    "fieldname": "column_break_6",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "model",
@@ -130,9 +133,23 @@
    "fieldname": "laboratory_manager",
    "fieldtype": "Data",
    "label": "Laboratory Manager"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:02:13.484757",
+ "modified": "2019-11-22 13:31:13.913322",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Mechanical Compactor",

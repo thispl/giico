@@ -5,20 +5,23 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "client",
   "project",
-  "job_no",
+  "client",
+  "column_break_3",
   "date_calib",
+  "department",
   "column_break_5",
   "date_report",
+  "job_no",
   "serial_no",
+  "column_break_9",
   "model",
   "mould",
   "volume_jar",
   "dry_weight",
   "jar_water",
-  "wt_water",
   "column_break_12",
+  "wt_water",
   "volume_mould",
   "section_break_15",
   "top_cone",
@@ -51,7 +54,7 @@
   },
   {
    "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "date_report",
@@ -94,7 +97,8 @@
    "description": "kg",
    "fieldname": "wt_water",
    "fieldtype": "Float",
-   "label": "Wt of water"
+   "label": "Wt of water",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_12",
@@ -104,7 +108,8 @@
    "description": "cm3\n",
    "fieldname": "volume_mould",
    "fieldtype": "Float",
-   "label": "Volume of Mould"
+   "label": "Volume of Mould",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_15",
@@ -134,9 +139,23 @@
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:01:24.065152",
+ "modified": "2019-11-22 13:19:04.424173",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration Of Pycnometer Jar",

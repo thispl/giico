@@ -6,8 +6,8 @@
  "field_order": [
   "stand_weight",
   "balance",
-  "column_break_4",
   "differ",
+  "column_break_4",
   "difference",
   "remarks"
  ],
@@ -32,13 +32,15 @@
    "fieldname": "differ",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Difference(g)"
+   "label": "Difference(g)",
+   "read_only": 1
   },
   {
    "fieldname": "difference",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Difference(%)"
+   "label": "Difference(%)",
+   "read_only": 1
   },
   {
    "fieldname": "remarks",
@@ -48,7 +50,7 @@
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 21:03:02.622376",
+ "modified": "2019-11-09 08:32:53.134302",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Electronic Balance",

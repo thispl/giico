@@ -5,16 +5,19 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "client",
   "project",
+  "client",
+  "giico_job_ref",
+  "column_break_3",
+  "date_of_calibration",
+  "date_of_report",
+  "department",
+  "section_break_6",
   "made",
   "equipment_id",
   "rang",
   "column_break_6",
   "readability",
-  "date_of_calibration",
-  "date_of_report",
-  "giico_job_ref",
   "section_break_11",
   "vernire_caliper_readings",
   "ambient_condition_section",
@@ -53,6 +56,7 @@
    "label": "Equipment ID"
   },
   {
+   "description": "mm",
    "fieldname": "rang",
    "fieldtype": "Data",
    "label": "Rang"
@@ -62,6 +66,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "description": "mm",
    "fieldname": "readability",
    "fieldtype": "Data",
    "label": "Readability"
@@ -135,6 +140,7 @@
   {
    "fieldname": "calibrated_by",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Calibrated By"
   },
   {
@@ -144,10 +150,25 @@
   {
    "fieldname": "checked_by",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Checked By"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 20:56:52.289796",
+ "modified": "2019-11-22 13:01:00.014894",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "UGCC Vernire Caliper",

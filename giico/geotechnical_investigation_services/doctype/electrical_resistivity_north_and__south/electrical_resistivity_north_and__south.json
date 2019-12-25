@@ -1,0 +1,51 @@
+{
+ "engine": "InnoDB", 
+ "field_order": [
+  "test_no", 
+  "electrode_interval", 
+  "resistance", 
+  "soil_resistivity"
+ ], 
+ "istable": 1, 
+ "modified_by": "Administrator", 
+ "name": "Electrical Resistivity North and  South", 
+ "fields": [
+  {
+   "in_list_view": 1, 
+   "fieldname": "test_no", 
+   "fieldtype": "Data", 
+   "columns": 2, 
+   "label": "Test No"
+  }, 
+  {
+   "in_list_view": 1, 
+   "fieldname": "electrode_interval", 
+   "fieldtype": "Float", 
+   "label": "Electrode Interval(M)"
+  }, 
+  {
+   "in_list_view": 1, 
+   "fieldname": "resistance", 
+   "fieldtype": "Float", 
+   "label": "Resistance(OHM)"
+  }, 
+  {
+   "read_only": 1, 
+   "in_list_view": 1, 
+   "fieldname": "soil_resistivity", 
+   "fieldtype": "Float", 
+   "label": "Soil Resistivity(OHM M)"
+  }
+ ], 
+ "creation": "2019-08-04 16:28:23.088169", 
+ "doctype": "DocType", 
+ "module": "Geotechnical Investigation Services", 
+ "modified": "2019-11-25 09:19:06.579516", 
+ "sort_order": "DESC", 
+ "track_changes": 1, 
+ "owner": "Administrator", 
+ "sort_field": "modified", 
+ "editable_grid": 1, 
+ "quick_entry": 1, 
+ "permissions": []
+}

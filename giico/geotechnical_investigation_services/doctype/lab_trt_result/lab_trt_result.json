@@ -1,0 +1,83 @@
+{
+ "creation": "2019-09-13 07:31:37.237797",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_id",
+  "depth_m",
+  "thermal_1",
+  "thermal_2",
+  "column_break_5",
+  "thermal_3",
+  "average_con",
+  "thermal_res",
+  "location_en"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test ID"
+  },
+  {
+   "fieldname": "depth_m",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Depth (m)"
+  },
+  {
+   "fieldname": "thermal_1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Thermal Conductivity (W/m0C)"
+  },
+  {
+   "fieldname": "thermal_2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Thermal Conductivity (W/m0C)1"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "thermal_3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Thermal Conductivity (W/m0C)2"
+  },
+  {
+   "fieldname": "average_con",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Average Conductivity (W/m0C)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "thermal_res",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Thermal Resistivity (m0C/W)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location_en",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Location EN"
+  }
+ ],
+ "modified": "2019-11-25 10:34:35.000046",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Lab TRT Result",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

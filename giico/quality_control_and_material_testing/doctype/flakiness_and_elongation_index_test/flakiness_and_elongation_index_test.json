@@ -1,0 +1,248 @@
+{
+ "autoname": "FE.####",
+ "creation": "2019-09-30 13:56:53.832534",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "location",
+  "column_break_5",
+  "test_date",
+  "report_date",
+  "department",
+  "section_break_7",
+  "report_refno",
+  "sample_description",
+  "section_break_9",
+  "flakiness_index",
+  "calculate",
+  "total_section",
+  "sample",
+  "column_break_14",
+  "mass_of_flat_particles",
+  "column_break_16",
+  "flat_particles",
+  "section_break_11",
+  "elongation_index",
+  "calculate1",
+  "section_break_20",
+  "total1",
+  "column_break_23",
+  "total2",
+  "column_break_25",
+  "total3",
+  "section_break_27",
+  "remarks",
+  "section_break_29",
+  "tested_by",
+  "column_break_31",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "report_refno",
+   "fieldtype": "Data",
+   "label": "Report Ref.No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sample_description",
+   "fieldtype": "Data",
+   "label": "Sample Description"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "flakiness_index",
+   "fieldtype": "Table",
+   "label": "Flakiness Index",
+   "options": "Flakiness Index"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "total_section",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "sample",
+   "fieldtype": "Float",
+   "label": "Sample",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mass_of_flat_particles",
+   "fieldtype": "Float",
+   "label": "Mass of Flat Particles",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "flat_particles",
+   "fieldtype": "Float",
+   "label": "Flat Particles",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "elongation_index",
+   "fieldtype": "Table",
+   "label": "Elongation Index",
+   "options": "Elongation Index"
+  },
+  {
+   "fieldname": "calculate1",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "total1",
+   "fieldtype": "Float",
+   "label": "Mass of Sample(g)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total2",
+   "fieldtype": "Float",
+   "label": "Mass of Elongated Particles(g)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total3",
+   "fieldtype": "Float",
+   "label": "Elongated Particles(%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-21 17:02:31.873004",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Flakiness and Elongation Index Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

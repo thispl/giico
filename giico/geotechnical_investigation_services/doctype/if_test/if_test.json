@@ -1,0 +1,140 @@
+{
+ "creation": "2019-09-18 16:20:35.794880",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "time_interval",
+  "ht",
+  "height_water",
+  "increm_inf",
+  "cumul_time",
+  "q",
+  "cmsec",
+  "section_break_6",
+  "cmhr",
+  "msec",
+  "msec1",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_if_test"
+ ],
+ "fields": [
+  {
+   "fieldname": "time_interval",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Incr Time"
+  },
+  {
+   "fieldname": "ht",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "A"
+  },
+  {
+   "fieldname": "cumul_time",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Cumul time min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "height_water",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Height of water cm",
+   "read_only": 1
+  },
+  {
+   "fieldname": "increm_inf",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Increm infiltrtation cm/hr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "q",
+   "fieldtype": "Float",
+   "label": "Q",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cmsec",
+   "fieldtype": "Float",
+   "label": "cm/sec",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cmhr",
+   "fieldtype": "Int",
+   "label": "cm/hr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "msec",
+   "fieldtype": "Float",
+   "label": "m/sec",
+   "read_only": 1
+  },
+  {
+   "fieldname": "msec1",
+   "fieldtype": "Float",
+   "label": "m/sec1*1000",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "IF Test"
+  },
+  {
+   "fieldname": "parent_if_test",
+   "fieldtype": "Link",
+   "label": "Parent IF Test",
+   "options": "IF Test"
+  }
+ ],
+ "is_tree": 1,
+ "istable": 1,
+ "modified": "2019-12-17 13:24:00.300995",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "IF Test",
+ "nsm_parent_field": "parent_if_test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,88 @@
+{
+ "autoname": "SD.####",
+ "creation": "2019-12-19 07:45:14.328069",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "date",
+  "section_break_3",
+  "field_work",
+  "section_break_5",
+  "work_performed",
+  "section_break_7",
+  "work_plan",
+  "crew"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_performed",
+   "fieldtype": "Small Text",
+   "label": "Work Performed"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "field_work",
+   "fieldtype": "Table",
+   "label": "Field Work",
+   "options": "Daily Report"
+  },
+  {
+   "fieldname": "crew",
+   "fieldtype": "Small Text",
+   "label": "Crew"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_plan",
+   "fieldtype": "Small Text",
+   "label": "Work Plan For Next Day"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-23 16:03:08.863428",
+ "modified_by": "Administrator",
+ "module": "Topography and Marine Survey",
+ "name": "Daily Report Survey",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

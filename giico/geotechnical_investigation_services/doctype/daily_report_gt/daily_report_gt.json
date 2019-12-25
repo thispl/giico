@@ -1,0 +1,344 @@
+{
+ "engine": "InnoDB", 
+ "field_order": [
+  "client", 
+  "project", 
+  "department", 
+  "job_no", 
+  "shift", 
+  "report_no", 
+  "work_date", 
+  "work_day", 
+  "column_break_4", 
+  "from_time", 
+  "to_time", 
+  "area", 
+  "weather", 
+  "section_break_8", 
+  "manpower", 
+  "calculate", 
+  "section_break_16", 
+  "total_prev", 
+  "column_break_18", 
+  "total_nos", 
+  "column_break_20", 
+  "total__hours", 
+  "column_break_22", 
+  "total_ttl", 
+  "column_break_24", 
+  "total_cum_hours", 
+  "section_break_22", 
+  "major_equipment", 
+  "calculate1", 
+  "section_break_14", 
+  "total_prev1", 
+  "column_break_31", 
+  "total_nos1", 
+  "column_break_33", 
+  "total__hours1", 
+  "column_break_35", 
+  "total_ttl1", 
+  "column_break_37", 
+  "total_cum_hours1", 
+  "section_break_39", 
+  "total_progress", 
+  "section_break_41", 
+  "calculate2", 
+  "section_break_43", 
+  "sum_a", 
+  "column_break_45", 
+  "sum_b", 
+  "section_break_47", 
+  "work_progress", 
+  "proposed_activities_for_tomorrow", 
+  "remarks"
+ ], 
+ "autoname": "ODR.####", 
+ "name": "Daily Report GT", 
+ "fields": [
+  {
+   "reqd": 1, 
+   "options": "Customer", 
+   "fieldname": "client", 
+   "fieldtype": "Link", 
+   "label": "Client"
+  }, 
+  {
+   "label": "Project", 
+   "in_list_view": 1, 
+   "fieldtype": "Link", 
+   "reqd": 1, 
+   "fieldname": "project", 
+   "options": "Project"
+  }, 
+  {
+   "options": "Department", 
+   "fieldname": "department", 
+   "fieldtype": "Link", 
+   "label": "Department"
+  }, 
+  {
+   "fieldname": "job_no", 
+   "fieldtype": "Data", 
+   "label": "Job No"
+  }, 
+  {
+   "fieldname": "shift", 
+   "fieldtype": "Data", 
+   "label": "Shift"
+  }, 
+  {
+   "fieldname": "report_no", 
+   "fieldtype": "Data", 
+   "label": "Report No."
+  }, 
+  {
+   "reqd": 1, 
+   "in_list_view": 1, 
+   "fieldname": "work_date", 
+   "fieldtype": "Date", 
+   "label": "Work Date"
+  }, 
+  {
+   "fieldname": "work_day", 
+   "fieldtype": "Data", 
+   "label": "Work Day"
+  }, 
+  {
+   "fieldname": "column_break_4", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "fieldname": "from_time", 
+   "fieldtype": "Time", 
+   "label": "From Time"
+  }, 
+  {
+   "fieldname": "to_time", 
+   "fieldtype": "Time", 
+   "label": "To Time"
+  }, 
+  {
+   "fieldname": "area", 
+   "fieldtype": "Data", 
+   "label": "Area"
+  }, 
+  {
+   "fieldname": "weather", 
+   "fieldtype": "Data", 
+   "label": "Weather"
+  }, 
+  {
+   "fieldname": "section_break_8", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "options": "Manpower", 
+   "fieldname": "manpower", 
+   "fieldtype": "Table", 
+   "label": "Manpower"
+  }, 
+  {
+   "fieldname": "calculate", 
+   "fieldtype": "Button", 
+   "label": "Calculate"
+  }, 
+  {
+   "fieldname": "section_break_16", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "total_prev", 
+   "fieldtype": "Int", 
+   "label": "Total Prev"
+  }, 
+  {
+   "fieldname": "column_break_18", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "total_nos", 
+   "fieldtype": "Int", 
+   "label": "Total Nos"
+  }, 
+  {
+   "fieldname": "column_break_20", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "total__hours", 
+   "fieldtype": "Int", 
+   "label": "Total  Hours"
+  }, 
+  {
+   "fieldname": "column_break_22", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "total_ttl", 
+   "fieldtype": "Int", 
+   "label": "Total TTL"
+  }, 
+  {
+   "fieldname": "column_break_24", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "total_cum_hours", 
+   "fieldtype": "Int", 
+   "label": "Total Cum Hours"
+  }, 
+  {
+   "fieldname": "section_break_22", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "options": "Major Equipment", 
+   "fieldname": "major_equipment", 
+   "fieldtype": "Table", 
+   "label": "Major Equipment"
+  }, 
+  {
+   "fieldname": "calculate1", 
+   "fieldtype": "Button", 
+   "label": "Calculate"
+  }, 
+  {
+   "fieldname": "section_break_14", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "total_prev1", 
+   "fieldtype": "Int", 
+   "label": "Total Prev"
+  }, 
+  {
+   "fieldname": "column_break_31", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "total_nos1", 
+   "fieldtype": "Int", 
+   "label": "Total Nos"
+  }, 
+  {
+   "fieldname": "column_break_33", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "total__hours1", 
+   "fieldtype": "Int", 
+   "label": "Total  Hours"
+  }, 
+  {
+   "fieldname": "column_break_35", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "total_ttl1", 
+   "fieldtype": "Int", 
+   "label": "Total TTL"
+  }, 
+  {
+   "fieldname": "column_break_37", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "total_cum_hours1", 
+   "fieldtype": "Int", 
+   "label": "Total Cum Hours"
+  }, 
+  {
+   "fieldname": "section_break_39", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "options": "Total Progress", 
+   "fieldname": "total_progress", 
+   "fieldtype": "Table", 
+   "label": "Total Progress"
+  }, 
+  {
+   "fieldname": "section_break_41", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "fieldname": "calculate2", 
+   "fieldtype": "Button", 
+   "label": "Calculate"
+  }, 
+  {
+   "fieldname": "section_break_43", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "sum_a", 
+   "fieldtype": "Int", 
+   "label": "Sum A"
+  }, 
+  {
+   "fieldname": "column_break_45", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "read_only": 1, 
+   "fieldname": "sum_b", 
+   "fieldtype": "Int", 
+   "label": "Sum B"
+  }, 
+  {
+   "fieldname": "section_break_47", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "fieldname": "work_progress", 
+   "fieldtype": "Small Text", 
+   "label": "Work Progress"
+  }, 
+  {
+   "fieldname": "proposed_activities_for_tomorrow", 
+   "fieldtype": "Small Text", 
+   "label": "Proposed Activities For Tomorrow"
+  }, 
+  {
+   "fieldname": "remarks", 
+   "fieldtype": "Small Text", 
+   "label": "Remarks"
+  }
+ ], 
+ "creation": "2019-08-31 09:44:07.696973", 
+ "doctype": "DocType", 
+ "module": "Geotechnical Investigation Services", 
+ "modified": "2019-12-22 07:39:27.465156", 
+ "sort_order": "DESC", 
+ "track_changes": 1, 
+ "owner": "Administrator", 
+ "modified_by": "Administrator", 
+ "editable_grid": 1, 
+ "sort_field": "modified", 
+ "permissions": [
+  {
+   "read": 1, 
+   "create": 1, 
+   "share": 1, 
+   "write": 1, 
+   "report": 1, 
+   "export": 1, 
+   "print": 1, 
+   "role": "System Manager", 
+   "email": 1, 
+   "delete": 1
+  }
+ ]
+}

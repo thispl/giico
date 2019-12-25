@@ -1,0 +1,609 @@
+{
+ "engine": "InnoDB", 
+ "field_order": [
+  "date", 
+  "well_no", 
+  "well_name", 
+  "project", 
+  "customer", 
+  "foreman_name", 
+  "foreman_phone", 
+  "well_type", 
+  "shift", 
+  "depth", 
+  "summary", 
+  "lost_hrs", 
+  "column_break_12", 
+  "rot_hrs", 
+  "dead_hrs", 
+  "location", 
+  "prev_depth", 
+  "lost_time", 
+  "est_completion", 
+  "tvd", 
+  "circle", 
+  "days_since_spud", 
+  "no_of_days", 
+  "target_days", 
+  "casing_and_screen_installed_in_the_well_section", 
+  "footage", 
+  "section_break_26", 
+  "operations_summary", 
+  "rig_needs_section", 
+  "mud_data", 
+  "1st_shift_section", 
+  "dr_1", 
+  "dr_2", 
+  "dr_3", 
+  "column_break_35", 
+  "fl_1", 
+  "fl_2", 
+  "fl_3", 
+  "drv1", 
+  "2nd_shift_section", 
+  "dr_11", 
+  "dr_12", 
+  "dr_13", 
+  "column_break_43", 
+  "fl_11", 
+  "fl_12", 
+  "fl_13", 
+  "drv2", 
+  "3rd_shift_section", 
+  "dr_21", 
+  "dr_22", 
+  "dr_23", 
+  "column_break_51", 
+  "fl_21", 
+  "fl_22", 
+  "fl_23", 
+  "drv3", 
+  "bit_data_section", 
+  "bit_number", 
+  "iadac", 
+  "size", 
+  "manufacturer", 
+  "serial_number", 
+  "type", 
+  "jets", 
+  "tfa", 
+  "md_in", 
+  "md_out", 
+  "tvd_out", 
+  "feet", 
+  "hours", 
+  "wob", 
+  "column_break_44", 
+  "rpm", 
+  "i_row", 
+  "o_row", 
+  "dc", 
+  "loc", 
+  "b", 
+  "g", 
+  "pressure", 
+  "gpm", 
+  "jet_vel", 
+  "dp_av", 
+  "dc_av", 
+  "bit_hhp", 
+  "drill_string_section", 
+  "drill", 
+  "repair_asap_section", 
+  "repair_asap", 
+  "section_break_91", 
+  "mdv_giico", 
+  "column_break_93", 
+  "contractor", 
+  "column_break_95", 
+  "pmc"
+ ], 
+ "sort_field": "modified", 
+ "autoname": "DDR.####", 
+ "name": "Daily Report DW", 
+ "fields": [
+  {
+   "fieldname": "date", 
+   "fieldtype": "Date", 
+   "label": "Date"
+  }, 
+  {
+   "fieldname": "well_no", 
+   "fieldtype": "Data", 
+   "label": "Well No"
+  }, 
+  {
+   "fieldname": "well_name", 
+   "fieldtype": "Data", 
+   "label": "Well Name"
+  }, 
+  {
+   "fieldname": "foreman_name", 
+   "fieldtype": "Data", 
+   "label": "Foreman Name"
+  }, 
+  {
+   "fieldname": "foreman_phone", 
+   "fieldtype": "Int", 
+   "label": "Foreman Phone "
+  }, 
+  {
+   "options": "\n1\n2\n3", 
+   "fieldname": "shift", 
+   "fieldtype": "Select", 
+   "label": "Shift"
+  }, 
+  {
+   "fieldname": "depth", 
+   "fieldtype": "Data", 
+   "label": "Depth"
+  }, 
+  {
+   "fieldname": "summary", 
+   "fieldtype": "Data", 
+   "label": "Summary of Operation"
+  }, 
+  {
+   "fieldname": "lost_hrs", 
+   "fieldtype": "Data", 
+   "label": "Lost hrs"
+  }, 
+  {
+   "fieldname": "column_break_12", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "fieldname": "rot_hrs", 
+   "fieldtype": "Data", 
+   "label": "Rot hrs"
+  }, 
+  {
+   "fieldname": "dead_hrs", 
+   "fieldtype": "Data", 
+   "label": "Dead Hrs"
+  }, 
+  {
+   "options": "Location", 
+   "label": "Location", 
+   "fieldname": "location", 
+   "fetch_from": "project.location", 
+   "fieldtype": "Link"
+  }, 
+  {
+   "fieldname": "prev_depth", 
+   "fieldtype": "Data", 
+   "label": "Prev Depth"
+  }, 
+  {
+   "fieldname": "lost_time", 
+   "fieldtype": "Data", 
+   "label": "Total Lost Time (Hours) for the well"
+  }, 
+  {
+   "fieldname": "est_completion", 
+   "fieldtype": "Date", 
+   "label": "Estimated Completion Date"
+  }, 
+  {
+   "fieldname": "tvd", 
+   "fieldtype": "Data", 
+   "label": "TVD"
+  }, 
+  {
+   "fieldname": "circle", 
+   "fieldtype": "Percent", 
+   "label": "Circle"
+  }, 
+  {
+   "fieldname": "days_since_spud", 
+   "fieldtype": "Date", 
+   "label": "Days since Spud"
+  }, 
+  {
+   "fieldname": "no_of_days", 
+   "fieldtype": "Int", 
+   "label": "No of days"
+  }, 
+  {
+   "fieldname": "target_days", 
+   "fieldtype": "Int", 
+   "label": "Target days"
+  }, 
+  {
+   "fieldname": "casing_and_screen_installed_in_the_well_section", 
+   "fieldtype": "Section Break", 
+   "label": "Casing and Screen installed in the well"
+  }, 
+  {
+   "options": "Footage", 
+   "fieldname": "footage", 
+   "fieldtype": "Table", 
+   "label": "Footage"
+  }, 
+  {
+   "fieldname": "section_break_26", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "options": "Summary", 
+   "fieldname": "operations_summary", 
+   "fieldtype": "Table", 
+   "label": "Operations Summary"
+  }, 
+  {
+   "fieldname": "rig_needs_section", 
+   "fieldtype": "Section Break", 
+   "label": "Rig Needs"
+  }, 
+  {
+   "options": "Mud Data", 
+   "fieldname": "mud_data", 
+   "fieldtype": "Table", 
+   "label": "Mud Data"
+  }, 
+  {
+   "fieldname": "bit_data_section", 
+   "fieldtype": "Section Break", 
+   "label": "Bit Data"
+  }, 
+  {
+   "fieldname": "bit_number", 
+   "fieldtype": "Int", 
+   "label": "Bit Number"
+  }, 
+  {
+   "fieldname": "iadac", 
+   "fieldtype": "Int", 
+   "label": "IADAC"
+  }, 
+  {
+   "fieldname": "size", 
+   "fieldtype": "Data", 
+   "label": "Size "
+  }, 
+  {
+   "fieldname": "manufacturer", 
+   "fieldtype": "Data", 
+   "label": "Manufacturer"
+  }, 
+  {
+   "fieldname": "serial_number", 
+   "fieldtype": "Int", 
+   "label": "Serial Number"
+  }, 
+  {
+   "fieldname": "type", 
+   "fieldtype": "Data", 
+   "label": "Type"
+  }, 
+  {
+   "fieldname": "jets", 
+   "fieldtype": "Data", 
+   "label": "Jets"
+  }, 
+  {
+   "fieldname": "tfa", 
+   "fieldtype": "Data", 
+   "label": "TFA"
+  }, 
+  {
+   "fieldname": "md_in", 
+   "fieldtype": "Data", 
+   "label": "MD in"
+  }, 
+  {
+   "fieldname": "md_out", 
+   "fieldtype": "Data", 
+   "label": "MD Out"
+  }, 
+  {
+   "fieldname": "tvd_out", 
+   "fieldtype": "Data", 
+   "label": "TVD Out"
+  }, 
+  {
+   "fieldname": "feet", 
+   "fieldtype": "Int", 
+   "label": "Feet"
+  }, 
+  {
+   "fieldname": "hours", 
+   "fieldtype": "Int", 
+   "label": "Hours"
+  }, 
+  {
+   "fieldname": "column_break_44", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "fieldname": "wob", 
+   "fieldtype": "Int", 
+   "label": "WOB"
+  }, 
+  {
+   "fieldname": "rpm", 
+   "fieldtype": "Int", 
+   "label": "RPM"
+  }, 
+  {
+   "fieldname": "i_row", 
+   "fieldtype": "Data", 
+   "label": "I-Row"
+  }, 
+  {
+   "fieldname": "o_row", 
+   "fieldtype": "Data", 
+   "label": "O-Row"
+  }, 
+  {
+   "fieldname": "dc", 
+   "fieldtype": "Data", 
+   "label": "DC"
+  }, 
+  {
+   "fieldname": "loc", 
+   "fieldtype": "Data", 
+   "label": "Loc"
+  }, 
+  {
+   "fieldname": "b", 
+   "fieldtype": "Data", 
+   "label": "B"
+  }, 
+  {
+   "fieldname": "g", 
+   "fieldtype": "Data", 
+   "label": "G"
+  }, 
+  {
+   "fieldname": "pressure", 
+   "fieldtype": "Data", 
+   "label": "Pressure"
+  }, 
+  {
+   "fieldname": "gpm", 
+   "fieldtype": "Data", 
+   "label": "GPM"
+  }, 
+  {
+   "fieldname": "jet_vel", 
+   "fieldtype": "Data", 
+   "label": "Jet Vel"
+  }, 
+  {
+   "fieldname": "dp_av", 
+   "fieldtype": "Data", 
+   "label": "DP Av"
+  }, 
+  {
+   "fieldname": "dc_av", 
+   "fieldtype": "Data", 
+   "label": "DC Av"
+  }, 
+  {
+   "fieldname": "bit_hhp", 
+   "fieldtype": "Data", 
+   "label": "Bit HHP"
+  }, 
+  {
+   "fieldname": "drill_string_section", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "fieldname": "drill", 
+   "fieldtype": "Small Text", 
+   "label": "DRILL STRING"
+  }, 
+  {
+   "fieldname": "repair_asap_section", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "fieldname": "well_type", 
+   "fieldtype": "Data", 
+   "label": "Well Type"
+  }, 
+  {
+   "options": "Project", 
+   "fieldname": "project", 
+   "fieldtype": "Link", 
+   "label": "Project"
+  }, 
+  {
+   "options": "Customer", 
+   "label": "Customer", 
+   "fieldname": "customer", 
+   "fetch_from": "project.customer", 
+   "fieldtype": "Link"
+  }, 
+  {
+   "fieldname": "1st_shift_section", 
+   "fieldtype": "Section Break", 
+   "label": "1st Shift"
+  }, 
+  {
+   "fieldname": "dr_1", 
+   "fieldtype": "Data", 
+   "label": "Dr 1"
+  }, 
+  {
+   "fieldname": "dr_2", 
+   "fieldtype": "Data", 
+   "label": "Dr 2"
+  }, 
+  {
+   "fieldname": "dr_3", 
+   "fieldtype": "Data", 
+   "label": "Dr 3"
+  }, 
+  {
+   "fieldname": "fl_1", 
+   "fieldtype": "Data", 
+   "label": "Fl 1"
+  }, 
+  {
+   "fieldname": "fl_2", 
+   "fieldtype": "Data", 
+   "label": "Fl 2"
+  }, 
+  {
+   "fieldname": "fl_3", 
+   "fieldtype": "Data", 
+   "label": "Fl 3"
+  }, 
+  {
+   "fieldname": "dr_11", 
+   "fieldtype": "Data", 
+   "label": "Dr 1"
+  }, 
+  {
+   "fieldname": "dr_12", 
+   "fieldtype": "Data", 
+   "label": "Dr 2"
+  }, 
+  {
+   "fieldname": "dr_13", 
+   "fieldtype": "Data", 
+   "label": "Dr 3"
+  }, 
+  {
+   "fieldname": "fl_11", 
+   "fieldtype": "Data", 
+   "label": "Fl 1"
+  }, 
+  {
+   "fieldname": "fl_12", 
+   "fieldtype": "Data", 
+   "label": "Fl 2"
+  }, 
+  {
+   "fieldname": "column_break_35", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "fieldname": "2nd_shift_section", 
+   "fieldtype": "Section Break", 
+   "label": "2nd Shift"
+  }, 
+  {
+   "fieldname": "column_break_43", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "fieldname": "fl_13", 
+   "fieldtype": "Data", 
+   "label": "Fl 3"
+  }, 
+  {
+   "fieldname": "3rd_shift_section", 
+   "fieldtype": "Section Break", 
+   "label": "3rd Shift"
+  }, 
+  {
+   "fieldname": "dr_21", 
+   "fieldtype": "Data", 
+   "label": "Dr 1"
+  }, 
+  {
+   "fieldname": "dr_22", 
+   "fieldtype": "Data", 
+   "label": "Dr 2"
+  }, 
+  {
+   "fieldname": "column_break_51", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "fieldname": "fl_21", 
+   "fieldtype": "Data", 
+   "label": "Fl 1"
+  }, 
+  {
+   "fieldname": "fl_22", 
+   "fieldtype": "Data", 
+   "label": "Fl 2"
+  }, 
+  {
+   "fieldname": "fl_23", 
+   "fieldtype": "Data", 
+   "label": "Fl 3"
+  }, 
+  {
+   "fieldname": "dr_23", 
+   "fieldtype": "Data", 
+   "label": "Dr 3"
+  }, 
+  {
+   "fieldname": "drv1", 
+   "fieldtype": "Data", 
+   "label": "Drv"
+  }, 
+  {
+   "fieldname": "drv2", 
+   "fieldtype": "Data", 
+   "label": "Drv"
+  }, 
+  {
+   "fieldname": "drv3", 
+   "fieldtype": "Data", 
+   "label": "Drv"
+  }, 
+  {
+   "options": "Repair Asap", 
+   "fieldname": "repair_asap", 
+   "fieldtype": "Table", 
+   "label": "REPAIR ASAP"
+  }, 
+  {
+   "fieldname": "section_break_91", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "fieldname": "mdv_giico", 
+   "fieldtype": "Data", 
+   "label": "MDV Giico"
+  }, 
+  {
+   "fieldname": "column_break_93", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "fieldname": "column_break_95", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "fieldname": "pmc", 
+   "fieldtype": "Data", 
+   "label": "PMC"
+  }, 
+  {
+   "fieldname": "contractor", 
+   "fieldtype": "Data", 
+   "label": "Contractor Representative"
+  }
+ ], 
+ "creation": "2019-12-18 09:24:04.048296", 
+ "doctype": "DocType", 
+ "module": "Drilling Water Well Service", 
+ "modified": "2019-12-21 08:20:18.472981", 
+ "sort_order": "DESC", 
+ "track_changes": 1, 
+ "owner": "Administrator", 
+ "modified_by": "Administrator", 
+ "editable_grid": 1, 
+ "quick_entry": 1, 
+ "permissions": [
+  {
+   "read": 1, 
+   "create": 1, 
+   "share": 1, 
+   "write": 1, 
+   "report": 1, 
+   "export": 1, 
+   "print": 1, 
+   "role": "System Manager", 
+   "email": 1, 
+   "delete": 1
+  }
+ ]
+}

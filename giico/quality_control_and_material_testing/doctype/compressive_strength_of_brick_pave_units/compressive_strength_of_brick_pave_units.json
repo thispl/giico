@@ -1,0 +1,187 @@
+{
+ "autoname": "BP.####",
+ "creation": "2019-09-27 07:41:34.323824",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_4",
+  "report_date",
+  "product_date",
+  "test_date",
+  "section_break_7",
+  "type_of_block",
+  "column_break_10",
+  "report_ref",
+  "section_break_9",
+  "brick_pave_readings",
+  "calculate",
+  "average_section",
+  "cs1",
+  "column_break_11",
+  "cs2",
+  "remarks_section",
+  "remarks",
+  "section_break_17",
+  "calibrated_by",
+  "column_break_19",
+  "checked_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_date",
+   "fieldtype": "Date",
+   "label": "Product Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "type_of_block",
+   "fieldtype": "Data",
+   "label": "Type of Block"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Data",
+   "label": "Report Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "brick_pave_readings",
+   "fieldtype": "Table",
+   "label": "Brick Pave Readings",
+   "options": "Brick Pave Readings"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "average_section",
+   "fieldtype": "Section Break",
+   "label": "Average"
+  },
+  {
+   "description": "(N/mm2)\n",
+   "fieldname": "cs1",
+   "fieldtype": "Float",
+   "label": "Compressive Strength",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(kg/cm2)\n",
+   "fieldname": "cs2",
+   "fieldtype": "Float",
+   "label": "Compressive Strength",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Calibrated by"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Checked by"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-21 15:22:49.565392",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Compressive Strength of Brick Pave Units",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,63 @@
+{
+ "creation": "2019-11-25 15:15:00.136699",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sl",
+  "date",
+  "depth",
+  "column_break_4",
+  "diameter",
+  "client_rep"
+ ],
+ "fields": [
+  {
+   "fieldname": "sl",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SL"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "description": "m",
+   "fieldname": "depth",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Depth"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "inch",
+   "fieldname": "diameter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Diameter"
+  },
+  {
+   "fieldname": "client_rep",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client Representatives Name"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 15:43:52.145712",
+ "modified_by": "Administrator",
+ "module": "Drilling Water Well Service",
+ "name": "Field Activities",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

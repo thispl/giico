@@ -1,0 +1,226 @@
+{
+ "autoname": "DHT.####",
+ "creation": "2019-10-18 08:30:26.122018",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_4",
+  "location",
+  "date",
+  "section_break_6",
+  "tested_by",
+  "data_for_source_s1_and_receiver_r1_section",
+  "table_2",
+  "calculate",
+  "avg_m1",
+  "section_break_3",
+  "h",
+  "column_break_13",
+  "r1_r2",
+  "section_break_5",
+  "s2_r2",
+  "calculate1",
+  "avg_calculate",
+  "section_break_21",
+  "soil_parameters",
+  "section_break_23",
+  "velocity",
+  "section_break_25",
+  "time",
+  "generate_graph",
+  "charts_section",
+  "charts",
+  "chart_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested/Checked by"
+  },
+  {
+   "fieldname": "data_for_source_s1_and_receiver_r1_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_2",
+   "fieldtype": "Table",
+   "label": "Data for Source S1 and Receiver R1",
+   "options": "Data for Source S1 and Receiver R1"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "avg_m1",
+   "fieldtype": "Data",
+   "label": "Average",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "h",
+   "fieldtype": "Float",
+   "label": "Distance between source and borehole"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "s2_r2",
+   "fieldtype": "Table",
+   "label": "Data for Source S2 and Receiver R2",
+   "options": "Data for Source S2 and Receiver R2"
+  },
+  {
+   "fieldname": "calculate1",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "avg_calculate",
+   "fieldtype": "Data",
+   "label": "Average",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "soil_parameters",
+   "fieldtype": "Table",
+   "label": "Soil Parameters",
+   "options": "Soil Parameters"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "velocity",
+   "fieldtype": "Table",
+   "label": "Velocity",
+   "options": "Velocity"
+  },
+  {
+   "fieldname": "r1_r2",
+   "fieldtype": "Float",
+   "label": "R1R2"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Table",
+   "label": "Time",
+   "options": "Time"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate Graph"
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "CHARTS"
+  },
+  {
+   "fieldname": "charts",
+   "fieldtype": "HTML",
+   "label": "Charts",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Chart Image"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  }
+ ],
+ "modified": "2019-12-19 16:31:08.303705",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Downhole Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

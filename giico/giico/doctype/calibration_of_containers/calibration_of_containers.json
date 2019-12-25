@@ -5,8 +5,9 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "client",
   "project",
+  "client",
+  "department",
   "column_break_3",
   "date",
   "equipment",
@@ -93,9 +94,15 @@
    "fieldname": "desig",
    "fieldtype": "Data",
    "label": "Designation"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:02:20.577731",
+ "modified": "2019-11-22 13:33:43.353898",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration Of Containers",

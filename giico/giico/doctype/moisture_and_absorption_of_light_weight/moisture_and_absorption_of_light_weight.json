@@ -5,14 +5,17 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project",
+  "test_date",
+  "column_break_3",
+  "report_date",
+  "department",
+  "section_break_5",
   "contractor",
   "consultant",
   "owner",
-  "project",
+  "column_break_8",
   "type_of_block",
-  "column_break_6",
-  "test_date",
-  "report_date",
   "report_ref",
   "supplier",
   "section_break_11",
@@ -51,10 +54,6 @@
    "fieldname": "type_of_block",
    "fieldtype": "Data",
    "label": "Type of Block "
-  },
-  {
-   "fieldname": "column_break_6",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "test_date",
@@ -111,15 +110,35 @@
   {
    "fieldname": "average",
    "fieldtype": "Float",
-   "label": "Absorption Average"
+   "label": "Absorption Average",
+   "read_only": 1
   },
   {
    "fieldname": "average1",
    "fieldtype": "Float",
-   "label": "Moisture Average"
+   "label": "Moisture Average",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-01 12:45:49.358800",
+ "modified": "2019-11-22 15:54:26.941407",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Moisture and Absorption Of Light Weight",

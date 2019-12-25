@@ -1,6 +1,6 @@
 {
- "autoname": "CMS.####",
- "creation": "2019-09-30 12:30:27.179202",
+ "autoname": "CM.####",
+ "creation": "2019-09-30 12:20:29.405066",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -8,13 +8,15 @@
   "project_name",
   "client_name",
   "location",
-  "aparatus_no",
-  "column_break_5",
+  "column_break_4",
   "date_of_test",
   "date_of_report",
+  "department",
+  "section_break_7",
+  "aparatus_no",
   "job_ref_no",
   "section_break_9",
-  "cover_meter_readings",
+  "cover_meter_readngs",
   "section_break_11",
   "tested_by",
   "column_break_13",
@@ -24,13 +26,13 @@
   {
    "fieldname": "project_name",
    "fieldtype": "Link",
-   "label": "Project Name   ",
+   "label": "Project Name",
    "options": "Project"
   },
   {
    "fieldname": "client_name",
    "fieldtype": "Data",
-   "label": "Client Name         "
+   "label": "Client Name"
   },
   {
    "fieldname": "location",
@@ -41,10 +43,6 @@
    "fieldname": "aparatus_no",
    "fieldtype": "Data",
    "label": "Aparatus No"
-  },
-  {
-   "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "date_of_test",
@@ -66,12 +64,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "cover_meter_readings",
-   "fieldtype": "Table",
-   "label": "Cover Meter Readings",
-   "options": "Cover Meter Readings"
-  },
-  {
    "fieldname": "section_break_11",
    "fieldtype": "Section Break"
   },
@@ -88,9 +80,29 @@
    "fieldname": "checked_by",
    "fieldtype": "Data",
    "label": "Checked by"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cover_meter_readngs",
+   "fieldtype": "Table",
+   "label": "Cover Meter Readngs",
+   "options": "Cover Meter Readings"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-30 12:30:27.179202",
+ "modified": "2019-11-22 14:12:53.253804",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Cover Meter Steel Bar",

@@ -1,0 +1,250 @@
+{
+ "autoname": "UCST.####",
+ "creation": "2019-09-16 15:11:37.687309",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "date",
+  "location",
+  "section_break_6",
+  "test_id_bh",
+  "depth_m",
+  "dia_of_samp",
+  "heightcm",
+  "height_dia_ratio",
+  "rate_of_loading",
+  "type_shape",
+  "column_break_12",
+  "mass",
+  "cr",
+  "moisture_content",
+  "diam",
+  "height",
+  "disp_rate",
+  "area",
+  "ct",
+  "initial_density",
+  "dry_density",
+  "gs",
+  "proving_ring",
+  "section_break_25",
+  "ust_test",
+  "section_break_27",
+  "chart_section",
+  "chart",
+  "chart_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_id_bh",
+   "fieldtype": "Data",
+   "label": "Test ID./BH #"
+  },
+  {
+   "fieldname": "depth_m",
+   "fieldtype": "Float",
+   "label": "Depth (m) "
+  },
+  {
+   "fieldname": "dia_of_samp",
+   "fieldtype": "Float",
+   "label": "Diameter of sample(cm)"
+  },
+  {
+   "fieldname": "heightcm",
+   "fieldtype": "Int",
+   "label": "Height(cm)"
+  },
+  {
+   "fieldname": "height_dia_ratio",
+   "fieldtype": "Float",
+   "label": "Height-Dia Ratio ",
+   "read_only": 1
+  },
+  {
+   "description": "mm/min",
+   "fieldname": "rate_of_loading",
+   "fieldtype": "Float",
+   "label": "Rate of loading"
+  },
+  {
+   "fieldname": "type_shape",
+   "fieldtype": "Data",
+   "label": "Type & shape of sample"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "gm",
+   "fieldname": "mass",
+   "fieldtype": "Int",
+   "label": "Mass"
+  },
+  {
+   "fieldname": "cr",
+   "fieldtype": "Int",
+   "label": "Cr"
+  },
+  {
+   "fieldname": "moisture_content",
+   "fieldtype": "Float",
+   "label": "Moisture content(%)"
+  },
+  {
+   "fieldname": "diam",
+   "fieldtype": "Int",
+   "label": "Diam"
+  },
+  {
+   "description": "mm",
+   "fieldname": "height",
+   "fieldtype": "Int",
+   "label": "Height"
+  },
+  {
+   "fieldname": "disp_rate",
+   "fieldtype": "Int",
+   "label": "Disp rate"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ct",
+   "fieldtype": "Float",
+   "label": "Ct",
+   "read_only": 1
+  },
+  {
+   "description": "Mg/m3\n",
+   "fieldname": "initial_density",
+   "fieldtype": "Float",
+   "label": "Initial density",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dry_density",
+   "fieldtype": "Data",
+   "label": "Dry density",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gs",
+   "fieldtype": "Float",
+   "label": "Gs"
+  },
+  {
+   "fieldname": "proving_ring",
+   "fieldtype": "Float",
+   "label": "Proving ring div (LC)"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ust_test",
+   "fieldtype": "Table",
+   "label": "UST Test",
+   "options": "UCS Test"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "chart_section",
+   "fieldtype": "Section Break",
+   "label": "Chart"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "label": "chart image"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-19 16:43:53.392784",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Unconfined Compressive Strength of Soil",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

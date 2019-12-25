@@ -46,7 +46,8 @@
    "fieldname": "chloride",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Chloride as Cl (%)"
+   "label": "Chloride as Cl (%)",
+   "read_only": 1
   },
   {
    "fieldname": "sulphate_as",
@@ -58,11 +59,12 @@
    "fieldname": "sulphate",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Sulphate as SO4 (%)"
+   "label": "Sulphate as SO4 (%)",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-10-01 08:11:23.230012",
+ "modified": "2019-11-12 13:30:34.364462",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Soil Sample",

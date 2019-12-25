@@ -1,0 +1,77 @@
+{
+ "creation": "2019-12-19 07:48:53.053814",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "description",
+  "total_quantity",
+  "completed_qty",
+  "column_break_5",
+  "balance_qty",
+  "completed",
+  "balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item\n"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description\n"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "completed_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Completed Qty "
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "balance_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Balance Qty"
+  },
+  {
+   "description": "%",
+   "fieldname": "completed",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Completed "
+  },
+  {
+   "description": "%",
+   "fieldname": "balance",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Balance "
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-19 07:54:37.659955",
+ "modified_by": "Administrator",
+ "module": "Topography and Marine Survey",
+ "name": "Daily Report",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

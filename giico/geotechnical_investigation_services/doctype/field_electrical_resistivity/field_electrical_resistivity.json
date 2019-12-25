@@ -1,0 +1,178 @@
+{
+ "autoname": "FER.####",
+ "creation": "2019-08-10 09:37:12.135809",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_15",
+  "date_tested",
+  "location1",
+  "section_break_6",
+  "test_no",
+  "job_no",
+  "section_break_9",
+  "fer_test",
+  "generate_graph",
+  "section_break_8",
+  "charts_section",
+  "chart",
+  "chart_image",
+  "section_break_17",
+  "tested_by",
+  "designation",
+  "column_break_17",
+  "checked_by",
+  "designation1"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_tested",
+   "fieldtype": "Date",
+   "label": "Date Tested"
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location1",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Int",
+   "label": "Test No"
+  },
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Job No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fer_test",
+   "fieldtype": "Table",
+   "label": "FER Test",
+   "options": "FER Test"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate graph"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "CHARTS"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Chart Image"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "designation"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Checked By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "designation1",
+   "fieldtype": "Data",
+   "label": "designation"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 15:19:57.542953",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Field Electrical Resistivity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

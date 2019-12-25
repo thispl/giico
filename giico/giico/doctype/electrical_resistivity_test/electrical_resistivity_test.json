@@ -5,10 +5,12 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "date",
   "project",
-  "column_break_3",
   "location",
+  "column_break_3",
+  "date",
+  "department",
+  "section_break_5",
   "customer",
   "section_break_6",
   "table_7",
@@ -92,9 +94,19 @@
    "fieldtype": "Link",
    "label": "Checked By",
    "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-28 12:24:51.568416",
+ "modified": "2019-11-22 16:52:56.687922",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Electrical Resistivity Test",

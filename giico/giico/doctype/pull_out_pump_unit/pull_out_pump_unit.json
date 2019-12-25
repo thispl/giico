@@ -1,0 +1,51 @@
+{
+ "creation": "2019-11-22 13:04:27.161787",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_2",
+  "data_2",
+  "column_break_3",
+  "data_3",
+  "currency"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project"
+  },
+  {
+   "fieldname": "data_2",
+   "fieldtype": "Data",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "data_3",
+   "fieldtype": "Data",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-22 13:32:35.822501",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Pull out Pump Unit",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -7,32 +7,47 @@
  "field_order": [
   "project",
   "client",
+  "column_break_3",
+  "department",
   "test_id",
   "bore_no",
   "int",
   "gwt",
   "length_of_un",
+  "k",
+  "f",
+  "dia",
   "col1",
   "date_of_test",
   "dep_of_test",
-  "ch_casing",
-  "internal_dia",
-  "dia_of_un",
-  "cs_of",
+  "ch_casing1",
+  "internal_dia1",
+  "dia_un",
+  "cs_of_1",
+  "area_of_casing",
+  "dy",
+  "time",
   "section_break_15",
-  "fhm_test"
+  "fhm_test",
+  "calculate",
+  "section_break_18",
+  "average"
  ],
  "fields": [
   {
    "fieldname": "project",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Project",
-   "options": "Project"
+   "options": "Project",
+   "reqd": 1
   },
   {
    "fieldname": "client",
    "fieldtype": "Data",
-   "label": "Client"
+   "in_list_view": 1,
+   "label": "Client",
+   "reqd": 1
   },
   {
    "fieldname": "test_id",
@@ -74,26 +89,6 @@
    "label": "Depth of Test in BH(m)"
   },
   {
-   "fieldname": "ch_casing",
-   "fieldtype": "Data",
-   "label": "Ch Casing-height above GL(Cm)"
-  },
-  {
-   "fieldname": "internal_dia",
-   "fieldtype": "Data",
-   "label": "Internal Dia PVC or Casing"
-  },
-  {
-   "fieldname": "dia_of_un",
-   "fieldtype": "Data",
-   "label": "Dia of Unlined BH(cm)"
-  },
-  {
-   "fieldname": "cs_of",
-   "fieldtype": "Data",
-   "label": "C/S of Casing/PVC Stand Pipe"
-  },
-  {
    "fieldname": "section_break_15",
    "fieldtype": "Section Break"
   },
@@ -102,9 +97,84 @@
    "fieldtype": "Table",
    "label": "FHM Test",
    "options": "FHM Test"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "average",
+   "fieldtype": "Data",
+   "label": "Average"
+  },
+  {
+   "fieldname": "internal_dia1",
+   "fieldtype": "Float",
+   "label": "Internal Dia PVC or Casing"
+  },
+  {
+   "fieldname": "ch_casing1",
+   "fieldtype": "Float",
+   "label": "Ch Casing-height above GL(Cm)"
+  },
+  {
+   "fieldname": "dia_un",
+   "fieldtype": "Float",
+   "label": "Dia of Unlined BH(cm)"
+  },
+  {
+   "fieldname": "k",
+   "fieldtype": "Data",
+   "label": "K"
+  },
+  {
+   "fieldname": "f",
+   "fieldtype": "Float",
+   "label": "F"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Time"
+  },
+  {
+   "fieldname": "area_of_casing",
+   "fieldtype": "Float",
+   "label": "Area of Casing"
+  },
+  {
+   "fieldname": "dy",
+   "fieldtype": "Data",
+   "label": "DY"
+  },
+  {
+   "fieldname": "cs_of_1",
+   "fieldtype": "Float",
+   "label": "C/S of Casing/PVC Stand Pipe"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dia",
+   "fieldtype": "Float",
+   "label": "Diameter"
   }
  ],
- "modified": "2019-09-27 21:03:30.259291",
+ "modified": "2019-12-03 14:29:33.268428",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Falling Head Method",

@@ -1,0 +1,84 @@
+{
+ "creation": "2019-11-23 09:53:16.722379",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "position",
+  "cost",
+  "column_break_4",
+  "daily_cost",
+  "ot",
+  "work_hours"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Read Only",
+   "label": "Position",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "cost",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "daily_cost",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Daily Cost"
+  },
+  {
+   "columns": 1,
+   "fieldname": "ot",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "OT"
+  },
+  {
+   "columns": 1,
+   "default": "8",
+   "fieldname": "work_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Working Hours"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-23 15:39:24.250614",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Time Sheet",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

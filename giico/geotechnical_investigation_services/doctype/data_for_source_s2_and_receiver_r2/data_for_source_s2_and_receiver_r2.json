@@ -1,0 +1,174 @@
+{
+ "creation": "2019-10-18 16:17:54.690670",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test",
+  "r2_test",
+  "field",
+  "unit",
+  "mass_density",
+  "ttrig_p",
+  "ttrig_s",
+  "x1",
+  "y1",
+  "tp2",
+  "ts2",
+  "column_break_10",
+  "sr2",
+  "vs2",
+  "vp2",
+  "g2",
+  "m2",
+  "m2r",
+  "remarks",
+  "e1"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test"
+  },
+  {
+   "columns": 2,
+   "fieldname": "r2_test",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "R2 Test"
+  },
+  {
+   "columns": 1,
+   "fieldname": "field",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Field"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Unit"
+  },
+  {
+   "fieldname": "mass_density",
+   "fieldtype": "Float",
+   "label": "Mass Density",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "ttrig_p",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ttrig(p)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "ttrig_s",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ttrig(s)"
+  },
+  {
+   "fieldname": "tp2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "tp2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ts2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "ts2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sr2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "SR2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vs2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Vs2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vp2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Vp2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "g2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "G2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "m2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "M2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "m2r",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "m2",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "x1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "X"
+  },
+  {
+   "columns": 1,
+   "fieldname": "y1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Y"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "e1",
+   "fieldtype": "Data",
+   "label": "E"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-17 08:24:42.786367",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Data for Source S2 and Receiver R2",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

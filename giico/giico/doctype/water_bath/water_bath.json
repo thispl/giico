@@ -7,6 +7,7 @@
   "test_temp",
   "instrument_read",
   "difference",
+  "column_break_4",
   "percent_differ",
   "remarks"
  ],
@@ -27,22 +28,28 @@
    "fieldname": "difference",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Difference"
+   "label": "Difference",
+   "read_only": 1
   },
   {
    "fieldname": "percent_differ",
    "fieldtype": "Float",
-   "label": "Percent Difference %"
+   "label": "Percent Difference %",
+   "read_only": 1
   },
   {
    "fieldname": "remarks",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 20:56:38.986786",
+ "modified": "2019-11-11 16:33:16.543205",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Water Bath",

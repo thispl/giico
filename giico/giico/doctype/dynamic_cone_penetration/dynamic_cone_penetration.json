@@ -38,17 +38,19 @@
    "fieldname": "den_index",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Density Index,Dr(%)"
+   "label": "Density Index,Dr(%)",
+   "read_only": 1
   },
   {
    "fieldname": "rel_density",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Relative Density Desc"
+   "label": "Relative Density Desc",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 21:08:30.805606",
+ "modified": "2019-11-13 14:17:17.231351",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Dynamic Cone Penetration",

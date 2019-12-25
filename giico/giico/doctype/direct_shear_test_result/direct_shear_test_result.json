@@ -6,15 +6,18 @@
  "engine": "InnoDB",
  "field_order": [
   "project",
-  "consultant",
   "location",
+  "department",
+  "column_break_3",
   "client",
+  "date_of_test",
+  "section_break_6",
   "contractor",
   "job_ref_no",
-  "date_of_test",
-  "column_break_5",
+  "consultant",
   "depth",
   "sample_condition",
+  "column_break_5",
   "avb",
   "test__condition",
   "cohesion",
@@ -128,9 +131,23 @@
    "fieldtype": "Table",
    "label": "Shear Test Results",
    "options": "Shear Test Results"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-25 08:32:27.551239",
+ "modified": "2019-11-22 14:17:16.827482",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Direct Shear Test Result",

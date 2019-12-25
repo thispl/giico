@@ -48,7 +48,8 @@
    "fieldname": "density",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Density"
+   "label": "Density",
+   "read_only": 1
   },
   {
    "fieldname": "load",
@@ -66,17 +67,19 @@
    "fieldname": "csn",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Compressive Strength(N/mm2)"
+   "label": "Compressive Strength(N/mm2)",
+   "read_only": 1
   },
   {
    "fieldname": "csnk",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Compressive Strength(kg/cm2)"
+   "label": "Compressive Strength(kg/cm2)",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-30 08:40:29.232962",
+ "modified": "2019-11-12 14:01:42.256593",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Concrete Tiles",

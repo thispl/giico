@@ -1,0 +1,140 @@
+{
+ "autoname": "TRT.####",
+ "creation": "2019-08-13 07:36:41.811815",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "column_break_3",
+  "location",
+  "department",
+  "section_break_5",
+  "contract_no",
+  "report_ref",
+  "sample_type",
+  "elevation",
+  "column_break_6",
+  "easting",
+  "northing",
+  "equip_used",
+  "section_break_12",
+  "tr"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contract_no",
+   "fieldtype": "Data",
+   "label": "Contract No"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Report Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sample_type",
+   "fieldtype": "Data",
+   "label": "Sample Type"
+  },
+  {
+   "fieldname": "elevation",
+   "fieldtype": "Float",
+   "label": "Elevation"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "easting",
+   "fieldtype": "Float",
+   "label": "Easting"
+  },
+  {
+   "fieldname": "northing",
+   "fieldtype": "Float",
+   "label": "Northing"
+  },
+  {
+   "fieldname": "equip_used",
+   "fieldtype": "Data",
+   "label": "Equip used"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tr",
+   "fieldtype": "Table",
+   "label": "TR",
+   "options": "TR"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-19 16:49:21.433612",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Lab Thermal Resistivity Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

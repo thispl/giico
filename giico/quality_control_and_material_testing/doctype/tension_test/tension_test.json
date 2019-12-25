@@ -1,0 +1,35 @@
+{
+ "creation": "2019-10-01 09:46:43.946069",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "test_result"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "test_result",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test Result"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 15:29:12.527999",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Tension Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

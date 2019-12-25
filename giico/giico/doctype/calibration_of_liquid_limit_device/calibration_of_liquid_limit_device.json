@@ -7,11 +7,14 @@
  "field_order": [
   "project",
   "client",
+  "department",
+  "data_3",
+  "report_date",
+  "calibration_date",
+  "section_break_6",
   "maker",
   "serial_id",
   "column_break_5",
-  "calibration_date",
-  "report_date",
   "report_no",
   "section_break_9",
   "liquid_limit",
@@ -129,9 +132,23 @@
    "fieldtype": "Link",
    "label": "Designation",
    "options": "Designation"
+  },
+  {
+   "fieldname": "data_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:02:20.067764",
+ "modified": "2019-11-22 13:32:52.851261",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration of Liquid Limit Device",

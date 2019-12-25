@@ -1,0 +1,103 @@
+{
+ "creation": "2019-09-27 12:22:12.240227",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "dim_length",
+  "dim_width",
+  "dim_height",
+  "weight_g",
+  "column_break_6",
+  "density",
+  "net",
+  "load",
+  "com",
+  "com_strength"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample ID"
+  },
+  {
+   "columns": 2,
+   "fieldname": "dim_length",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Length"
+  },
+  {
+   "columns": 1,
+   "fieldname": "dim_width",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Width"
+  },
+  {
+   "columns": 1,
+   "fieldname": "dim_height",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": " Height"
+  },
+  {
+   "description": "g",
+   "fieldname": "weight_g",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Float",
+   "label": "Density (g/cm3)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net",
+   "fieldtype": "Int",
+   "label": "Net Area (mm2)",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "load",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Load (kN)"
+  },
+  {
+   "fieldname": "com",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Compressive strength (N/mm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "com_strength",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Compressive strength (kg/cm2)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-16 12:12:34.416584",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Concrete Masonary",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

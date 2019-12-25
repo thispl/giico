@@ -1,40 +1,39 @@
 {
  "autoname": "PLT.####",
- "creation": "2019-08-12 09:39:46.259114",
+ "creation": "2019-11-18 12:14:01.360022",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project",
+  "client",
+  "location",
+  "column_break_4",
   "date_of_test",
   "test_no",
+  "department",
+  "section_break_7",
   "elevation",
-  "location",
-  "column_break_5",
   "job_ref_no",
-  "set_of_plates",
+  "set_of_plates_used",
+  "column_break_11",
   "test_soil_condition",
-  "section_break_9",
-  "data_9",
+  "settlement_readings_section",
+  "gauge_1",
+  "calculate",
   "section_break_11",
-  "test_by",
-  "designation1",
-  "column_break_13",
-  "review_by",
-  "designation2",
+  "gauge_2",
+  "section_break_13",
+  "gauge_3",
   "section_break_15",
-  "project",
-  "column_break_17",
-  "client",
-  "stress_section",
-  "test2",
-  "des1",
-  "column_break_21",
-  "review2",
-  "des2",
-  "section_break_23",
-  "project2",
-  "column_break_25",
-  "client2"
+  "mean_of_final_settlement",
+  "section_break_17",
+  "notes_section",
+  "notes",
+  "section_break_25",
+  "tested_by",
+  "reviewed_by",
+  "column_break_19"
  ],
  "fields": [
   {
@@ -58,18 +57,14 @@
    "label": "Location"
   },
   {
-   "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "job_ref_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Job Ref No"
   },
   {
-   "fieldname": "set_of_plates",
-   "fieldtype": "Data",
-   "label": "Set of Plates Used(m)"
+   "fieldname": "set_of_plates_used",
+   "fieldtype": "Float",
+   "label": "Set of Plates used"
   },
   {
    "fieldname": "test_soil_condition",
@@ -77,46 +72,63 @@
    "label": "Test Soil Condition"
   },
   {
-   "fieldname": "section_break_9",
-   "fieldtype": "Section Break"
+   "fieldname": "settlement_readings_section",
+   "fieldtype": "Section Break",
+   "label": "Settlement Readings"
   },
   {
-   "fieldname": "data_9",
+   "fieldname": "gauge_1",
    "fieldtype": "Table",
-   "label": "PLT Readings",
-   "options": "PLT Readings"
+   "label": "Gauge 1",
+   "options": "Gauge 1"
   },
   {
    "fieldname": "section_break_11",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "test_by",
-   "fieldtype": "Data",
-   "label": "Tested By"
+   "fieldname": "gauge_2",
+   "fieldtype": "Table",
+   "label": "Gauge 2",
+   "options": "Gauge 2"
   },
   {
-   "fieldname": "designation1",
-   "fieldtype": "Data",
-   "label": "Designation"
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
   },
   {
-   "fieldname": "column_break_13",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "review_by",
-   "fieldtype": "Data",
-   "label": "Reviewed By"
-  },
-  {
-   "fieldname": "designation2",
-   "fieldtype": "Data",
-   "label": "Designation"
+   "fieldname": "gauge_3",
+   "fieldtype": "Table",
+   "label": "Gauge 3",
+   "options": "Gauge 3"
   },
   {
    "fieldname": "section_break_15",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mean_of_final_settlement",
+   "fieldtype": "Table",
+   "label": "Mean of Final Settlement",
+   "options": "Mean of Final Settlement"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested by"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Data",
+   "label": "Reviewed by"
   },
   {
    "fieldname": "project",
@@ -125,66 +137,48 @@
    "options": "Project"
   },
   {
-   "fieldname": "column_break_17",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "client",
    "fieldtype": "Data",
    "label": "Client"
   },
   {
-   "fieldname": "stress_section",
-   "fieldtype": "Section Break",
-   "label": "STRESS"
-  },
-  {
-   "fieldname": "test2",
-   "fieldtype": "Data",
-   "label": "Tested By"
-  },
-  {
-   "fieldname": "des1",
-   "fieldtype": "Link",
-   "label": "Designation",
-   "options": "Employee"
-  },
-  {
-   "fieldname": "column_break_21",
+   "fieldname": "column_break_4",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "review2",
-   "fieldtype": "Data",
-   "label": "Reviewed by"
-  },
-  {
-   "fieldname": "des2",
-   "fieldtype": "Link",
-   "label": "Designation",
-   "options": "Employee"
-  },
-  {
-   "fieldname": "section_break_23",
+   "fieldname": "section_break_7",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "project2",
-   "fieldtype": "Link",
-   "label": "Project",
-   "options": "Project"
-  },
-  {
-   "fieldname": "column_break_25",
+   "fieldname": "column_break_11",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "client2",
-   "fieldtype": "Data",
-   "label": "Client"
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:10:40.424123",
+ "modified": "2019-11-22 14:31:10.455927",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Plate Loading Test",

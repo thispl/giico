@@ -1,0 +1,175 @@
+{
+ "autoname": "CTU.####",
+ "creation": "2019-09-30 07:18:47.890926",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "department",
+  "customer",
+  "column_break_3",
+  "location",
+  "test_date",
+  "report_date",
+  "section_break_5",
+  "report_ref",
+  "dimensions",
+  "owner1",
+  "column_break_5",
+  "type_of_sample",
+  "section_break_9",
+  "concrete_tiles",
+  "calculate",
+  "average_section",
+  "cs1",
+  "column_break_13",
+  "cs2",
+  "section_break_15",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date "
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "dimensions",
+   "fieldtype": "Data",
+   "label": "Dimensions"
+  },
+  {
+   "fieldname": "owner1",
+   "fieldtype": "Data",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_of_sample",
+   "fieldtype": "Data",
+   "label": "Type of Sample"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Report Ref",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "concrete_tiles",
+   "fieldtype": "Table",
+   "label": "Concrete Tiles",
+   "options": "Concrete Tiles"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "average_section",
+   "fieldtype": "Section Break",
+   "label": "Average "
+  },
+  {
+   "fieldname": "cs1",
+   "fieldtype": "Float",
+   "label": "Compressive Strength(N/mm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cs2",
+   "fieldtype": "Float",
+   "label": "Compressive Strength(kg/cm2)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-24 09:16:02.146282",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Concrete Tiles Units",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

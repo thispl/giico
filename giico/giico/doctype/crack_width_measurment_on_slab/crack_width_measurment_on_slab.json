@@ -9,6 +9,8 @@
   "client",
   "column_break_3",
   "location",
+  "department",
+  "column_break_5",
   "giico_ref",
   "section_break_5",
   "crack_width",
@@ -59,9 +61,19 @@
   {
    "fieldname": "section_break_8",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-04 15:47:39.709379",
+ "modified": "2019-11-22 14:15:15.589602",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Crack Width Measurment on Slab",

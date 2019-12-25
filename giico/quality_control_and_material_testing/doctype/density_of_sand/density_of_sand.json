@@ -1,0 +1,44 @@
+{
+ "creation": "2019-09-25 08:58:53.923096",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "wt_cylinder",
+  "wt_sand",
+  "bulk_density"
+ ],
+ "fields": [
+  {
+   "fieldname": "wt_cylinder",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt of Sand + Cylinder(g)"
+  },
+  {
+   "fieldname": "wt_sand",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt of Sand in Cylinder(g)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bulk_density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bulk Density Of Sand (g/(cm3)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-11-25 13:31:00.623783",
+ "modified_by": "ceo@giico.net",
+ "module": "Quality Control and Material Testing",
+ "name": "Density Of Sand",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

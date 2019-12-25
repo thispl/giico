@@ -13,6 +13,7 @@
   "test_date",
   "report_date",
   "report_ref_no",
+  "department",
   "section_break_9",
   "sand_equivalent_readings",
   "calculate",
@@ -83,7 +84,8 @@
   {
    "fieldname": "average_sand_equivalent",
    "fieldtype": "Data",
-   "label": "Average Sand Equivalent"
+   "label": "Average Sand Equivalent",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_13",
@@ -111,9 +113,15 @@
    "fieldname": "approved_by",
    "fieldtype": "Data",
    "label": "Approved by"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-03 10:49:37.084495",
+ "modified": "2019-11-22 14:32:11.352236",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Sand Equivalent",

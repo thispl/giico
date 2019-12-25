@@ -1,0 +1,140 @@
+{
+ "autoname": "PTD.####",
+ "creation": "2019-11-25 10:40:45.341383",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "location",
+  "well_no",
+  "starting_date",
+  "starting_time",
+  "pump_type",
+  "column_break_8",
+  "completion_date",
+  "completion_time",
+  "type_of_test",
+  "static_water_level",
+  "mp",
+  "discharge",
+  "pump_depth",
+  "section_break_16",
+  "pumping_test"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "well_no",
+   "fieldtype": "Data",
+   "label": "Well No"
+  },
+  {
+   "fieldname": "starting_date",
+   "fieldtype": "Date",
+   "label": "Starting Date"
+  },
+  {
+   "fieldname": "starting_time",
+   "fieldtype": "Data",
+   "label": "Starting Time"
+  },
+  {
+   "fieldname": "pump_type",
+   "fieldtype": "Select",
+   "label": "Pump Type",
+   "options": "\nGrundfus"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "completion_date",
+   "fieldtype": "Date",
+   "label": "Completion Date"
+  },
+  {
+   "fieldname": "completion_time",
+   "fieldtype": "Time",
+   "label": "Completion Time"
+  },
+  {
+   "fieldname": "type_of_test",
+   "fieldtype": "Data",
+   "label": "Type of Test"
+  },
+  {
+   "description": "m",
+   "fieldname": "static_water_level",
+   "fieldtype": "Data",
+   "label": "Static Water Level"
+  },
+  {
+   "description": "m",
+   "fieldname": "mp",
+   "fieldtype": "Data",
+   "label": "M.P"
+  },
+  {
+   "fieldname": "discharge",
+   "fieldtype": "Data",
+   "label": "Discharge (Q) (IGPM) "
+  },
+  {
+   "description": "m",
+   "fieldname": "pump_depth",
+   "fieldtype": "Data",
+   "label": "Pump Depth "
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pumping_test",
+   "fieldtype": "Table",
+   "label": "Pumping Test",
+   "options": "Pumping Test"
+  }
+ ],
+ "modified": "2019-11-25 10:56:32.356016",
+ "modified_by": "Administrator",
+ "module": "Drilling Water Well Service",
+ "name": "Pumping Test Data Sheets",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

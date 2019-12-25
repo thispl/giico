@@ -1,0 +1,78 @@
+{
+ "creation": "2019-10-04 08:15:17.918925",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "passing",
+  "retained",
+  "grading_section",
+  "a",
+  "b",
+  "column_break_6",
+  "c",
+  "d"
+ ],
+ "fields": [
+  {
+   "fieldname": "passing",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sieve Size (Passing)"
+  },
+  {
+   "fieldname": "retained",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sieve Size (Retained On)"
+  },
+  {
+   "fieldname": "grading_section",
+   "fieldtype": "Section Break",
+   "label": "Grading"
+  },
+  {
+   "columns": 1,
+   "fieldname": "a",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "A"
+  },
+  {
+   "columns": 1,
+   "fieldname": "b",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "B"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "c",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "C"
+  },
+  {
+   "columns": 1,
+   "fieldname": "d",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "D"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-16 14:00:10.716477",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Grading of Test Sample",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

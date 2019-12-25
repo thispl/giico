@@ -1,0 +1,207 @@
+{
+ "autoname": "CBR.####",
+ "creation": "2019-08-16 09:55:32.027073",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "location",
+  "date_of_report",
+  "section_break_6",
+  "test",
+  "test_depth",
+  "materials",
+  "water_content_",
+  "column_break_4",
+  "job_ref_no",
+  "northing",
+  "easting",
+  "section_break_9",
+  "penetration",
+  "generate_graph",
+  "chart_section",
+  "chart_html",
+  "chart_image",
+  "section_break_20",
+  "tested_by",
+  "designation",
+  "section_break_14",
+  "checked_by",
+  "designation1"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date Of Report"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "label": "Test#"
+  },
+  {
+   "fieldname": "test_depth",
+   "fieldtype": "Float",
+   "label": "Test Depth#"
+  },
+  {
+   "fieldname": "materials",
+   "fieldtype": "Data",
+   "label": "Materials"
+  },
+  {
+   "fieldname": "water_content_",
+   "fieldtype": "Data",
+   "label": "Water Content(%)"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_ref_no",
+   "fieldtype": "Int",
+   "label": "Job Ref No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "northing",
+   "fieldtype": "Float",
+   "label": "Northing"
+  },
+  {
+   "fieldname": "easting",
+   "fieldtype": "Float",
+   "label": "Easting"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "penetration",
+   "fieldtype": "Table",
+   "label": "Penetration",
+   "options": "Penetration"
+  },
+  {
+   "fieldname": "chart_section",
+   "fieldtype": "Section Break",
+   "label": "Chart"
+  },
+  {
+   "fieldname": "chart_html",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "chart image"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By"
+  },
+  {
+   "fieldname": "designation1",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate Graph"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-19 16:33:30.948465",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Field CBR",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

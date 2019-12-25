@@ -1,0 +1,48 @@
+{
+ "autoname": "field:test_no",
+ "creation": "2019-08-26 11:52:28.346555",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "fdt_test"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "label": "Test No",
+   "unique": 1
+  },
+  {
+   "fieldname": "fdt_test",
+   "fieldtype": "Table",
+   "label": "FDT Test",
+   "options": "FDT Test"
+  }
+ ],
+ "modified": "2019-12-19 07:17:02.629894",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "FDT Calculations",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,40 @@
+{
+ "creation": "2019-12-23 09:12:21.141352",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "column_break_2",
+  "details"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Details"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-23 09:12:21.141352",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "GT",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

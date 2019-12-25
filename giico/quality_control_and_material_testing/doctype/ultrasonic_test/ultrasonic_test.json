@@ -1,0 +1,59 @@
+{
+ "creation": "2019-10-01 07:17:06.877048",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "si_no",
+  "distance",
+  "column_break_3",
+  "transit_time",
+  "pulse_velocity"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "si_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SI.NO"
+  },
+  {
+   "columns": 3,
+   "fieldname": "distance",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Distance between Transducers(MM)"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "transit_time",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Transit Time "
+  },
+  {
+   "columns": 2,
+   "fieldname": "pulse_velocity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Pulse Velocity",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-17 09:26:27.978076",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Ultrasonic Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,218 @@
+{
+ "autoname": "LLD.####",
+ "creation": "2019-09-24 08:25:36.836653",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "data_3",
+  "report_date",
+  "calibration_date",
+  "next_calibration_on",
+  "section_break_6",
+  "maker",
+  "serial_id",
+  "column_break_5",
+  "report_no",
+  "section_break_9",
+  "liquid_limit",
+  "adjustment_of_height_of_drop_section",
+  "item_no",
+  "item_checked",
+  "column_break_18",
+  "observation",
+  "remarks",
+  "section_break_11",
+  "overall_calibration_result",
+  "section_break_15",
+  "calibrated_by",
+  "des1",
+  "column_break_26",
+  "checked_by",
+  "des2"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date "
+  },
+  {
+   "fieldname": "calibration_date",
+   "fieldtype": "Date",
+   "label": "Calibration Date "
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "maker",
+   "fieldtype": "Data",
+   "label": "Maker"
+  },
+  {
+   "fieldname": "serial_id",
+   "fieldtype": "Int",
+   "label": "Serial ID"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Report No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "liquid_limit",
+   "fieldtype": "Table",
+   "label": "Liquid Limit",
+   "options": "Liquid Limit"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overall_calibration_result",
+   "fieldtype": "Data",
+   "label": "Overall Calibration Result "
+  },
+  {
+   "fieldname": "next_calibration_on",
+   "fieldtype": "Date",
+   "label": "Next Calibration On "
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "calibrated_by",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Calibrated by ",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "calibrated_by.designation",
+   "fieldname": "des1",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Checked by ",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "checked_by.designation",
+   "fieldname": "des2",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "adjustment_of_height_of_drop_section",
+   "fieldtype": "Section Break",
+   "label": "Adjustment Of Height Of Drop"
+  },
+  {
+   "fieldname": "item_no",
+   "fieldtype": "Data",
+   "label": "Item No"
+  },
+  {
+   "fieldname": "item_checked",
+   "fieldtype": "Data",
+   "label": "Item Checked"
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-23 16:18:52.442533",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Calibration of Liquid Limit Device",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

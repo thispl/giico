@@ -1,0 +1,71 @@
+{
+ "creation": "2019-08-31 09:57:17.171341",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "manpower",
+  "prev",
+  "nos",
+  "column_break_4",
+  "total_hours",
+  "ttl",
+  "cum_hours"
+ ],
+ "fields": [
+  {
+   "fieldname": "manpower",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Manpower",
+   "options": "\nSite Supervisor\nDrillers\nAsst.Driller\nLabors"
+  },
+  {
+   "fieldname": "prev",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Prev"
+  },
+  {
+   "fieldname": "nos",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Nos"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Hours"
+  },
+  {
+   "fieldname": "ttl",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "TTL",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cum_hours",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Cum Hours",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-18 09:07:47.089997",
+ "modified_by": "Administrator",
+ "module": "Drilling Water Well Service",
+ "name": "Manpower",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

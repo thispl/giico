@@ -5,13 +5,15 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "client",
   "project",
-  "equipment",
-  "column_break_4",
-  "date_calibration",
+  "client",
+  "department",
+  "column_break_3",
   "date_report",
+  "date_calibration",
+  "column_break_4",
   "giico_job",
+  "equipment",
   "sieves_section",
   "sieves",
   "section_break_8",
@@ -36,7 +38,7 @@
   },
   {
    "fieldname": "column_break_4",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "date_calibration",
@@ -71,9 +73,19 @@
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 20:56:54.196360",
+ "modified": "2019-11-22 13:10:09.773103",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration of Sieves",

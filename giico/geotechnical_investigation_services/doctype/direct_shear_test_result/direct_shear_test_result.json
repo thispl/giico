@@ -1,0 +1,226 @@
+{
+ "autoname": "DS.####",
+ "creation": "2019-10-10 09:05:33.519805",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "customer",
+  "department",
+  "column_break_3",
+  "location",
+  "date_of_test",
+  "section_break_6",
+  "contractor",
+  "job_ref_no",
+  "consultant",
+  "sample_condition",
+  "column_break_5",
+  "avb",
+  "test__condition",
+  "cohesion",
+  "phi",
+  "section_break_10",
+  "sample",
+  "calculate",
+  "section_break_17",
+  "shear_test_results",
+  "generate_graph",
+  "section_break_18",
+  "remarks",
+  "charts",
+  "chart",
+  "chart_image",
+  "description",
+  "desc"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project ",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.location",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location ",
+   "options": "Location"
+  },
+  {
+   "fetch_from": "project.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor "
+  },
+  {
+   "fieldname": "job_ref_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Ref No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consultant",
+   "fieldtype": "Data",
+   "label": "Consultant "
+  },
+  {
+   "fieldname": "sample_condition",
+   "fieldtype": "Data",
+   "label": "Sample Condition"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "avb",
+   "fieldtype": "Float",
+   "label": "Av. B. Density(Mg/m3) "
+  },
+  {
+   "fieldname": "test__condition",
+   "fieldtype": "Data",
+   "label": "Test  Condition"
+  },
+  {
+   "description": "kpa",
+   "fieldname": "cohesion",
+   "fieldtype": "Float",
+   "label": "Cohesion"
+  },
+  {
+   "description": "Degree",
+   "fieldname": "phi",
+   "fieldtype": "Float",
+   "label": "phi"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sample",
+   "fieldtype": "Table",
+   "label": "Sample",
+   "options": "Sample"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shear_test_results",
+   "fieldtype": "Table",
+   "label": "Shear Test Results",
+   "options": "Shear Test Results"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "charts",
+   "fieldtype": "Section Break",
+   "label": "CHARTS"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Chart Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "description",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "default": "0",
+   "fieldname": "desc",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Description"
+  },
+  {
+   "fetch_from": "project.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate graph"
+  }
+ ],
+ "modified": "2019-12-20 07:41:07.298742",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Direct Shear Test Result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

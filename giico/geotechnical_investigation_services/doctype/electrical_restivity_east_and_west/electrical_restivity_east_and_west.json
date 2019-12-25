@@ -1,0 +1,50 @@
+{
+ "creation": "2019-12-10 07:59:23.132602",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "test_no",
+  "electrode_interval",
+  "resistance",
+  "soil_resistivity"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "test_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test No"
+  },
+  {
+   "fieldname": "electrode_interval",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Electrode Interval(M)"
+  },
+  {
+   "fieldname": "resistance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Resistance(OHM)"
+  },
+  {
+   "fieldname": "soil_resistivity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Soil Resistivity(OHM M)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-12-13 08:20:20.240399",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Electrical Restivity East and West",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

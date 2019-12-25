@@ -53,13 +53,15 @@
    "fieldname": "absorption",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Absorption (%)"
+   "label": "Absorption (%)",
+   "read_only": 1
   },
   {
    "fieldname": "density",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Density (kg/m3)"
+   "label": "Density (kg/m3)",
+   "read_only": 1
   },
   {
    "fieldname": "submerged",
@@ -89,11 +91,12 @@
   {
    "fieldname": "cr_factor",
    "fieldtype": "Float",
-   "label": "Correction Factor"
+   "label": "Correction Factor",
+   "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-09-30 13:33:49.843265",
+ "modified": "2019-11-12 14:18:47.559419",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Water Absorption",

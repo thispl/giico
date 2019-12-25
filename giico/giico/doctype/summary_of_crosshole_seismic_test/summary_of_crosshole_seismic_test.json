@@ -5,69 +5,180 @@
  "engine": "InnoDB",
  "field_order": [
   "test_depth_m",
-  "sr1__g_mpa",
-  "sr1_m_mpa",
-  "sr1_m",
-  "sr1_e2g1m_mpa",
-  "sr2__g_mpa",
-  "sr2_m_mpa",
-  "sr2_m",
-  "sr2_e2g1m_mpa"
+  "g1mpa",
+  "g2mpa",
+  "g12mpa",
+  "gmpa",
+  "m1mpa",
+  "m2mpa",
+  "column_break_7",
+  "m12mpa",
+  "mmpa",
+  "m1",
+  "m2",
+  "m12",
+  "m",
+  "column_break_14",
+  "vs1",
+  "vs2",
+  "vs12",
+  "vs",
+  "vp1",
+  "vp2",
+  "column_break_21",
+  "vp12",
+  "vp",
+  "e1",
+  "e2",
+  "e12",
+  "e"
  ],
  "fields": [
   {
+   "fieldname": "g1mpa",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "G1mpa"
+  },
+  {
+   "fieldname": "g2mpa",
+   "fieldtype": "Int",
+   "label": "G2mpa"
+  },
+  {
+   "fieldname": "g12mpa",
+   "fieldtype": "Int",
+   "label": "G12mpa"
+  },
+  {
+   "fieldname": "gmpa",
+   "fieldtype": "Int",
+   "label": "Gmpa"
+  },
+  {
+   "fieldname": "m1mpa",
+   "fieldtype": "Int",
+   "label": "M1mpa"
+  },
+  {
+   "fieldname": "m2mpa",
+   "fieldtype": "Int",
+   "label": "M2mpa"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "m12mpa",
+   "fieldtype": "Int",
+   "label": "M12mpa"
+  },
+  {
+   "fieldname": "mmpa",
+   "fieldtype": "Int",
+   "label": "Mmpa"
+  },
+  {
+   "fieldname": "m1",
+   "fieldtype": "Float",
+   "label": "m1"
+  },
+  {
+   "fieldname": "m2",
+   "fieldtype": "Float",
+   "label": "m2"
+  },
+  {
+   "fieldname": "m12",
+   "fieldtype": "Float",
+   "label": "m12"
+  },
+  {
+   "fieldname": "m",
+   "fieldtype": "Float",
+   "label": "m"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vs1",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vs1"
+  },
+  {
+   "fieldname": "vs2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vs2"
+  },
+  {
+   "fieldname": "vs12",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vs12"
+  },
+  {
+   "fieldname": "vs",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Vs"
+  },
+  {
+   "fieldname": "vp1",
+   "fieldtype": "Int",
+   "label": "Vp1"
+  },
+  {
+   "fieldname": "vp2",
+   "fieldtype": "Int",
+   "label": "Vp2"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vp12",
+   "fieldtype": "Int",
+   "label": "Vp12"
+  },
+  {
+   "fieldname": "vp",
+   "fieldtype": "Int",
+   "label": "Vp"
+  },
+  {
+   "fieldname": "e1",
+   "fieldtype": "Int",
+   "label": "E1"
+  },
+  {
+   "fieldname": "e2",
+   "fieldtype": "Int",
+   "label": "E2"
+  },
+  {
+   "fieldname": "e12",
+   "fieldtype": "Int",
+   "label": "E12"
+  },
+  {
+   "fieldname": "e",
+   "fieldtype": "Int",
+   "label": "E"
+  },
+  {
    "fieldname": "test_depth_m",
    "fieldtype": "Float",
-   "in_list_view": 1,
-   "label": "Test Depth m "
-  },
-  {
-   "fieldname": "sr1__g_mpa",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "SR1  G Mpa"
-  },
-  {
-   "fieldname": "sr1_m_mpa",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "SR1 M Mpa"
-  },
-  {
-   "fieldname": "sr1_m",
-   "fieldtype": "Float",
-   "in_list_view": 1,
-   "label": "SR1 m"
-  },
-  {
-   "fieldname": "sr1_e2g1m_mpa",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "SR1 E=2G(1+m) Mpa"
-  },
-  {
-   "fieldname": "sr2__g_mpa",
-   "fieldtype": "Data",
-   "label": "SR2  G Mpa"
-  },
-  {
-   "fieldname": "sr2_m_mpa",
-   "fieldtype": "Data",
-   "label": "SR2 M Mpa"
-  },
-  {
-   "fieldname": "sr2_m",
-   "fieldtype": "Data",
-   "label": "SR2 m"
-  },
-  {
-   "fieldname": "sr2_e2g1m_mpa",
-   "fieldtype": "Data",
-   "label": "SR2 E=2G(1+m) Mpa"
+   "label": "Test Depth m"
   }
  ],
  "istable": 1,
- "modified": "2019-10-21 08:24:42.860943",
+ "modified": "2019-11-20 07:52:22.096063",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Summary of Crosshole Seismic Test",

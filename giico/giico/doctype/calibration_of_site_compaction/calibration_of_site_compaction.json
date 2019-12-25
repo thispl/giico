@@ -5,13 +5,16 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "client",
   "project",
-  "giico_job_no",
+  "client",
+  "department",
+  "column_break_3",
+  "date_of_report",
   "date_of_calibration",
   "column_break_5",
-  "date_of_report",
   "model",
+  "giico_job_no",
+  "column_break_9",
   "make",
   "serial",
   "section_break_10",
@@ -50,7 +53,7 @@
   },
   {
    "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "date_of_report",
@@ -118,11 +121,13 @@
   },
   {
    "fieldname": "column_break_16",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "fieldname": "checked_by",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Checked By",
    "options": "Employee"
   },
@@ -130,11 +135,26 @@
    "fetch_from": "checked_by.designation",
    "fieldname": "des2",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Designation",
    "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-09-27 21:02:24.242769",
+ "modified": "2019-11-22 13:27:59.253993",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Calibration of Site Compaction",

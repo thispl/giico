@@ -5,8 +5,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "sample_id",
+  "project",
+  "location",
+  "column_break_3",
+  "client",
+  "department",
+  "section_break_5",
   "dm",
+  "sample_id",
   "am",
   "column_break_4",
   "lm",
@@ -22,13 +28,11 @@
   "hydraulic_gradient",
   "section_break_16",
   "ptp",
+  "calculate",
   "k_avg",
-  "section_break_18",
-  "project",
-  "column_break_16",
-  "client",
-  "column_break_18",
-  "location"
+  "charts_section",
+  "chart",
+  "chart_image"
  ],
  "fields": [
   {
@@ -44,7 +48,8 @@
   {
    "fieldname": "am",
    "fieldtype": "Float",
-   "label": "Area of Mould"
+   "label": "Area of Mould",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_4",
@@ -58,7 +63,8 @@
   {
    "fieldname": "vm",
    "fieldtype": "Float",
-   "label": "Volume of Mould"
+   "label": "Volume of Mould",
+   "read_only": 1
   },
   {
    "fieldname": "ch",
@@ -101,7 +107,8 @@
   {
    "fieldname": "hydraulic_gradient",
    "fieldtype": "Float",
-   "label": "Hydraulic Gradient"
+   "label": "Hydraulic Gradient",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_16",
@@ -116,11 +123,8 @@
   {
    "fieldname": "k_avg",
    "fieldtype": "Data",
-   "label": "K <sub>avg</sub>"
-  },
-  {
-   "fieldname": "section_break_18",
-   "fieldtype": "Section Break"
+   "label": "K <sub>avg</sub>",
+   "read_only": 1
   },
   {
    "fieldname": "project",
@@ -129,25 +133,52 @@
    "options": "Project"
   },
   {
-   "fieldname": "column_break_16",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "client",
    "fieldtype": "Data",
    "label": "Client"
   },
   {
-   "fieldname": "column_break_18",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "Charts"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "label": "Chart Image"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
- "modified": "2019-10-05 06:54:00.153251",
+ "modified": "2019-11-22 16:51:29.296614",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Constant Head Permeability Test",
