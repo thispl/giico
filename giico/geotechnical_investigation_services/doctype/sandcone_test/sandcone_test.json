@@ -1,0 +1,82 @@
+{
+ "creation": "2020-01-06 14:42:29.167036",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "with_sand",
+  "without_sand",
+  "sand_in_hole",
+  "wt_of_sand",
+  "column_break_5",
+  "bulk_density",
+  "wt_of_sand_in_hole",
+  "volume_of_test_hole"
+ ],
+ "fields": [
+  {
+   "description": "g",
+   "fieldname": "with_sand",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Wt. of apparatus filled with sand"
+  },
+  {
+   "description": "g",
+   "fieldname": "without_sand",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Wt.of apparatus and remaining sand"
+  },
+  {
+   "description": "g",
+   "fieldname": "sand_in_hole",
+   "fieldtype": "Int",
+   "label": "Wt.of sand in hole,plate and cone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "g",
+   "fieldname": "wt_of_sand_in_hole",
+   "fieldtype": "Int",
+   "label": "Wt of sand in hole",
+   "read_only": 1
+  },
+  {
+   "description": "cm3",
+   "fieldname": "volume_of_test_hole",
+   "fieldtype": "Data",
+   "label": "Volume of test hole",
+   "read_only": 1
+  },
+  {
+   "description": "g",
+   "fieldname": "wt_of_sand",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Wt.of sand in plate and cone"
+  },
+  {
+   "description": "g/cm3",
+   "fieldname": "bulk_density",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bulk density of sand"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-01-09 12:22:09.105705",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Sandcone Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
