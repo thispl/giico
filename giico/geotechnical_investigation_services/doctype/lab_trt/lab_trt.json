@@ -13,11 +13,10 @@
   "date",
   "section_break_6",
   "east",
-  "report_ref",
   "north",
   "column_break_10",
+  "report_ref",
   "equip_used",
-  "reference_std",
   "section_break_11",
   "lab_trt_result",
   "section_break_13",
@@ -90,11 +89,6 @@
    "label": "Equip Used "
   },
   {
-   "fieldname": "reference_std",
-   "fieldtype": "Data",
-   "label": "Reference STD "
-  },
-  {
    "fieldname": "section_break_11",
    "fieldtype": "Section Break"
   },
@@ -132,7 +126,7 @@
    "reqd": 1
   }
  ],
- "modified": "2019-12-24 14:29:55.111388",
+ "modified": "2019-12-30 13:22:56.793095",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Lab TRT",

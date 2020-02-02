@@ -11,16 +11,20 @@
   "column_break_3",
   "location",
   "date_of_test",
+  "date_of_report",
   "section_break_6",
   "contractor",
+  "sample_description",
   "job_ref_no",
   "consultant",
   "sample_condition",
+  "slope",
   "column_break_5",
   "avb",
   "test__condition",
   "cohesion",
   "phi",
+  "sample1",
   "section_break_10",
   "sample",
   "calculate",
@@ -199,9 +203,29 @@
    "fieldname": "generate_graph",
    "fieldtype": "Button",
    "label": "Generate graph"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "slope",
+   "fieldtype": "Float",
+   "label": "Slope"
+  },
+  {
+   "fieldname": "sample_description",
+   "fieldtype": "Data",
+   "label": "Sample Description"
+  },
+  {
+   "fieldname": "sample1",
+   "fieldtype": "Int",
+   "label": "Sample"
   }
  ],
- "modified": "2019-12-20 07:41:07.298742",
+ "modified": "2019-12-27 08:26:30.174198",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Direct Shear Test Result",

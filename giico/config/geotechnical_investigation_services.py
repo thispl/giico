@@ -118,10 +118,10 @@ def get_data():
                         },
                         {
                             "type": "doctype",
-                            "name": "FDT",
+                            "name": "Field Density Test",
                             "icon": "fa fa-star",
                             "label": _("Field Density Tests"),
-                            "description": _("FDT"),
+                            "description": _("Field Density Test"),
                             "onboard": 1
                         },
                         {

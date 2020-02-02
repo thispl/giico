@@ -4,32 +4,30 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "test_no",
   "optimum_moisture_content__",
+  "column_break_2",
   "max_dry_densitygcm3"
  ],
  "fields": [
   {
-   "fieldname": "test_no",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Test No"
-  },
-  {
    "fieldname": "optimum_moisture_content__",
-   "fieldtype": "Percent",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Optimum Moisture content  (%)"
   },
   {
    "fieldname": "max_dry_densitygcm3",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Max Dry Density(g/cm3)"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 21:09:48.210561",
+ "modified": "2020-01-07 15:19:07.828664",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Reference Proctor Test",

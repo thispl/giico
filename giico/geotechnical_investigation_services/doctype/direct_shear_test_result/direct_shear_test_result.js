@@ -85,11 +85,20 @@ frappe.ui.form.on('Direct Shear Test Result', {
 
 		});
 
-
-
-
 	},
 	calculate: function (frm) {
+		var r1 = frm.doc.sample
+		var avg = r1.length
+		var a = 0
+		$.each(frm.doc.sample, function (i, d) {
+
+			if (d.density) {
+				a += d.density / avg
+				console.log(a)
+			}
+		})
+		frm.set_value("avb",a)
+
 		if (frm.doc.description != 1) {
 			var child = frm.doc.sample
 			var len = child.length
@@ -98,22 +107,17 @@ frappe.ui.form.on('Direct Shear Test Result', {
 				for (var a = 0; a < len; a++) {
 					var row = frappe.model.add_child(frm.doc, "Shear Test Results", "shear_test_results");
 					row.sample = child[a].sample
-					row.shear_stress = child[a].ct * child[a].div
-					row.horizontal_displacement = child[a].disprate * child[a].time
+					row.shear_stress = (child[a].ct * child[a].div).toFixed(3)
+					row.horizontal_displacement = (child[a].disprate * child[a].time)
 					row.dry_density = child[a].dry_density
-					row.void_ratio = (child[a].gs / child[a].dry_density) - 1
+					row.void_ratio = ((child[a].gs / child[a].dry_density) - 1).toFixed(3)
 					row.moisture_content = child[a].wc_1
-					console.log(child[a].ct * child[a].div)
 
 				}
 				frm.refresh_field("shear_test_results")
 			}
 			frm.set_value("description", 1)
 		}
-
-
-
-
 
 	}
 })
@@ -142,7 +146,7 @@ frappe.ui.form.on('Sample', {
 	density: function (frm, cdt, cdn) {
 		var child = locals[cdt][cdn]
 		var dry_den = child.density / (1 + child.wc_1 / 100)
-		frappe.model.set_value(child.doctype, child.name, "dry_density", dry_den)
+		frappe.model.set_value(child.doctype, child.name, "dry_density",dry_den.toFixed(3))
 	},
 	ct: function (frm, cdt, cdn) {
 		$.each(frm.doc.sample || [], function (i, v) {

@@ -19,8 +19,12 @@
   "moisture_calibration",
   "moisture_conten_section",
   "moisture_content",
+  "generate_graph",
   "section_break_10",
-  "remarks"
+  "remarks",
+  "charts_section",
+  "chart",
+  "chart_image"
  ],
  "fields": [
   {
@@ -111,9 +115,31 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "charts_section",
+   "fieldtype": "Section Break",
+   "label": "CHARTS"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "Chart",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Chart Image"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate graph"
   }
  ],
- "modified": "2019-12-21 14:24:47.199084",
+ "modified": "2019-12-28 11:58:20.373909",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Speedy Moisture",

@@ -45,31 +45,7 @@ def get_data():
             "label": _("Calibration Tests"),
             "items": [
               
-                {
-                    "type": "doctype",
-                    "name": "Calibration of Sieves 12",
-                     "icon": "fa fa-star",
-                    "label": _("Calibration of Sieves 12"),
-                     "description": _("Calibration of Sieves 12"),
-                      "onboard": 1
-                },
-                {
-                    "type": "doctype",
-                    "name": "Calibration of Speedy Moisture",
-                    "icon": "fa fa-star",
-                    "label": _("Speedy"),
-                     "description": _("Calibration of Speedy Moisture"),
-                     "onboard": 1
-                },
-                {
-                    "type": "doctype",
-                    "name": "Calibration of Sandcone",
-                  "icon": "fa fa-star",
-                    "label": _("Sand Cone "),
-                     "description": _("Calibration of Sandcone"),
-                     "onboard": 1
-                },
-                {
+               {
                     "type": "doctype",
                     "name": "Calibration of Oven",
                   "icon": "fa fa-star",
@@ -222,10 +198,34 @@ def get_data():
                 },
                  {
                     "type": "doctype",
+                    "name": "Calibration of Sandcone",
+                  "icon": "fa fa-star",
+                    "label": _("Sand Cone "),
+                     "description": _("Calibration of Sandcone"),
+                     "onboard": 1
+                },
+                 {
+                    "type": "doctype",
                     "name": "Calibration of Sieves",
                     "icon": "fa fa-star",
                     "label": _("Calibration of Sieves 8"),
                      "description": _("Calibration of Sieves"),
+                     "onboard": 1
+                },
+                 {
+                    "type": "doctype",
+                    "name": "Calibration of Sieves 12",
+                     "icon": "fa fa-star",
+                    "label": _("Calibration of Sieves 12"),
+                     "description": _("Calibration of Sieves 12"),
+                      "onboard": 1
+                },
+                 {
+                    "type": "doctype",
+                    "name": "Calibration of Speedy Moisture",
+                    "icon": "fa fa-star",
+                    "label": _("Speedy"),
+                     "description": _("Calibration of Speedy Moisture"),
                      "onboard": 1
                 },
                  {

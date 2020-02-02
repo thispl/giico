@@ -4,25 +4,19 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "test_no",
-  "specified_min_relative_compaction"
+  "specified_min"
  ],
  "fields": [
   {
-   "fieldname": "test_no",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Test No"
-  },
-  {
-   "fieldname": "specified_min_relative_compaction",
+   "columns": 2,
+   "fieldname": "specified_min",
    "fieldtype": "Percent",
    "in_list_view": 1,
    "label": "Specified Min Relative Compaction"
   }
  ],
  "istable": 1,
- "modified": "2019-09-27 21:10:40.000024",
+ "modified": "2020-01-07 16:07:58.248521",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Specification",
