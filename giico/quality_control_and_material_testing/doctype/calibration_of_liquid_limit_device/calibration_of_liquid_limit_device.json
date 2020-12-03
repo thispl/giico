@@ -1,11 +1,12 @@
 {
- "autoname": "LLD.####",
+ "autoname": "LLD-.YYYY.-06-.####",
  "creation": "2019-09-24 08:25:36.836653",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "data_3",
@@ -16,7 +17,6 @@
   "maker",
   "serial_id",
   "column_break_5",
-  "report_no",
   "section_break_9",
   "liquid_limit",
   "adjustment_of_height_of_drop_section",
@@ -27,12 +27,14 @@
   "remarks",
   "section_break_11",
   "overall_calibration_result",
+  "note",
   "section_break_15",
   "calibrated_by",
   "des1",
   "column_break_26",
   "checked_by",
-  "des2"
+  "des2",
+  "amended_from"
  ],
  "fields": [
   {
@@ -83,13 +85,6 @@
   {
    "fieldname": "column_break_5",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "report_no",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Report No",
-   "reqd": 1
   },
   {
    "fieldname": "section_break_9",
@@ -191,9 +186,30 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration of Liquid Limit Device",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
   }
  ],
- "modified": "2019-12-23 16:18:52.442533",
+ "is_submittable": 1,
+ "modified": "2020-11-10 09:41:39.023778",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Liquid Limit Device",

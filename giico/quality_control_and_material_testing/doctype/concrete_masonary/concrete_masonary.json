@@ -58,13 +58,13 @@
   {
    "fieldname": "density",
    "fieldtype": "Float",
-   "label": "Density (g/cm3)",
+   "label": "Density (g/cm\u00b3)",
    "read_only": 1
   },
   {
    "fieldname": "net",
    "fieldtype": "Int",
-   "label": "Net Area (mm2)",
+   "label": "Net Area (mm\u00b2)",
    "read_only": 1
   },
   {
@@ -78,19 +78,19 @@
    "fieldname": "com",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Compressive strength (N/mm2)",
+   "label": "Compressive strength (N/mm\u00b2)",
    "read_only": 1
   },
   {
    "fieldname": "com_strength",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Compressive strength (kg/cm2)",
+   "label": "Compressive strength (kg/cm\u00b2)",
    "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-12-16 12:12:34.416584",
+ "modified": "2020-11-12 09:34:11.700408",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Concrete Masonary",

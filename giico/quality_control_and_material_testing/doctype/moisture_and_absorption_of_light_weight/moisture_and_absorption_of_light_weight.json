@@ -1,11 +1,13 @@
 {
- "autoname": "MA.####",
+ "autoname": "MA-.YYYY.-06-.####",
  "creation": "2019-09-30 14:05:31.218544",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
@@ -17,7 +19,6 @@
   "owner",
   "column_break_8",
   "type_of_block",
-  "report_ref",
   "supplier",
   "section_break_11",
   "light_weight",
@@ -27,7 +28,8 @@
   "column_break_16",
   "average1",
   "section_break_13",
-  "remarks"
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
@@ -91,13 +93,6 @@
    "label": "Type of Block "
   },
   {
-   "fieldname": "report_ref",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Report Ref",
-   "reqd": 1
-  },
-  {
    "fieldname": "supplier",
    "fieldtype": "Data",
    "label": "Supplier "
@@ -150,12 +145,36 @@
    "fetch_from": "project.customer",
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Moisture and Absorption Of Light Weight",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-24 09:21:24.203651",
+ "is_submittable": 1,
+ "modified": "2020-12-03 14:38:53.301410",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Moisture and Absorption Of Light Weight",

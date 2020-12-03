@@ -1,11 +1,12 @@
 {
- "autoname": "CBW.####",
+ "autoname": "CBW-.YYYY.-06-.####",
  "creation": "2019-09-26 14:03:22.809445",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
@@ -17,7 +18,6 @@
   "equipment_id",
   "column_break_6",
   "readability",
-  "giico_job_no",
   "section_break_11",
   "cbw_readings",
   "remarks_section",
@@ -25,7 +25,8 @@
   "section_break_15",
   "tested_by",
   "column_break_17",
-  "checked_by"
+  "checked_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -82,13 +83,6 @@
    "label": "Readability"
   },
   {
-   "fieldname": "giico_job_no",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Giico Job No",
-   "reqd": 1
-  },
-  {
    "fieldname": "section_break_11",
    "fieldtype": "Section Break"
   },
@@ -143,9 +137,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration of Balance and Weight",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-24 10:50:53.643693",
+ "is_submittable": 1,
+ "modified": "2020-11-06 10:35:55.028332",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Balance and Weight",

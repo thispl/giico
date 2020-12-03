@@ -1,27 +1,30 @@
 {
- "autoname": "CC.####",
+ "autoname": "CC-.YYYY.-06-.####",
  "creation": "2019-09-27 12:29:53.269107",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
-  "column_break_3",
-  "location",
   "test_date",
   "report_date",
+  "column_break_3",
+  "location",
+  "machine_no",
   "section_break_6",
   "contractor",
   "consultant",
   "owner1",
   "structure",
   "column_break_7",
-  "report_ref",
   "concrete_grade",
   "concrete_supplier",
   "delivery_note_no",
+  "expired_of_calibration",
   "section_break_14",
   "concrete_cubes",
   "calculate",
@@ -35,11 +38,11 @@
   "section_break_23",
   "calibrated_by",
   "column_break_25",
-  "checked_by"
+  "checked_by",
+  "amended_from"
  ],
  "fields": [
   {
-   "fetch_from": "project.",
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -48,20 +51,17 @@
    "reqd": 1
   },
   {
-   "fetch_from": "project.location",
    "fieldname": "location",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Location"
   },
   {
-   "fetch_from": "project.department",
    "fieldname": "department",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Department",
-   "options": "Department",
-   "reqd": 1
+   "options": "Department"
   },
   {
    "fieldname": "column_break_3",
@@ -98,18 +98,12 @@
   },
   {
    "fieldname": "structure",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "Structure"
   },
   {
    "fieldname": "column_break_7",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "report_ref",
-   "fieldtype": "Data",
-   "label": "Report Ref",
-   "reqd": 1
   },
   {
    "fieldname": "concrete_grade",
@@ -204,9 +198,42 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Compressive Strength of Concrete Cubes",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "machine_no",
+   "fieldtype": "Data",
+   "label": "Machine No."
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "expired_of_calibration",
+   "fieldtype": "Data",
+   "label": "Expired Of Calibration"
   }
  ],
- "modified": "2019-12-26 07:56:28.300246",
+ "is_submittable": 1,
+ "modified": "2020-11-04 08:21:52.276067",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Compressive Strength of Concrete Cubes",

@@ -1,0 +1,66 @@
+{
+ "autoname": "BT.####",
+ "creation": "2020-11-29 12:44:12.944531",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bc_table",
+  "generate_graph",
+  "chart_section_section",
+  "chart",
+  "chart_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "bc_table",
+   "fieldtype": "Table",
+   "label": "BC Table",
+   "options": "BC Table"
+  },
+  {
+   "fieldname": "chart_section_section",
+   "fieldtype": "Section Break",
+   "label": "Chart Section"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "HTML",
+   "label": "Chart ",
+   "options": "<div id=\"chart\"></div>"
+  },
+  {
+   "fieldname": "chart_image",
+   "fieldtype": "Small Text",
+   "label": "Chart Image"
+  },
+  {
+   "fieldname": "generate_graph",
+   "fieldtype": "Button",
+   "label": "Generate Graph"
+  }
+ ],
+ "modified": "2020-12-01 10:21:02.674564",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "BW Borehole Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

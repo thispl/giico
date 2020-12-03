@@ -17,7 +17,6 @@
   "materials",
   "water_content_",
   "column_break_4",
-  "job_ref_no",
   "northing",
   "easting",
   "section_break_9",
@@ -31,7 +30,8 @@
   "designation",
   "section_break_14",
   "checked_by",
-  "designation1"
+  "designation1",
+  "amended_from"
  ],
  "fields": [
   {
@@ -95,12 +95,6 @@
   {
    "fieldname": "column_break_4",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "job_ref_no",
-   "fieldtype": "Int",
-   "label": "Job Ref No",
-   "reqd": 1
   },
   {
    "fieldname": "northing",
@@ -180,9 +174,19 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Field CBR",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2019-12-19 16:33:30.948465",
+ "is_submittable": 1,
+ "modified": "2020-10-19 13:37:12.043145",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Field CBR",

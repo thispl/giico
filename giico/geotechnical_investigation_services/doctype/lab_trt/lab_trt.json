@@ -15,14 +15,14 @@
   "east",
   "north",
   "column_break_10",
-  "report_ref",
   "equip_used",
   "section_break_11",
   "lab_trt_result",
   "section_break_13",
   "tested_by",
   "column_break_13",
-  "checked_by"
+  "checked_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -66,13 +66,6 @@
    "fieldname": "east",
    "fieldtype": "Data",
    "label": "East"
-  },
-  {
-   "fieldname": "report_ref",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Report Ref",
-   "reqd": 1
   },
   {
    "fieldname": "north",
@@ -124,9 +117,19 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lab TRT",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2019-12-30 13:22:56.793095",
+ "is_submittable": 1,
+ "modified": "2020-10-19 13:35:59.757956",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Lab TRT",

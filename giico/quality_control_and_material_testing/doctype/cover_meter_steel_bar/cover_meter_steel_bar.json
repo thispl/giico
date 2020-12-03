@@ -1,11 +1,13 @@
 {
- "autoname": "CM.####",
+ "autoname": "CM-.YYYY.-06-.####",
  "creation": "2019-09-30 12:20:29.405066",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "location",
   "column_break_4",
@@ -14,22 +16,20 @@
   "department",
   "section_break_7",
   "aparatus_no",
-  "job_ref_no",
   "section_break_9",
   "cover_meter_readngs",
   "section_break_11",
   "tested_by",
   "column_break_13",
-  "checked_by"
+  "checked_by",
+  "amended_from"
  ],
  "fields": [
   {
-   "fetch_from": "project.location",
    "fieldname": "location",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Location",
-   "options": "Location"
+   "label": "Location"
   },
   {
    "fieldname": "column_break_4",
@@ -51,8 +51,7 @@
    "fieldname": "department",
    "fieldtype": "Link",
    "label": "Department",
-   "options": "Department",
-   "reqd": 1
+   "options": "Department"
   },
   {
    "fieldname": "section_break_7",
@@ -62,12 +61,6 @@
    "fieldname": "aparatus_no",
    "fieldtype": "Data",
    "label": "Aparatus No"
-  },
-  {
-   "fieldname": "job_ref_no",
-   "fieldtype": "Data",
-   "label": "Job Ref No",
-   "reqd": 1
   },
   {
    "fieldname": "section_break_9",
@@ -101,7 +94,7 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project ",
+   "label": "Project",
    "options": "Project",
    "reqd": 1
   },
@@ -113,9 +106,32 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cover Meter Steel Bar",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-24 08:09:32.784597",
+ "is_submittable": 1,
+ "modified": "2020-11-12 15:03:35.342710",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Cover Meter Steel Bar",

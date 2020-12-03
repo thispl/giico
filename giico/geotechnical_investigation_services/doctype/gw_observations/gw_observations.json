@@ -1,0 +1,42 @@
+{
+ "creation": "2020-11-26 10:13:33.756557",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "time",
+  "levelm"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date "
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time"
+  },
+  {
+   "fieldname": "levelm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Level(m)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-11-26 10:21:41.117997",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "GW Observations",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

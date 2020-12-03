@@ -55,7 +55,7 @@
    "label": "Weight"
   },
   {
-   "description": "(kg/m3)\n",
+   "description": "(kg/m\u00b3)\n",
    "fieldname": "density",
    "fieldtype": "Float",
    "label": "Density",
@@ -70,23 +70,23 @@
    "label": "Load"
   },
   {
-   "description": "(N/mm2)\n",
+   "description": "(N/mm\u00b2)\n",
    "fieldname": "compressive_strength",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Compressive Strength(N/mm2)",
+   "label": "Compressive Strength(N/mm\u00b2)",
    "read_only": 1
   },
   {
-   "description": "(kg/cm2)\n",
+   "description": "(kg/cm\u00b2)\n",
    "fieldname": "kgcm2",
    "fieldtype": "Float",
-   "label": "Compressive Strength(kg/cm2)",
+   "label": "Compressive Strength(kg/cm\u00b2)",
    "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-12-16 11:02:47.892843",
+ "modified": "2020-11-12 12:12:45.985069",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Brick Pave Readings",

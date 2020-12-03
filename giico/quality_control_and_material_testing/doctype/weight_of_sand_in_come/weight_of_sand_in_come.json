@@ -11,28 +11,27 @@
  "fields": [
   {
    "fieldname": "wt_bottle_before",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Wt of Sand + Bottle Before pouring (g)"
   },
   {
    "fieldname": "wt_bottle_after",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Wt of Sand + Bottle After Pouring (g)",
-   "read_only": 1
+   "label": "Wt of Sand + Bottle After Pouring (g)"
   },
   {
    "fieldname": "wt_cone_plate",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Wt of Sand in Cone & Plate (g)",
    "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-11-25 13:30:20.776209",
- "modified_by": "ceo@giico.net",
+ "modified": "2020-11-10 16:21:50.039662",
+ "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Weight of Sand In Come",
  "owner": "Administrator",

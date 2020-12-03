@@ -1,18 +1,18 @@
 {
- "autoname": "COS.####",
+ "autoname": "COS-.YYYY.-06-.####",
  "creation": "2019-09-25 08:37:25.426845",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
   "date_calib",
   "date_report",
   "section_break_6",
-  "giico_report",
   "equip_id",
   "measuring",
   "column_break_4",
@@ -27,7 +27,8 @@
   "calculate1",
   "aver1",
   "section_break_13",
-  "remarks"
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
@@ -64,13 +65,6 @@
   {
    "fieldname": "section_break_6",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "giico_report",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Giico Report No",
-   "reqd": 1
   },
   {
    "fieldname": "equip_id",
@@ -155,9 +149,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration of Sandcone",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-21 14:26:36.107531",
+ "is_submittable": 1,
+ "modified": "2020-11-06 10:33:22.955444",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Sandcone",

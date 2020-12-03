@@ -11,7 +11,6 @@
   "column_break_5",
   "test_date",
   "report_date",
-  "report_ref_no",
   "department",
   "section_break_9",
   "attach_report",
@@ -61,13 +60,6 @@
    "label": "Report Date"
   },
   {
-   "fieldname": "report_ref_no",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Report Ref No",
-   "reqd": 1
-  },
-  {
    "fetch_from": "project.department",
    "fieldname": "department",
    "fieldtype": "Link",
@@ -113,7 +105,7 @@
    "label": "Approved by"
   }
  ],
- "modified": "2019-12-22 12:12:31.240145",
+ "modified": "2020-10-02 16:16:48.038647",
  "modified_by": "Administrator",
  "module": "Third Party Industrial Inspection",
  "name": "Inspection Report",

@@ -1,0 +1,63 @@
+{
+ "creation": "2020-11-29 12:49:06.531448",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "depth",
+  "field_n_values_blows",
+  "specified",
+  "b1",
+  "b2",
+  "b3"
+ ],
+ "fields": [
+  {
+   "fieldname": "depth",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Depth"
+  },
+  {
+   "fieldname": "field_n_values_blows",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Field N values blows"
+  },
+  {
+   "fieldname": "specified",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specified"
+  },
+  {
+   "fieldname": "b1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "B1"
+  },
+  {
+   "fieldname": "b2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "B2"
+  },
+  {
+   "fieldname": "b3",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "B3"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-11-30 08:10:15.442508",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "BC Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

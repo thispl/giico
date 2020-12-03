@@ -1,17 +1,17 @@
 {
- "autoname": "CSM.####",
+ "autoname": "CSM-.YYYY.-06-.####",
  "creation": "2019-09-26 07:57:19.206638",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "column_break_3",
   "calibration_date",
   "department",
   "column_break_4",
-  "report_ref",
   "serial_no",
   "column_break_9",
   "name1",
@@ -24,7 +24,8 @@
   "remarks",
   "charts_section",
   "chart",
-  "chart_image"
+  "chart_image",
+  "amended_from"
  ],
  "fields": [
   {
@@ -61,13 +62,6 @@
    "fieldname": "serial_no",
    "fieldtype": "Data",
    "label": "Serial No"
-  },
-  {
-   "fieldname": "report_ref",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Giico Report Ref",
-   "reqd": 1
   },
   {
    "fieldname": "name1",
@@ -137,9 +131,25 @@
    "fieldname": "generate_graph",
    "fieldtype": "Button",
    "label": "Generate graph"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration of Speedy Moisture",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-28 11:58:20.373909",
+ "is_submittable": 1,
+ "modified": "2020-12-01 08:34:15.330490",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Speedy Moisture",

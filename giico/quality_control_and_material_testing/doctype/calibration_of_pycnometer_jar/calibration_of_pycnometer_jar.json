@@ -1,11 +1,12 @@
 {
- "autoname": "CPJ.####",
+ "autoname": "CPJ-.YYYY.-06-.####",
  "creation": "2019-09-25 13:08:58.034413",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
@@ -16,19 +17,20 @@
   "serial_no",
   "column_break_9",
   "model",
-  "mould",
   "volume_jar",
   "dry_weight",
   "jar_water",
   "column_break_12",
   "wt_water",
+  "mould",
   "volume_mould",
   "section_break_15",
   "top_cone",
   "column_break_17",
   "room_temp",
   "section_break_19",
-  "remarks"
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
@@ -68,7 +70,7 @@
   },
   {
    "fieldname": "job_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Job No",
    "reqd": 1
@@ -106,7 +108,7 @@
   {
    "description": "kg",
    "fieldname": "jar_water",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "label": "Jar + Water "
   },
   {
@@ -121,7 +123,7 @@
    "read_only": 1
   },
   {
-   "description": "cm3\n",
+   "description": "cm\u00b3\n",
    "fieldname": "volume_mould",
    "fieldtype": "Float",
    "label": "Volume of Mould",
@@ -142,9 +144,9 @@
    "fieldtype": "Column Break"
   },
   {
-   "description": "oC\t\n\n\n\n",
+   "description": "\u00b0C\t\n\n\n\n",
    "fieldname": "room_temp",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Room Temparature"
   },
   {
@@ -164,9 +166,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration Of Pycnometer Jar",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-23 16:30:35.534672",
+ "is_submittable": 1,
+ "modified": "2020-11-17 09:21:01.643746",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration Of Pycnometer Jar",

@@ -128,7 +128,7 @@
    "options": "Effective Volume Calculation"
   }
  ],
- "modified": "2019-11-16 10:13:11.950818",
+ "modified": "2020-10-04 13:24:03.270469",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Data input",
@@ -147,7 +147,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

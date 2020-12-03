@@ -1,11 +1,13 @@
 {
- "autoname": "CSCM.####",
+ "autoname": "CSCM-.YYYY.-06-.####",
  "creation": "2019-09-27 12:05:40.323950",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
   "section_break_4",
@@ -14,7 +16,6 @@
   "report_date",
   "column_break_7",
   "type_block",
-  "report_ref",
   "section_break_9",
   "concrete_masonary",
   "calculate",
@@ -23,7 +24,8 @@
   "column_break_14",
   "average1",
   "section_break_16",
-  "remarks"
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
@@ -72,12 +74,6 @@
    "label": "Type of Block "
   },
   {
-   "fieldname": "report_ref",
-   "fieldtype": "Int",
-   "label": "Report Ref",
-   "reqd": 1
-  },
-  {
    "fieldname": "section_break_9",
    "fieldtype": "Section Break"
   },
@@ -99,7 +95,7 @@
   {
    "fieldname": "average",
    "fieldtype": "Float",
-   "label": "Average Com Strength(N/mm2)",
+   "label": "Average Com Strength(N/mm\u00b2)",
    "read_only": 1
   },
   {
@@ -109,7 +105,7 @@
   {
    "fieldname": "average1",
    "fieldtype": "Float",
-   "label": "Average Com Strength(kg/cm2)",
+   "label": "Average Com Strength(kg/cm\u00b2)",
    "read_only": 1
   },
   {
@@ -129,9 +125,32 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Compressive Strength of Concrete Masonary",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-24 07:55:13.606357",
+ "is_submittable": 1,
+ "modified": "2020-11-12 09:35:06.084156",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Compressive Strength of Concrete Masonary",

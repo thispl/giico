@@ -1,11 +1,12 @@
 {
- "autoname": "CMR.####",
+ "autoname": "CMR-.YYYY.-06-.####",
  "creation": "2019-09-24 13:30:36.790529",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
@@ -13,7 +14,6 @@
   "date_report",
   "column_break_4",
   "equip_id",
-  "giico_report_no",
   "section_break_8",
   "marshall_rammer",
   "section_break_10",
@@ -23,7 +23,8 @@
   "desig",
   "column_break_12",
   "checked_by",
-  "desig1"
+  "desig1",
+  "amended_from"
  ],
  "fields": [
   {
@@ -65,13 +66,6 @@
    "fieldname": "equip_id",
    "fieldtype": "Data",
    "label": "Equipment ID"
-  },
-  {
-   "fieldname": "giico_report_no",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Giico Report No",
-   "reqd": 1
   },
   {
    "fieldname": "section_break_8",
@@ -133,9 +127,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration of Marshall Rammer",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-23 16:21:24.639528",
+ "is_submittable": 1,
+ "modified": "2020-11-06 10:30:21.342006",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Marshall Rammer",

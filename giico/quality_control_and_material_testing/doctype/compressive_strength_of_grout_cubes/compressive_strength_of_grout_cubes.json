@@ -1,24 +1,30 @@
 {
- "autoname": "GC.####",
+ "autoname": "GC-.YYYY.-06-.####",
  "creation": "2019-10-03 07:20:19.678908",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_6",
   "location",
   "report_date",
+  "test_date",
   "section_break_6",
-  "report_ref",
   "consultant",
   "contractor",
   "owner1",
   "column_break_10",
   "grade",
   "concrete_supplier",
+  "structure",
+  "column_break_17",
+  "machine_no",
+  "expired_of_calibration",
   "section_break_11",
   "grout_cubes",
   "calculate",
@@ -27,7 +33,8 @@
   "column_break_15",
   "avg_s2",
   "remarks_section",
-  "small_text_18"
+  "small_text_18",
+  "amended_from"
  ],
  "fields": [
   {
@@ -58,9 +65,8 @@
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "project.location",
    "fieldname": "location",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Location"
   },
@@ -82,12 +88,6 @@
    "fieldname": "owner1",
    "fieldtype": "Data",
    "label": "Owner"
-  },
-  {
-   "fieldname": "report_ref",
-   "fieldtype": "Data",
-   "label": "Report Ref",
-   "reqd": 1
   },
   {
    "fieldname": "column_break_10",
@@ -126,7 +126,7 @@
   {
    "fieldname": "avg_s1",
    "fieldtype": "Float",
-   "label": "Average Strength(N/mm2)",
+   "label": "Average Strength(N/mm\u00b2)",
    "read_only": 1
   },
   {
@@ -136,7 +136,7 @@
   {
    "fieldname": "avg_s2",
    "fieldtype": "Float",
-   "label": "Average Strength((kg/cm2)",
+   "label": "Average Strength((kg/cm\u00b2)",
    "read_only": 1
   },
   {
@@ -151,13 +151,60 @@
   {
    "fetch_from": "project.customer",
    "fieldname": "customer",
-   "fieldtype": "Link",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Compressive Strength of Grout Cubes",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "structure",
+   "fieldtype": "Small Text",
+   "label": "Structure"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "machine_no",
+   "fieldtype": "Data",
+   "label": "Machine No"
+  },
+  {
+   "fieldname": "expired_of_calibration",
+   "fieldtype": "Data",
+   "label": "Expired of Calibration"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
   }
  ],
- "modified": "2019-12-24 08:34:31.684852",
+ "is_submittable": 1,
+ "modified": "2020-12-03 14:31:57.413834",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Compressive Strength of Grout Cubes",

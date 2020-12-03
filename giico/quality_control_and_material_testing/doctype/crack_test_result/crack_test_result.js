@@ -2,8 +2,13 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Crack Test Result', {
-	refresh:function(frm){
-		if(frm.doc.chart_image){
+	onload: function (frm) {
+		if (frappe.user.has_role("Technician")) {
+			hide_field(['customer', 'department'])
+		}
+	},
+	refresh: function (frm) {
+		if (frm.doc.chart_image) {
 			frm.trigger("generate_graph")
 		}
 	},

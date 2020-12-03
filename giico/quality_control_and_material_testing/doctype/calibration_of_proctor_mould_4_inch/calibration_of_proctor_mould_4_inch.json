@@ -1,11 +1,12 @@
 {
- "autoname": "CPM.####",
+ "autoname": "CPM-.YYYY.-06-.####",
  "creation": "2019-09-25 12:43:04.349949",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
@@ -16,7 +17,6 @@
   "mould_type",
   "column_break_9",
   "srno",
-  "giico_report_ref",
   "section_break_10",
   "proctor_mould_readings",
   "calculate",
@@ -39,7 +39,8 @@
   "column_break_22",
   "checked_by",
   "remarks_section",
-  "remarks"
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
@@ -87,13 +88,6 @@
    "fieldname": "srno",
    "fieldtype": "Data",
    "label": "Sr.No"
-  },
-  {
-   "fieldname": "giico_report_ref",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Giico Report Ref",
-   "reqd": 1
   },
   {
    "fieldname": "section_break_10",
@@ -225,9 +219,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration of Proctor Mould 4 inch",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-21 14:54:39.671927",
+ "is_submittable": 1,
+ "modified": "2020-11-06 10:31:28.146245",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Proctor Mould 4 inch",

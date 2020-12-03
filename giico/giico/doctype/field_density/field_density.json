@@ -1,0 +1,249 @@
+{
+ "autoname": "FD.####",
+ "creation": "2020-02-14 12:39:17.945742",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "client",
+  "location",
+  "section_break_34",
+  "date_of_report",
+  "date_of_test",
+  "department",
+  "column_break_7",
+  "method_of_compaction",
+  "oversized_materials",
+  "material_description",
+  "layer_no",
+  "layer_thicknesscm",
+  "column_break_36",
+  "elevationm",
+  "apparatus_no",
+  "report_no",
+  "client_ref_no",
+  "test_location",
+  "section_break_14",
+  "remarks",
+  "section_break_28",
+  "tested_by",
+  "des1",
+  "column_break_31",
+  "checked_by",
+  "des2",
+  "section_break_40",
+  "fdt__test",
+  "section_break_30",
+  "fdt_test_2",
+  "section_break_32",
+  "fdt_test_3",
+  "section_4",
+  "fdt_test_4",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "section_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date of Test"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "method_of_compaction",
+   "fieldtype": "Data",
+   "label": "Method of Compaction"
+  },
+  {
+   "fieldname": "oversized_materials",
+   "fieldtype": "Percent",
+   "label": "Oversized Materials"
+  },
+  {
+   "fieldname": "material_description",
+   "fieldtype": "Data",
+   "label": "Material Description"
+  },
+  {
+   "fieldname": "layer_no",
+   "fieldtype": "Int",
+   "label": "Layer No"
+  },
+  {
+   "fieldname": "layer_thicknesscm",
+   "fieldtype": "Float",
+   "label": "Layer Thickness(cm)"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "elevationm",
+   "fieldtype": "Int",
+   "label": "Elevation(m)"
+  },
+  {
+   "fieldname": "apparatus_no",
+   "fieldtype": "Data",
+   "label": "Apparatus No"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "client_ref_no",
+   "fieldtype": "Data",
+   "label": "Client Ref No"
+  },
+  {
+   "fieldname": "test_location",
+   "fieldtype": "Data",
+   "label": "Test Location"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "des1",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By"
+  },
+  {
+   "fieldname": "des2",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "section_break_40",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fdt__test",
+   "fieldtype": "Table",
+   "label": "FDT  Test 1",
+   "options": "FDT Test 1"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fdt_test_2",
+   "fieldtype": "Table",
+   "label": "FDT  Test 2",
+   "options": "FDT Test 2"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fdt_test_3",
+   "fieldtype": "Table",
+   "label": "FDT  Test 3",
+   "options": "FDT Test 3"
+  },
+  {
+   "fieldname": "section_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fdt_test_4",
+   "fieldtype": "Table",
+   "label": "FDT  Test 4",
+   "options": "FDT Test 4"
+  },
+  {
+   "default": "0",
+   "fieldname": "description",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Description"
+  }
+ ],
+ "modified": "2020-10-04 13:23:37.646166",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Field Density",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -2,7 +2,11 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Electrical Resistivity Test', {
-	// refresh: function(frm) {
-
-	// }
+	onload: function(frm) {
+		// get doc by name
+// frappe.db.get_doc('Employee', null,{user_id:frappe.session.user})
+// .then(doc => {
+// 	console.log(doc)
+// })
+	}
 });

@@ -39,7 +39,7 @@
    "label": "Date"
   }
  ],
- "modified": "2019-09-27 21:03:17.024394",
+ "modified": "2020-10-04 13:24:11.755437",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "Fuel Card",
@@ -58,7 +58,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

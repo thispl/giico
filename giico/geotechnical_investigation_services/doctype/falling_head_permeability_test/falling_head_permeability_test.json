@@ -5,6 +5,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
   "customer",
   "column_break_3",
@@ -36,7 +37,8 @@
   "chart_section",
   "generate_graph",
   "chart_html",
-  "chart_image"
+  "chart_image",
+  "amended_from"
  ],
  "fields": [
   {
@@ -213,9 +215,26 @@
    "fieldtype": "Link",
    "label": "Location",
    "options": "Location"
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Falling Head Permeability Test",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2019-12-19 16:24:55.071065",
+ "is_submittable": 1,
+ "modified": "2020-10-19 13:38:45.909432",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Falling Head Permeability Test",

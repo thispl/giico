@@ -1,11 +1,13 @@
 {
- "autoname": "RCDT.####",
+ "autoname": "RCDT-.YYYY.-06-.####",
  "creation": "2019-10-14 09:58:19.062737",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_5",
@@ -13,7 +15,6 @@
   "test_date",
   "date_cored",
   "section_break_6",
-  "report_ref",
   "project_details_section",
   "core_details_section",
   "core_no",
@@ -68,7 +69,8 @@
   "section_break_49",
   "tested_by",
   "column_break_49",
-  "checked_by"
+  "checked_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -102,12 +104,6 @@
   {
    "fieldname": "section_break_6",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "report_ref",
-   "fieldtype": "Data",
-   "label": "Report Ref ",
-   "reqd": 1
   },
   {
    "fieldname": "project_details_section",
@@ -420,9 +416,32 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rock Core Drilling and Strength Testing",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-21 16:51:15.154728",
+ "is_submittable": 1,
+ "modified": "2020-12-03 14:52:37.776035",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Rock Core Drilling and Strength Testing",

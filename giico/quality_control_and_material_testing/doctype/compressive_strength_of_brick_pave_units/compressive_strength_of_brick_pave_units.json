@@ -1,11 +1,13 @@
 {
- "autoname": "BP.####",
+ "autoname": "BP-.YYYY.-06-.####",
  "creation": "2019-09-27 07:41:34.323824",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_4",
@@ -15,7 +17,6 @@
   "section_break_7",
   "type_of_block",
   "column_break_10",
-  "report_ref",
   "section_break_9",
   "brick_pave_readings",
   "calculate",
@@ -28,7 +29,8 @@
   "section_break_17",
   "calibrated_by",
   "column_break_19",
-  "checked_by"
+  "checked_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -76,12 +78,6 @@
    "label": "Type of Block"
   },
   {
-   "fieldname": "report_ref",
-   "fieldtype": "Data",
-   "label": "Report Ref",
-   "reqd": 1
-  },
-  {
    "fieldname": "section_break_9",
    "fieldtype": "Section Break"
   },
@@ -102,7 +98,7 @@
    "label": "Average"
   },
   {
-   "description": "(N/mm2)\n",
+   "description": "(N/mm\u00b2)\n",
    "fieldname": "cs1",
    "fieldtype": "Float",
    "label": "Compressive Strength",
@@ -113,7 +109,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "description": "(kg/cm2)\n",
+   "description": "(kg/cm\u00b2)\n",
    "fieldname": "cs2",
    "fieldtype": "Float",
    "label": "Compressive Strength",
@@ -160,9 +156,32 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Compressive Strength of Brick Pave Units",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-21 15:22:49.565392",
+ "is_submittable": 1,
+ "modified": "2020-11-12 12:07:57.616204",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Compressive Strength of Brick Pave Units",

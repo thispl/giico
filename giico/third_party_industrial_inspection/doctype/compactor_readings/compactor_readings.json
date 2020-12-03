@@ -35,11 +35,11 @@
    "fieldname": "tolerance",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Tolerance"
+   "label": "Tolerance(\u00b1)"
   }
  ],
  "istable": 1,
- "modified": "2019-11-24 16:19:40.033280",
+ "modified": "2020-11-10 15:06:06.796573",
  "modified_by": "Administrator",
  "module": "Third Party Industrial Inspection",
  "name": "Compactor Readings",

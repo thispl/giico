@@ -1,18 +1,19 @@
 {
- "autoname": "UT.####",
+ "autoname": "UT-.YYYY.-06-.####",
  "creation": "2019-10-01 07:12:34.128659",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
   "date_of_test",
   "date_of_report",
   "column_break_4",
-  "job_ref_no",
   "location",
   "column_break_10",
   "table",
@@ -22,7 +23,8 @@
   "section_break_9",
   "note",
   "section_break_11",
-  "approved_by"
+  "approved_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -61,13 +63,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "job_ref_no",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Job Ref No",
-   "reqd": 1
-  },
-  {
    "fieldname": "page_no",
    "fieldtype": "Data",
    "label": "Page No"
@@ -103,18 +98,15 @@
   {
    "fetch_from": "project.customer",
    "fieldname": "customer",
-   "fieldtype": "Link",
+   "fieldtype": "Read Only",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
-   "fetch_from": "project.location",
    "fieldname": "location",
-   "fieldtype": "Link",
-   "label": "Location",
-   "options": "Location"
+   "fieldtype": "Data",
+   "label": "Location"
   },
   {
    "fieldname": "column_break_10",
@@ -124,9 +116,32 @@
    "fieldname": "table",
    "fieldtype": "Data",
    "label": "Table"
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ultrasonic Test Results",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-30 08:18:11.522569",
+ "is_submittable": 1,
+ "modified": "2020-11-12 14:10:07.935525",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Ultrasonic Test Results",

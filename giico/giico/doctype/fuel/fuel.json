@@ -1,0 +1,88 @@
+{
+ "creation": "2020-02-25 07:37:03.819165",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "description",
+  "unit",
+  "qty",
+  "column_break_4",
+  "unit_2",
+  "qty_2",
+  "urate",
+  "total_kd"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item ",
+   "options": "Item"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit 1"
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qty 1"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "urate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "U.Rate"
+  },
+  {
+   "fieldname": "total_kd",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total KD"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "qty_2",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty 2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit 2"
+  },
+  {
+   "fetch_from": "item.description",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-23 17:36:07.608201",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Fuel",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

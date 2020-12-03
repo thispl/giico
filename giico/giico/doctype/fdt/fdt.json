@@ -5,28 +5,45 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project_info_section",
   "project",
-  "client",
+  "project_name",
+  "customer",
   "location",
   "section_break_34",
-  "date_of_report",
-  "date_of_test",
   "department",
   "column_break_7",
   "method_of_compaction",
-  "oversized_materials",
   "material_description",
+  "oversized_materials",
   "layer_no",
   "layer_thicknesscm",
-  "column_break_36",
   "elevationm",
+  "column_break_36",
   "apparatus_no",
+  "date_of_test",
+  "date_of_report",
   "report_no",
   "client_ref_no",
   "test_location",
   "section_break_14",
-  "results",
-  "section_break_26",
+  "wt_of_sand_in_plate_and_cone",
+  "column_break_22",
+  "bulk_density_of_sand",
+  "section_break_40",
+  "fdt__test",
+  "calculate1",
+  "section_break_30",
+  "fdt_test_2",
+  "calculate2",
+  "section_break_32",
+  "fdt_test_3",
+  "calculate3",
+  "section_4",
+  "fdt_test_4",
+  "calculate4",
+  "description",
+  "section_break_23",
   "remarks",
   "section_break_28",
   "tested_by",
@@ -34,8 +51,7 @@
   "column_break_31",
   "checked_by",
   "des2",
-  "section_break_40",
-  "fdt__test"
+  "amended_from"
  ],
  "fields": [
   {
@@ -107,16 +123,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "results",
-   "fieldtype": "Table",
-   "label": "Results",
-   "options": "Results"
-  },
-  {
-   "fieldname": "section_break_26",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
@@ -156,17 +162,13 @@
   {
    "fieldname": "project",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Project",
    "options": "Project"
   },
   {
    "fieldname": "column_break_36",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "client",
-   "fieldtype": "Data",
-   "label": "Client"
   },
   {
    "fieldname": "location",
@@ -180,17 +182,126 @@
   {
    "fieldname": "fdt__test",
    "fieldtype": "Table",
-   "label": "FDT  Test",
-   "options": "FDT Test"
+   "label": "FDT  Test 1",
+   "options": "FDT Test 1"
   },
   {
    "fieldname": "department",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Department",
    "options": "Department"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break",
+   "label": "Additional Tests"
+  },
+  {
+   "fieldname": "fdt_test_2",
+   "fieldtype": "Table",
+   "label": "FDT  Test 2",
+   "options": "FDT Test 2"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break",
+   "label": "Additional Tests"
+  },
+  {
+   "fieldname": "fdt_test_3",
+   "fieldtype": "Table",
+   "label": "FDT  Test 3",
+   "options": "FDT Test 3"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_4",
+   "fieldtype": "Section Break",
+   "label": "Additional Tests"
+  },
+  {
+   "fieldname": "fdt_test_4",
+   "fieldtype": "Table",
+   "label": "FDT  Test 4",
+   "options": "FDT Test 4"
+  },
+  {
+   "default": "0",
+   "fieldname": "description",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "wt_of_sand_in_plate_and_cone",
+   "fieldtype": "Data",
+   "label": "Wt. of Sand in Plate and Cone"
+  },
+  {
+   "fieldname": "bulk_density_of_sand",
+   "fieldtype": "Data",
+   "label": "Bulk Density of Sand"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer"
+  },
+  {
+   "fieldname": "calculate1",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "calculate2",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "calculate3",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "calculate4",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "project_info_section",
+   "fieldtype": "Section Break",
+   "label": "Project Info"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "FDT",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2019-11-22 14:21:25.610661",
+ "modified": "2020-11-26 11:11:06.299186",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "FDT",

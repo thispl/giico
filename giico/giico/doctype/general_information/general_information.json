@@ -115,7 +115,7 @@
    "label": "Poisson's coefficient"
   }
  ],
- "modified": "2019-11-16 08:37:47.932234",
+ "modified": "2020-10-04 13:24:03.971711",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "General Information",
@@ -134,7 +134,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

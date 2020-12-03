@@ -1,0 +1,91 @@
+{
+ "creation": "2020-11-26 09:44:12.408250",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "depthm",
+  "sample",
+  "sample_type",
+  "blow_penetrationnmm",
+  "recoverymm",
+  "soil_description",
+  "date_time",
+  "casing_dia__\u03c6",
+  "casing_depth_m",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "depthm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Depth(m)"
+  },
+  {
+   "fieldname": "sample",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample NO"
+  },
+  {
+   "fieldname": "sample_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample Type"
+  },
+  {
+   "fieldname": "blow_penetrationnmm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Blow/Penetration(N/mm)"
+  },
+  {
+   "fieldname": "recoverymm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Recovery(mm)"
+  },
+  {
+   "fieldname": "soil_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Soil Description"
+  },
+  {
+   "fieldname": "date_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Time"
+  },
+  {
+   "fieldname": "casing_dia__\u03c6",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Casing Dia  \u03a6"
+  },
+  {
+   "fieldname": "casing_depth_m",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Casing Depth (m)"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-11-26 10:07:41.095146",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Borehole Test1",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

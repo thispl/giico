@@ -1,11 +1,12 @@
 {
- "autoname": "COC.####",
+ "autoname": "COC-.YYYY.-06-.####",
  "creation": "2019-09-24 08:35:25.886727",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
@@ -19,7 +20,8 @@
   "desig1",
   "column_break_10",
   "checked_by",
-  "desig"
+  "desig",
+  "amended_from"
  ],
  "fields": [
   {
@@ -113,9 +115,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration Of Containers",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-21 10:15:52.177572",
+ "is_submittable": 1,
+ "modified": "2020-11-06 10:14:36.240544",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration Of Containers",

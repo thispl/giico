@@ -5,6 +5,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
   "customer",
   "department",
@@ -223,9 +224,16 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
   }
  ],
- "modified": "2019-12-19 16:43:53.392784",
+ "modified": "2020-06-13 09:44:41.290708",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Unconfined Compressive Strength of Soil",

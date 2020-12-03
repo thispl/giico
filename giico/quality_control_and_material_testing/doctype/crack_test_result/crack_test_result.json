@@ -1,11 +1,13 @@
 {
- "autoname": "C.####",
+ "autoname": "C-.YYYY.-06-.####",
  "creation": "2019-10-03 12:25:14.924006",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "location",
   "department",
@@ -14,14 +16,14 @@
   "date_of_test",
   "date_of_report",
   "section_break_8",
-  "job_ref_no",
   "owner",
   "section_break_10",
   "crack_test",
   "generate_graph",
   "charts_section",
   "chart",
-  "chart_image"
+  "chart_image",
+  "amended_from"
  ],
  "fields": [
   {
@@ -63,12 +65,6 @@
   {
    "fieldname": "section_break_8",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "job_ref_no",
-   "fieldtype": "Int",
-   "label": "JOB REF No",
-   "reqd": 1
   },
   {
    "fieldname": "owner",
@@ -117,14 +113,36 @@
    "reqd": 1
   },
   {
-   "fetch_from": "project.location",
    "fieldname": "location",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": " Location "
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Crack Test Result",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-21 16:59:51.753338",
+ "is_submittable": 1,
+ "modified": "2020-11-12 15:02:41.692516",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Crack Test Result",

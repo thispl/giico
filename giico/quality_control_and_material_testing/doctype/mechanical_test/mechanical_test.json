@@ -1,11 +1,13 @@
 {
- "autoname": "MT.####",
+ "autoname": "MT-.YYYY.-06-.####",
  "creation": "2019-10-01 09:36:27.027453",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
@@ -26,7 +28,8 @@
   "section_break_15",
   "bend_test",
   "section_break_17",
-  "remarks"
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
@@ -91,13 +94,13 @@
    "reqd": 1
   },
   {
-   "description": "mm",
+   "description": "mm \u03d5",
    "fieldname": "thick",
    "fieldtype": "Int",
    "label": "Thick  Dia "
   },
   {
-   "description": "oC\n",
+   "description": "\u00b0C\n\n",
    "fieldname": "lab_temp",
    "fieldtype": "Int",
    "label": "Lab Temperature"
@@ -145,12 +148,36 @@
    "fetch_from": "project.customer",
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Mechanical Test",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-24 09:08:00.329894",
+ "is_submittable": 1,
+ "modified": "2020-12-03 14:38:23.794530",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Mechanical Test",

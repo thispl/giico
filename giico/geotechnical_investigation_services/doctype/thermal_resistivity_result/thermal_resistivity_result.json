@@ -11,7 +11,6 @@
   "location",
   "department",
   "column_break_5",
-  "ref",
   "samp_type",
   "section_break_8",
   "equip_used",
@@ -22,7 +21,8 @@
   "designation",
   "column_break_12",
   "checked_by",
-  "designation1"
+  "designation1",
+  "amended_from"
  ],
  "fields": [
   {
@@ -34,12 +34,10 @@
    "reqd": 1
   },
   {
-   "fetch_from": "project.customer",
    "fieldname": "customer",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Customer ",
-   "options": "Customer",
    "reqd": 1
   },
   {
@@ -65,13 +63,6 @@
   {
    "fieldname": "column_break_5",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "ref",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Report Ref",
-   "reqd": 1
   },
   {
    "fieldname": "samp_type",
@@ -126,9 +117,19 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Designation"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Thermal Resistivity Result",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2019-12-24 16:37:19.099655",
+ "is_submittable": 1,
+ "modified": "2020-10-19 13:38:00.108090",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Thermal Resistivity Result",

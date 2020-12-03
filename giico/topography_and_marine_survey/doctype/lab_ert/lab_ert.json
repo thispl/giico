@@ -5,6 +5,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
   "customer",
   "department",
@@ -127,9 +128,16 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
   }
  ],
- "modified": "2019-12-24 14:27:50.514597",
+ "modified": "2020-10-04 13:23:32.448786",
  "modified_by": "Administrator",
  "module": "Topography and Marine Survey",
  "name": "Lab ERT",
@@ -148,7 +156,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

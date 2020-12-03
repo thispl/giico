@@ -1,11 +1,13 @@
 {
- "autoname": "SG.####",
+ "autoname": "SG-.YYYY.-06-.####",
  "creation": "2019-10-05 08:15:28.899597",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "client",
   "location",
   "column_break_5",
@@ -13,7 +15,6 @@
   "report_date",
   "department",
   "section_break_7",
-  "report_ref",
   "sample_desc",
   "section_break_9",
   "specific_gravity",
@@ -27,14 +28,15 @@
   "column_break_19",
   "average4",
   "section_break_11",
-  "remarks"
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project  ",
+   "label": "Project ",
    "options": "Project",
    "reqd": 1
   },
@@ -48,7 +50,6 @@
    "reqd": 1
   },
   {
-   "fetch_from": "project.location",
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location  "
@@ -79,13 +80,6 @@
   {
    "fieldname": "section_break_7",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "report_ref",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Report Ref  No",
-   "reqd": 1
   },
   {
    "fieldname": "sample_desc",
@@ -155,9 +149,32 @@
   {
    "fieldname": "section_break_14",
    "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Specific Gravity of Asphalt Aashto",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-23 16:21:38.001881",
+ "is_submittable": 1,
+ "modified": "2020-11-12 14:51:34.423490",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Specific Gravity of Asphalt Aashto",

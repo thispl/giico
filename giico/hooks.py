@@ -16,8 +16,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/giico/css/giico.css"
-app_include_js = "/assets/js/apexcharts.min.js"
-
+app_include_js = "/assets/giico/js/apexcharts.js"
 # include js, css files in header of web template
 # web_include_css = "/assets/giico/css/giico.css"
 # web_include_js = "/assets/giico/js/giico.js"
@@ -74,7 +73,7 @@ app_include_js = "/assets/js/apexcharts.min.js"
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
-
+boot_session = "giico.custom.redirect_technicians"
 # Document Events
 # ---------------
 # Hook on document methods and events

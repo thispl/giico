@@ -1,11 +1,12 @@
 {
- "autoname": "CKB.####",
+ "autoname": "CKB-.YYYY.-06-.####",
  "creation": "2019-10-08 14:59:40.293242",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_4",
@@ -16,7 +17,6 @@
   "capacity",
   "readability",
   "section_break_9",
-  "report_ref_no",
   "equipment_id",
   "section_break_14",
   "electronic_balance",
@@ -25,7 +25,8 @@
   "section_break_18",
   "calibrated_by",
   "column_break_20",
-  "checked_by"
+  "checked_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -85,13 +86,6 @@
    "label": "Readability"
   },
   {
-   "fieldname": "report_ref_no",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Report Ref No",
-   "reqd": 1
-  },
-  {
    "fieldname": "equipment_id",
    "fieldtype": "Data",
    "label": "Equipment ID"
@@ -143,9 +137,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration of Electronic Balance 86KB",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-24 09:48:18.149521",
+ "is_submittable": 1,
+ "modified": "2020-11-06 10:27:14.030883",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Electronic Balance 86KB",

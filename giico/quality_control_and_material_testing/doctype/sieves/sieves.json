@@ -14,7 +14,7 @@
    "fieldname": "sieve",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Sieve No"
+   "label": "Sieve No(mm/\u03bcm)"
   },
   {
    "fieldname": "dia",
@@ -24,7 +24,7 @@
   },
   {
    "fieldname": "sno",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "S.NO"
   },
@@ -36,8 +36,8 @@
   }
  ],
  "istable": 1,
- "modified": "2019-11-25 14:00:49.088487",
- "modified_by": "ceo@giico.net",
+ "modified": "2020-11-11 08:48:15.187738",
+ "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Sieves",
  "owner": "Administrator",

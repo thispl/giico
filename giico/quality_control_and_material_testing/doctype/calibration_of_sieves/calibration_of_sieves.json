@@ -1,23 +1,24 @@
 {
- "autoname": "CS.####",
+ "autoname": "CS-.YYYY.-06-.####",
  "creation": "2019-09-26 12:05:21.172403",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
   "date_report",
   "date_calibration",
   "column_break_4",
-  "giico_job",
   "equipment",
   "sieves_section",
   "sieves",
   "section_break_8",
-  "remarks"
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
@@ -56,13 +57,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "giico_job",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Giico Job No",
-   "reqd": 1
-  },
-  {
    "fieldname": "equipment",
    "fieldtype": "Data",
    "label": "Equipment"
@@ -94,9 +88,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration of Sieves",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-21 14:57:40.681613",
+ "is_submittable": 1,
+ "modified": "2020-11-06 10:33:50.669959",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Sieves",

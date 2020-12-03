@@ -49,7 +49,7 @@
    "label": "GII Representative"
   }
  ],
- "modified": "2019-11-25 15:25:30.133770",
+ "modified": "2020-10-04 13:23:56.039717",
  "modified_by": "Administrator",
  "module": "Drilling Water Well Service",
  "name": "DW Earthing Holes",
@@ -68,7 +68,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

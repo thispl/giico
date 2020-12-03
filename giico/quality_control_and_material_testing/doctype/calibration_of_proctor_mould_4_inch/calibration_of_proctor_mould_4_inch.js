@@ -2,7 +2,9 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Calibration of Proctor Mould 4 inch', {
-	// refresh: function(frm) {
-
-	// }
+	onload: function (frm) {
+		if (frappe.user.has_role("Technician")) {
+			hide_field(['customer', 'department'])
+		}
+	}
 });

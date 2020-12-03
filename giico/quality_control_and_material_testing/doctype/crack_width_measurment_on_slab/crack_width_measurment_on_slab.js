@@ -2,7 +2,9 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Crack Width Measurment on Slab', {
-	// refresh: function(frm) {
-
-	// }
+	onload: function (frm) {
+		if (frappe.user.has_role("Technician")) {
+			hide_field(['customer', 'department'])
+		}
+	}
 });

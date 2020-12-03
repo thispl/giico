@@ -1,11 +1,13 @@
 {
- "autoname": "AS.####",
+ "autoname": "AS-.YYYY.-06-.####",
  "creation": "2019-10-12 08:10:05.370432",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_4",
@@ -16,8 +18,9 @@
   "type_of_mix",
   "sample_source",
   "column_break_7",
-  "job_no",
   "sample_no",
+  "data_15",
+  "aashto",
   "extraction_results_section",
   "asphalt_mix_by_reflux_attraction_section",
   "asp_sample",
@@ -31,7 +34,9 @@
   "total_wt_aggregate",
   "wt_of_bitumen",
   "bitumen_wt_aggregate",
+  "total_job_mix_specification",
   "job_mix_form",
+  "job_mix",
   "min",
   "max",
   "section_break_24",
@@ -52,7 +57,8 @@
   "section_break_44",
   "tested_by",
   "column_break_32",
-  "materials_engineer"
+  "materials_engineer",
+  "amended_from"
  ],
  "fields": [
   {
@@ -64,7 +70,6 @@
    "reqd": 1
   },
   {
-   "fetch_from": "project.location",
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
@@ -76,7 +81,7 @@
   {
    "fieldname": "asp_laying_date",
    "fieldtype": "Date",
-   "label": "Asphalt Laying Date"
+   "label": "Laying Date"
   },
   {
    "fieldname": "report_date",
@@ -97,9 +102,8 @@
   },
   {
    "fieldname": "type_of_mix",
-   "fieldtype": "Select",
-   "label": "Type of Mix",
-   "options": "\nType-1(Base Course)"
+   "fieldtype": "Data",
+   "label": "Type of Mix"
   },
   {
    "fieldname": "sample_source",
@@ -109,12 +113,6 @@
   {
    "fieldname": "column_break_7",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "job_no",
-   "fieldtype": "Data",
-   "label": "Job No",
-   "reqd": 1
   },
   {
    "fieldname": "sample_no",
@@ -306,9 +304,53 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Asphalt Analysis Sample",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "total_job_mix_specification",
+   "fieldtype": "Data",
+   "label": "Total Job Mix Specification"
+  },
+  {
+   "fieldname": "data_15",
+   "fieldtype": "Heading",
+   "label": "ASTM D 2172-05",
+   "options": "\n"
+  },
+  {
+   "fieldname": "aashto",
+   "fieldtype": "Heading",
+   "label": "AASHTO T164-18\u00b9"
+  },
+  {
+   "fieldname": "job_mix",
+   "fieldtype": "Data",
+   "label": "Job Mix \u00b1"
   }
  ],
- "modified": "2019-12-21 15:16:50.047142",
+ "is_submittable": 1,
+ "modified": "2020-11-19 10:11:58.029967",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Asphalt Analysis Sample",

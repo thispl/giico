@@ -67,19 +67,19 @@
    "fieldname": "csn",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Compressive Strength(N/mm2)",
+   "label": "Compressive Strength(N/mm\u00b2)",
    "read_only": 1
   },
   {
    "fieldname": "csnk",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Compressive Strength(kg/cm2)",
+   "label": "Compressive Strength(kg/cm\u00b2)",
    "read_only": 1
   }
  ],
  "istable": 1,
- "modified": "2019-11-25 15:37:28.536219",
+ "modified": "2020-11-12 08:38:59.120386",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Concrete Tiles",

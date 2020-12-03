@@ -14,7 +14,7 @@
    "fieldname": "sieve_no",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Sieve No"
+   "label": "Sieve No(mm/\u03bcm)"
   },
   {
    "fieldname": "dia_inches",
@@ -36,7 +36,7 @@
   }
  ],
  "istable": 1,
- "modified": "2019-11-24 08:19:58.353046",
+ "modified": "2020-11-10 12:17:11.131357",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Sieves 12",

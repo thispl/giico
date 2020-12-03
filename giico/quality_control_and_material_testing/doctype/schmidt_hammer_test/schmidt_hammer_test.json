@@ -1,11 +1,13 @@
 {
- "autoname": "SHT.####",
+ "autoname": "SHT-.YYYY.-06-.####",
  "creation": "2019-11-01 08:28:10.055047",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_5",
@@ -13,7 +15,6 @@
   "date_of_report",
   "date_of_test",
   "section_break_6",
-  "job_ref",
   "column_break_8",
   "structure_location",
   "column_break_10",
@@ -87,6 +88,24 @@
   "column_break_80",
   "html_81",
   "section_break_82",
+  "test_5_section",
+  "test_no_5",
+  "uncorrected_cube_compr_strength_5",
+  "column_break_87",
+  "location_5",
+  "time_factor_5",
+  "column_break_90",
+  "direction_of_test_5",
+  "corrected_cube_compr_strength_5",
+  "test5_direction_section",
+  "html_94",
+  "column_break_95",
+  "html_96",
+  "column_break_97",
+  "html_98",
+  "column_break_99",
+  "html_100",
+  "section_break_101",
   "readings_4",
   "calculate",
   "section_break_41",
@@ -100,11 +119,11 @@
   "section_break_42",
   "additional_readings4",
   "section_break_80",
-  "age_of_structure"
+  "age_of_structure",
+  "amended_from"
  ],
  "fields": [
   {
-   "fetch_from": "project.location",
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
@@ -144,13 +163,6 @@
   {
    "fieldname": "column_break_8",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "job_ref",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Job Ref",
-   "reqd": 1
   },
   {
    "fieldname": "column_break_10",
@@ -414,6 +426,7 @@
    "fetch_from": "project.customer",
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
@@ -421,7 +434,7 @@
   {
    "fieldname": "html_24",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/A1.png\">\n<br><center>A</center>"
+   "options": "<img height=\"100\" src=\"/files/A.PNG\">\n<br><center>A</center>"
   },
   {
    "fieldname": "column_break_25",
@@ -430,7 +443,7 @@
   {
    "fieldname": "html_26",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/B.png\">\n<br>\n<center>B</center>"
+   "options": "<img height=\"100\" src=\"/files/B.PNG\">\n<br>\n<center>B</center>"
   },
   {
    "fieldname": "column_break_27",
@@ -439,7 +452,7 @@
   {
    "fieldname": "html_28",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/C1.png\">\n<br>\n<center>C</center>"
+   "options": "<img height=\"100\" src=\"/files/C1.PNG\">\n<br>\n<center>C</center>"
   },
   {
    "fieldname": "column_break_29",
@@ -448,7 +461,7 @@
   {
    "fieldname": "html_30",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/D1.png\">\n<br>\n<center>D</center>"
+   "options": "<img height=\"100\" src=\"/files/imga r.PNG\">\n<br>\n<center>D</center>"
   },
   {
    "fieldname": "test2_direction_section",
@@ -458,7 +471,7 @@
   {
    "fieldname": "html_41",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/A1.png\">\n<br><center>A</center>"
+   "options": "<img height=\"100\" src=\"/files/A.PNG\">\n<br><center>A</center>"
   },
   {
    "fieldname": "column_break_42",
@@ -467,7 +480,7 @@
   {
    "fieldname": "html_43",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/B.png\">\n<br>\n<center>B</center>"
+   "options": "<img height=\"100\" src=\"/files/B.PNG\">\n<br>\n<center>B</center>"
   },
   {
    "fieldname": "column_break_44",
@@ -476,12 +489,12 @@
   {
    "fieldname": "html_45",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/C1.png\">\n<br>\n<center>C</center>"
+   "options": "<img height=\"100\" src=\"/files/C1.PNG\">\n<br>\n<center>C</center>"
   },
   {
    "fieldname": "html_47",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/D1.png\">\n<br>\n<center>D</center>"
+   "options": "<img height=\"100\" src=\"/files/imga r.PNG\">\n<br>\n<center>D</center>"
   },
   {
    "fieldname": "column_break_52",
@@ -515,7 +528,7 @@
   {
    "fieldname": "html_58",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/A1.png\">\n<br><center>A</center>"
+   "options": "<img height=\"100\" src=\"/files/A.PNG\">\n<br><center>A</center>"
   },
   {
    "fieldname": "column_break_59",
@@ -524,7 +537,7 @@
   {
    "fieldname": "html_60",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/B.png\">\n<br>\n<center>B</center>"
+   "options": "<img height=\"100\" src=\"/files/B.PNG\">\n<br>\n<center>B</center>"
   },
   {
    "fieldname": "column_break_61",
@@ -533,7 +546,7 @@
   {
    "fieldname": "html_62",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/C1.png\">\n<br>\n<center>C</center>"
+   "options": "<img height=\"100\" src=\"/files/C1.PNG\">\n<br>\n<center>C</center>"
   },
   {
    "fieldname": "column_break_63",
@@ -542,27 +555,27 @@
   {
    "fieldname": "html_64",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/D1.png\">\n<br>\n<center>D</center>"
+   "options": "<img height=\"100\" src=\"/files/imga r.PNG\">\n<br>\n<center>D</center>"
   },
   {
    "fieldname": "html_75",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/A1.png\">\n<br><center>A</center>"
+   "options": "<img height=\"100\" src=\"/files/A.PNG\">\n<br><center>A</center>"
   },
   {
    "fieldname": "html_77",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/B.png\">\n<br>\n<center>B</center>"
+   "options": "<img height=\"100\" src=\"/files/B.PNG\">\n<br>\n<center>B</center>"
   },
   {
    "fieldname": "html_79",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/C1.png\">\n<br>\n<center>C</center>"
+   "options": "<img height=\"100\" src=\"/files/C1.PNG\">\n<br>\n<center>C</center>"
   },
   {
    "fieldname": "html_81",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/D1.png\">\n<br>\n<center>D</center>"
+   "options": "<img height=\"100\" src=\"/files/imga r.PNG\">\n<br>\n<center>D</center>"
   },
   {
    "fieldname": "column_break_76",
@@ -579,9 +592,118 @@
   {
    "fieldname": "section_break_82",
    "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Schmidt Hammer Test",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "test_5_section",
+   "fieldtype": "Section Break",
+   "label": "TEST 5"
+  },
+  {
+   "fieldname": "test_no_5",
+   "fieldtype": "Data",
+   "label": "Test No "
+  },
+  {
+   "fieldname": "uncorrected_cube_compr_strength_5",
+   "fieldtype": "Data",
+   "label": "Uncorrected Cube Compr. Strength "
+  },
+  {
+   "fieldname": "column_break_87",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location_5",
+   "fieldtype": "Data",
+   "label": "Location "
+  },
+  {
+   "fieldname": "time_factor_5",
+   "fieldtype": "Float",
+   "label": "Time factor "
+  },
+  {
+   "fieldname": "column_break_90",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "direction_of_test_5",
+   "fieldtype": "Select",
+   "label": "Direction of Test ",
+   "options": "\nA\nB\nC\nD"
+  },
+  {
+   "fieldname": "corrected_cube_compr_strength_5",
+   "fieldtype": "Data",
+   "label": "Corrected Cube Compr. Strength ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "test5_direction_section",
+   "fieldtype": "Section Break",
+   "label": "TEST5 Direction"
+  },
+  {
+   "fieldname": "html_94",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/A.PNG\">\n<br><center>A</center>"
+  },
+  {
+   "fieldname": "column_break_95",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_96",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/B.PNG\">\n<br>\n<center>B</center>"
+  },
+  {
+   "fieldname": "column_break_97",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_98",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/C1.PNG\">\n<br>\n<center>C</center>"
+  },
+  {
+   "fieldname": "column_break_99",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_100",
+   "fieldtype": "HTML",
+   "options": "<img height=\"100\" src=\"/files/imga r.PNG\">\n<br>\n<center>D</center>"
+  },
+  {
+   "fieldname": "section_break_101",
+   "fieldtype": "Section Break"
   }
  ],
- "modified": "2020-01-10 14:41:44.401408",
+ "is_submittable": 1,
+ "modified": "2020-12-03 14:33:07.348694",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Schmidt Hammer Test",

@@ -5,12 +5,14 @@
  "engine": "InnoDB",
  "field_order": [
   "sieve_size",
+  "sample_nomm\u03bcm",
   "cumulative_wt_retained",
   "cumulative__retained",
   "status",
   "column_break_4",
   "passing",
   "job_mix",
+  "plusminus",
   "min",
   "max"
  ],
@@ -66,10 +68,23 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Specification(max)"
+  },
+  {
+   "fieldname": "sample_nomm\u03bcm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample No(mm/\u03bcm)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "plusminus",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u00b1"
   }
  ],
  "istable": 1,
- "modified": "2019-11-27 16:02:37.036363",
+ "modified": "2020-11-18 12:52:29.760158",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Gradation",

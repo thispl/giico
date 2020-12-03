@@ -19,6 +19,13 @@ def get_data():
 					"onboard": 1,
 					"dependencies": ["Item", "Customer"],
 				},
+                {
+					"type": "doctype",
+					"name": "Cost Estimation",
+					"description": _("Cost Estimation for Quotations."),
+					"onboard": 1,
+					"dependencies": ["Item", "Customer"],
+				},
 				{
 					"type": "doctype",
 					"name": "Sales Order",
@@ -245,10 +252,10 @@ def get_data():
                 },
                  {
                     "type": "doctype",
-                    "name": "UGCC Vernire Caliper",
+                    "name": "Vernire Caliper",
                     "icon": "fa fa-star",
-                    "label": _("UGCC Vernire Caliper"),
-                     "description": _("UGCC Vernire Caliper"),
+                    "label": _("Vernire Caliper"),
+                     "description": _("Vernire Caliper"),
                      "onboard": 1
                 },
                  {

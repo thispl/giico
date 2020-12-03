@@ -12,7 +12,8 @@
   "thermal_3",
   "average_con",
   "thermal_res",
-  "location_en"
+  "location_en",
+  "amended_from"
  ],
  "fields": [
   {
@@ -68,15 +69,24 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Location EN"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lab TRT Result",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2019-11-25 10:34:35.000046",
+ "is_submittable": 1,
+ "modified": "2020-10-19 13:36:08.509977",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Lab TRT Result",
  "owner": "Administrator",
  "permissions": [],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

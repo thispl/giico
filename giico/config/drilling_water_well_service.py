@@ -21,6 +21,13 @@ def get_data():
 					"onboard": 1,
 					"dependencies": ["Item", "Customer"],
 				},
+                    {
+					"type": "doctype",
+					"name": "Cost Estimation",
+                    "label": _("Cost Estimation"),
+					"description": _("Cost Estimation"),
+					"onboard": 1,
+				},
 				{
 					"type": "doctype",
 					"name": "Sales Order",

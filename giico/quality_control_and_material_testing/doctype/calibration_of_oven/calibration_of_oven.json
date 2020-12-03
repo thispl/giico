@@ -1,32 +1,35 @@
 {
- "autoname": "OV.####",
+ "autoname": "OV-.YYYY.-06-.####",
  "creation": "2019-09-25 08:56:13.848812",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
   "date_of_report",
   "date_of_calibration",
+  "calibration",
   "column_break_5",
   "manufacturer",
   "serial_no",
   "column_break_9",
   "temp_range",
-  "giico_job_no",
   "section_break_10",
   "oven_readings",
   "notes_section",
   "notes",
   "traceability_section",
   "traceability",
+  "data_24",
   "section_break_16",
   "calibrated_by",
   "column_break_18",
-  "checked_by"
+  "checked_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -85,13 +88,6 @@
    "label": "Temp Range"
   },
   {
-   "fieldname": "giico_job_no",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Giico Job No",
-   "reqd": 1
-  },
-  {
    "fieldname": "section_break_10",
    "fieldtype": "Section Break"
   },
@@ -146,9 +142,36 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration of Oven",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "calibration",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Calibration"
+  },
+  {
+   "fieldname": "data_24",
+   "fieldtype": "Data"
   }
  ],
- "modified": "2019-12-21 14:29:52.141506",
+ "is_submittable": 1,
+ "modified": "2020-12-03 15:32:18.888627",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Oven",

@@ -1,11 +1,13 @@
 {
- "autoname": "ASR.####",
+ "autoname": "ASR-.YYYY.-06-.####",
  "creation": "2019-10-12 15:28:58.981870",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_4",
@@ -13,7 +15,6 @@
   "date_report",
   "location",
   "section_break_7",
-  "job_no",
   "temp",
   "ambient_temperature",
   "section_break_9",
@@ -23,7 +24,8 @@
   "section_break_11",
   "viewed_by",
   "column_break_13",
-  "approved_by"
+  "approved_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -64,12 +66,6 @@
   {
    "fieldname": "section_break_7",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "job_no",
-   "fieldtype": "Data",
-   "label": "Job No",
-   "reqd": 1
   },
   {
    "fieldname": "temp",
@@ -121,14 +117,36 @@
   {
    "fetch_from": "project.customer",
    "fieldname": "customer",
-   "fieldtype": "Link",
+   "fieldtype": "Read Only",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Asphalt Spray Rate",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-21 15:20:55.396438",
+ "is_submittable": 1,
+ "modified": "2020-11-12 15:00:47.305293",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Asphalt Spray Rate",

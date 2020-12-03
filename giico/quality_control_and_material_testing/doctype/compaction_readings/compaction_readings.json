@@ -35,12 +35,12 @@
    "fieldname": "tolerance",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Tolerance"
+   "label": "Tolerance\u00b1"
   }
  ],
  "istable": 1,
- "modified": "2019-11-25 13:51:44.668119",
- "modified_by": "ceo@giico.net",
+ "modified": "2020-11-10 15:17:15.425448",
+ "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Compaction Readings",
  "owner": "Administrator",

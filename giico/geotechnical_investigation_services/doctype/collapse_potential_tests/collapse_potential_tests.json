@@ -5,6 +5,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
   "customer",
   "department",
@@ -12,7 +13,6 @@
   "location",
   "date",
   "section_break_6",
-  "job_ref",
   "test_id",
   "sample_id",
   "specimen_details",
@@ -31,7 +31,8 @@
   "section_break_17",
   "charts_section",
   "chart",
-  "chart_image"
+  "chart_image",
+  "amended_from"
  ],
  "fields": [
   {
@@ -70,13 +71,6 @@
   {
    "fieldname": "section_break_6",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "job_ref",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Job Ref",
-   "reqd": 1
   },
   {
    "fieldname": "test_id",
@@ -188,9 +182,26 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Collapse Potential Tests",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2019-12-24 14:21:38.345474",
+ "is_submittable": 1,
+ "modified": "2020-10-19 13:37:00.517535",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Collapse Potential Tests",

@@ -1,11 +1,12 @@
 {
- "autoname": "SC.####",
+ "autoname": "SC-.YYYY.-06-.####",
  "creation": "2019-09-24 12:30:34.196405",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
@@ -13,7 +14,6 @@
   "date_of_calibration",
   "column_break_5",
   "model",
-  "giico_job_no",
   "column_break_9",
   "make",
   "serial",
@@ -27,7 +27,8 @@
   "des1",
   "column_break_16",
   "checked_by",
-  "des2"
+  "des2",
+  "amended_from"
  ],
  "fields": [
   {
@@ -71,12 +72,6 @@
    "label": "Model"
   },
   {
-   "fieldname": "giico_job_no",
-   "fieldtype": "Data",
-   "label": "Giico Job No",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break_9",
    "fieldtype": "Column Break"
   },
@@ -115,7 +110,6 @@
    "hidden": 1
   },
   {
-   "fetch_from": "checked_by.designation",
    "fieldname": "calibrated_by",
    "fieldtype": "Link",
    "label": "Calibrated by",
@@ -162,9 +156,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration of Site Compaction",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-23 16:20:00.433897",
+ "is_submittable": 1,
+ "modified": "2020-11-10 10:03:21.854401",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Site Compaction",

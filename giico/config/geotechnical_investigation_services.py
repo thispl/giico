@@ -19,6 +19,13 @@ def get_data():
 					"onboard": 1,
 					"dependencies": ["Item", "Customer"],
 				},
+                {
+					"type": "doctype",
+					"name": "Cost Estimation",
+                    "label": _("Cost Estimation"),
+					"description": _("Cost Estimation"),
+					"onboard": 1,
+				},
 				{
 					"type": "doctype",
 					"name": "Sales Order",
@@ -39,7 +46,7 @@ def get_data():
 					"description": _("Job Form GT"),
 					"onboard": 1,
 				},
-                  {
+                {
 					"type": "doctype",
 					"name": "Daily Report GT",
                     "label": _("Daily Report"),
@@ -53,10 +60,25 @@ def get_data():
             "items": [
                         {
                             "type": "doctype",
+                            "name": "Borehole",
+                            "description": _("Borehole Test"),
+                            "onboard": 1,
+                            "icon": "fa fa-star"
+                        },
+                        {
+                            "type": "doctype",
                             "name": "Dynamic Cone Penetration Test",
                             "icon": "fa fa-star",
                             "label": _("Dynamic Cone Probing"),
                             "description": _("Dynamic Cone Penetration Test"),
+                            "onboard": 1
+                        },
+                        {
+                            "type": "doctype",
+                            "name": "Borehole",
+                            "icon": "fa fa-star",
+                            "label": _("Borehole Test1"),
+                            "description": _("Borehole Test"),
                              "onboard": 1
                         },
                         {

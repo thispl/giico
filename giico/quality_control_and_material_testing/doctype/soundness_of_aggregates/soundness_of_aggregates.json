@@ -1,11 +1,13 @@
 {
- "autoname": "SA.####",
+ "autoname": "SA-.YYYY.-06-.####",
  "creation": "2019-10-01 09:33:30.362042",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "location",
   "column_break_5",
@@ -13,7 +15,6 @@
   "report_date",
   "department",
   "section_break_7",
-  "report_ref",
   "sample_desc",
   "section_break_9",
   "fine",
@@ -28,7 +29,8 @@
   "sec3",
   "tested_by",
   "column_break_17",
-  "checked_by"
+  "checked_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -40,7 +42,6 @@
    "reqd": 1
   },
   {
-   "fetch_from": "project.location",
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
@@ -71,13 +72,6 @@
   {
    "fieldname": "section_break_7",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "report_ref",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Report Ref",
-   "reqd": 1
   },
   {
    "fieldname": "sample_desc",
@@ -161,9 +155,32 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Soundness of Aggregates",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-21 17:17:19.996526",
+ "is_submittable": 1,
+ "modified": "2020-11-12 14:52:26.355709",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Soundness of Aggregates",

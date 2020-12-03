@@ -16,19 +16,19 @@
    "fieldname": "test_temp",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": " Test Temperature 0C"
+   "label": " Test Temperature \u00b0C"
   },
   {
    "fieldname": "instrument_read",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Instrument Reading 0C"
+   "label": "Instrument Reading \u00b0C"
   },
   {
    "fieldname": "difference",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Difference",
+   "label": "Difference\u00b0C",
    "read_only": 1
   },
   {
@@ -50,7 +50,7 @@
   }
  ],
  "istable": 1,
- "modified": "2019-12-14 13:37:34.096101",
+ "modified": "2020-11-11 09:30:09.935209",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Water Bath",

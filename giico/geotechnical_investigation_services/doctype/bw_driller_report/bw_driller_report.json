@@ -1,0 +1,96 @@
+{
+ "creation": "2020-11-26 15:26:07.754919",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bh",
+  "job",
+  "area",
+  "depth",
+  "drilling_start_date",
+  "drilling_end_date",
+  "column_break_7",
+  "driller_name",
+  "rig_no",
+  "delivery",
+  "received"
+ ],
+ "fields": [
+  {
+   "fieldname": "bh",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "BH"
+  },
+  {
+   "fieldname": "job",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area"
+  },
+  {
+   "fieldname": "depth",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Depth"
+  },
+  {
+   "fieldname": "drilling_start_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drilling Start Date"
+  },
+  {
+   "fieldname": "drilling_end_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drilling End Date"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "driller_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Driller Name"
+  },
+  {
+   "fieldname": "rig_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rig No"
+  },
+  {
+   "fieldname": "delivery",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Delivery"
+  },
+  {
+   "fieldname": "received",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Received"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-11-26 15:58:18.350645",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "BW Driller Report",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

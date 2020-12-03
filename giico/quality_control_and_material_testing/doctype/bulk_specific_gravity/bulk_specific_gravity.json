@@ -56,14 +56,14 @@
    "fieldname": "calculated_bulk",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Calculated Bulk Density (g/cm3)",
+   "label": "Calculated Bulk Density (g/cm\u00b3)",
    "read_only": 1
   },
   {
    "fieldname": "job_mix",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Job Mix Density (g/cm3)"
+   "label": "Job Mix Density (g/cm\u00b3)"
   },
   {
    "fieldname": "percent_com",
@@ -88,11 +88,11 @@
    "fieldname": "aver_thick1",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Average Thickness (mm)"
+   "label": "Total Average Thickness (mm)"
   }
  ],
  "istable": 1,
- "modified": "2019-11-25 15:34:48.716262",
+ "modified": "2020-11-12 08:04:38.914435",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Bulk Specific Gravity",

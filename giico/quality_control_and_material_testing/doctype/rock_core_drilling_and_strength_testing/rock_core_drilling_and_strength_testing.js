@@ -2,7 +2,9 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Rock Core Drilling and Strength Testing', {
-	// refresh: function(frm) {
-
-	// }
+	onload: function (frm) {
+		if (frappe.user.has_role("Technicianr")) {
+			hide_field(['customer', 'department'])
+		}
+	}
 });

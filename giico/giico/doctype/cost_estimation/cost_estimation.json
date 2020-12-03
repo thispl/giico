@@ -1,0 +1,603 @@
+{
+ "autoname": "CET.####",
+ "creation": "2020-02-24 12:26:19.869161",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tender",
+  "client",
+  "department",
+  "date",
+  "column_break_4",
+  "project_name",
+  "scope_of_work",
+  "rev_no",
+  "quotation",
+  "total_section",
+  "project_cost",
+  "overhead_amt",
+  "profit_amt",
+  "bidding_price",
+  "column_break_89",
+  "overhead_per",
+  "profit_per",
+  "section_break_86",
+  "customer_discount",
+  "column_break_88",
+  "customer_discount_amount",
+  "discount_price",
+  "consumable_material",
+  "mud_additives",
+  "total_mud",
+  "section_break_4",
+  "drilling_tools_and_spare_parts",
+  "total_drilling",
+  "section_break_6",
+  "casing_and_screen",
+  "total_casing",
+  "section_break_8",
+  "materials",
+  "total_material",
+  "section_break_10",
+  "fuel",
+  "total_fuel",
+  "section_break_28",
+  "grand_total_a",
+  "overhead_a",
+  "profit_a",
+  "column_break_33",
+  "overhead_amount_a",
+  "profit_amount_a",
+  "section_break_36",
+  "tools",
+  "total_tools",
+  "section_break_34",
+  "grand_total_b",
+  "overhead_b",
+  "profit_b",
+  "column_break_38",
+  "overhead_amount_b",
+  "profit_amt_b",
+  "section_break_41",
+  "technical_crew",
+  "total_tc",
+  "section_break_44",
+  "overhead_c",
+  "profit_c",
+  "column_break_47",
+  "overhead_amount_c",
+  "profit_amount_c",
+  "section_break_50",
+  "direct_cost",
+  "overhead_per_abc",
+  "profit_per_abc",
+  "column_break_52",
+  "overhead_abc",
+  "profit_abc",
+  "bidding_abc",
+  "section_break_56",
+  "sub",
+  "total_d1",
+  "section_break_58",
+  "section_break_64",
+  "subcontractor_no2",
+  "total_d2",
+  "section_break_60",
+  "section_break_72",
+  "subcontractor_no3",
+  "total_d3",
+  "section_break_68",
+  "grand_total_d",
+  "overhead_d3",
+  "profit_d3",
+  "column_break_77",
+  "overhead_amount_d3",
+  "overhead_profit_d3",
+  "bidding_sub"
+ ],
+ "fields": [
+  {
+   "fieldname": "consumable_material",
+   "fieldtype": "Section Break",
+   "label": "A.Consumable Materials"
+  },
+  {
+   "fieldname": "mud_additives",
+   "fieldtype": "Table",
+   "label": "A1.Mud Additives",
+   "options": "Mud Additives"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "drilling_tools_and_spare_parts",
+   "fieldtype": "Table",
+   "label": "A2.Drilling Tools and Spare Parts",
+   "options": "Drilling Tools and Spare Parts"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "casing_and_screen",
+   "fieldtype": "Table",
+   "label": "A3.Casing & Screen",
+   "options": "Casing and Screen"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "materials",
+   "fieldtype": "Table",
+   "label": "A.4.Materials",
+   "options": "Materials"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fuel",
+   "fieldtype": "Table",
+   "label": "A.5.Fuel",
+   "options": "Fuel"
+  },
+  {
+   "fieldname": "tender",
+   "fieldtype": "Data",
+   "label": "Tender"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Project Name",
+   "options": "Project"
+  },
+  {
+   "fieldname": "scope_of_work",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Scope of Work"
+  },
+  {
+   "fieldname": "rev_no",
+   "fieldtype": "Int",
+   "label": "Rev No"
+  },
+  {
+   "fieldname": "total_mud",
+   "fieldtype": "Currency",
+   "label": "Total K.D",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_drilling",
+   "fieldtype": "Currency",
+   "label": "Total K.D",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_casing",
+   "fieldtype": "Currency",
+   "label": "Total K.D",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_material",
+   "fieldtype": "Currency",
+   "label": "Total K.D",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_fuel",
+   "fieldtype": "Currency",
+   "label": "Total K.D",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grand_total_a",
+   "fieldtype": "Currency",
+   "label": "Grand Total for Item(A)"
+  },
+  {
+   "fieldname": "overhead_a",
+   "fieldtype": "Percent",
+   "label": "OVER HEAD FOR ITEM A (%)"
+  },
+  {
+   "fieldname": "profit_a",
+   "fieldtype": "Percent",
+   "label": "PROFIT FOR  ITEM A (%)"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overhead_amount_a",
+   "fieldtype": "Currency",
+   "label": "OVER HEAD FOR ITEM A (amount)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "profit_amount_a",
+   "fieldtype": "Currency",
+   "label": "PROFIT FOR  ITEM A (amount)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tools",
+   "fieldtype": "Table",
+   "label": "Tools,Equipment & Vehicles",
+   "options": "Tools and Equipment and Vehicles"
+  },
+  {
+   "fieldname": "total_tools",
+   "fieldtype": "Currency",
+   "label": "Total K.D",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_34",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grand_total_b",
+   "fieldtype": "Currency",
+   "label": "Grand Total for item(B)"
+  },
+  {
+   "fieldname": "overhead_b",
+   "fieldtype": "Percent",
+   "label": "OVER HEAD FOR ITEM B (%)"
+  },
+  {
+   "fieldname": "profit_b",
+   "fieldtype": "Percent",
+   "label": "PROFIT FOR  ITEM B (%)"
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overhead_amount_b",
+   "fieldtype": "Currency",
+   "label": "OVER HEAD FOR ITEM B (amount)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "profit_amt_b",
+   "fieldtype": "Currency",
+   "label": "PROFIT FOR  ITEM B (amount)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_41",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "technical_crew",
+   "fieldtype": "Table",
+   "label": "Technical Crew",
+   "options": "Technical Crew"
+  },
+  {
+   "fieldname": "total_tc",
+   "fieldtype": "Currency",
+   "label": "Grand Total Item for C",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_44",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overhead_c",
+   "fieldtype": "Percent",
+   "label": "OVER HEAD FOR ITEM C (%)"
+  },
+  {
+   "fieldname": "profit_c",
+   "fieldtype": "Percent",
+   "label": "PROFIT FOR  ITEM C (%)"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overhead_amount_c",
+   "fieldtype": "Currency",
+   "label": "OVER HEAD FOR ITEM C (amount)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "profit_amount_c",
+   "fieldtype": "Currency",
+   "label": "PROFIT FOR  ITEM C (amount)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_50",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "direct_cost",
+   "fieldtype": "Currency",
+   "label": "DIRECT COST FOR A +B + C",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overhead_abc",
+   "fieldtype": "Currency",
+   "label": "OVER HEAD FOR ITEM A + B + C",
+   "read_only": 1
+  },
+  {
+   "fieldname": "profit_abc",
+   "fieldtype": "Currency",
+   "label": "PROFIT FOR  ITEM A + B + C",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_56",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sub",
+   "fieldtype": "Table",
+   "label": "D1.Subcontractor No1",
+   "options": "Subcontractor No1"
+  },
+  {
+   "fieldname": "section_break_58",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "subcontractor_no2",
+   "fieldtype": "Table",
+   "label": "D2.Subcontractor No2",
+   "options": "Subcontractor No2"
+  },
+  {
+   "fieldname": "section_break_60",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "subcontractor_no3",
+   "fieldtype": "Table",
+   "label": "D3.Subcontractor No3",
+   "options": "Subcontractor No3"
+  },
+  {
+   "fieldname": "section_break_64",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_68",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_72",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overhead_d3",
+   "fieldtype": "Percent",
+   "label": "OVER HEAD FOR ITEM D (%)"
+  },
+  {
+   "fieldname": "profit_d3",
+   "fieldtype": "Percent",
+   "label": "PROFIT FOR  ITEM D (%)"
+  },
+  {
+   "fieldname": "column_break_77",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overhead_amount_d3",
+   "fieldtype": "Currency",
+   "label": "OVER HEAD FOR ITEM D (amount)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overhead_profit_d3",
+   "fieldtype": "Currency",
+   "label": "PROFIT FOR ITEM D (amount)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_section",
+   "fieldtype": "Section Break",
+   "label": "TOTAL"
+  },
+  {
+   "fieldname": "project_cost",
+   "fieldtype": "Currency",
+   "label": "TOTAL COST OF THE PROJECT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overhead_amt",
+   "fieldtype": "Currency",
+   "label": "TOTAL AMOUNT AS OVERHEAD",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_89",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "profit_amt",
+   "fieldtype": "Currency",
+   "label": "TOTAL AMOUNT OF PROFIT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bidding_price",
+   "fieldtype": "Currency",
+   "label": "TOTAL BIDDING PRICE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_d1",
+   "fieldtype": "Currency",
+   "label": "Total K.D",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_d2",
+   "fieldtype": "Currency",
+   "label": "Total K.D",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_d3",
+   "fieldtype": "Currency",
+   "label": "Total K.D",
+   "read_only": 1
+  },
+  {
+   "fieldname": "grand_total_d",
+   "fieldtype": "Currency",
+   "label": "Grand Total D"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "customer_discount",
+   "fieldtype": "Currency",
+   "label": "CUSTOMER DISCOUNT (%)"
+  },
+  {
+   "fieldname": "section_break_86",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_88",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discount_price",
+   "fieldtype": "Currency",
+   "label": "TOTAL PRICE AFTER DISCOUNT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quotation",
+   "fieldtype": "Link",
+   "label": "Quotation",
+   "options": "Quotation"
+  },
+  {
+   "fieldname": "customer_discount_amount",
+   "fieldtype": "Currency",
+   "label": "CUSTOMER DISCOUNT AMOUNT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overhead_per_abc",
+   "fieldtype": "Percent",
+   "label": "OVER HEAD % FOR A + B + C",
+   "read_only": 1
+  },
+  {
+   "fieldname": "profit_per_abc",
+   "fieldtype": "Percent",
+   "label": "PROFIT % FOR A + B + C",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bidding_abc",
+   "fieldtype": "Currency",
+   "label": "BIDDING PRICE FOR A+B+C",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bidding_sub",
+   "fieldtype": "Currency",
+   "label": "BIDDING PRICE FOR SUBCONTRACTOR",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overhead_per",
+   "fieldtype": "Percent",
+   "label": "TOTAL OVERHEAD % ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "profit_per",
+   "fieldtype": "Percent",
+   "label": "TOTAL PROFIT %",
+   "read_only": 1
+  }
+ ],
+ "modified": "2020-10-04 13:23:31.195520",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "Cost Estimation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "scope_of_work",
+ "track_changes": 1
+}

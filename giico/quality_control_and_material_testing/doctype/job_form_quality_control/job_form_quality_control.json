@@ -99,7 +99,7 @@
    "fieldtype": "Section Break"
   }
  ],
- "modified": "2019-12-23 12:48:44.664513",
+ "modified": "2020-10-04 13:23:46.417359",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Job Form Quality Control",
@@ -118,7 +118,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

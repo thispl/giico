@@ -2,6 +2,11 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Sandmix Analysis Test', {
+    onload: function (frm) {
+        if (frappe.user.has_role("Technician")) {
+            hide_field(['customer', 'department'])
+        }
+    },
     refresh: function (frm) {
         var pass = []
         var sieve = []

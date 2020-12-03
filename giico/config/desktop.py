@@ -64,6 +64,16 @@ def get_data():
 			"type": "module",
 			"description": "Stock transactions, reports, serial numbers and batches."
 			# "onboard_present": 1
+		},
+		{
+			"module_name": "Technician Entry",
+			"category": "Places",
+			"label": _("Technician Entry"),
+			"color": "#3498db",
+			"icon": "fa fa-check-circle",
+			"type": "module",
+			"description": "Technician Entry"
+			# "onboard_present": 1
 		}
 		
 		

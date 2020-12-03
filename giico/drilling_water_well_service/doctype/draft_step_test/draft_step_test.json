@@ -114,7 +114,7 @@
    "options": "Step Test Data"
   }
  ],
- "modified": "2019-11-25 14:40:34.845726",
+ "modified": "2020-10-04 13:23:56.658074",
  "modified_by": "Administrator",
  "module": "Drilling Water Well Service",
  "name": "Draft Step Test",
@@ -133,7 +133,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

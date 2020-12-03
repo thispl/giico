@@ -12,7 +12,6 @@
   "test_date",
   "report_date",
   "section_break_6",
-  "report_ref",
   "type_block",
   "source_of_sample",
   "section_break_9",
@@ -72,13 +71,6 @@
    "label": "Source of Sample "
   },
   {
-   "fieldname": "report_ref",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Report Ref",
-   "reqd": 1
-  },
-  {
    "fieldname": "section_break_9",
    "fieldtype": "Section Break"
   },
@@ -132,7 +124,7 @@
    "reqd": 1
   }
  ],
- "modified": "2019-12-24 08:39:38.628499",
+ "modified": "2020-10-02 16:16:19.924563",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Compressive Strength  Of Hollow Block",

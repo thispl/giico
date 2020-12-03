@@ -1,11 +1,13 @@
 {
- "autoname": "SE.####",
+ "autoname": "SE-.YYYY.-06-.####",
  "creation": "2019-10-03 10:42:05.800315",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_5",
@@ -13,7 +15,6 @@
   "test_date",
   "report_date",
   "section_break_9",
-  "report_ref_no",
   "sample_description",
   "section_break_12",
   "sand_equivalent_readings",
@@ -24,7 +25,8 @@
   "section_break_15",
   "tested_by",
   "column_break_17",
-  "approved_by"
+  "approved_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -41,7 +43,6 @@
    "label": "Sample Description"
   },
   {
-   "fetch_from": "project.location",
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
@@ -59,13 +60,6 @@
    "fieldname": "report_date",
    "fieldtype": "Date",
    "label": "Report Date"
-  },
-  {
-   "fieldname": "report_ref_no",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Report Ref No",
-   "reqd": 1
   },
   {
    "fetch_from": "project.department",
@@ -136,9 +130,32 @@
   {
    "fieldname": "section_break_12",
    "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sand Equivalent",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-24 08:46:32.520830",
+ "is_submittable": 1,
+ "modified": "2020-11-12 15:00:27.715980",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Sand Equivalent",

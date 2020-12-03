@@ -1,11 +1,12 @@
 {
- "autoname": "CTR.####",
+ "autoname": "CTR-.YYYY.-06-.####",
  "creation": "2019-09-26 09:33:31.586765",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
@@ -13,21 +14,23 @@
   "calib_date",
   "section_break_8",
   "equip_id",
-  "giico_report",
   "column_break_4",
   "apparatus",
-  "slump_cone",
   "shape",
   "column_break_12",
+  "slump_cone",
+  "slump_cone_heading",
   "base_dia",
   "top_dia",
   "height",
-  "tamping_rod",
   "column_break_18",
+  "tamping_rod",
   "dia",
   "length",
+  "weight",
   "section_break_19",
-  "note"
+  "note",
+  "amended_from"
  ],
  "fields": [
   {
@@ -71,13 +74,6 @@
    "label": "Equip ID"
   },
   {
-   "fieldname": "giico_report",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Giico Report No",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break_4",
    "fieldtype": "Section Break"
   },
@@ -88,8 +84,7 @@
   },
   {
    "fieldname": "slump_cone",
-   "fieldtype": "Data",
-   "label": "Slump cone"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "shape",
@@ -119,11 +114,6 @@
    "label": "Height"
   },
   {
-   "fieldname": "tamping_rod",
-   "fieldtype": "Section Break",
-   "label": "Tamping rod"
-  },
-  {
    "fieldname": "column_break_18",
    "fieldtype": "Column Break"
   },
@@ -151,14 +141,44 @@
   {
    "fetch_from": "project.customer",
    "fieldname": "customer",
-   "fieldtype": "Link",
+   "fieldtype": "Read Only",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
+  },
+  {
+   "fieldname": "slump_cone_heading",
+   "fieldtype": "Heading",
+   "label": "Slump Cone"
+  },
+  {
+   "fieldname": "tamping_rod",
+   "fieldtype": "Heading",
+   "label": "Tamping Rod"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration Of Slump Cone and Tamping Rod",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
   }
  ],
- "modified": "2019-12-21 14:33:50.355336",
+ "is_submittable": 1,
+ "modified": "2020-11-10 13:46:49.043519",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration Of Slump Cone and Tamping Rod",

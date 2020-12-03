@@ -1,11 +1,12 @@
 {
- "autoname": "CE.####",
+ "autoname": "CE-.YYYY.-06-.####",
  "creation": "2019-10-08 13:33:03.618182",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_3",
@@ -17,7 +18,6 @@
   "equipment_id",
   "column_break_10",
   "readability",
-  "report_ref_no",
   "section_break_11",
   "electronic_balance",
   "column_break_13",
@@ -25,7 +25,8 @@
   "section_break_13",
   "calibrated_by",
   "column_break_15",
-  "checked_by"
+  "checked_by",
+  "amended_from"
  ],
  "fields": [
   {
@@ -90,13 +91,6 @@
    "label": "Readability"
   },
   {
-   "fieldname": "report_ref_no",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Report Ref No",
-   "reqd": 1
-  },
-  {
    "fieldname": "section_break_11",
    "fieldtype": "Section Break"
   },
@@ -143,9 +137,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration of Electronic Balance 200g",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-24 09:44:21.667671",
+ "is_submittable": 1,
+ "modified": "2020-11-06 10:27:41.992641",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Electronic Balance 200g",

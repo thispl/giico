@@ -1,0 +1,68 @@
+{
+ "creation": "2020-02-14 10:25:37.229994",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "test_no1",
+  "test_no2",
+  "test_no3",
+  "test_no4",
+  "test_no5"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "columns": 1,
+   "fieldname": "test_no1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "11"
+  },
+  {
+   "columns": 1,
+   "fieldname": "test_no2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "12"
+  },
+  {
+   "columns": 1,
+   "fieldname": "test_no3",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "13"
+  },
+  {
+   "columns": 1,
+   "fieldname": "test_no4",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "14"
+  },
+  {
+   "columns": 1,
+   "fieldname": "test_no5",
+   "fieldtype": "Data",
+   "label": "15"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-02-15 21:57:32.840638",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "FDT Test 3",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,128 @@
+{
+ "autoname": "BWF1.####",
+ "creation": "2020-11-26 11:41:15.500069",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_no",
+  "date_received",
+  "drill_start",
+  "drill_finished",
+  "owner",
+  "client",
+  "column_break_6",
+  "phone",
+  "subject",
+  "location",
+  "block",
+  "plot",
+  "section_break_13",
+  "job_form_bw",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Data",
+   "label": "Job No"
+  },
+  {
+   "fieldname": "date_received",
+   "fieldtype": "Date",
+   "label": "Date Received"
+  },
+  {
+   "fieldname": "drill_start",
+   "fieldtype": "Data",
+   "label": "Drill Start"
+  },
+  {
+   "fieldname": "drill_finished",
+   "fieldtype": "Data",
+   "label": "Drill Finished"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block"
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Data",
+   "label": "Plot"
+  },
+  {
+   "fieldname": "job_form_bw",
+   "fieldtype": "Table",
+   "label": "Job Form BW",
+   "options": "Job Form BW"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "BW Job Form",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-11-26 12:31:17.222637",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "BW Job Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

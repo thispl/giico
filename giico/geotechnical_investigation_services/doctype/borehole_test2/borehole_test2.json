@@ -1,0 +1,77 @@
+{
+ "creation": "2020-11-26 10:11:45.239580",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "boring_progress_date",
+  "time",
+  "depth",
+  "casing_from",
+  "casing_to",
+  "casing_hours",
+  "added_water_from",
+  "added_water_to"
+ ],
+ "fields": [
+  {
+   "fieldname": "boring_progress_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Boring Progress Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time"
+  },
+  {
+   "fieldname": "depth",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Depth"
+  },
+  {
+   "fieldname": "casing_from",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Casing From"
+  },
+  {
+   "fieldname": "casing_to",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Casing To"
+  },
+  {
+   "fieldname": "casing_hours",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Casing Hours"
+  },
+  {
+   "fieldname": "added_water_from",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Added Water From"
+  },
+  {
+   "fieldname": "added_water_to",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Added Water To"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-11-26 10:21:19.017644",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Borehole Test2",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

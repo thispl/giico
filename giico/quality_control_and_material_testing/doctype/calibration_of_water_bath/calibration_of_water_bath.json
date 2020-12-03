@@ -1,11 +1,12 @@
 {
- "autoname": "CWB.####",
+ "autoname": "CWB-.YYYY.-06-.####",
  "creation": "2019-09-27 05:49:57.162367",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "department",
   "column_break_4",
@@ -18,11 +19,11 @@
   "temp_range",
   "column_break_6",
   "serial_no",
-  "report_ref",
   "section_break_12",
   "water",
   "section_break_14",
-  "note"
+  "note",
+  "amended_from"
  ],
  "fields": [
   {
@@ -76,7 +77,7 @@
    "label": "Brand Name"
   },
   {
-   "description": "0C\n",
+   "description": "\u00b0C\n",
    "fieldname": "temp_range",
    "fieldtype": "Data",
    "label": "Temperature Range"
@@ -89,13 +90,6 @@
    "fieldname": "serial_no",
    "fieldtype": "Data",
    "label": "Serial No"
-  },
-  {
-   "fieldname": "report_ref",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Report Ref No",
-   "reqd": 1
   },
   {
    "fieldname": "section_break_12",
@@ -124,9 +118,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calibration Of Water Bath",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-21 15:02:36.236636",
+ "is_submittable": 1,
+ "modified": "2020-11-11 09:30:55.558119",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration Of Water Bath",

@@ -1,11 +1,13 @@
 {
- "autoname": "WA.####",
+ "autoname": "WA-.YYYY.-06-.####",
  "creation": "2019-09-30 07:37:24.870595",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "mail_sent",
   "project",
+  "project_name",
   "department",
   "customer",
   "test_date",
@@ -18,13 +20,13 @@
   "consultant",
   "owner",
   "column_break_6",
-  "report_ref",
   "concrete_grade",
   "concrete_supplier",
   "section_break_13",
   "water_absorption",
   "section_break_20",
-  "remarks"
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
@@ -36,11 +38,9 @@
    "reqd": 1
   },
   {
-   "fetch_from": "project.location",
    "fieldname": "location",
-   "fieldtype": "Link",
-   "label": "Location ",
-   "options": "Location"
+   "fieldtype": "Data",
+   "label": "Location "
   },
   {
    "fieldname": "test_date",
@@ -95,13 +95,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "report_ref",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Report Ref",
-   "reqd": 1
-  },
-  {
    "fieldname": "concrete_grade",
    "fieldtype": "Data",
    "label": "Concrete Grade "
@@ -134,12 +127,36 @@
    "fetch_from": "project.customer",
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mail_sent",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Mail Sent"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Water Absorption of Hardened Concrete",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
   }
  ],
- "modified": "2019-12-24 09:19:02.041381",
+ "is_submittable": 1,
+ "modified": "2020-12-03 14:39:04.078537",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Water Absorption of Hardened Concrete",

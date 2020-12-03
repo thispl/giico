@@ -88,11 +88,12 @@
   {
    "fieldname": "pressure",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Pressure"
   }
  ],
  "istable": 1,
- "modified": "2019-12-05 16:06:45.426637",
+ "modified": "2020-02-21 08:09:20.514202",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Gauge 2",

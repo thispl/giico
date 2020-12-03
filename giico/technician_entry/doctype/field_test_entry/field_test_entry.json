@@ -1,0 +1,50 @@
+{
+ "creation": "2020-02-20 20:57:42.930902",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_id",
+  "section_break_2",
+  "project_tests"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Project"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_tests",
+   "fieldtype": "Table",
+   "label": "Project Tests",
+   "options": "Project Test"
+  }
+ ],
+ "hide_toolbar": 1,
+ "issingle": 1,
+ "modified": "2020-10-04 13:23:37.155981",
+ "modified_by": "Administrator",
+ "module": "Technician Entry",
+ "name": "Field Test Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,136 @@
+{
+ "autoname": "BWDF.####",
+ "creation": "2020-11-26 13:48:52.551099",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job",
+  "si_rig",
+  "date",
+  "start_time",
+  "finish_time",
+  "project",
+  "client",
+  "owner",
+  "column_break_8",
+  "location",
+  "block",
+  "plot",
+  "consumption_material",
+  "production",
+  "stoppage",
+  "crew",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "job",
+   "fieldtype": "Data",
+   "label": "Job"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Data",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "finish_time",
+   "fieldtype": "Data",
+   "label": "Finish Time"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block"
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Data",
+   "label": "Plot"
+  },
+  {
+   "fieldname": "consumption_material",
+   "fieldtype": "Data",
+   "label": "Consumption material"
+  },
+  {
+   "fieldname": "production",
+   "fieldtype": "Data",
+   "label": "Production"
+  },
+  {
+   "fieldname": "stoppage",
+   "fieldtype": "Data",
+   "label": "Stoppage"
+  },
+  {
+   "fieldname": "crew",
+   "fieldtype": "Data",
+   "label": "Crew"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "si_rig",
+   "fieldtype": "Select",
+   "label": "SI RIG",
+   "options": "I\nII\nIII\nIV\nV\nVI\nVII\nVIII\nIX\nX\nXI\nXII\nXVIII\nXIV\nXVI\nXVII"
+  }
+ ],
+ "modified": "2020-11-26 14:41:39.062512",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "BW Daily Field Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
