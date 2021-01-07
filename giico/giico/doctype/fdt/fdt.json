@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "FDT.####",
  "creation": "2019-08-13 08:57:35.072793",
  "doctype": "DocType",
@@ -11,6 +12,7 @@
   "customer",
   "location",
   "section_break_34",
+  "test",
   "department",
   "column_break_7",
   "method_of_compaction",
@@ -34,12 +36,15 @@
   "fdt__test",
   "calculate1",
   "section_break_30",
+  "is_additional_check",
   "fdt_test_2",
   "calculate2",
   "section_break_32",
+  "is_additional_check1",
   "fdt_test_3",
   "calculate3",
   "section_4",
+  "is_additional_check2",
   "fdt_test_4",
   "calculate4",
   "description",
@@ -51,6 +56,13 @@
   "column_break_31",
   "checked_by",
   "des2",
+  "section_break_48",
+  "data_49",
+  "datetime",
+  "column_break_50",
+  "data_51",
+  "column_break_52",
+  "data_53",
   "amended_from"
  ],
  "fields": [
@@ -71,7 +83,7 @@
   },
   {
    "fieldname": "layer_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Layer No"
   },
   {
@@ -106,6 +118,7 @@
   {
    "fieldname": "report_no",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Report No"
   },
   {
@@ -188,7 +201,6 @@
   {
    "fieldname": "department",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Department",
    "options": "Department"
   },
@@ -299,9 +311,67 @@
    "options": "FDT",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_48",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_49",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_50",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_51",
+   "fieldtype": "Data",
+   "hidden": 1
+  },
+  {
+   "fieldname": "column_break_52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_53",
+   "fieldtype": "Data",
+   "hidden": 1
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Datetime"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_additional_check",
+   "fieldtype": "Check",
+   "label": "Is Additional Check"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_additional_check1",
+   "fieldtype": "Check",
+   "label": "Is Additional Check1"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_additional_check2",
+   "fieldtype": "Check",
+   "label": "Is Additional Check2"
   }
  ],
- "modified": "2020-11-26 11:11:06.299186",
+ "links": [],
+ "modified": "2020-12-23 16:54:29.016525",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "FDT",

@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "BO.####",
  "creation": "2020-11-26 09:38:02.279752",
  "doctype": "DocType",
@@ -11,6 +12,7 @@
   "client",
   "location",
   "column_break_5",
+  "test",
   "ktmutn_n",
   "ktmutn_e",
   "job_no",
@@ -34,7 +36,10 @@
   "method_plant_used",
   "driller",
   "column_break_29",
-  "giico"
+  "giico",
+  "section_break_32",
+  "data_33",
+  "amended_from"
  ],
  "fields": [
   {
@@ -47,16 +52,19 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Project Name"
   },
   {
    "fieldname": "contract",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Contract"
   },
   {
    "fieldname": "client",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Client"
   },
   {
@@ -183,9 +191,36 @@
   {
    "fieldname": "column_break_29",
    "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_33",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Borehole",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2020-11-26 11:09:02.552945",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2020-12-14 10:33:37.225943",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Borehole",

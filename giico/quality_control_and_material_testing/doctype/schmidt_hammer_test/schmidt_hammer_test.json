@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "SHT-.YYYY.-06-.####",
  "creation": "2019-11-01 08:28:10.055047",
  "doctype": "DocType",
@@ -11,6 +12,7 @@
   "customer",
   "department",
   "column_break_5",
+  "test",
   "location",
   "date_of_report",
   "date_of_test",
@@ -116,10 +118,18 @@
   "aver3",
   "column_break_77",
   "aver4",
+  "column_break_113",
+  "aver5",
   "section_break_42",
   "additional_readings4",
   "section_break_80",
   "age_of_structure",
+  "section_break_119",
+  "collected_by",
+  "column_break_121",
+  "tested_by",
+  "section_break_123",
+  "data_118",
   "amended_from"
  ],
  "fields": [
@@ -700,10 +710,55 @@
   {
    "fieldname": "section_break_101",
    "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "data_118",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_113",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aver5",
+   "fieldtype": "Data",
+   "label": "Average(test5)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_119",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_121",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_123",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-12-03 14:33:07.348694",
+ "links": [],
+ "modified": "2020-12-29 16:19:41.413314",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Schmidt Hammer Test",

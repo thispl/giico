@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "TRT.####",
  "creation": "2019-08-13 07:36:41.811815",
  "doctype": "DocType",
@@ -8,6 +9,7 @@
   "project",
   "customer",
   "column_break_3",
+  "test",
   "location",
   "department",
   "section_break_5",
@@ -20,6 +22,8 @@
   "equip_used",
   "section_break_12",
   "tr",
+  "section_break_17",
+  "data_18",
   "amended_from"
  ],
  "fields": [
@@ -115,10 +119,26 @@
    "options": "Lab Thermal Resistivity Test",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_18",
+   "fieldtype": "Data"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-10-19 13:37:46.214175",
+ "links": [],
+ "modified": "2020-12-14 10:54:50.395114",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Lab Thermal Resistivity Test",

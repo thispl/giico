@@ -1,15 +1,52 @@
 {
+ "actions": [],
  "autoname": "BT.####",
  "creation": "2020-11-29 12:44:12.944531",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "cover_letter_section",
+  "date",
+  "to",
+  "report_name",
+  "block",
+  "plot",
+  "column_break_7",
+  "location",
+  "report_ref_no",
+  "client",
+  "owner",
+  "section_break_13",
+  "subject",
+  "message",
+  "regards",
+  "signature",
+  "revision_history",
+  "revision_notes",
+  "section_break_17",
   "bc_table",
+  "test",
   "generate_graph",
   "chart_section_section",
   "chart",
-  "chart_image"
+  "chart_image",
+  "data_7",
+  "field_borehole_log_section",
+  "project",
+  "borehole_no",
+  "drilling_started",
+  "rig_no",
+  "column_break_32",
+  "drilling_finished",
+  "bh_elev",
+  "bh_depth",
+  "spt_hammer",
+  "section_break_36",
+  "bw1",
+  "section_break_38",
+  "bw2",
+  "remarks"
  ],
  "fields": [
   {
@@ -32,15 +69,200 @@
   {
    "fieldname": "chart_image",
    "fieldtype": "Small Text",
+   "hidden": 1,
    "label": "Chart Image"
   },
   {
    "fieldname": "generate_graph",
    "fieldtype": "Button",
    "label": "Generate Graph"
+  },
+  {
+   "default": "0",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "data_7",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "cover_letter_section",
+   "fieldtype": "Section Break",
+   "label": "Cover Letter"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Data",
+   "label": "To"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Small Text",
+   "label": "Message"
+  },
+  {
+   "fieldname": "report_name",
+   "fieldtype": "Data",
+   "label": "Report Name"
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block"
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Data",
+   "label": "Plot"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "report_ref_no",
+   "fieldtype": "Data",
+   "label": "Report Ref No"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Owner"
+  },
+  {
+   "fieldname": "revision_history",
+   "fieldtype": "Table",
+   "label": "Revision History",
+   "options": "Revision History and Approvals"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "revision_notes",
+   "fieldtype": "Small Text",
+   "label": "Revision Notes"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Small Text",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "regards",
+   "fieldtype": "Small Text",
+   "label": "Regards"
+  },
+  {
+   "fieldname": "field_borehole_log_section",
+   "fieldtype": "Section Break",
+   "label": "Field Borehole Log"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "borehole_no",
+   "fieldtype": "Data",
+   "label": "Borehole No"
+  },
+  {
+   "fieldname": "drilling_started",
+   "fieldtype": "Datetime",
+   "label": "Drilling Started"
+  },
+  {
+   "fieldname": "drilling_finished",
+   "fieldtype": "Datetime",
+   "label": "Drilling Finished"
+  },
+  {
+   "fieldname": "bh_elev",
+   "fieldtype": "Data",
+   "label": "BH Elev"
+  },
+  {
+   "fieldname": "bh_depth",
+   "fieldtype": "Data",
+   "label": "BH Depth"
+  },
+  {
+   "fieldname": "bw1",
+   "fieldtype": "Table",
+   "label": "BW1",
+   "options": "BW1"
+  },
+  {
+   "fieldname": "bw2",
+   "fieldtype": "Table",
+   "label": "BW2",
+   "options": "BW2"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_38",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rig_no",
+   "fieldtype": "Data",
+   "label": "Rig No"
+  },
+  {
+   "fieldname": "spt_hammer",
+   "fieldtype": "Data",
+   "label": "SPT Hammer"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
   }
  ],
- "modified": "2020-12-01 10:21:02.674564",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2020-12-31 15:15:47.039608",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "BW Borehole Test",

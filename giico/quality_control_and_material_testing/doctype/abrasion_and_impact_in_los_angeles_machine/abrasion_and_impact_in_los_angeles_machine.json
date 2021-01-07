@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "LA-.YYYY.-06-.####",
  "creation": "2019-10-04 08:12:20.521436",
  "doctype": "DocType",
@@ -11,6 +12,7 @@
   "customer",
   "location",
   "column_break_5",
+  "test",
   "test_date",
   "report_date",
   "department",
@@ -32,6 +34,12 @@
   "tested_by",
   "column_break_23",
   "approved_by",
+  "section_break_29",
+  "collected_by",
+  "column_break_31",
+  "tested_by1",
+  "section_break_33",
+  "data_30",
   "amended_from"
  ],
  "fields": [
@@ -186,10 +194,45 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_30",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by1",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-12 15:02:14.475000",
+ "links": [],
+ "modified": "2020-12-30 08:37:44.289187",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Abrasion and Impact in Los Angeles Machine",

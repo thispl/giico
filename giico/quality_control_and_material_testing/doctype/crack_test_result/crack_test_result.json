@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "C-.YYYY.-06-.####",
  "creation": "2019-10-03 12:25:14.924006",
  "doctype": "DocType",
@@ -12,6 +13,7 @@
   "location",
   "department",
   "column_break_6",
+  "test",
   "test_no",
   "date_of_test",
   "date_of_report",
@@ -23,6 +25,12 @@
   "charts_section",
   "chart",
   "chart_image",
+  "section_break_20",
+  "collected_by",
+  "column_break_22",
+  "tested_by",
+  "section_break_24",
+  "data_21",
   "amended_from"
  ],
  "fields": [
@@ -139,10 +147,45 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_21",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-12 15:02:41.692516",
+ "links": [],
+ "modified": "2020-12-30 08:12:20.491076",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Crack Test Result",

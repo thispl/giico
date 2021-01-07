@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "CTU-.YYYY.-06-.####",
  "creation": "2019-09-30 07:18:47.890926",
  "doctype": "DocType",
@@ -14,6 +15,7 @@
   "location",
   "test_date",
   "report_date",
+  "test",
   "section_break_5",
   "dimensions",
   "owner1",
@@ -28,6 +30,12 @@
   "cs2",
   "section_break_15",
   "remarks",
+  "section_break_25",
+  "collected_by",
+  "column_break_27",
+  "tested_by",
+  "section_break_29",
+  "data_25",
   "amended_from"
  ],
  "fields": [
@@ -164,10 +172,45 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name"
+  },
+  {
+   "fieldname": "data_25",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-12-03 14:38:44.282850",
+ "links": [],
+ "modified": "2020-12-29 16:03:06.189533",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Concrete Tiles Units",

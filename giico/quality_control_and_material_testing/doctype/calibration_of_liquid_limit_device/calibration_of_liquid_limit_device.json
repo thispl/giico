@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "LLD-.YYYY.-06-.####",
  "creation": "2019-09-24 08:25:36.836653",
  "doctype": "DocType",
@@ -10,6 +11,7 @@
   "customer",
   "department",
   "data_3",
+  "test",
   "report_date",
   "calibration_date",
   "next_calibration_on",
@@ -28,6 +30,12 @@
   "section_break_11",
   "overall_calibration_result",
   "note",
+  "section_break_25",
+  "collected_by",
+  "column_break_27",
+  "tested_by",
+  "section_break_29",
+  "data_26",
   "section_break_15",
   "calibrated_by",
   "des1",
@@ -206,10 +214,45 @@
    "fieldname": "note",
    "fieldtype": "Small Text",
    "label": "Note"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_26",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-10 09:41:39.023778",
+ "links": [],
+ "modified": "2020-12-29 12:10:20.471582",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Liquid Limit Device",

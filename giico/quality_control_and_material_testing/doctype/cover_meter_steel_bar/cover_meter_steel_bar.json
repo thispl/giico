@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "CM-.YYYY.-06-.####",
  "creation": "2019-09-30 12:20:29.405066",
  "doctype": "DocType",
@@ -11,6 +12,7 @@
   "customer",
   "location",
   "column_break_4",
+  "test",
   "date_of_test",
   "date_of_report",
   "department",
@@ -22,6 +24,12 @@
   "tested_by",
   "column_break_13",
   "checked_by",
+  "section_break_19",
+  "collected_by",
+  "column_break_21",
+  "tested_by1",
+  "section_break_23",
+  "data_20",
   "amended_from"
  ],
  "fields": [
@@ -128,10 +136,45 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_20",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by1",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-12 15:03:35.342710",
+ "links": [],
+ "modified": "2020-12-30 08:01:01.155488",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Cover Meter Steel Bar",

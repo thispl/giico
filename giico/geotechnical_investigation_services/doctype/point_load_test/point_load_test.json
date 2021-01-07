@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "BH.####",
  "creation": "2019-09-14 07:33:47.665616",
  "doctype": "DocType",
@@ -9,6 +10,7 @@
   "project",
   "customer",
   "column_break_3",
+  "test",
   "date",
   "department",
   "section_break_19",
@@ -34,6 +36,8 @@
   "column_break_26",
   "checked_by",
   "point_load_value",
+  "section_break_31",
+  "data_32",
   "amended_from"
  ],
  "fields": [
@@ -166,7 +170,7 @@
   },
   {
    "fieldname": "department",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Department",
    "options": "Department",
    "reqd": 1
@@ -199,10 +203,26 @@
    "options": "Point Load Test",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_32",
+   "fieldtype": "Data"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-10-19 13:39:30.017843",
+ "links": [],
+ "modified": "2020-12-14 10:58:17.091129",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Point Load Test",

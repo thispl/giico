@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "DS.####",
  "creation": "2019-10-10 09:05:33.519805",
  "doctype": "DocType",
@@ -10,6 +11,7 @@
   "customer",
   "department",
   "column_break_3",
+  "test",
   "location",
   "date_of_test",
   "date_of_report",
@@ -38,6 +40,8 @@
   "chart_image",
   "description",
   "desc",
+  "section_break_35",
+  "data_36",
   "amended_from"
  ],
  "fields": [
@@ -233,10 +237,26 @@
    "options": "Direct Shear Test Result",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_35",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_36",
+   "fieldtype": "Data"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-10-19 13:37:23.272134",
+ "links": [],
+ "modified": "2020-12-14 11:02:00.054490",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Direct Shear Test Result",

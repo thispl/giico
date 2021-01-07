@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "LWC-.YYYY.-06-.####",
  "creation": "2019-09-28 09:41:09.516936",
  "doctype": "DocType",
@@ -11,6 +12,7 @@
   "customer",
   "department",
   "column_break_3",
+  "test",
   "location",
   "date",
   "section_break_6",
@@ -28,6 +30,12 @@
   "viewed_by",
   "column_break_18",
   "approved_by",
+  "section_break_25",
+  "collected_by",
+  "column_break_27",
+  "tested_by",
+  "section_break_29",
+  "data_26",
   "amended_from"
  ],
  "fields": [
@@ -162,10 +170,45 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_26",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-12 14:07:44.300157",
+ "links": [],
+ "modified": "2020-12-29 15:40:00.210612",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Location Wise Concrete Pour Record",

@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "OB.####",
  "creation": "2019-08-09 08:37:43.394793",
  "doctype": "DocType",
@@ -8,10 +9,13 @@
   "project",
   "customer",
   "column_break_3",
+  "test",
   "location",
   "department",
   "section_break_2",
-  "table_1"
+  "table_1",
+  "section_break_9",
+  "data_10"
  ],
  "fields": [
   {
@@ -60,9 +64,25 @@
    "label": "Customer",
    "options": "Customer",
    "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_10",
+   "fieldtype": "Data"
   }
  ],
- "modified": "2019-12-24 14:50:03.011218",
+ "links": [],
+ "modified": "2020-12-14 11:11:05.770056",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Ground Water Level Observations",

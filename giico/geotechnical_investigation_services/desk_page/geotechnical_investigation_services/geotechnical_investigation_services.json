@@ -1,0 +1,34 @@
+{
+ "cards": [
+  {
+   "hidden": 0,
+   "label": "Geotechnical Investigation Services",
+   "links": "[\n    {\n        \n        \"label\": \"Project\",\n        \"name\": \"Project\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Customer\",\n        \"name\": \"Customer\",\n        \"type\": \"doctype\"\n    },\n      {\n        \n        \"label\": \"Quotation\",\n        \"name\": \"Quotation\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Sales Order\",\n        \"name\": \"Sales Order\",\n        \"type\": \"doctype\"\n    },\n      {\n        \n        \"label\": \"Daily Report\",\n        \"name\": \"Daily Report GT\",\n        \"type\": \"doctype\"\n    },\n      {\n    \n        \"label\": \"Job Form GT\",\n        \"name\": \"Job Form GT\",\n        \"type\": \"doctype\"\n    }\n]"
+  },
+  {
+   "hidden": 0,
+   "label": "Test",
+   "links": "[\n  \n    {\n        \n        \"label\": \"Borehole\",\n        \"name\": \"Borehole\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"BW Borehole Test\",\n        \"name\": \"BW Borehole Test\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"BW Driller Report on BH and Sample\",\n        \"name\": \"BW Driller Report on BH and Sample\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Thermal Resistivity Test Result\",\n        \"name\": \"Thermal Resistivity Test Result\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Crosshole Test\",\n        \"name\": \"Crosshole Test\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Field Permeability Test\",\n        \"name\": \"Field Permeability Test\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Downhole Test\",\n        \"name\": \"Downhole Test\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Falling Head Method\",\n        \"name\": \"Falling Head Method\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Field Electrical Resistivity\",\n        \"name\": \"Field Electrical Resistivity\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Electrical Resistivity Test\",\n        \"name\": \"Electrical Resistivity Test\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Constant Head Permeability Test\",\n        \"name\": \"Constant Head Permeability Test\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Point Load Test\",\n        \"name\": \"Point Load Test\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Chemical Tests\",\n        \"name\": \"Chemical Tests\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Falling Head Permeability Test\",\n        \"name\": \"Falling Head Permeability Test\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Lab Test Allocation\",\n        \"name\": \"Lab Test Allocation\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Thermal Resistivity Result\",\n        \"name\": \"Thermal Resistivity Result\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Lab Thermal Resistivity Test\",\n        \"name\": \"Lab Thermal Resistivity Test\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Plate Loading Test\",\n        \"name\": \"Plate Loading Test\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Direct Shear Test Result\",\n        \"name\": \"Direct Shear Test Result\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Field CBR\",\n        \"name\": \"Field CBR\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Collapse Potential Tests\",\n        \"name\": \"Collapse Potential Tests\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"FDT Calculations\",\n        \"name\": \"FDT Calculations\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Field Electrical Resistivity Normal\",\n        \"name\": \"Field Electrical Resistivity Normal\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Shear Test\",\n        \"name\": \"Shear Test\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Lab TRT Result\",\n        \"name\": \"Lab TRT Result\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Lab TRT\",\n        \"name\": \"Lab TRT\",\n        \"type\": \"doctype\"\n    },\n     {\n    \n        \"label\": \"Dynamic Cone Penetration Test\",\n        \"name\": \"Dynamic Cone Penetration Test\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Lab Test Allocation Tool\",\n        \"name\": \"Lab Test Allocation Tool\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Unconfined Compressive Strength of Soil\",\n        \"name\": \"Unconfined Compressive Strength of Soil\",\n        \"type\": \"doctype\"\n    },\n    {\n    \n        \"label\": \"Ground Water Level Observations\",\n        \"name\": \"Ground Water Level Observations\",\n        \"type\": \"doctype\"\n    }\n]"
+  }
+ ],
+ "category": "Modules",
+ "charts": [],
+ "creation": "2020-12-04 20:09:20.759197",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Desk Page",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_standard": 1,
+ "label": "Geotechnical Investigation Services",
+ "modified": "2020-12-21 10:28:22.998552",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Geotechnical Investigation Services",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": []
+}

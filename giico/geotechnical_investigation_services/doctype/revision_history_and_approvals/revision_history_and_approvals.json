@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "creation": "2020-12-10 11:52:48.912521",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rev",
+  "date",
+  "description",
+  "prepared_by",
+  "reviewed_approved_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rev"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prepared By"
+  },
+  {
+   "fieldname": "reviewed_approved_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reviewed & Approved By"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2020-12-10 11:59:08.658526",
+ "modified_by": "Administrator",
+ "module": "Geotechnical Investigation Services",
+ "name": "Revision History and Approvals",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

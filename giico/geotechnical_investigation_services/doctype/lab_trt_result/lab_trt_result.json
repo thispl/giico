@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "creation": "2019-09-13 07:31:37.237797",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,10 +10,13 @@
   "thermal_1",
   "thermal_2",
   "column_break_5",
+  "test",
   "thermal_3",
   "average_con",
   "thermal_res",
   "location_en",
+  "section_break_11",
+  "data_12",
   "amended_from"
  ],
  "fields": [
@@ -78,10 +82,26 @@
    "options": "Lab TRT Result",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_12",
+   "fieldtype": "Data"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-10-19 13:36:08.509977",
+ "links": [],
+ "modified": "2020-12-14 11:07:42.965693",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Lab TRT Result",

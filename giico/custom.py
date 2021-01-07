@@ -9,6 +9,7 @@ from frappe.utils import formatdate, getdate, cint, add_months, date_diff, add_d
 from frappe.utils.xlsxutils import make_xlsx
 import requests
 from frappe.desk.form.load import get_attachments
+from frappe.utils.csvutils import read_csv_content
 
 @frappe.whitelist()
 def mark_timesheet(employees,date,project,hours):
@@ -77,7 +78,53 @@ def attendance(names,status):
 @frappe.whitelist()
 def assign():
     assign = frappe.get_all("Project")
+
+@frappe.whitelist()
+def test_in_project(project):
+    test=frappe.db.sql("""select `tabDocType`.name,`tabDocType`.Module Def FROM `tabDocType`
+    LEFT JOIN `tabDocField` ON `tabDocType`.name =`tabDocField`.parent 
+    where `tabDocField`.fieldname='test' && `tabDocField`.fieldtype='check' """,as_dict=True)
+    list1=[]
+    # frappe.errprint(test)
+    for i in test:
+        a=frappe.db.exists(i["name"],{"project":project})
+        if a:
+            l = {
+                "name":i["name"],
+                "id":a
+            }
+            list1.append(l)
+    return list1
     
 
-
            
+@frappe.whitelist()
+def test_hooks(doc,method):
+    frappe.errprint(doc)
+
+def bulk_update_from_csv(filename):
+    #below is the method to get file from Frappe File manager
+    from frappe.utils.file_manager import get_file
+    #Method to fetch file using get_doc and stored as _file
+    _file = frappe.get_doc("File", {"file_name": filename})
+    #Path in the system
+    filepath = get_file(filename)
+    #CSV Content stored as pps
+
+    pps = read_csv_content(filepath[1])
+    count = 0
+    for pp in pps:
+        print(pp[0])
+        # ld = frappe.db.exists("Lead",{'name':pp[0]})
+        # if ld:
+        #     # items = frappe.get_all("Lead",{'name':pp[0]})
+        #     # for item in items:
+        #     i = frappe.get_doc('Lead',pp[0])
+        #     if not i.contac%t_by:
+        #         i.contact_date = pp[1]
+        #         print(pp[1])
+                # i.append("supplier_items",{
+                #     'supplier' : pp[1]
+                # })
+                # i.save(ignore_permissions=True)
+                # frappe.db.commit()    

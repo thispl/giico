@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "MTA-.YYYY.-06-.####",
  "creation": "2019-10-01 13:45:03.197926",
  "doctype": "DocType",
@@ -13,6 +14,7 @@
   "column_break_3",
   "sample_date",
   "date_test",
+  "test",
   "column_break_5",
   "description",
   "material",
@@ -32,6 +34,12 @@
   "bend_test",
   "section_break_15",
   "remarks",
+  "section_break_29",
+  "collected_by",
+  "column_break_31",
+  "tested_by",
+  "section_break_33",
+  "data_30",
   "amended_from"
  ],
  "fields": [
@@ -190,10 +198,45 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_30",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-12 15:25:09.352510",
+ "links": [],
+ "modified": "2020-12-30 07:48:43.199306",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Mechanical Test ASTM",

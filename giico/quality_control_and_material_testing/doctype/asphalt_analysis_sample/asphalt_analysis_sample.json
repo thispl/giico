@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "AS-.YYYY.-06-.####",
  "creation": "2019-10-12 08:10:05.370432",
  "doctype": "DocType",
@@ -11,6 +12,7 @@
   "customer",
   "department",
   "column_break_4",
+  "test",
   "location",
   "asp_laying_date",
   "report_date",
@@ -58,6 +60,12 @@
   "tested_by",
   "column_break_32",
   "materials_engineer",
+  "section_break_55",
+  "collected_by",
+  "column_break_57",
+  "tested_by1",
+  "section_break_59",
+  "data_56",
   "amended_from"
  ],
  "fields": [
@@ -347,10 +355,45 @@
    "fieldname": "job_mix",
    "fieldtype": "Data",
    "label": "Job Mix \u00b1"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_55",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_56",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_57",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by1",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_59",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-19 10:11:58.029967",
+ "links": [],
+ "modified": "2020-12-29 14:28:54.250278",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Asphalt Analysis Sample",

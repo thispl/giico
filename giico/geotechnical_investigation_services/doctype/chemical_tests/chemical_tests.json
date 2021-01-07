@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "CT.####",
  "creation": "2019-09-13 11:44:21.674031",
  "doctype": "DocType",
@@ -9,10 +10,13 @@
   "project",
   "customer",
   "column_break_3",
+  "test",
   "department",
   "title",
   "section_break_5",
   "chemical_test",
+  "section_break_10",
+  "data_11",
   "amended_from"
  ],
  "fields": [
@@ -76,10 +80,26 @@
    "options": "Chemical Tests",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_11",
+   "fieldtype": "Data"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-10-19 13:39:10.152924",
+ "links": [],
+ "modified": "2020-12-14 10:53:11.544099",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Chemical Tests",

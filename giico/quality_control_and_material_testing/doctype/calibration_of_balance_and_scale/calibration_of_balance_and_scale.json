@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "BS-.YYYY.-06-.####",
  "creation": "2019-10-05 12:59:41.831160",
  "doctype": "DocType",
@@ -10,6 +11,7 @@
   "customer",
   "department",
   "column_break_3",
+  "test",
   "calibration_date",
   "report_date",
   "section_break_6",
@@ -26,6 +28,12 @@
   "calibrated_by",
   "column_break_15",
   "checked_by",
+  "section_break_23",
+  "collected_by",
+  "column_break_25",
+  "tested_by",
+  "section_break_27",
+  "data_24",
   "amended_from"
  ],
  "fields": [
@@ -152,10 +160,45 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_24",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-06 10:13:53.929372",
+ "links": [],
+ "modified": "2020-12-29 14:10:16.648325",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Balance and Scale",

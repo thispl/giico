@@ -1,0 +1,50 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Expense Claim Type",
+  "enabled": 1,
+  "modified": "2020-12-23 12:01:03.098461",
+  "name": "Expense Claim Type-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on(\"Expense Claim Type\", {\r\n\trefresh: function(frm) {\r\n\t\tfrm.fields_dict[\"accounts\"].grid.get_field(\"default_account\").get_query = function(doc, cdt, cdn) {\r\n\t\t\tvar d = locals[cdt][cdn];\r\n\t\t\treturn {\r\n\t\t\t\tfilters: {\r\n\t\t\t\t\t\"is_group\": 0,\r\n\t\t\t\t\t// \"root_type\": frm.doc.deferred_expense_account ? \"Asset\" : \"Expense\",\r\n\t\t\t\t\t\"account_type\": [\"in\",\"Cost of Goods Sold,Expense Account\"],\r\n\t\t\t\t\t'company': d.company\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n})"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Purchase Order",
+  "enabled": 1,
+  "modified": "2020-12-26 10:20:30.310159",
+  "name": "Purchase Order-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Purchase Order', {\n    onload(frm){\n        frm.set_value(\"expense_account\",\"2010120 - Purchase Clearing Account - GIICO\")\n    },\n\tvalidate(frm) {\n\t\t// your code here\n\t\t$.each(frm.doc.items,function(i,d){\n\t\t    d.expense_account = frm.doc.expense_account,\n\t\t    d.cost_center = frm.doc.cost_center,\n\t\t    d.project = frm.doc.project\n\t\t})\n\t}\n})\n"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Expense Claim",
+  "enabled": 1,
+  "modified": "2020-12-23 13:08:27.212277",
+  "name": "Expense Claim-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on(\"Expense Claim\", {\r\n\temployee: function(frm) {\r\n\t\tfrm.set_value(\"payable_account\",\"2010102 - AP-Employees - GIICO\")\r\n\t}\r\n})"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Stock Entry",
+  "enabled": 1,
+  "modified": "2020-12-28 10:58:38.891185",
+  "name": "Stock Entry-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Stock Entry', {\n\trefresh(frm) {\n\t\t// your code here\n\t\tfrm.set_query(\"expense_account\", function() {\n\t\t\treturn {\n\t\t\t\tfilters: {\n\t\t\t\t\t\"is_group\": 0,\n\t\t\t\t\t\"account_type\": [\"in\",\"Cost of Goods Sold,Expense Account\"],\n\t\t\t\t}\n\t\t\t};\n\t\t});\n\t}\n\t\n})"
+ }
+]

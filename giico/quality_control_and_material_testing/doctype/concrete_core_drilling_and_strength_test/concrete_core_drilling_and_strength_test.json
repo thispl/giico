@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "CCD-.YYYY.-06-.####",
  "creation": "2019-10-15 08:54:44.407302",
  "doctype": "DocType",
@@ -12,6 +13,7 @@
   "customer",
   "column_break_4",
   "location",
+  "test",
   "report_date",
   "test_date",
   "section_break_7",
@@ -80,6 +82,8 @@
   "tested_by",
   "column_break_51",
   "approved_by",
+  "section_break_77",
+  "data_78",
   "amended_from"
  ],
  "fields": [
@@ -485,10 +489,26 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_77",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_78",
+   "fieldtype": "Data"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-12-03 14:28:44.844161",
+ "links": [],
+ "modified": "2020-12-14 10:16:29.016600",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Concrete Core Drilling And Strength Test",

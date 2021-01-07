@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "creation": "2020-12-31 14:16:31.844973",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "depth",
+  "sample_no",
+  "sample_type",
+  "blow1",
+  "penetration1",
+  "blow2",
+  "penetration2",
+  "blow3",
+  "penetration3",
+  "n_value",
+  "soil_classification",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "depth",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Depth"
+  },
+  {
+   "fieldname": "sample_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample No"
+  },
+  {
+   "fieldname": "sample_type",
+   "fieldtype": "Data",
+   "label": "Sample Type"
+  },
+  {
+   "fieldname": "blow1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Blow1"
+  },
+  {
+   "fieldname": "penetration1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Penetration1"
+  },
+  {
+   "fieldname": "blow2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Blow2"
+  },
+  {
+   "fieldname": "penetration2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Penetration2"
+  },
+  {
+   "fieldname": "blow3",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Blow3"
+  },
+  {
+   "fieldname": "penetration3",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Penetration3"
+  },
+  {
+   "fieldname": "n_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "N Value"
+  },
+  {
+   "fieldname": "soil_classification",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Soil Classification"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2020-12-31 14:18:05.217022",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "BW2",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

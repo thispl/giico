@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "FHM.####",
  "creation": "2019-09-19 13:06:34.917828",
  "doctype": "DocType",
@@ -8,6 +9,7 @@
   "project",
   "customer",
   "column_break_3",
+  "test",
   "department",
   "test_id",
   "bore_no",
@@ -36,6 +38,8 @@
   "generate_graph",
   "chart",
   "chart_image",
+  "section_break_33",
+  "data_34",
   "amended_from"
  ],
  "fields": [
@@ -211,10 +215,26 @@
    "options": "Falling Head Method",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_34",
+   "fieldtype": "Data"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-10-19 13:40:44.633992",
+ "links": [],
+ "modified": "2020-12-14 10:38:39.502367",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Falling Head Method",

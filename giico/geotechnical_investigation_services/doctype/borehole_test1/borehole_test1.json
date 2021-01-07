@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "creation": "2020-11-26 09:44:12.408250",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -7,7 +8,12 @@
   "depthm",
   "sample",
   "sample_type",
-  "blow_penetrationnmm",
+  "blow1",
+  "penetration1",
+  "blow2",
+  "penetration2",
+  "blow3",
+  "penetration3",
   "recoverymm",
   "soil_description",
   "date_time",
@@ -33,12 +39,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Sample Type"
-  },
-  {
-   "fieldname": "blow_penetrationnmm",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Blow/Penetration(N/mm)"
   },
   {
    "fieldname": "recoverymm",
@@ -75,10 +75,45 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Remarks"
+  },
+  {
+   "fieldname": "blow1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Blow 1"
+  },
+  {
+   "columns": 1,
+   "fieldname": "blow2",
+   "fieldtype": "Data",
+   "label": "Blow2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "blow3",
+   "fieldtype": "Data",
+   "label": "Blow3"
+  },
+  {
+   "fieldname": "penetration1",
+   "fieldtype": "Data",
+   "label": "Penetration1"
+  },
+  {
+   "fieldname": "penetration2",
+   "fieldtype": "Data",
+   "label": "Penetration2"
+  },
+  {
+   "fieldname": "penetration3",
+   "fieldtype": "Data",
+   "label": "Penetration3"
   }
  ],
+ "index_web_pages_for_search": 1,
  "istable": 1,
- "modified": "2020-11-26 10:07:41.095146",
+ "links": [],
+ "modified": "2020-12-16 13:11:10.160269",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Borehole Test1",

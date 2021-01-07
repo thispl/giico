@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "CSE-.YYYY.-06-.####",
  "creation": "2019-09-25 07:51:39.103453",
  "doctype": "DocType",
@@ -9,6 +10,7 @@
   "project_name",
   "customer",
   "column_break_3",
+  "test",
   "date",
   "department",
   "column_break_5",
@@ -18,6 +20,12 @@
   "read_point",
   "section_break_9",
   "remarks",
+  "section_break_15",
+  "collected_by",
+  "column_break_17",
+  "tested_by",
+  "section_break_19",
+  "data_16",
   "amended_from"
  ],
  "fields": [
@@ -104,10 +112,45 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_16",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-06 10:32:49.280357",
+ "links": [],
+ "modified": "2020-12-29 13:13:44.766052",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Sand Equivalent",

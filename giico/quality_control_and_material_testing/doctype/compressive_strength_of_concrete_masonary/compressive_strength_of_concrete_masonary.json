@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "CSCM-.YYYY.-06-.####",
  "creation": "2019-09-27 12:05:40.323950",
  "doctype": "DocType",
@@ -11,6 +12,7 @@
   "customer",
   "department",
   "section_break_4",
+  "test",
   "test_date",
   "product_date",
   "report_date",
@@ -25,6 +27,12 @@
   "average1",
   "section_break_16",
   "remarks",
+  "section_break_22",
+  "collected_by",
+  "column_break_24",
+  "tested_by",
+  "section_break_26",
+  "data_23",
   "amended_from"
  ],
  "fields": [
@@ -147,10 +155,45 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_23",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_26",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-12 09:35:06.084156",
+ "links": [],
+ "modified": "2020-12-30 09:02:04.676445",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Compressive Strength of Concrete Masonary",

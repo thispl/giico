@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "BWDF.####",
  "creation": "2020-11-26 13:48:52.551099",
  "doctype": "DocType",
@@ -52,11 +53,13 @@
   {
    "fieldname": "client",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Client"
   },
   {
    "fieldname": "owner",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Owner"
   },
   {
@@ -66,6 +69,7 @@
   {
    "fieldname": "location",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Location"
   },
   {
@@ -110,7 +114,9 @@
    "options": "I\nII\nIII\nIV\nV\nVI\nVII\nVIII\nIX\nX\nXI\nXII\nXVIII\nXIV\nXVI\nXVII"
   }
  ],
- "modified": "2020-11-26 14:41:39.062512",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2020-12-12 11:11:29.637470",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "BW Daily Field Report",

@@ -1,8 +1,11 @@
 // Copyright (c) 2019, VHRS and contributors
 // For license information, please see license.txt
 frappe.ui.form.on('FDT', {
+	// validate:function (frm){
+	// frm.set_value("datetime",frappe.datetime.now_datetime())
+	// },
 	refresh: function (frm) {
-		cur_frm.page.hide_menu()
+		// cur_frm.page.hide_menu()
 		frm.add_custom_button(__("Print"), function () {
 			var f_name = frm.doc.name
 			var print_format = "FDT";
@@ -18,11 +21,13 @@ frappe.ui.form.on('FDT', {
 		})
 		var child1 = frm.doc.sand_cone_test_data
 		frm.trigger("load_desc")
-
+		
+		
 	},
 	onload: function (frm) {
 		frm.trigger("load_desc")
 	},
+	    
 
 	load_desc: function (frm) {
 		if (frm.doc.description != 1) {
@@ -66,7 +71,7 @@ frappe.ui.form.on('FDT', {
 	// 	cur_frm.get_field("fdt_test_2").grid.grid_rows[2].columns.test_no5.df.read_only = 1	
 	// },
 
-
+    
 	calculate1: function (frm) {
 		frm.events.wt_of_sand_in_plate_and_cone(frm, frm.doc.fdt__test)
 		frm.events.bulk_density_of_sand(frm, frm.doc.fdt__test)
@@ -106,17 +111,17 @@ frappe.ui.form.on('FDT', {
 	calculate: function (frm, method) {
 		var child = method
 		for (var i = 0; i < child.length; i++) {
-			child[2].test_no1.toFixed(3) = child[0].test_no1.toFixed(3) - child[1].test_no1.toFixed(3)// wt_sand_hole_cone_plate = appt_with_sand - appt_remaining_sand
-			child[5].test_no1.toFixed(3) = child[2].test_no1.toFixed(3) - child[3].test_no1.toFixed(3) // wt_sand_hole = wt_sand_hole_cone_plate - wt_sand_cone_plate
-			child[6].test_no1.toFixed(3) = child[5].test_no1.toFixed(3) / child[4].test_no1.toFixed(3) // volume_test_hole = wt_sand_hole / bulk_density_of_sand
-			child[9].test_no1.toFixed(3) = child[7].test_no1.toFixed(3) - child[8].test_no1.toFixed(3) // Wt. of wet soil from hole = Wt. of tare - Wt. of wet soil from hole+tare
-			child[10].test_no1.toFixed(3) = child[9].test_no1.toFixed(3) / child[6].test_no1.toFixed(3) // Wet density = Wt. of wet soil from hole / Volume of test hole
-			if (child[11].test_no1.toFixed(3)) {
-				child[12].test_no1.toFixed(3) = child[10].test_no1 / (1 + (child[11].test_no1 / 100)) //dry-density
+			child[2].test_no1 = child[0].test_no1- child[1].test_no1// wt_sand_hole_cone_plate = appt_with_sand - appt_remaining_sand
+			child[5].test_no1 = child[2].test_no1 - child[3].test_no1 // wt_sand_hole = wt_sand_hole_cone_plate - wt_sand_cone_plate
+			child[6].test_no1 = child[5].test_no1 / child[4].test_no1// volume_test_holeTea = wt_sand_hole / bulk_density_of_sand
+			child[9].test_no1 = child[7].test_no1 - child[8].test_no1 // Wt. of wet soil from hole = Wt. of tare - Wt. of wet soil from hole+tare
+			child[10].test_no1= child[9].test_no1 / child[6].test_no1 // Wet density = Wt. of wet soil from hole / Volume of test hole
+			if (child[11].test_no1) {
+				child[12].test_no1= child[10].test_no1 / (1 + (child[11].test_no1 / 100)) //dry-density
 			}
-			child[16].test_no1.toFixed(3) = (100 * child[12].test_no1 / child[14].test_no1)
+			child[16].test_no1 = (100 * child[12].test_no1 / child[14].test_no1)
 
-			if (child[15].test_no1.toFixed(3)) {
+			if (child[15].test_no1) {
 				if (child[16].test_no1 < child[15].test_no1) {
 					child[17].test_no1 = 'Fail'
 				}
@@ -216,10 +221,13 @@ frappe.ui.form.on('FDT', {
 				else {
 					child[17].test_no5 = 'Pass'
 				}
+				
 			}
 		}
-		refresh_many(["fdt__test", "fdt_test_2", "fdt_test_3", "fedt_test4"])
+		frm.set_value("datetime",frappe.datetime.now_datetime())
 	}
+	
+	
 })
 
 frappe.ui.form.on('FDT Test 1', {

@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "GC-.YYYY.-06-.####",
  "creation": "2019-10-03 07:20:19.678908",
  "doctype": "DocType",
@@ -12,6 +13,7 @@
   "department",
   "column_break_6",
   "location",
+  "test",
   "report_date",
   "test_date",
   "section_break_6",
@@ -34,6 +36,12 @@
   "avg_s2",
   "remarks_section",
   "small_text_18",
+  "section_break_31",
+  "collected_by",
+  "column_break_33",
+  "tested_by",
+  "section_break_35",
+  "data_32",
   "amended_from"
  ],
  "fields": [
@@ -201,10 +209,45 @@
    "fieldname": "test_date",
    "fieldtype": "Date",
    "label": "Test Date"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_32",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_35",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-12-03 14:31:57.413834",
+ "links": [],
+ "modified": "2020-12-29 16:23:28.806989",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Compressive Strength of Grout Cubes",

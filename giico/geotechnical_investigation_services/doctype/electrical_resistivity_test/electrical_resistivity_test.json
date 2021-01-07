@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "ERT.####",
  "creation": "2019-08-04 16:33:03.067659",
  "doctype": "DocType",
@@ -10,6 +11,7 @@
   "customer",
   "location",
   "column_break_3",
+  "test",
   "date",
   "department",
   "section_break_5",
@@ -32,6 +34,8 @@
   "charts_section",
   "charts",
   "chart_image",
+  "section_break_29",
+  "data_30",
   "amended_from"
  ],
  "fields": [
@@ -191,10 +195,26 @@
    "options": "Electrical Resistivity Test",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_30",
+   "fieldtype": "Data"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-10-19 13:40:15.935369",
+ "links": [],
+ "modified": "2020-12-14 10:43:00.263526",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Electrical Resistivity Test",

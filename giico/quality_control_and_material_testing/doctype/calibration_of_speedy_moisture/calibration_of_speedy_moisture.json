@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "CSM-.YYYY.-06-.####",
  "creation": "2019-09-26 07:57:19.206638",
  "doctype": "DocType",
@@ -10,6 +11,7 @@
   "customer",
   "column_break_3",
   "calibration_date",
+  "test",
   "department",
   "column_break_4",
   "serial_no",
@@ -25,6 +27,12 @@
   "charts_section",
   "chart",
   "chart_image",
+  "section_break_24",
+  "collected_by",
+  "column_break_25",
+  "tested_by",
+  "section_break_21",
+  "data_21",
   "amended_from"
  ],
  "fields": [
@@ -146,10 +154,45 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name"
+  },
+  {
+   "fieldname": "data_21",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "test",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Test"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Data",
+   "label": "Collected By"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-12-01 08:34:15.330490",
+ "links": [],
+ "modified": "2020-12-29 10:23:03.145511",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Speedy Moisture",

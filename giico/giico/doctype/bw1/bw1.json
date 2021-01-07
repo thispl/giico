@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "creation": "2020-12-31 08:44:25.564221",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gwl",
+  "measured_date",
+  "measured_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "gwl",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "GWL"
+  },
+  {
+   "fieldname": "measured_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Measured Date"
+  },
+  {
+   "fieldname": "measured_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Measured Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2020-12-31 14:18:22.457480",
+ "modified_by": "Administrator",
+ "module": "Giico",
+ "name": "BW1",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

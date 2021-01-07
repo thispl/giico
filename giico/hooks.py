@@ -73,18 +73,20 @@ app_include_js = "/assets/giico/js/apexcharts.js"
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
-boot_session = "giico.custom.redirect_technicians"
+#boot_session = "giico.custom.redirect_technicians"
 # Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+    "Purchase Receipt": {
+        "on_submit": "giico.accounting.create_purchase_receipt_je"
+    },
+    "Stock Entry": {
+        "on_submit": "giico.accounting.create_material_issue_je"
+    }
+}
+
 
 # Scheduled Tasks
 # ---------------
@@ -118,4 +120,6 @@ boot_session = "giico.custom.redirect_technicians"
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "giico.event.get_events"
 # }
+
+fixtures = [ 'Custom Script', 'Custom Field']
 
