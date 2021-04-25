@@ -11,6 +11,7 @@
   "project_name",
   "customer",
   "location",
+  "project_client",
   "column_break_4",
   "test",
   "testing_date",
@@ -41,8 +42,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Project ",
-   "options": "Project",
-   "reqd": 1
+   "options": "Project"
   },
   {
    "fieldname": "location",
@@ -127,8 +127,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "default": "0",
@@ -150,7 +149,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "default": "1",
@@ -165,7 +164,8 @@
   },
   {
    "fieldname": "data_23",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "fieldname": "collected_by",
@@ -185,11 +185,16 @@
   {
    "fieldname": "section_break_26",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-30 08:57:48.375616",
+ "modified": "2021-01-26 16:57:18.141400",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Organic Matter of Chemical Test on Soil Sample",

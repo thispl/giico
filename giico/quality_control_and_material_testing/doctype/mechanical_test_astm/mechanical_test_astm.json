@@ -11,6 +11,7 @@
   "project_name",
   "customer",
   "department",
+  "project_client",
   "column_break_3",
   "sample_date",
   "date_test",
@@ -47,9 +48,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project  ",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project  (GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.department",
@@ -174,8 +174,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "default": "0",
@@ -197,7 +196,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "default": "1",
@@ -212,7 +211,8 @@
   },
   {
    "fieldname": "data_30",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "fieldname": "collected_by",
@@ -232,11 +232,16 @@
   {
    "fieldname": "section_break_33",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-30 07:48:43.199306",
+ "modified": "2021-01-26 16:06:17.624728",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Mechanical Test ASTM",

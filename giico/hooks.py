@@ -83,7 +83,9 @@ doc_events = {
         "on_submit": "giico.accounting.create_purchase_receipt_je"
     },
     "Stock Entry": {
-        "on_submit": "giico.accounting.create_material_issue_je"
+        "on_submit" :[
+        "giico.accounting.create_material_issue_je",
+        "giico.accounting.create_material_receipt_je"]
     }
 }
 

@@ -9,6 +9,7 @@
   "project",
   "customer",
   "column_break_3",
+  "project_client",
   "test",
   "location",
   "department",
@@ -22,9 +23,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fieldname": "column_break_3",
@@ -62,8 +62,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "default": "1",
@@ -78,11 +77,17 @@
   },
   {
    "fieldname": "data_10",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "links": [],
- "modified": "2020-12-14 11:11:05.770056",
+ "modified": "2021-01-26 16:09:36.465292",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Ground Water Level Observations",

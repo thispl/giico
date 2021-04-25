@@ -11,6 +11,7 @@
   "project_name",
   "customer",
   "department",
+  "project_client",
   "test",
   "test_date",
   "report_date",
@@ -53,9 +54,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fieldname": "location",
@@ -204,8 +204,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "default": "0",
@@ -232,7 +231,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "fieldname": "expired_of_calibration",
@@ -253,7 +252,8 @@
   },
   {
    "fieldname": "data_37",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "fieldname": "collected_by",
@@ -269,11 +269,16 @@
   {
    "fieldname": "section_break_36",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2021-01-07 14:14:43.593621",
+ "modified": "2021-01-26 16:44:44.136014",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Compressive Strength of Concrete Cubes",

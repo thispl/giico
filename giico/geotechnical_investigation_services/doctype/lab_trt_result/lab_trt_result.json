@@ -17,7 +17,8 @@
   "location_en",
   "section_break_11",
   "data_12",
-  "amended_from"
+  "amended_from",
+  "project_client"
  ],
  "fields": [
   {
@@ -97,11 +98,16 @@
   {
    "fieldname": "data_12",
    "fieldtype": "Data"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 11:07:42.965693",
+ "modified": "2021-01-25 13:32:55.257217",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Lab TRT Result",

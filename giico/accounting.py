@@ -51,3 +51,26 @@ def create_material_issue_je(doc,method):
         je.save(ignore_permissions=True)
         je.submit()
         frappe.db.commit()
+
+@frappe.whitelist()
+def create_material_receipt_je(doc,method):
+    if doc.stock_entry_type == 'Material Receipt':
+        debit_ac = frappe.get_value('Warehouse',doc.to_warehouse,'account')
+        credit_ac = doc.credit_account
+        je = frappe.new_doc('Journal Entry')
+        je.entry_type = 'Journal Entry'
+        je.posting_date = doc.posting_date
+        je.append("accounts", {
+            "account": debit_ac,
+            "cost_center": doc.cost_center,
+            "project": doc.project,
+            "debit_in_account_currency": doc.total_incoming_value
+        })
+        je.append("accounts", {
+            "account": credit_ac,
+            "project": doc.project,
+            "credit_in_account_currency": doc.total_incoming_value
+        })
+        je.save(ignore_permissions=True)
+        je.submit()
+        frappe.db.commit()

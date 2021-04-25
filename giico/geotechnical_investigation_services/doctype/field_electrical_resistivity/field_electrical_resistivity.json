@@ -7,15 +7,15 @@
  "engine": "InnoDB",
  "field_order": [
   "project",
-  "customer",
+  "project_name",
   "department",
   "column_break_15",
   "test",
+  "project_client",
   "date_tested",
   "location1",
   "section_break_6",
   "test_no",
-  "job_no",
   "section_break_9",
   "fer_test",
   "generate_graph",
@@ -38,9 +38,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fieldname": "column_break_15",
@@ -74,13 +73,6 @@
    "fieldname": "test_no",
    "fieldtype": "Int",
    "label": "Test No"
-  },
-  {
-   "fieldname": "job_no",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Job No",
-   "reqd": 1
   },
   {
    "fieldname": "section_break_9",
@@ -149,15 +141,6 @@
    "label": "designation"
   },
   {
-   "fetch_from": "project.customer",
-   "fieldname": "customer",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
-  },
-  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -179,12 +162,26 @@
   },
   {
    "fieldname": "data_25",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name(GIICO)",
+   "read_only": 1
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:39:06.513853",
+ "modified": "2021-03-24 10:41:50.763498",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Field Electrical Resistivity",

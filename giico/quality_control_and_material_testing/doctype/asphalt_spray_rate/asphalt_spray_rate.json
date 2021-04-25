@@ -11,6 +11,7 @@
   "project_name",
   "customer",
   "department",
+  "project_client",
   "column_break_4",
   "test",
   "date_test",
@@ -40,9 +41,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fieldname": "location",
@@ -150,7 +150,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "default": "1",
@@ -165,7 +165,8 @@
   },
   {
    "fieldname": "data_23",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "fieldname": "collected_by",
@@ -185,11 +186,16 @@
   {
    "fieldname": "section_break_26",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-29 14:23:23.163723",
+ "modified": "2021-01-26 15:50:21.642928",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Asphalt Spray Rate",

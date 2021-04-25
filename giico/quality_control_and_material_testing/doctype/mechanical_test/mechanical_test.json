@@ -11,6 +11,7 @@
   "project_name",
   "customer",
   "department",
+  "project_client",
   "column_break_3",
   "date_test",
   "test",
@@ -44,9 +45,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project  ",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project (GIICO)",
+   "options": "Project"
   },
   {
    "fieldname": "sample_lab",
@@ -158,8 +158,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "default": "0",
@@ -181,7 +180,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "default": "1",
@@ -196,7 +195,8 @@
   },
   {
    "fieldname": "data_27",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "fieldname": "collected_by",
@@ -216,11 +216,16 @@
   {
    "fieldname": "section_break_30",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-29 16:11:15.052124",
+ "modified": "2021-01-26 16:02:41.514454",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Mechanical Test",

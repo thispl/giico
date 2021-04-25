@@ -11,6 +11,7 @@
   "customer",
   "department",
   "column_break_3",
+  "project_client",
   "test",
   "date_of_report",
   "date_of_calibration",
@@ -41,9 +42,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.department",
@@ -51,8 +51,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Department",
-   "options": "Department",
-   "reqd": 1
+   "options": "Department"
   },
   {
    "fieldname": "column_break_3",
@@ -144,8 +143,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fieldname": "amended_from",
@@ -160,7 +158,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "default": "0",
@@ -183,7 +181,8 @@
   },
   {
    "fieldname": "data_22",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "fieldname": "collected_by",
@@ -195,11 +194,16 @@
    "fieldtype": "Link",
    "label": "Tested by",
    "options": "User"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-29 10:30:16.818170",
+ "modified": "2021-01-26 16:49:35.418568",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Oven",

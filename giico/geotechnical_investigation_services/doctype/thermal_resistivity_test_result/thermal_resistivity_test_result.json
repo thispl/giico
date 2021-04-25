@@ -11,6 +11,7 @@
   "project_name",
   "customer",
   "department",
+  "project_client",
   "column_break_3",
   "test",
   "date_test",
@@ -38,8 +39,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Project ",
-   "options": "Project",
-   "reqd": 1
+   "options": "Project"
   },
   {
    "fetch_from": "project.department",
@@ -47,8 +47,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Department",
-   "options": "Department",
-   "reqd": 1
+   "options": "Department"
   },
   {
    "fieldname": "column_break_3",
@@ -123,8 +122,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "default": "0",
@@ -146,7 +144,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "fieldname": "location",
@@ -171,12 +169,18 @@
   },
   {
    "fieldname": "data_24",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:35:44.640663",
+ "modified": "2021-03-23 08:27:09.498385",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Thermal Resistivity Test Result",

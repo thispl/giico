@@ -11,6 +11,7 @@
   "project_name",
   "department",
   "customer",
+  "project_client",
   "column_break_4",
   "location",
   "test",
@@ -382,7 +383,7 @@
   {
    "fieldname": "html_1",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/A.JPG\">"
+   "options": "<img height=\"100\" src=\"/files/A.png\">"
   },
   {
    "fieldname": "column_break_56",
@@ -391,7 +392,7 @@
   {
    "fieldname": "html_48",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/B.JPG\">"
+   "options": "<img height=\"100\" src=\"/files/B.png\">"
   },
   {
    "fieldname": "column_break_58",
@@ -400,7 +401,7 @@
   {
    "fieldname": "html_52",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/C.JPG\">"
+   "options": "<img height=\"100\" src=\"/files/C.png\">"
   },
   {
    "fieldname": "column_break_60",
@@ -409,7 +410,7 @@
   {
    "fieldname": "html_54",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/D.JPG\">"
+   "options": "<img height=\"100\" src=\"/files/D.png\">"
   },
   {
    "fieldname": "column_break_62",
@@ -418,7 +419,7 @@
   {
    "fieldname": "html_56",
    "fieldtype": "HTML",
-   "options": "<img height=\"100\" src=\"/files/E.JPG\">"
+   "options": "<img height=\"100\" src=\"/files/E.png\">"
   },
   {
    "fieldname": "column_break_63",
@@ -457,16 +458,14 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "default": "0",
@@ -488,7 +487,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "default": "1",
@@ -503,12 +502,18 @@
   },
   {
    "fieldname": "data_78",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:16:29.016600",
+ "modified": "2021-02-08 14:24:59.796949",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Concrete Core Drilling And Strength Test",

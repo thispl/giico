@@ -11,6 +11,7 @@
   "customer",
   "department",
   "column_break_3",
+  "project_client",
   "test",
   "calibration_date",
   "report_date",
@@ -41,9 +42,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.department",
@@ -143,8 +143,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fieldname": "amended_from",
@@ -159,7 +158,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "default": "1",
@@ -174,7 +173,8 @@
   },
   {
    "fieldname": "data_24",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "fieldname": "collected_by",
@@ -194,11 +194,16 @@
   {
    "fieldname": "section_break_27",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-29 13:55:46.219938",
+ "modified": "2021-01-26 16:31:15.079284",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Calibration of Electronic Balance 8100 g",

@@ -11,6 +11,7 @@
   "project_name",
   "customer",
   "department",
+  "project_client",
   "column_break_3",
   "test",
   "location",
@@ -43,9 +44,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.department",
@@ -169,7 +169,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "default": "1",
@@ -184,7 +184,8 @@
   },
   {
    "fieldname": "data_26",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "fieldname": "collected_by",
@@ -204,11 +205,16 @@
   {
    "fieldname": "section_break_29",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-29 15:40:00.210612",
+ "modified": "2021-01-26 16:54:54.853399",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Location Wise Concrete Pour Record",

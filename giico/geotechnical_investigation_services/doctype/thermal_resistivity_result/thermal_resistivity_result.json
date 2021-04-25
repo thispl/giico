@@ -11,6 +11,7 @@
   "column_break_3",
   "test",
   "location",
+  "project_client",
   "department",
   "column_break_5",
   "samp_type",
@@ -34,15 +35,13 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Project ",
-   "options": "Project",
-   "reqd": 1
+   "options": "Project"
   },
   {
    "fieldname": "customer",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Customer ",
-   "reqd": 1
+   "label": "Customer "
   },
   {
    "fieldname": "column_break_3",
@@ -144,12 +143,18 @@
   },
   {
    "fieldname": "data_20",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:57:31.679102",
+ "modified": "2021-01-26 16:02:11.461997",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Thermal Resistivity Result",

@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "PCT-.YYYY.-06-.####",
  "creation": "2019-09-27 09:55:29.117410",
  "doctype": "DocType",
@@ -10,6 +11,7 @@
   "project_name",
   "customer",
   "department",
+  "project_client",
   "column_break_3",
   "test_date",
   "report_date",
@@ -23,16 +25,16 @@
   "test",
   "section_break_13",
   "remark",
-  "amended_from"
+  "amended_from",
+  "reference_no"
  ],
  "fields": [
   {
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.department",
@@ -91,7 +93,7 @@
   {
    "fieldname": "test",
    "fieldtype": "Table",
-   "label": "Test",
+   "label": "Test NO",
    "options": "Physical and Chemical"
   },
   {
@@ -109,8 +111,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "default": "0",
@@ -132,11 +133,22 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-06 10:39:25.867332",
+ "links": [],
+ "modified": "2021-01-26 16:59:45.490090",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Physical and Chemical Test",

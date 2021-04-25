@@ -11,7 +11,11 @@
   "project_name",
   "customer",
   "location",
+  "owner",
+  "contractor",
+  "sub_contractor",
   "section_break_34",
+  "project_client",
   "test",
   "department",
   "column_break_7",
@@ -176,7 +180,7 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
+   "label": "Project(GIICO)",
    "options": "Project"
   },
   {
@@ -301,7 +305,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "fieldname": "amended_from",
@@ -343,7 +347,8 @@
   {
    "fieldname": "data_53",
    "fieldtype": "Data",
-   "hidden": 1
+   "hidden": 1,
+   "label": "Reference No"
   },
   {
    "fieldname": "datetime",
@@ -368,10 +373,30 @@
    "fieldname": "is_additional_check2",
    "fieldtype": "Check",
    "label": "Is Additional Check2"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor"
+  },
+  {
+   "fieldname": "sub_contractor",
+   "fieldtype": "Data",
+   "label": "Sub Contractor"
   }
  ],
  "links": [],
- "modified": "2020-12-23 16:54:29.016525",
+ "modified": "2021-04-08 14:42:41.207915",
  "modified_by": "Administrator",
  "module": "Giico",
  "name": "FDT",

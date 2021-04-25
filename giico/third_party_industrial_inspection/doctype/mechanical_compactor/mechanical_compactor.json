@@ -11,6 +11,7 @@
   "customer",
   "department",
   "column_break_3",
+  "project_client",
   "test",
   "date_of_calibration",
   "date_of_report",
@@ -40,9 +41,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.department",
@@ -154,8 +154,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fieldname": "amended_from",
@@ -170,7 +169,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "default": "1",
@@ -185,12 +184,18 @@
   },
   {
    "fieldname": "data_27",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:22:40.554403",
+ "modified": "2021-01-26 15:54:18.439833",
  "modified_by": "Administrator",
  "module": "Third Party Industrial Inspection",
  "name": "Mechanical Compactor",

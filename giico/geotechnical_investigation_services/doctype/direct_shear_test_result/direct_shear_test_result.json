@@ -11,6 +11,7 @@
   "customer",
   "department",
   "column_break_3",
+  "project_client",
   "test",
   "location",
   "date_of_test",
@@ -50,8 +51,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Project ",
-   "options": "Project",
-   "reqd": 1
+   "options": "Project"
   },
   {
    "fetch_from": "project.location",
@@ -194,8 +194,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fieldname": "generate_graph",
@@ -251,12 +250,18 @@
   },
   {
    "fieldname": "data_36",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 11:02:00.054490",
+ "modified": "2021-01-26 15:54:45.816837",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Direct Shear Test Result",

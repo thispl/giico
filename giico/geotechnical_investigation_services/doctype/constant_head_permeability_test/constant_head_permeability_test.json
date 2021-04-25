@@ -11,6 +11,7 @@
   "customer",
   "column_break_3",
   "test",
+  "project_client",
   "location",
   "department",
   "section_break_5",
@@ -44,9 +45,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.location",
@@ -190,8 +190,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "default": "0",
@@ -222,12 +221,18 @@
   },
   {
    "fieldname": "data_31",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:43:40.549924",
+ "modified": "2021-01-26 16:00:00.843179",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Constant Head Permeability Test",

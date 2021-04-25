@@ -48,16 +48,16 @@
   "tested_by1",
   "section_break_41",
   "data_38",
-  "amended_from"
+  "amended_from",
+  "project_client"
  ],
  "fields": [
   {
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fieldname": "location",
@@ -95,7 +95,7 @@
   {
    "fieldname": "sample_description",
    "fieldtype": "Data",
-   "label": "Sample Description"
+   "label": "Sample description"
   },
   {
    "fieldname": "section_break_9",
@@ -222,8 +222,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "default": "0",
@@ -245,7 +244,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "default": "1",
@@ -260,12 +259,13 @@
   },
   {
    "fieldname": "data_38",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "fieldname": "collected_by",
    "fieldtype": "Data",
-   "label": "Collected By"
+   "label": "Collected by"
   },
   {
    "fieldname": "column_break_39",
@@ -280,11 +280,16 @@
   {
    "fieldname": "section_break_41",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-30 08:32:46.076686",
+ "modified": "2021-01-25 13:32:11.073793",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Flakiness and Elongation Index Test",

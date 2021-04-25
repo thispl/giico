@@ -11,6 +11,7 @@
   "column_break_3",
   "test",
   "department",
+  "project_client",
   "test_id",
   "bore_no",
   "int",
@@ -47,9 +48,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fieldname": "column_break_3",
@@ -204,8 +204,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fieldname": "amended_from",
@@ -229,12 +228,18 @@
   },
   {
    "fieldname": "data_34",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:38:39.502367",
+ "modified": "2021-01-26 16:28:49.567166",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Falling Head Method",

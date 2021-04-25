@@ -42,16 +42,16 @@
   "chart_image",
   "section_break_35",
   "data_36",
-  "amended_from"
+  "amended_from",
+  "project_client"
  ],
  "fields": [
   {
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fieldname": "column_break_3",
@@ -210,8 +210,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fetch_from": "project.location",
@@ -249,12 +248,18 @@
   },
   {
    "fieldname": "data_36",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:53:41.426020",
+ "modified": "2021-01-26 16:11:33.664590",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Falling Head Permeability Test",

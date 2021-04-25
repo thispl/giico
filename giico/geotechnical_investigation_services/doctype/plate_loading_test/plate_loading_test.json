@@ -7,10 +7,12 @@
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
   "customer",
   "location",
   "column_break_4",
   "test",
+  "project_client",
   "date_of_test",
   "test_no",
   "department",
@@ -50,9 +52,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.location",
@@ -249,12 +250,25 @@
   },
   {
    "fieldname": "data_37",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name(GIICO)",
+   "read_only": 1
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:57:51.909063",
+ "modified": "2021-03-24 10:46:35.416676",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Plate Loading Test",

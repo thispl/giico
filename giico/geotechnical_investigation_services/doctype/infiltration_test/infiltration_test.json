@@ -11,6 +11,7 @@
   "location",
   "column_break_4",
   "test",
+  "project_client",
   "date",
   "test_no",
   "department",
@@ -38,9 +39,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.location",
@@ -160,8 +160,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "default": "1",
@@ -176,11 +175,17 @@
   },
   {
    "fieldname": "data_26",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "links": [],
- "modified": "2020-12-14 11:11:34.024032",
+ "modified": "2021-01-26 16:31:35.138797",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Infiltration Test",

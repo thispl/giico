@@ -11,6 +11,7 @@
   "column_break_3",
   "test",
   "location",
+  "project_client",
   "department",
   "section_break_5",
   "contract_no",
@@ -31,9 +32,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fieldname": "column_break_3",
@@ -100,8 +100,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fetch_from": "project.department",
@@ -133,12 +132,18 @@
   },
   {
    "fieldname": "data_18",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:54:50.395114",
+ "modified": "2021-01-26 15:52:42.858206",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Lab Thermal Resistivity Test",

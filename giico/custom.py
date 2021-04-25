@@ -15,9 +15,9 @@ from frappe.utils.csvutils import read_csv_content
 def mark_timesheet(employees,date,project,hours):
     emps = json.loads(employees)
     for emp in emps:
-        frappe.errprint(emp)
+        # frappe.errprint(emp)
         if "__checked" in emp:
-            frappe.errprint(emp)
+            # frappe.errprint(emp)
             timesheet = frappe.new_doc('Timesheet')
             timesheet.employee = emp["employee"]
             timesheet.project = project
@@ -33,6 +33,45 @@ def mark_timesheet(employees,date,project,hours):
             # frappe.db.commit()
     return emp
 
+@frappe.whitelist()
+def modify_projects():
+    # count = 0
+    # test=frappe.db.sql("""select `tabDocType`.name,`tabDocType`.Module Def FROM `tabDocType`
+    # LEFT JOIN `tabDocField` ON `tabDocType`.name =`tabDocField`.parent 
+    # where `tabDocField`.fieldname='test' && `tabDocField`.fieldtype='check'""",as_dict=True)
+    # for t in test:
+    #     test_project = frappe.db.sql("""select name,project from `tab%s` where project not in 
+    #     ("KUWAIT FLOUR MILLS & BAKERIES CO.",
+    #     "Arabian Darb-Inspection of Ductile Iron Pipes & Fittings-RA266",
+    #     "MEW 5341",
+    #     "Naser Al Baddah-Deep Well Drilling /CP Works-Project No. E31",
+    #     "O&G Kuwait",
+    #     "Stantek UK Limited",
+    #     "China Petroleum-Construction of Earthing Holes",
+    #     "ALARGAN NATIONAL GENERAL TRADING & CONTRACTING CO.", 
+    #     "US Army Plate Load Test- Camp Arifjan",
+    #     "ONG KUWAIT",
+    #     "Mitas Energy","Nezar Al-Anjari Consulting Bureau") AND project IS NOT NULL""" %(t.name),as_dict=True)
+    #     for test in test_project:
+    #         frappe.errprint(test.project)
+    #         frappe.set_value(t.name,test.name,'project','')
+    project=frappe.db.sql("""select name from `tabProject` where project_name not in 
+    ("KUWAIT FLOUR MILLS & BAKERIES CO.",
+    "Arabian Darb-Inspection of Ductile Iron Pipes & Fittings-RA266",
+    "MEW 5341",
+    "Naser Al Baddah-Deep Well Drilling /CP Works-Project No. E31",
+    "O&G Kuwait",
+    "Stantek UK Limited",
+    "China Petroleum-Construction of Earthing Holes",
+    "ALARGAN NATIONAL GENERAL TRADING & CONTRACTING CO.", 
+    "US Army Plate Load Test- Camp Arifjan",
+    "ONG KUWAIT",
+    "Mitas Energy","Nezar Al-Anjari Consulting Bureau")""",as_dict=True)
+    for d in project:
+        project = frappe.get_doc('Project', d.name)
+        if project.docstatus == 1:
+            project.cancel()
+        frappe.delete_doc('Project',d.name,force=True)
 
 @frappe.whitelist()
 def redirect_technicians(bootinfo):
@@ -69,7 +108,7 @@ def send_quotation(name,mail_id,subject,message,cc=None):
     
 @frappe.whitelist()
 def attendance(names,status):
-    frappe.errprint(type(names))
+    # frappe.errprint(type(names))
     ids = json.loads(names)
     for id in ids:
         att = frappe.get_doc("Attendance",id) 
@@ -127,4 +166,80 @@ def bulk_update_from_csv(filename):
                 #     'supplier' : pp[1]
                 # })
                 # i.save(ignore_permissions=True)
-                # frappe.db.commit()    
+                # frappe.db.commit()
+
+def changes_mandatory():
+    test=frappe.db.sql("""select `tabDocType`.name,`tabDocType`.Module Def FROM `tabDocType`
+    LEFT JOIN `tabDocField` ON `tabDocType`.name =`tabDocField`.parent 
+    where `tabDocField`.fieldname='test' && `tabDocField`.fieldtype='check' """,as_dict=True)
+    for t in test:
+        get_doc =frappe.get_doc('DocType',t.name)
+        get_doc.delete('fields',{
+                'label':'Project',
+                'fieldtype':'Data',
+                'fieldname':'project_client'
+            })
+        get_doc.save(ignore_permissions=True)
+        frappe.db.commit()
+        # for i in get_doc.fields:
+            # if i.label == 'Project':
+            #     i.label = 'Project(GIICO)',
+            #     i.reqd = 0
+            #     get_doc.save(ignore_permissions=True)
+            #     frappe.db.commit()
+            # if i.label =='Customer':
+            #     i.reqd = 0
+            #     get_doc.save(ignore_permissions=True)
+            #     frappe.db.commit()
+            # if i.label == 'Project Name':
+            #     i.label = 'Project Name(GIICO)'
+            #     get_doc.save(ignore_permissions=True)
+            #     frappe.db.commit()
+def delete_test():
+    projects = ("KUWAIT FLOUR MILLS & BAKERIES CO.","Hello")
+    test=frappe.db.sql("""select name from `tabProject` where project_name not in 
+    ("KUWAIT FLOUR MILLS & BAKERIES CO.",
+    "Arabian Darb-Inspection of Ductile Iron Pipes & Fittings-RA266",
+    "MEW 5341",
+     "Naser Al Baddah-Deep Well Drilling /CP Works-Project No. E31",
+     "O&G Kuwait",
+     "Stantek UK Limited",
+     "China Petroleum-Construction of Earthing Holes",
+     "ALARGAN NATIONAL GENERAL TRADING & CONTRACTING CO.", 
+     "US Army Plate Load Test- Camp Arifjan",
+     "ONG KUWAIT",
+     "Mitas Energy","Nezar Al-Anjari Consulting Bureau")""")
+    # frappe.errprint(len(test))
+    for t in test:
+        frappe.errprint(t[0])
+        a =frappe.get_doc("Project",t[0])
+        for g in a.test1:
+            te =frappe.get_doc(g.test_name,g.test_id)
+            # frappe.errprint(te)      
+@frappe.whitelist()
+def get_test():
+    test=frappe.db.sql("""select `tabDocType`.name,`tabDocType`.Module Def FROM `tabDocType`
+    LEFT JOIN `tabDocField` ON `tabDocType`.name =`tabDocField`.parent 
+    where `tabDocField`.fieldname='test' && `tabDocField`.fieldtype='check' """,as_dict=True)
+    for t in test:
+        try:
+            project=frappe.db.sql("""select name,project from `tab%s` where project not in 
+            ("KUWAIT FLOUR MILLS & BAKERIES CO.",
+            "Arabian Darb-Inspection of Ductile Iron Pipes & Fittings-RA266",
+            "MEW 5341",
+            "Naser Al Baddah-Deep Well Drilling /CP Works-Project No. E31",
+            "O&G Kuwait",
+            "Stantek UK Limited",
+            "China Petroleum-Construction of Earthing Holes",
+            "ALARGAN NATIONAL GENERAL TRADING & CONTRACTING CO.", 
+            "US Army Plate Load Test- Camp Arifjan",
+            "ONG KUWAIT",
+            "Mitas Energy","Nezar Al-Anjari Consulting Bureau") AND project IS NOT NULL""" %(t.name),as_dict=True)
+            for d in project:
+                frappe.errprint(d.project_name)
+                # frappe.db.set_value(t.name,project[0][0],"project","")
+                # frappe.errprint(project[0][0])
+                # frappe.errprint(t.name)
+        except:
+            pass
+          

@@ -11,6 +11,7 @@
   "project_name",
   "customer",
   "department",
+  "project_client",
   "column_break_5",
   "test",
   "location",
@@ -428,9 +429,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.customer",
@@ -438,8 +438,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fieldname": "html_24",
@@ -623,7 +622,7 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "fieldname": "test_5_section",
@@ -720,7 +719,8 @@
   },
   {
    "fieldname": "data_118",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "fieldname": "column_break_113",
@@ -754,11 +754,16 @@
   {
    "fieldname": "section_break_123",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-29 16:19:41.413314",
+ "modified": "2021-01-26 16:04:16.040454",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Schmidt Hammer Test",

@@ -11,6 +11,7 @@
   "project_name",
   "department",
   "customer",
+  "project_client",
   "column_break_3",
   "location",
   "test_date",
@@ -141,15 +142,13 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fieldname": "project",
    "fieldtype": "Link",
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "default": "0",
@@ -171,11 +170,12 @@
    "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "fieldname": "data_25",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "default": "1",
@@ -206,11 +206,16 @@
   {
    "fieldname": "section_break_29",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-29 16:03:06.189533",
+ "modified": "2021-01-26 16:12:56.497173",
  "modified_by": "Administrator",
  "module": "Quality Control and Material Testing",
  "name": "Concrete Tiles Units",

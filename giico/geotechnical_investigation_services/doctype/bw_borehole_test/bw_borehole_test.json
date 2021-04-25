@@ -11,6 +11,7 @@
   "to",
   "report_name",
   "block",
+  "project_client",
   "plot",
   "column_break_7",
   "location",
@@ -46,7 +47,8 @@
   "bw1",
   "section_break_38",
   "bw2",
-  "remarks"
+  "remarks",
+  "reference_no"
  ],
  "fields": [
   {
@@ -192,7 +194,7 @@
   {
    "fieldname": "project",
    "fieldtype": "Link",
-   "label": "Project",
+   "label": "Project(GIICO)",
    "options": "Project"
   },
   {
@@ -258,11 +260,21 @@
    "fieldname": "remarks",
    "fieldtype": "Data",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-12-31 15:15:47.039608",
+ "modified": "2021-01-26 15:54:01.382627",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "BW Borehole Test",

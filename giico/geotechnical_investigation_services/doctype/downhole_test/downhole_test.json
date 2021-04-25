@@ -11,6 +11,7 @@
   "department",
   "column_break_4",
   "test",
+  "project_client",
   "location",
   "date",
   "section_break_6",
@@ -46,9 +47,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.department",
@@ -195,8 +195,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fetch_from": "project.location",
@@ -227,12 +226,18 @@
   },
   {
    "fieldname": "data_33",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:37:31.883175",
+ "modified": "2021-01-26 15:47:04.762954",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Downhole Test",

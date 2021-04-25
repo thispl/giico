@@ -8,6 +8,7 @@
  "field_order": [
   "sample",
   "test",
+  "project_client",
   "sample_data",
   "section_break_4",
   "data_5",
@@ -47,13 +48,19 @@
   },
   {
    "fieldname": "data_5",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 11:07:09.492116",
+ "modified": "2021-01-26 15:45:15.957531",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Shear Test",

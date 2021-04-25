@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "CBR.####",
  "creation": "2019-08-16 09:55:32.027073",
  "doctype": "DocType",
@@ -6,6 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "project_name",
+  "project_client",
   "customer",
   "department",
   "column_break_3",
@@ -38,9 +41,8 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Project",
-   "options": "Project",
-   "reqd": 1
+   "label": "Project(GIICO)",
+   "options": "Project"
   },
   {
    "fetch_from": "project.department",
@@ -48,8 +50,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Department",
-   "options": "Department",
-   "reqd": 1
+   "options": "Department"
   },
   {
    "fieldname": "column_break_3",
@@ -172,8 +173,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
+   "options": "Customer"
   },
   {
    "fieldname": "amended_from",
@@ -183,10 +183,23 @@
    "options": "Field CBR",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name(GIICO)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-10-19 13:37:12.043145",
+ "links": [],
+ "modified": "2021-03-24 10:47:01.454558",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Field CBR",

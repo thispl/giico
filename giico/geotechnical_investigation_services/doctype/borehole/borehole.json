@@ -11,6 +11,7 @@
   "contract",
   "client",
   "location",
+  "project_client",
   "column_break_5",
   "test",
   "ktmutn_n",
@@ -45,7 +46,7 @@
   {
    "fieldname": "project",
    "fieldtype": "Link",
-   "label": "Project",
+   "label": "Project(GIICO)",
    "options": "Project"
   },
   {
@@ -53,7 +54,7 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Project Name"
+   "label": "Project Name(GIICO)"
   },
   {
    "fieldname": "contract",
@@ -205,7 +206,8 @@
   },
   {
    "fieldname": "data_33",
-   "fieldtype": "Data"
+   "fieldtype": "Data",
+   "label": "Reference No"
   },
   {
    "fieldname": "amended_from",
@@ -215,12 +217,17 @@
    "options": "Borehole",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2020-12-14 10:33:37.225943",
+ "modified": "2021-01-26 16:34:26.156833",
  "modified_by": "Administrator",
  "module": "Geotechnical Investigation Services",
  "name": "Borehole",
