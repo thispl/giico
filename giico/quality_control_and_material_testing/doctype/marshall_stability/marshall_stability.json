@@ -1,0 +1,297 @@
+{
+ "actions": [],
+ "autoname": "MS-.YYYY.-06-.####",
+ "creation": "2021-01-13 08:40:49.830312",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client",
+  "project",
+  "location",
+  "sample_source",
+  "sample_no",
+  "project_client",
+  "column_break_6",
+  "asphalt_laying_date",
+  "test_date",
+  "report_date",
+  "report_ref",
+  "type_of_sample",
+  "section_break_12",
+  "marshal",
+  "section_break_14",
+  "calculate",
+  "section_break_16",
+  "average_density",
+  "column_break_15",
+  "average_stability",
+  "column_break_17",
+  "average_flow",
+  "section_break_19",
+  "air_voids_gmm",
+  "air_voids_gmb",
+  "air_gmm",
+  "air_av",
+  "column_break_25",
+  "voids_in_mineral_aggregate_gmb",
+  "voids_in_mineral_aggregate_ps",
+  "voids_in_mineral_aggregate_gsb",
+  "voids_in_mineral_aggregate_vma",
+  "section_break_30",
+  "wet_aashto",
+  "compressive_strength_dry_group_aashto_165",
+  "column_break_33",
+  "index_of_retained_strength_",
+  "loss_of_stability",
+  "section_break_34",
+  "remarks",
+  "section_break_32",
+  "tested_by",
+  "column_break_16",
+  "approved_by",
+  "reference_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project(GIICO)",
+   "options": "Project"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "sample_source",
+   "fieldtype": "Data",
+   "label": "Sample Source"
+  },
+  {
+   "fieldname": "sample_no",
+   "fieldtype": "Data",
+   "label": "Sample No"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "asphalt_laying_date",
+   "fieldtype": "Date",
+   "label": "Asphalt Laying Date"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "report_ref",
+   "fieldtype": "Data",
+   "label": "Report Ref"
+  },
+  {
+   "fieldname": "type_of_sample",
+   "fieldtype": "Data",
+   "label": "Type of Sample"
+  },
+  {
+   "fieldname": "marshal",
+   "fieldtype": "Table",
+   "label": "Marshal",
+   "options": "Marshall"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "average_density",
+   "fieldtype": "Data",
+   "label": "Average(Density)"
+  },
+  {
+   "fieldname": "average_stability",
+   "fieldtype": "Data",
+   "label": "Average (Stability)"
+  },
+  {
+   "fieldname": "average_flow",
+   "fieldtype": "Data",
+   "label": "Average (Flow)"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "air_voids_gmm",
+   "fieldtype": "Data",
+   "label": "Air voids gmm"
+  },
+  {
+   "fieldname": "air_voids_gmb",
+   "fieldtype": "Data",
+   "label": "Air voids gmb"
+  },
+  {
+   "fieldname": "air_gmm",
+   "fieldtype": "Data",
+   "label": "Air voids gmm"
+  },
+  {
+   "fieldname": "air_av",
+   "fieldtype": "Data",
+   "label": "Air voids AV"
+  },
+  {
+   "fieldname": "voids_in_mineral_aggregate_gmb",
+   "fieldtype": "Data",
+   "label": "Voids in mineral aggregate gmb"
+  },
+  {
+   "fieldname": "voids_in_mineral_aggregate_ps",
+   "fieldtype": "Data",
+   "label": "Voids in mineral aggregate Ps"
+  },
+  {
+   "fieldname": "voids_in_mineral_aggregate_gsb",
+   "fieldtype": "Data",
+   "label": "Voids in mineral aggregate Gsb"
+  },
+  {
+   "fieldname": "voids_in_mineral_aggregate_vma",
+   "fieldtype": "Data",
+   "label": "Voids in mineral aggregate VMA"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "wet_aashto",
+   "fieldtype": "Data",
+   "label": "Compressive strength wet group AASHTO 165"
+  },
+  {
+   "fieldname": "compressive_strength_dry_group_aashto_165",
+   "fieldtype": "Data",
+   "label": "Compressive strength dry group AASHTO 165"
+  },
+  {
+   "fieldname": "loss_of_stability",
+   "fieldtype": "Data",
+   "label": "Loss of stability"
+  },
+  {
+   "fieldname": "section_break_34",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "index_of_retained_strength_",
+   "fieldtype": "Data",
+   "label": "Index of retained strength (%)"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-01-26 16:58:17.734726",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Marshall Stability",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

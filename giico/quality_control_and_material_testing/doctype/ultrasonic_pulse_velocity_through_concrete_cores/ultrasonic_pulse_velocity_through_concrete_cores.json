@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "autoname": "UPVCC-.YYYY.-06-.####",
+ "creation": "2021-03-29 14:14:35.659468",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "project_name",
+  "project_client",
+  "location",
+  "column_break_6",
+  "client_name",
+  "date_of_test",
+  "date_of_report",
+  "reference_no",
+  "section_break_10",
+  "attach_report",
+  "section_break_12",
+  "tested_by",
+  "column_break_14",
+  "collected_by",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "description": "Select Only if the Project is a Long-Term Project.\nPlease use Project field for Walkin Customer Projects.",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project(GIICO)",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name(GIICO)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_client",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client Name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Test",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_report",
+   "fieldtype": "Date",
+   "label": "Date of Report"
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "depends_on": "eval:!doc.__islocal",
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attach_report",
+   "fieldtype": "Attach",
+   "label": "Attach Report"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "collected_by",
+   "fieldtype": "Link",
+   "label": "Collected By",
+   "options": "User"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ultrasonic Pulse Velocity Through Concrete Cores",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-03-29 14:14:35.659468",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Ultrasonic Pulse Velocity Through Concrete Cores",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lab Test User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

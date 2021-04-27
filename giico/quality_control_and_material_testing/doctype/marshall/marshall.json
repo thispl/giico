@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "creation": "2021-01-13 08:45:20.672428",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_id",
+  "bitumen",
+  "weight_in_air",
+  "ssd",
+  "weight_in_water",
+  "bulk_volume",
+  "density",
+  "volume_correction",
+  "load",
+  "stability",
+  "deformation",
+  "flow"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample ID"
+  },
+  {
+   "fieldname": "bitumen",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bitumen (%)"
+  },
+  {
+   "fieldname": "weight_in_air",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Weight In Air"
+  },
+  {
+   "fieldname": "ssd",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SSD"
+  },
+  {
+   "fieldname": "weight_in_water",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Weight In Water"
+  },
+  {
+   "fieldname": "bulk_volume",
+   "fieldtype": "Data",
+   "label": "Bulk Volume"
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Data",
+   "label": "Density(g/m\u00b3)"
+  },
+  {
+   "fieldname": "volume_correction",
+   "fieldtype": "Data",
+   "label": "Volume Correction"
+  },
+  {
+   "fieldname": "load",
+   "fieldtype": "Data",
+   "label": "Load (kN)"
+  },
+  {
+   "fieldname": "stability",
+   "fieldtype": "Data",
+   "label": "Stability(kg)"
+  },
+  {
+   "fieldname": "deformation",
+   "fieldtype": "Data",
+   "label": "Deformation(mm)"
+  },
+  {
+   "fieldname": "flow",
+   "fieldtype": "Data",
+   "label": "Flow 0.01\""
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-01-13 09:03:13.458077",
+ "modified_by": "Administrator",
+ "module": "Quality Control and Material Testing",
+ "name": "Marshall",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
